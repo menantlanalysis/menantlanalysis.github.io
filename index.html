@@ -141,6 +141,7 @@
             const chartWrapper = document.getElementById('chart-wrapper');
             const chartContainer = document.getElementById('chart-container');
             const chartLoader = document.getElementById('chart-loader');
+            const mainFooter = document.getElementById('main-footer');
             
             let websiteData = {};
 
@@ -339,7 +340,7 @@
             function updateFooter(lastRunDate) {
                 const currentYear = new Date().getFullYear();
                 mainFooter.innerHTML = `
-                    &copy; ${currentYear} All rights reserved. Last run date: ${lastRunDate}.
+                    &copy; ${currentYear} All rights reserved. Last update: ${lastRunDate}.
                     Contact: <a href="mailto:menantlanalysis@gmail.com">menantlanalysis@gmail.com</a>
                 `;
             }

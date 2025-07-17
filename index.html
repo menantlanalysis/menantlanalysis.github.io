@@ -310,7 +310,7 @@
                 const layout = {
                     title: `Luminosity in ${title}`, xaxis: { title: 'Date' }, yaxis: { title: 'Luminosity' },
                     shapes: shapes, annotations: annotations, showlegend: true, legend: { x: 1, xanchor: 'right', y: 1 },
-                    margin: { l: 60, r: 20, t: 50, b: 50 }
+                    margin: { l: 60, r: 20, t: 50, b: 50 }, height: 500
                 };
                 Plotly.newPlot(chartContainer, [scatterTrace, loessTrace], layout, {responsive: true});
             }

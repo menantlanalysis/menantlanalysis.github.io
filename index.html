@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nighttime Lights Dashboard</title>
+  <script src="https://cdn.plot.ly/plotly-2.25.1.min.js"></script>
+  <style>
+    body { display: flex; margin: 0; font-family: sans-serif; }
+    #sidebar { width: 200px; background: #f4f4f4; padding: 10px; height: 100vh; overflow-y: auto; }
+    #main { flex: 1; padding: 10px; overflow-y: auto; }
+    .country, .muni { cursor: pointer; padding: 5px; margin: 2px 0; border-radius: 3px; }
+    .country:hover, .muni:hover { background: #ddd; }
+    #video { width: 100%; max-height: 360px; }
+    #plot { width: 100%; height: 400px; }
+  </style>
+</head>
+<body>
+
+  <div id="sidebar">
+    <h3>Countries</h3>
+    <div id="countries"></div>
+  </div>
+
+  <div id="main">
+    <video id="video" controls></video>
+    <div style="margin: 10px 0;">
+      <a id="download-link" href="#" download="data.csv">📥 Download CSV Data</a>
+    </div>
+    <div id="plot"></div>
+    <h4>Municipalities</h4>
+    <div id="munis"></div>
+  </div>
+
+<script>
+(async function(){
+  // Load config and events
+  const config = await fetch('config.json').then(r=>r.json());
+  const events = await fetch('events.json').then(r=>r.json());
+
+  const countriesDiv = document.getElementById('countries');
+  const munisDiv     = document.getElementById('munis');
+  const videoEl      = document.getElementById('video');
+  const plotEl       = document.getElementById('plot');
+
+  // Helper to plot a CSV with Plotly
+  async function plotCSV(path, countryKey, muniKey){
+    const data = await Plotly.d3.csv(path);
+    const dates = data.map(d => new Date(d.date));
+    const y      = data.map(d => +d.luminosity);
+    const trace = {
+      x: dates, y, mode:'markers', name:'Luminosity',
+      marker:{size:6, color:'#1f77b4'}
+    };
+    const trace2 = {
+      x: dates, y, mode:'lines', name:'Smoothed',
+      line:{shape:'spline', smoothing:0.5, color:'#ff7f0e'}
+    };
+    const shapes = [];
+    const evList = (events[countryKey]?.events || [])
+      .concat(events[countryKey]?.municipalities?.[muniKey]?.events||[]);
+    evList.forEach(ev=>{
+      shapes.push({
+        type:'rect',
+        x0: ev.start, x1: ev.end,
+        y0:0, y1:Math.max(...y)*1.1,
+        fillcolor:'rgba(200,200,200,0.3)',
+        line:{width:0}
+      });
+    });
+
+    Plotly.newPlot(plotEl, [trace,trace2], {
+      title: `${config.countries[countryKey].displayName}${muniKey?' — '+muniKey:''}`,
+      shapes, xaxis:{title:'Date'}, yaxis:{title:'Luminosity'}
+    });
+
+    // Update download link
+    const dl = document.getElementById('download-link');
+    dl.href = path;
+    dl.download = `${countryKey}${muniKey ? '_' + muniKey : ''}_data.csv`;
+    dl.textContent = '📥 Download CSV Data';
+  }
+
+  // Populate country list
+  Object.entries(config.countries).forEach(([key,cfg])=>{
+    const div = document.createElement('div');
+    div.textContent = cfg.displayName;
+    div.className = 'country';
+    div.onclick = ()=>selectCountry(key);
+    countriesDiv.append(div);
+  });
+
+  async function selectCountry(countryKey){
+    const c = config.countries[countryKey];
+    // Clear muni list
+    munisDiv.innerHTML = '';
+    // Load country video & plot
+    videoEl.src = `videos/${countryKey}/video.mp4`;
+    await plotCSV(`tables/${countryKey}/country.csv`, countryKey, null);
+
+    // List munis
+    Object.keys(c.municipalities).forEach(mk=>{
+      const d = document.createElement('div');
+      d.textContent = c.municipalities[mk].displayName;
+      d.className = 'muni';
+      d.onclick = ()=>selectMunicipality(countryKey, mk);
+      munisDiv.append(d);
+    });
+  }
+
+  async function selectMunicipality(countryKey, muniKey){
+    const c = config.countries[countryKey];
+    videoEl.src = `videos/${countryKey}/${muniKey}/video.mp4`;
+    await plotCSV(`tables/${countryKey}/${muniKey}/data.csv`, countryKey, muniKey);
+  }
+
+  // Auto‐select first country
+  const first = Object.keys(config.countries)[0];
+  if(first) selectCountry(first);
+
+})();
+</script>
+</body>
+</html>

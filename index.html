@@ -58,6 +58,25 @@
   const ctx          = document.getElementById('plotCanvas').getContext('2d');
   let chartInstance;
 
+  // Build sidebar nested list
+  Object.entries(config.countries).forEach(([countryKey, cfg])=>{
+    // Country
+    const cDiv = document.createElement('div');
+    cDiv.textContent = cfg.displayName;
+    cDiv.className = 'country';
+    cDiv.onclick = ()=>selectCountry(countryKey);
+    countriesDiv.append(cDiv);
+
+    // Municipalities
+    Object.entries(cfg.municipalities).forEach(([muniKey, muniCfg])=>{
+      const mDiv = document.createElement('div');
+      mDiv.textContent = muniKey;
+      mDiv.className = 'muni';
+      mDiv.onclick = ()=>selectMunicipality(countryKey, muniKey);
+      countriesDiv.append(mDiv);
+    });
+  });
+
   // Helper: parse CSV text
   function parseCSV(text) {
     const [headerLine, ...lines] = text.trim().split('\n');
@@ -160,25 +179,6 @@
     dlLink.download = `${countryKey}${muniKey?'_'+muniKey:''}_data.csv`;
     dlContainer.style.display = 'block';
   }
-
-  // Build sidebar nested list
-  Object.entries(config.countries).forEach(([countryKey, cfg])=>{
-    // Country
-    const cDiv = document.createElement('div');
-    cDiv.textContent = cfg.displayName;
-    cDiv.className = 'country';
-    cDiv.onclick = ()=>selectCountry(countryKey);
-    countriesDiv.append(cDiv);
-
-    // Municipalities
-    Object.entries(cfg.municipalities).forEach(([muniKey, muniCfg])=>{
-      const mDiv = document.createElement('div');
-      mDiv.textContent = muniKey;
-      mDiv.className = 'muni';
-      mDiv.onclick = ()=>selectMunicipality(countryKey, muniKey);
-      countriesDiv.append(mDiv);
-    });
-  });
 
   async function selectCountry(countryKey) {
     const c = config.countries[countryKey];

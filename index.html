@@ -6,10 +6,11 @@
   <script src="https://cdn.plot.ly/plotly-2.25.1.min.js"></script>
   <style>
     body { display: flex; margin: 0; font-family: sans-serif; }
-    #sidebar { width: 200px; background: #f4f4f4; padding: 10px; height: 100vh; overflow-y: auto; }
+    #sidebar { width: 220px; background: #f4f4f4; padding: 10px; height: 100vh; overflow-y: auto; }
     #main { flex: 1; padding: 10px; overflow-y: auto; }
     .country, .muni { cursor: pointer; padding: 5px; margin: 2px 0; border-radius: 3px; }
     .country:hover, .muni:hover { background: #ddd; }
+    .muni { padding-left: 20px; font-size: 0.95em; color: #555; }
     #video { width: 100%; max-height: 360px; }
     #plot { width: 100%; height: 400px; }
   </style>
@@ -27,8 +28,6 @@
       <a id="download-link" href="#" download="data.csv">📥 Download CSV Data</a>
     </div>
     <div id="plot"></div>
-    <h4>Municipalities</h4>
-    <div id="munis"></div>
   </div>
 
 <script>
@@ -37,7 +36,6 @@
   const events = await fetch('events.json').then(r=>r.json());
 
   const countriesDiv = document.getElementById('countries');
-  const munisDiv     = document.getElementById('munis');
   const videoEl      = document.getElementById('video');
   const plotEl       = document.getElementById('plot');
   const dlContainer  = document.getElementById('download-container');
@@ -80,12 +78,21 @@
     dlContainer.style.display = 'block';
   }
 
-  Object.entries(config.countries).forEach(([key, cfg])=>{
-    const div = document.createElement('div');
-    div.textContent = cfg.displayName;
-    div.className = 'country';
-    div.onclick = ()=>selectCountry(key);
-    countriesDiv.append(div);
+  Object.entries(config.countries).forEach(([countryKey, countryCfg])=>{
+    const countryDiv = document.createElement('div');
+    countryDiv.textContent = countryCfg.displayName;
+    countryDiv.className = 'country';
+    countryDiv.onclick = ()=>selectCountry(countryKey);
+    countriesDiv.append(countryDiv);
+
+    // Municipalities
+    Object.keys(countryCfg.municipalities).forEach(muniKey=>{
+      const muniDiv = document.createElement('div');
+      muniDiv.textContent = muniKey;
+      muniDiv.className = 'muni';
+      muniDiv.onclick = ()=>selectMunicipality(countryKey, muniKey);
+      countriesDiv.append(muniDiv);
+    });
   });
 
   async function selectCountry(countryKey){
@@ -93,26 +100,13 @@
     videoEl.src = c.video;
     plotEl.innerHTML = '';
     dlContainer.style.display = 'none';
-    munisDiv.innerHTML = '';
-
-    Object.entries(c.municipalities).forEach(([muniKey, muniCfg])=>{
-      const d = document.createElement('div');
-      d.textContent = muniKey;
-      d.className = 'muni';
-      d.onclick = ()=>selectMunicipality(countryKey, muniKey);
-      munisDiv.append(d);
-    });
   }
 
   async function selectMunicipality(countryKey, muniKey){
-    const c = config.countries[countryKey];
-    const muniCfg = c.municipalities[muniKey];
+    const muniCfg = config.countries[countryKey].municipalities[muniKey];
     videoEl.src = muniCfg.video;
     await plotCSV(muniCfg.csv, countryKey, muniKey);
   }
-
-  const first = Object.keys(config.countries)[0];
-  if(first) selectCountry(first);
 
 })();
 </script>

@@ -4,106 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Middle East & North Africa Nighttime Lights</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        #app-container {
-            display: flex;
-            height: 100vh;
-        }
-        #menu {
-            width: 300px;
-            flex-shrink: 0;
-            background-color: #fff;
-            border-right: 1px solid #ddd;
-            padding: 20px;
-            overflow-y: auto;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
-        }
-        #menu h2 {
-            margin-top: 0;
-            color: #0056b3;
-        }
-        #menu .country-name, #menu .muni-item {
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 4px;
-            margin-bottom: 5px;
-            transition: background-color 0.2s;
-            user-select: none; /* Prevent text selection on click */
-        }
-        #menu .country-name:hover, #menu .muni-item:hover {
-            background-color: #e9ecef;
-        }
-        /* --- COLLAPSIBLE STYLES --- */
-        .country-name::before {
-            content: '► ';
-            font-size: 0.8em;
-        }
-        .country-name.open::before {
-            content: '▼ ';
-        }
-        .muni-list {
-            list-style-type: none;
-            padding-left: 20px;
-            border-left: 2px solid #0056b3;
-            margin-left: 8px;
-            display: none; /* Hidden by default */
-        }
-        .muni-list.open {
-            display: block; /* Shown when open */
-        }
-        #content {
-            flex-grow: 1;
-            padding: 20px;
-            overflow-y: auto;
-        }
-        #video-container, #chart-wrapper {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        #video-player {
-            width: 100%;
-            height: auto;
-            max-height: 70vh;
-            border-radius: 4px;
-            background-color: #000;
-        }
-        h3 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-        .loader, .error-message {
-            text-align: center;
-            padding: 40px;
-            font-size: 1.2em;
-            color: #666;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px 20px;
-            font-size: 0.9em;
-            border-top: 1px solid #444;
-            flex-shrink: 0; /* Prevent footer from shrinking */
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+   <style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        display: flex; /* Make body a flex container */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh; /* Ensure body takes full viewport height */
+        padding-bottom: 60px; /* Add padding to body to account for fixed footer height */
+    }
+    #app-container {
+        display: flex;
+        flex-grow: 1; /* Allows app-container to take up available space */
+        overflow: hidden; /* Prevent app-container from creating its own scrollbar */
+    }
+    #menu {
+        width: 300px;
+        flex-shrink: 0;
+        background-color: #fff;
+        border-right: 1px solid #ddd;
+        padding: 20px;
+        overflow-y: auto; /* Make menu scrollable */
+        box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+    #menu h2 {
+        margin-top: 0;
+        color: #0056b3;
+    }
+    #menu .country-name, #menu .muni-item {
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        transition: background-color 0.2s;
+        user-select: none; /* Prevent text selection on click */
+    }
+    #menu .country-name:hover, #menu .muni-item:hover {
+        background-color: #e9ecef;
+    }
+    /* --- COLLAPSIBLE STYLES --- */
+    .country-name::before {
+        content: '► ';
+        font-size: 0.8em;
+    }
+    .country-name.open::before {
+        content: '▼ ';
+    }
+    .muni-list {
+        list-style-type: none;
+        padding-left: 20px;
+        border-left: 2px solid #0056b3;
+        margin-left: 8px;
+        display: none; /* Hidden by default */
+    }
+    .muni-list.open {
+        display: block; /* Shown when open */
+    }
+    #content {
+        flex-grow: 1;
+        padding: 20px;
+        overflow-y: auto; /* Make content area scrollable */
+    }
+    #video-container, #chart-wrapper {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    #video-player {
+        width: 100%;
+        height: auto;
+        max-height: 70vh;
+        border-radius: 4px;
+        background-color: #000;
+    }
+    h3 {
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 5px;
+        margin-top: 0;
+    }
+    .loader, .error-message {
+        text-align: center;
+        padding: 40px;
+        font-size: 1.2em;
+        color: #666;
+    }
+    /* --- FOOTER STYLES --- */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 0.9em;
+        border-top: 1px solid #444;
+        position: fixed; /* Make the footer fixed */
+        bottom: 0; /* Position it at the bottom */
+        left: 0; /* Align to the left edge */
+        width: 100%; /* Make it span the full width */
+        z-index: 1000; /* Ensure it stays on top of other content */
+        height: 45px; /* Give it a fixed height */
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+   </style>
 </head>
 <body>
 
@@ -340,7 +351,7 @@
             function updateFooter(lastRunDate) {
                 const currentYear = new Date().getFullYear();
                 mainFooter.innerHTML = `
-                    &copy; ${currentYear} All rights reserved. Last update: ${lastRunDate}.
+                    &copy; ${currentYear} All rights reserved. Last run date: ${lastRunDate}.
                     Contact: <a href="mailto:menantlanalysis@gmail.com">menantlanalysis@gmail.com</a>
                 `;
             }

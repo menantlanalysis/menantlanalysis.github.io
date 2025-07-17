@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Nighttime Lights Dashboard</title>
-  <!-- Chart.js and plugins -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Chart.js core -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  <!-- Annotation plugin (UMD build) -->
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.2.0/dist/chartjs-plugin-annotation.umd.min.js"></script>
+  <!-- simple-statistics for LOESS -->
   <script src="https://unpkg.com/simple-statistics@7.8.3/dist/simple-statistics.min.js"></script>
   <style>
     body { display: flex; margin: 0; font-family: sans-serif; }
@@ -15,16 +17,7 @@
     .country:hover, .muni:hover { background: #ddd; }
     .muni { padding-left: 20px; font-size: 0.95em; color: #555; }
     #video { width: 100%; max-height: 360px; margin-bottom: 10px; }
-    #plotCanvas { width: 100%; height: 400px; }
-    #download-link {
-      display: inline-block;
-      padding: 4px 8px;
-      background: #007BFF;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      margin-bottom: 10px;
-    }
+    #download-link { display: inline-block; padding: 4px 8px; background: #007BFF; color: white; border-radius: 4px; text-decoration: none; margin-bottom: 10px; }
     #download-link:hover { background: #0056b3; }
   </style>
 </head>
@@ -40,17 +33,19 @@
     <div id="download-container" style="margin:10px 0; display:none;">
       <a id="download-link" href="#" download>📥 Download CSV Data</a>
     </div>
-    <canvas id="plotCanvas"></canvas>
+    <canvas id="plotCanvas" width="800" height="400"></canvas>
   </div>
 
 <script>
 (async function(){
-  // Load configuration and events
+  // 1) Register the annotation plugin
+  Chart.register(ChartAnnotation);
+
+  // 2) Load configuration and events
   const config = await fetch('config.json').then(r=>r.json());
   const events = await fetch('events.json').then(r=>r.json());
 
-  Chart.register(window['chartjs-plugin-annotation']);
-
+  // 3) Helpers & DOM refs
   const countriesDiv = document.getElementById('countries');
   const videoEl      = document.getElementById('video');
   const dlContainer  = document.getElementById('download-container');
@@ -58,142 +53,107 @@
   const ctx          = document.getElementById('plotCanvas').getContext('2d');
   let chartInstance;
 
-  // Build sidebar nested list
-  Object.entries(config.countries).forEach(([countryKey, cfg])=>{
-    // Country
-    const cDiv = document.createElement('div');
-    cDiv.textContent = cfg.displayName;
-    cDiv.className = 'country';
-    cDiv.onclick = ()=>selectCountry(countryKey);
-    countriesDiv.append(cDiv);
-
-    // Municipalities
-    Object.entries(cfg.municipalities).forEach(([muniKey, muniCfg])=>{
-      const mDiv = document.createElement('div');
-      mDiv.textContent = muniKey;
-      mDiv.className = 'muni';
-      mDiv.onclick = ()=>selectMunicipality(countryKey, muniKey);
-      countriesDiv.append(mDiv);
-    });
-  });
-
-  // Helper: parse CSV text
   function parseCSV(text) {
-    const [headerLine, ...lines] = text.trim().split('\n');
-    const headers = headerLine.split(',');
+    const [h, ...lines] = text.trim().split('\n');
+    const headers = h.split(',');
     return lines.map(line => {
       const cols = line.split(',');
-      const obj = {};
-      headers.forEach((h,i) => obj[h]=cols[i]);
-      return obj;
+      return headers.reduce((o,k,i)=>(o[k]=cols[i],o),{});
     });
   }
 
+  // 4) Plotting function
   async function plotCSV(path, countryKey, muniKey) {
-    // Fetch and parse CSV
-    const text = await fetch(path).then(r=>{
-      if(!r.ok) throw new Error(`Cannot load CSV: ${path}`);
-      return r.text();
-    });
+    const text = await fetch(path).then(r=>{ if(!r.ok) throw ""; return r.text(); });
     const data = parseCSV(text);
-
-    // Extract date & luminosity arrays
     const dates = data.map(d=>new Date(d.date));
-    const values= data.map(d=>+d.luminosity);
+    const vals  = data.map(d=>+d.luminosity);
 
-    // Compute LOESS smoothing
-    const xNums = dates.map(d=>d.getTime());
-    const sorted = xNums.map((x,i)=>[x, values[i]])
-                       .sort((a,b)=>a[0]-b[0]);
-    const xs = sorted.map(d=>d[0]);
-    const ys = sorted.map(d=>d[1]);
-    const smoothYs = ss.loess(xs, ys, 0.3);
-    const smoothData = xs.map((x,i)=>({x: new Date(x), y: smoothYs[i]}));
-
-    // Prepare trace data
-    const rawData = xs.map((x,i)=>({x:new Date(x),y:ys[i]}));
+    // LOESS in JS
+    const xnums = dates.map(d=>d.getTime());
+    const sorted = xnums.map((x,i)=>[x,vals[i]]).sort((a,b)=>a[0]-b[0]);
+    const xs = sorted.map(d=>d[0]), ys=sorted.map(d=>d[1]);
+    const sy = ss.loess(xs,ys,0.3);
+    const smooth = xs.map((x,i)=>({x:new Date(x),y:sy[i]}));
+    const raw    = xs.map((x,i)=>({x:new Date(x),y:ys[i]}));
 
     // Build event annotations
-    const evList = [
-      ...(events[countryKey]?.events || []),
-      ...(events[countryKey]?.municipalities?.[muniKey] || [])
-    ];
-    const chartAnnotations = {};
-    evList.forEach((ev,i)=>{
-      chartAnnotations['box'+i] = {
-        type: 'box',
-        xMin: ev.start, xMax: ev.end,
-        yMin: 0,   yMax: Math.max(...ys)*1.1,
-        backgroundColor: 'rgba(200,200,200,0.3)',
-        borderWidth: 0
-      };
+    const evs = [...(events[countryKey]?.events||[]),
+                 ...(events[countryKey]?.municipalities?.[muniKey]||[])];
+    const ann = {};
+    evs.forEach((ev,i)=>{
+      if(ev.start===ev.end){
+        ann['l'+i] = {
+          type:'line', xMin:ev.start, xMax:ev.start,
+          borderColor:'rgba(200,0,0,0.7)', borderWidth:2,
+          label:{content:ev.label,enabled:true,position:'start'}
+        };
+      } else {
+        ann['b'+i] = {
+          type:'box', xMin:ev.start, xMax:ev.end,
+          yMin:0, yMax:Math.max(...ys)*1.1,
+          backgroundColor:'rgba(200,200,200,0.3)', borderWidth:0,
+          label:{content:ev.label,enabled:true,position:'start'}
+        };
+      }
     });
 
-    // Destroy prior chart
     if(chartInstance) chartInstance.destroy();
-
     chartInstance = new Chart(ctx, {
-      type: 'scatter',
-      data: {
-        datasets: [
-          {
-            label: 'Raw Luminosity',
-            data: rawData,
-            showLine: false,
-            pointRadius: 4,
-            borderColor: '#1f77b4'
-          },
-          {
-            label: 'LOESS Smoothed',
-            data: smoothData,
-            showLine: true,
-            fill: false,
-            borderColor: '#ff7f0e',
-            tension: 0.3,
-            pointRadius: 0
-          }
-        ]
-      },
-      options: {
-        scales: {
-          x: {
-            type: 'time',
-            time: {parser:'isoDate', unit:'day', tooltipFormat:'yyyy-MM-dd'},
-            title: {display:true, text:'Date'}
-          },
-          y: {
-            title: {display:true, text:'Luminosity (nW/sr/cm²)'}
-          }
+      type:'scatter',
+      data:{ datasets:[
+        { label:'Raw',  data:raw,  showLine:false, pointRadius:4, borderColor:'#1f77b4' },
+        { label:'Smoothed', data:smooth, showLine:true, pointRadius:0,
+          borderColor:'#ff7f0e', tension:0.3 }
+      ]},
+      options:{
+        scales:{
+          x:{ type:'time', time:{unit:'day'}, title:{display:true,text:'Date'} },
+          y:{ title:{display:true,text:'Luminosity'} }
         },
-        plugins: {
-          legend: {position:'top'},
-          annotation: {
-            annotations: chartAnnotations
-          }
+        plugins:{
+          legend:{position:'top'},
+          annotation:{ annotations:ann }
         }
       }
     });
 
-    // Update download link
+    // Update CSV download link
     dlLink.href = path;
     dlLink.download = `${countryKey}${muniKey?'_'+muniKey:''}_data.csv`;
     dlContainer.style.display = 'block';
   }
 
-  async function selectCountry(countryKey) {
-    const c = config.countries[countryKey];
-    videoEl.src = c.video;
-    dlContainer.style.display = 'none';
+  // 5) Sidebar population
+  Object.entries(config.countries).forEach(([ck,cfg])=>{
+    const cDiv = document.createElement('div');
+    cDiv.textContent = cfg.displayName;
+    cDiv.className = 'country';
+    cDiv.onclick = ()=>selectCountry(ck);
+    countriesDiv.append(cDiv);
+
+    Object.keys(cfg.municipalities).forEach(mk=>{
+      const mDiv = document.createElement('div');
+      mDiv.textContent = mk;
+      mDiv.className = 'muni';
+      mDiv.onclick = ()=>selectMunicipality(ck,mk);
+      countriesDiv.append(mDiv);
+    });
+  });
+
+  function selectCountry(ck){
+    videoEl.src = config.countries[ck].video;
+    dlContainer.style.display='none';
     if(chartInstance) chartInstance.destroy();
   }
 
-  async function selectMunicipality(countryKey, muniKey) {
-    const muniCfg = config.countries[countryKey].municipalities[muniKey];
-    videoEl.src = muniCfg.video;
-    await plotCSV(muniCfg.csv, countryKey, muniKey);
+  async function selectMunicipality(ck,mk){
+    const muni = config.countries[ck].municipalities[mk];
+    videoEl.src = muni.video;
+    await plotCSV(muni.csv, ck, mk);
   }
 
-  // Auto-select first country
+  // Auto‐select first
   const first = Object.keys(config.countries)[0];
   if(first) selectCountry(first);
 

@@ -34,15 +34,28 @@
             border-radius: 4px;
             margin-bottom: 5px;
             transition: background-color 0.2s;
+            user-select: none; /* Prevent text selection on click */
         }
         #menu .country-name:hover, #menu .muni-item:hover {
             background-color: #e9ecef;
         }
-        #menu .muni-list {
+        /* --- COLLAPSIBLE STYLES --- */
+        .country-name::before {
+            content: '► ';
+            font-size: 0.8em;
+        }
+        .country-name.open::before {
+            content: '▼ ';
+        }
+        .muni-list {
             list-style-type: none;
             padding-left: 20px;
             border-left: 2px solid #0056b3;
             margin-left: 8px;
+            display: none; /* Hidden by default */
+        }
+        .muni-list.open {
+            display: block; /* Shown when open */
         }
         #content {
             flex-grow: 1;
@@ -58,7 +71,10 @@
         }
         #video-player {
             width: 100%;
+            height: auto;
+            max-height: 70vh;
             border-radius: 4px;
+            background-color: #000;
         }
         h3 {
             border-bottom: 2px solid #0056b3;
@@ -99,7 +115,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
-            // --- 1. GET DOM ELEMENTS ---
             const locationList = document.getElementById('location-list');
             const videoContainer = document.getElementById('video-container');
             const videoTitle = document.getElementById('video-title');
@@ -107,30 +122,23 @@
             const chartWrapper = document.getElementById('chart-wrapper');
             const chartContainer = document.getElementById('chart-container');
             
-            let websiteData = {}; // To store merged data
+            let websiteData = {};
 
-            // --- 2. LOAD & MERGE DATA ---
             async function initialize() {
                 try {
-                    // Fetch both JSON files concurrently
                     const [configResponse, eventsResponse] = await Promise.all([
                         fetch('config.json'),
                         fetch('events.json')
                     ]);
-
                     if (!configResponse.ok || !eventsResponse.ok) {
                        throw new Error('Network response was not ok.');
                     }
-
                     const configData = await configResponse.json();
                     const eventsData = await eventsResponse.json();
 
-                    // Merge event data into the main config structure
                     for (const countryKey in eventsData) {
                         if (configData.countries[countryKey]) {
-                            // Merge country-level events
                             configData.countries[countryKey].events = eventsData[countryKey].events || [];
-                            // Merge municipality-level events
                             if (eventsData[countryKey].municipalities) {
                                 for (const muniKey in eventsData[countryKey].municipalities) {
                                     if (configData.countries[countryKey].municipalities[muniKey]) {
@@ -142,19 +150,18 @@
                     }
                     websiteData = configData;
                     buildNavigation(websiteData);
+                    handleUrlOnLoad(); // Check URL for initial view
 
                 } catch (error) {
                     console.error("Failed to load or process data:", error);
-                    locationList.innerHTML = `<div class="error-message">Error: Could not load site data. Please check file paths and network connection.</div>`;
+                    locationList.innerHTML = `<div class="error-message">Error: Could not load site data.</div>`;
                 }
             }
 
-            // --- 3. DYNAMIC UI & EVENT HANDLING ---
             function buildNavigation(data) {
-                locationList.innerHTML = ''; // Clear loader
+                locationList.innerHTML = '';
                 for (const countryKey in data.countries) {
                     const country = data.countries[countryKey];
-                    
                     const countryDiv = document.createElement('div');
                     const countryNameH3 = document.createElement('h3');
                     countryNameH3.className = 'country-name';
@@ -164,11 +171,9 @@
 
                     const muniList = document.createElement('ul');
                     muniList.className = 'muni-list';
-
                     for (const muniKey in country.municipalities) {
                         const muniItem = document.createElement('li');
                         muniItem.className = 'muni-item';
-                        // Prettify name for display: replace underscores, remove parenthetical aliases, and capitalize
                         muniItem.textContent = muniKey.replace(/_\(.*\)|_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()).trim();
                         muniItem.dataset.countryKey = countryKey;
                         muniItem.dataset.muniKey = muniKey;
@@ -178,43 +183,83 @@
                     locationList.appendChild(countryDiv);
                 }
             }
-
+            
+            // --- UPDATED CLICK HANDLER FOR COLLAPSIBLE LISTS ---
             locationList.addEventListener('click', (e) => {
                 const target = e.target;
                 const { countryKey, muniKey } = target.dataset;
 
-                if (countryKey && !muniKey) {
+                if (target.classList.contains('country-name')) {
+                    // It's a country click, toggle sublist and show video
+                    target.classList.toggle('open');
+                    target.nextElementSibling.classList.toggle('open');
                     displayCountry(countryKey);
-                } else if (countryKey && muniKey) {
+                } else if (target.classList.contains('muni-item')) {
+                    // It's a municipality click
                     displayMunicipality(countryKey, muniKey);
                 }
             });
 
-            // --- 4. DISPLAY LOGIC ---
-            function displayCountry(countryKey) {
+            // --- URL HANDLING LOGIC ---
+            function updateUrl(countryKey, muniKey = null) {
+                const viewParam = muniKey ? `${countryKey},${muniKey}` : countryKey;
+                const url = new URL(window.location);
+                url.searchParams.set('view', viewParam);
+                // Use pushState to change URL without reloading
+                history.pushState({ view: viewParam }, '', url);
+            }
+
+            function handleUrlOnLoad() {
+                const params = new URLSearchParams(window.location.search);
+                const view = params.get('view');
+                if (!view) return;
+
+                const [countryKey, muniKey] = view.split(',');
+                
+                if (websiteData.countries[countryKey]) {
+                    // Expand the country list to show selection
+                    const countryHeader = document.querySelector(`.country-name[data-country-key="${countryKey}"]`);
+                    if (countryHeader) {
+                        countryHeader.classList.add('open');
+                        countryHeader.nextElementSibling.classList.add('open');
+                    }
+                    
+                    if (muniKey && websiteData.countries[countryKey].municipalities[muniKey]) {
+                        displayMunicipality(countryKey, muniKey, false); // Don't update URL again
+                    } else {
+                        displayCountry(countryKey, false); // Don't update URL again
+                    }
+                }
+            }
+
+            function displayCountry(countryKey, shouldUpdateUrl = true) {
                 const countryData = websiteData.countries[countryKey];
                 videoTitle.textContent = `Video: ${countryData.displayName}`;
                 videoPlayer.src = countryData.video;
                 videoContainer.style.display = 'block';
-                chartWrapper.style.display = 'none'; // Hide chart
+                chartWrapper.style.display = 'none';
+                if (shouldUpdateUrl) {
+                    updateUrl(countryKey);
+                }
             }
             
-            async function displayMunicipality(countryKey, muniKey) {
+            async function displayMunicipality(countryKey, muniKey, shouldUpdateUrl = true) {
                 chartContainer.innerHTML = `<div class="loader">Loading Chart...</div>`;
                 try {
+                    if (shouldUpdateUrl) {
+                        updateUrl(countryKey, muniKey);
+                    }
                     const countryData = websiteData.countries[countryKey];
                     const muniData = countryData.municipalities[muniKey];
                     const prettyMuniName = muniKey.replace(/_\(.*\)|_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()).trim();
 
-                    // Display video
                     videoTitle.textContent = `Video: ${prettyMuniName}`;
                     videoPlayer.src = muniData.video;
                     videoContainer.style.display = 'block';
                     chartWrapper.style.display = 'block';
 
-                    // Fetch and process CSV for the chart
                     const response = await fetch(muniData.csv);
-                    if (!response.ok) throw new Error(`Could not fetch ${muniData.csv} (HTTP ${response.status})`);
+                    if (!response.ok) throw new Error(`Could not fetch ${muniData.csv}`);
                     
                     const csvText = await response.text();
                     Papa.parse(csvText, {
@@ -222,17 +267,11 @@
                         dynamicTyping: true,
                         skipEmptyLines: true,
                         complete: (results) => {
-                             // **IMPORTANT ASSUMPTION**: CSV has 'date' and 'fatalities' columns.
-                             // If your column names differ, change 'date' and 'fatalities' below.
-                            const chartData = results.data.filter(d => d.date && d.fatalities !== undefined);
+                            const chartData = results.data.filter(d => d.date && d.luminosity !== undefined);
+                            if (chartData.length === 0) throw new Error("No valid data (rows with 'date' and 'luminosity') found in CSV.");
                             
-                            if (chartData.length === 0) {
-                                throw new Error("No valid data (rows with 'date' and 'fatalities') found in CSV.");
-                            }
-
                             const countryEvents = countryData.events || [];
                             const muniEvents = muniData.events || [];
-                            
                             drawChart(chartData, countryEvents, muniEvents, prettyMuniName);
                         },
                         error: (err) => { throw new Error(`CSV Parsing Error: ${err.message}`); }
@@ -244,72 +283,38 @@
                 }
             }
 
-            // --- 5. CHARTING ---
             function drawChart(data, countryEvents, muniEvents, title) {
                 const dates = data.map(row => row.date);
-                const values = data.map(row => row.fatalities);
+                const values = data.map(row => row.luminosity);
                 
-                const scatterTrace = {
-                    x: dates,
-                    y: values,
-                    mode: 'markers',
-                    type: 'scatter',
-                    name: 'Data Points',
-                    marker: { color: 'grey', opacity: 0.7 }
-                };
+                const scatterTrace = { x: dates, y: values, mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'grey', opacity: 0.7 } };
 
-                // Calculate LOESS fit using science.js
                 const numericDates = dates.map(d => new Date(d).getTime());
                 const loessGenerator = science.stats.loess().bandwidth(0.4);
                 const loessData = loessGenerator(numericDates, values);
 
-                const loessTrace = {
-                    x: loessData.map(p => new Date(p[0])),
-                    y: loessData.map(p => p[1]),
-                    mode: 'lines',
-                    name: 'LOESS Fit',
-                    line: { color: '#0056b3', width: 3 }
-                };
+                const loessTrace = { x: loessData.map(p => new Date(p[0])), y: loessData.map(p => p[1]), mode: 'lines', name: 'LOESS Fit', line: { color: '#0056b3', width: 3 } };
                 
-                // Prepare shapes and annotations for events
                 const shapes = [];
                 const annotations = [];
 
                 countryEvents.forEach((event) => {
-                    shapes.push({
-                        type: 'rect', xref: 'x', yref: 'paper', x0: event.start_date, y0: 0, x1: event.end_date, y1: 1,
-                        fillcolor: 'rgba(211, 47, 47, 0.2)', line: { width: 0 }
-                    });
-                    annotations.push({
-                        x: event.start_date, y: 0.95, yref: 'paper', text: `${event.name} (Country)`, showarrow: false, xanchor: 'left', font: { color: '#b71c1c'}
-                    });
+                    shapes.push({ type: 'rect', xref: 'x', yref: 'paper', x0: event.start_date, y0: 0, x1: event.end_date, y1: 1, fillcolor: 'rgba(211, 47, 47, 0.2)', line: { width: 0 } });
+                    annotations.push({ x: event.start_date, y: 0.95, yref: 'paper', text: `${event.name} (Country)`, showarrow: false, xanchor: 'left', font: { color: '#b71c1c'} });
                 });
-
                 muniEvents.forEach((event) => {
-                    shapes.push({
-                        type: 'rect', xref: 'x', yref: 'paper', x0: event.start_date, y0: 0, x1: event.end_date, y1: 1,
-                        fillcolor: 'rgba(25, 118, 210, 0.2)', line: { width: 0 }
-                    });
-                     annotations.push({
-                        x: event.start_date, y: 0.90, yref: 'paper', text: `${event.name} (Muni)`, showarrow: false, xanchor: 'left', font: { color: '#0d47a1'}
-                    });
+                    shapes.push({ type: 'rect', xref: 'x', yref: 'paper', x0: event.start_date, y0: 0, x1: event.end_date, y1: 1, fillcolor: 'rgba(25, 118, 210, 0.2)', line: { width: 0 } });
+                     annotations.push({ x: event.start_date, y: 0.90, yref: 'paper', text: `${event.name} (Muni)`, showarrow: false, xanchor: 'left', font: { color: '#0d47a1'} });
                 });
-
+                
                 const layout = {
-                    title: `Data for ${title}`,
-                    xaxis: { title: 'Date' },
-                    yaxis: { title: 'Fatalities' }, // Assumed Y-axis title
-                    shapes: shapes,
-                    annotations: annotations,
-                    showlegend: true,
-                    legend: { x: 1, xanchor: 'right', y: 1 },
-                    margin: { l: 50, r: 20, t: 50, b: 50 }
+                    title: `Luminosity in ${title}`, xaxis: { title: 'Date' }, yaxis: { title: 'Luminosity' },
+                    shapes: shapes, annotations: annotations, showlegend: true, legend: { x: 1, xanchor: 'right', y: 1 },
+                    margin: { l: 60, r: 20, t: 50, b: 50 }
                 };
-
                 Plotly.newPlot(chartContainer, [scatterTrace, loessTrace], layout, {responsive: true});
             }
 
-            // --- KICK OFF THE APPLICATION ---
             initialize();
         });
     </script>

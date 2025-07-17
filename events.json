@@ -1,2 +1,18 @@
 {
+    "syria" : {
+        "events": [{
+            "name": "Ramadan",
+            "start_date": "2025-2-28",
+            "end_date": "2025-3-29"
+        }],
+        "municipalities": {
+            "tartus": {
+                "events": [{
+                    "name": "Coastal Insurgency",
+                    "start_date": "2025-3-5",
+                    "end_date": "2025-3-8"
+                }]
+            }
+        }
+    }
 }

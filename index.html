@@ -103,7 +103,9 @@
             </div>
             <div id="chart-wrapper" style="display:none;">
                 <h3>Data Chart 📈</h3>
-                <div id="chart-container"></div>
+                <div id="chart-container">
+                  <div id="chart-loader" class="loader">Loading Chart...</div>
+                </div>
             </div>
         </main>
     </div>
@@ -121,6 +123,7 @@
             const videoPlayer = document.getElementById('video-player');
             const chartWrapper = document.getElementById('chart-wrapper');
             const chartContainer = document.getElementById('chart-container');
+            const chartLoader = document.getElementById('chart-loader');
             
             let websiteData = {};
 
@@ -244,7 +247,6 @@
             }
             
             async function displayMunicipality(countryKey, muniKey, shouldUpdateUrl = true) {
-                chartContainer.innerHTML = `<div class="loader">Loading Chart...</div>`;
                 try {
                     if (shouldUpdateUrl) {
                         updateUrl(countryKey, muniKey);
@@ -252,8 +254,9 @@
                     const countryData = websiteData.countries[countryKey];
                     const muniData = countryData.municipalities[muniKey];
                     const prettyMuniName = muniKey.replace(/_\(.*\)|_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()).trim();
+                    const title = `${prettyMuniName}, ${countryData.displayName}`;
 
-                    videoTitle.textContent = `Video: ${prettyMuniName}`;
+                    videoTitle.textContent = `Video: ${title}`;
                     videoPlayer.src = muniData.video;
                     videoContainer.style.display = 'block';
                     chartWrapper.style.display = 'block';
@@ -272,10 +275,11 @@
                             
                             const countryEvents = countryData.events || [];
                             const muniEvents = muniData.events || [];
-                            drawChart(chartData, countryEvents, muniEvents, prettyMuniName);
+                            drawChart(chartData, countryEvents, muniEvents, title);
                         },
                         error: (err) => { throw new Error(`CSV Parsing Error: ${err.message}`); }
                     });
+                    chartLoader.innerHTML = "";
                 } catch (error) {
                     console.error("Error displaying municipality:", error);
                     chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;
@@ -300,11 +304,11 @@
 
                 countryEvents.forEach((event) => {
                     shapes.push({ type: 'rect', xref: 'x', yref: 'paper', x0: event.start_date, y0: 0, x1: event.end_date, y1: 1, fillcolor: 'rgba(211, 47, 47, 0.2)', line: { width: 0 } });
-                    annotations.push({ x: event.start_date, y: 0.95, yref: 'paper', text: `${event.name} (Country)`, showarrow: false, xanchor: 'left', font: { color: '#b71c1c'} });
+                    annotations.push({ x: event.start_date, y: 0.95, yref: 'paper', text: `${event.name}`, showarrow: false, xanchor: 'left', font: { color: '#b71c1c'} });
                 });
                 muniEvents.forEach((event) => {
                     shapes.push({ type: 'rect', xref: 'x', yref: 'paper', x0: event.start_date, y0: 0, x1: event.end_date, y1: 1, fillcolor: 'rgba(25, 118, 210, 0.2)', line: { width: 0 } });
-                     annotations.push({ x: event.start_date, y: 0.90, yref: 'paper', text: `${event.name} (Muni)`, showarrow: false, xanchor: 'left', font: { color: '#0d47a1'} });
+                     annotations.push({ x: event.start_date, y: 0.90, yref: 'paper', text: `${event.name}`, showarrow: false, xanchor: 'left', font: { color: '#0d47a1'} });
                 });
                 
                 const layout = {

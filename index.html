@@ -103,7 +103,10 @@
   }
 
   async function selectMunicipality(countryKey, muniKey){
+    console.log(config);
     const muniCfg = config.countries[countryKey].municipalities[muniKey];
+    console.log(countryKey);
+    console.log(muniKey);
     videoEl.src = muniCfg.video;
     await plotCSV(muniCfg.csv, countryKey, muniKey);
   }

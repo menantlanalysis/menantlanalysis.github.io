@@ -2,62 +2,62 @@
     "countries": {
         "syria": {
             "displayName": "Syria",
-            "video": "videos/syria/video.mpg",
+            "video": "videos/syria/video.mp4",
             "municipalities": {
                 "homs_(hims)": {
-                    "video": "videos/syria/homs_(hims)/video.mpg",
+                    "video": "videos/syria/homs_(hims)/video.mp4",
                     "csv": "tables/syria/homs_(hims)/syria_homs_(hims).csv"
                 },
                 "tartus": {
-                    "video": "videos/syria/tartus/video.mpg",
+                    "video": "videos/syria/tartus/video.mp4",
                     "csv": "tables/syria/tartus/syria_tartus.csv"
                 },
                 "rif_dimashq": {
-                    "video": "videos/syria/rif_dimashq/video.mpg",
+                    "video": "videos/syria/rif_dimashq/video.mp4",
                     "csv": "tables/syria/rif_dimashq/syria_rif_dimashq.csv"
                 },
                 "hasaka_(al_haksa)": {
-                    "video": "videos/syria/hasaka_(al_haksa)/video.mpg",
+                    "video": "videos/syria/hasaka_(al_haksa)/video.mp4",
                     "csv": "tables/syria/hasaka_(al_haksa)/syria_hasaka_(al_haksa).csv"
                 },
                 "ar_raqqah": {
-                    "video": "videos/syria/ar_raqqah/video.mpg",
+                    "video": "videos/syria/ar_raqqah/video.mp4",
                     "csv": "tables/syria/ar_raqqah/syria_ar_raqqah.csv"
                 },
                 "aleppo": {
-                    "video": "videos/syria/aleppo/video.mpg",
+                    "video": "videos/syria/aleppo/video.mp4",
                     "csv": "tables/syria/aleppo/syria_aleppo.csv"
                 },
                 "idlib": {
-                    "video": "videos/syria/idlib/video.mpg",
+                    "video": "videos/syria/idlib/video.mp4",
                     "csv": "tables/syria/idlib/syria_idlib.csv"
                 },
                 "lattakia": {
-                    "video": "videos/syria/lattakia/video.mpg",
+                    "video": "videos/syria/lattakia/video.mp4",
                     "csv": "tables/syria/lattakia/syria_lattakia.csv"
                 },
                 "as_suwayda'": {
-                    "video": "videos/syria/as_suwayda'/video.mpg",
+                    "video": "videos/syria/as_suwayda'/video.mp4",
                     "csv": "tables/syria/as_suwayda'/syria_as_suwayda'.csv"
                 },
                 "dar`a": {
-                    "video": "videos/syria/dar`a/video.mpg",
+                    "video": "videos/syria/dar`a/video.mp4",
                     "csv": "tables/syria/dar`a/syria_dar`a.csv"
                 },
                 "dayr_az_zawr": {
-                    "video": "videos/syria/dayr_az_zawr/video.mpg",
+                    "video": "videos/syria/dayr_az_zawr/video.mp4",
                     "csv": "tables/syria/dayr_az_zawr/syria_dayr_az_zawr.csv"
                 },
                 "quneitra": {
-                    "video": "videos/syria/quneitra/video.mpg",
+                    "video": "videos/syria/quneitra/video.mp4",
                     "csv": "tables/syria/quneitra/syria_quneitra.csv"
                 },
                 "hamah": {
-                    "video": "videos/syria/hamah/video.mpg",
+                    "video": "videos/syria/hamah/video.mp4",
                     "csv": "tables/syria/hamah/syria_hamah.csv"
                 },
                 "damascus": {
-                    "video": "videos/syria/damascus/video.mpg",
+                    "video": "videos/syria/damascus/video.mp4",
                     "csv": "tables/syria/damascus/syria_damascus.csv"
                 }
             }

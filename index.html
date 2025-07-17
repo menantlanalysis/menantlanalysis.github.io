@@ -296,6 +296,7 @@
                 const numericDates = dates.map(d => new Date(d).getTime());
                 const loessGenerator = science.stats.loess().bandwidth(0.4);
                 const loessData = loessGenerator(numericDates, values);
+                console.log(loessData);
 
                 const loessTrace = { x: loessData.map(p => new Date(p[0])), y: loessData.map(p => p[1]), mode: 'lines', name: 'LOESS Fit', line: { color: '#0056b3', width: 3 } };
                 

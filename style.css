@@ -1,0 +1,301 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Space for fixed footer */
+}
+#app-container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+#menu {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+#menu h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+#menu .country-name, #menu .muni-item {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+#menu .country-name:hover, #menu .muni-item:hover {
+    background-color: #e9ecef;
+}
+.country-name::before {
+    content: '► ';
+    font-size: 0.8em;
+}
+.country-name.open::before {
+    content: '▼ ';
+}
+.muni-list {
+    list-style-type: none;
+    padding-left: 20px;
+    border-left: 2px solid #0056b3;
+    margin-left: 8px;
+    display: none;
+}
+.muni-list.open {
+    display: block;
+}
+#content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+#video-container, #chart-wrapper, #stats-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+/* Style for chart container to prevent collapse */
+#chart-container {
+    min-height: 500px;
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+#video-player {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    border-radius: 4px;
+    background-color: #000;
+}
+h3 {
+    /* border-bottom: 2px solid #0056b3; */ /* This line is removed */
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0056b3; /* Border is now on the container */
+    margin-bottom: 15px;
+}   
+.loader, .error-message {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2em;
+    color: #666;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: auto;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- HEADER & MOBILE NAV STYLES --- */
+#main-header {
+    background-color: #0056b3;
+    color: white;
+    padding: 0 15px;
+    display: none; /* Hidden on desktop */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+#main-header h1 {
+    font-size: 1.1em;
+    margin: 0 0 0 15px;
+    flex-grow: 1;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2.5px 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+#menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999; /* Below menu, above content */
+}
+
+/* --- MEDIA QUERY FOR MOBILE --- */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Space for new fixed header */
+        padding-bottom: 0px; /* More space for footer on mobile */
+    }
+
+    footer {
+        position: static;
+        padding: 20px 15px;
+    }
+    
+    #main-header {
+        display: flex; /* Show the header on mobile */
+    }
+
+    #app-container {
+        overflow: visible; /* Allow content to scroll normally */
+    }
+
+    /* Make the original menu a slide-out panel */
+    #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        max-width: 80vw;
+        height: 100%;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+        border-right: none;
+    }
+
+    #menu.open {
+        transform: translateX(0);
+    }
+    
+    /* Show overlay when menu is active */
+    body.menu-is-open #menu-overlay {
+        display: block;
+    }
+    
+    /* Animate the burger icon into an 'X' */
+    body.menu-is-open #menu-toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    body.menu-is-open #menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    body.menu-is-open #menu-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    #content {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #video-container, #chart-wrapper, #stats-summary {
+        padding: 15px;
+    }
+    #chart-container {
+        flex-basis: 100%;
+    }
+    #stats-table {
+        flex-grow: 1;
+    }
+}
+
+.summary-content-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#stats-map {
+    width: 100%;
+}
+
+#stats-table {
+    flex-basis: 30%; 
+    max-width: 320px;
+}
+
+#stats-table th,
+#stats-table td {
+    padding: 16px; /* Increased padding for better spacing */
+    text-align: left;
+    border: none; /* Remove all cell borders */
+    border-bottom: 1px solid #f0f0f0; /* Use subtle horizontal separators */
+}
+
+/* Remove the bottom border from the last row for a clean finish */
+#stats-table tr:last-child td {
+    border-bottom: none;
+}
+
+#stats-table th {
+    background-color: transparent;
+    color: #666;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+#stats-table th:last-child,
+#stats-table td:last-child {
+    text-align: right;
+}
+
+#stats-table td:first-child {
+    color: #333;
+    font-weight: 500;
+}
+
+#stats-table td:last-child {
+    font-weight: 700;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}

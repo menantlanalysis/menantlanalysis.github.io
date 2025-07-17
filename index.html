@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Middle East & North Africa Nighttime Lights Viewer">
+    <meta property="og:description" content="Explore changes in nighttime luminosity across the Middle East and North Africa with interactive charts and timelapses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://menantlanalysis.github.io/">
+    <meta property="og:image" content="https://menantlanalysis.github.io/display.jpeg">
+    <meta property="og:image:alt" content="Nighttime lights satellite imagery of the Middle East and North Africa">
+    <meta property="og:locale" content="en_US">
+    <title>Middle East & North Africa Nighttime Lights Viewer</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --light-gray: #f4f4f9;
+            --medium-gray: #ddd;
+            --dark-gray: #333;
+            --text-color: #333;
+            --bg-color: #fff;
+            --border-radius: 8px;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+        #app-container {
+            display: flex;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        #menu {
+            width: 300px;
+            flex-shrink: 0;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--medium-gray);
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+        }
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        #video-container, #chart-wrapper, #stats-summary, #lightbox-container {
+            background-color: var(--bg-color);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        #chart-container {
+            min-height: 500px;
+            flex-basis: 70%;
+            flex-grow: 1;
+        }
+        h2, h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .country-name, .muni-item {
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            transition: background-color 0.2s;
+            user-select: none;
+        }
+        .country-name:hover, .muni-item:hover {
+            background-color: #e9ecef;
+        }
+        .country-name::before {
+            content: '► ';
+            font-size: 0.8em;
+        }
+        .country-name.open::before {
+            content: '▼ ';
+        }
+        .muni-list {
+            list-style-type: none;
+            padding-left: 20px;
+            border-left: 2px solid var(--primary-color);
+            margin-left: 8px;
+            display: none;
+        }
+        .muni-list.open {
+            display: block;
+        }
+        #video-player {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            border-radius: 4px;
+            background-color: #ffffff;
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .loader, .error-message {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #666;
+        }
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.9em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        footer a {
+            color: var(--bg-color);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #main-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0 15px;
+            display: none;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1001;
+            height: 60px;
+            box-sizing: border-box;
+        }
+        #main-header h1 {
+            font-size: 1.1em;
+            margin: 0 0 0 15px;
+            flex-grow: 1;
+        }
+        #menu-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1002;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 2.5px 0;
+            transition: all 0.3s ease-in-out;
+            border-radius: 2px;
+        }
+        #menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+        .summary-content-wrapper {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        #stats-map { width: 100%; }
+        #stats-table {
+            flex: 3;
+            min-width: 320px;
+        }
+        #stats-table th, #stats-table td {
+            padding: 16px;
+            text-align: left;
+            border: none;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        #stats-table tr:last-child td { border-bottom: none; }
+        #stats-table th {
+            background-color: transparent;
+            color: #666;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        #stats-table th:last-child, #stats-table td:last-child { text-align: right; }
+        #stats-table td:first-child {
+            color: #333;
+            font-weight: 500;
+        }
+        #stats-table td:last-child {
+            font-weight: 700;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding-top: 60px;
+                padding-bottom: 0px;
+            }
+            footer { position: static; padding: 20px 15px; }
+            #main-header { display: flex; }
+            #app-container { overflow: visible; }
+            #menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 300px;
+                max-width: 80vw;
+                height: 100%;
+                z-index: 1000;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+                border-right: none;
+            }
+            #menu.open { transform: translateX(0); }
+            body.menu-is-open #menu-overlay { display: block; }
+            body.menu-is-open #menu-toggle span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+            body.menu-is-open #menu-toggle span:nth-child(2) { opacity: 0; }
+            body.menu-is-open #menu-toggle span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+            #content { width: 100%; padding: 15px; box-sizing: border-box; }
+            #video-container, #chart-wrapper, #stats-summary, #lightbox-container { padding: 15px; }
+            #chart-container, #stats-table { flex-basis: 100%; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css" />
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20740W8TXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-20740W8TXW');
+</script>
+<body>
+    <header id="main-header">
+        <button id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1>Report</h1>
+    </header>
+    <div id="menu-overlay"></div>
+    <div id="app-container">
+        <nav id="menu">
+            <h2>Navigation 🗺️</h2>
+            <div id="location-list"><div class="loader">Loading Data...</div></div>
+        </nav>
+        <main id="content">
+            <div id="video-container" style="display: none;">
+                <h3 id="video-title">Timelapse</h3>
+                <video id="video-player" controls autoplay muted playsinline></video>
+            </div>
+            <div id="lightbox-container" style="display: none;">
+                <h3>Satellite Image Comparison </h3>
+                <div id="lightbox-content">
+                </div>
+            </div>
+            <div id="chart-wrapper" style="display: none;">
+                <div class="chart-header">
+                    <h3>Luminosity Time Series 📈</h3>
+                    <a id="download-csv-link" class="download-link" style="display: none;" download>Download CSV</a>
+                </div>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div id="chart-container">
+                        <div class="loader" id="chart-loader">Loading Chart...</div>
+                    </div>
+                    <table id="stats-table">
+                            <thead>
+                                <tr>
+                                    <th>Timeframe</th>
+                                    <th>Luminosity Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Change from Last Year (YOY)</td>
+                                    <td id="yoy-change">--</td>
+                                </tr>
+                                <tr>
+                                    <td>Change This Year (YTD)</td>
+                                    <td id="ytd-change">--</td>
+                                </tr>
+                                <tr>
+                                    <td>Change This Quarter (QTD)</td>
+                                    <td id="qtd-change">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+            <div id="stats-summary" style="display:none;">
+                <h3>Regional Breakdown (LOESS) 📊</h3>
+                <div class="summary-content-wrapper">
+                    <div id="stats-map" style="display:none;">
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer id="main-footer"></footer>
+
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/science@1.9.3/science.v1.min.js"></script>
+    <!-- build:js //cdn.knightlab.com/libs/juxtapose/%(cdn)s/js/juxtapose.js -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

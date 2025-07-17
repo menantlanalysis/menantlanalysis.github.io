@@ -4,6 +4,10 @@
             "name": "Ramadan",
             "start_date": "2025-2-28",
             "end_date": "2025-3-29"
+        }, {
+            "name": "Sanction Removal Announcement",
+            "start_date": "2025-5-13",
+            "end_date": "2025-5-14"
         }],
         "municipalities": {
             "tartus": {

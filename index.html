@@ -267,7 +267,6 @@
             async function displayCountry(countryKey, shouldUpdateUrl = true) {
                 // --- 1. Initial Setup and UI Update ---
                 const chartContainer = document.getElementById('chart-container');
-                chartContainer.innerHTML = `<div class="loader">Loading Aggregated Chart...</div>`;
                 chartWrapper.style.display = 'block';
 
                 if (shouldUpdateUrl) {

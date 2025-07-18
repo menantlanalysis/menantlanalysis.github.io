@@ -322,11 +322,12 @@
                 
                 const scatterTrace = { x: dates, y: values, mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'grey', opacity: 0.7 } };
 
+                const bandwidth = 0.3;
                 const numericDates = dates.map(d => new Date(d).getTime());
-                const loessGenerator = science.stats.loess().bandwidth(0.4);
+                const loessGenerator = science.stats.loess().bandwidth(bandwidth);
                 const loessData = loessGenerator(numericDates, values);
 
-                const loessTrace = { x: dates, y: loessData, mode: 'lines', name: 'LOESS Fit', line: { color: '#0056b3', width: 3 } };
+                const loessTrace = { x: dates, y: loessData, mode: 'lines', name: `LOESS Fit (${bandwidth})`, line: { color: '#0056b3', width: 3 } };
                 
                 const shapes = [];
                 const annotations = [];

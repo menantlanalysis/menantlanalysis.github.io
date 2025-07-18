@@ -264,14 +264,116 @@
                 }
             }
 
-            function displayCountry(countryKey, shouldUpdateUrl = true) {
-                const countryData = websiteData.countries[countryKey];
-                videoTitle.textContent = `Video: ${countryData.displayName}`;
-                videoPlayer.src = countryData.video;
-                videoContainer.style.display = 'block';
-                chartWrapper.style.display = 'none';
+            async function displayCountry(countryKey, shouldUpdateUrl = true) {
+                // --- 1. Initial Setup and UI Update ---
+                const chartContainer = document.getElementById('chart-container');
+                chartContainer.innerHTML = `<div class="loader">Loading Aggregated Chart...</div>`;
+                chartWrapper.style.display = 'block';
+
                 if (shouldUpdateUrl) {
                     updateUrl(countryKey);
+                }
+                
+                try {
+                    const countryData = websiteData.countries[countryKey];
+                    
+                    // Display video and basic info
+                    videoTitle.textContent = `Video: ${countryData.displayName}`;
+                    videoPlayer.src = countryData.video;
+                    videoContainer.style.display = 'block';
+
+                    // --- 2. Fetch All Municipality Data Concurrently ---
+                    const municipalities = Object.values(countryData.municipalities);
+                    const promises = municipalities.map(muni => {
+                        return new Promise(async (resolve, reject) => {
+                            if (!muni.csv) return resolve([]); // Resolve with empty if no CSV
+                            try {
+                                const response = await fetch(muni.csv);
+                                if (!response.ok) throw new Error(`Failed to fetch ${muni.csv}`);
+                                const csvText = await response.text();
+                                Papa.parse(csvText, {
+                                    header: true,
+                                    dynamicTyping: true,
+                                    skipEmptyLines: true,
+                                    complete: (results) => {
+                                        const data = results.data.filter(d => d.date && d.luminosity !== undefined);
+                                        // Convert dates to timestamps for easier math
+                                        resolve(data.map(d => ({ ...d, time: new Date(d.date).getTime() })));
+                                    },
+                                    error: (err) => reject(new Error(`Parsing error in ${muni.csv}: ${err.message}`))
+                                });
+                            } catch (fetchErr) {
+                                reject(fetchErr);
+                            }
+                        });
+                    });
+
+                    const allMuniData = await Promise.all(promises);
+
+                    // --- 3. Create Unified Timeline and Interpolate Data ---
+                    // Get all unique dates from all datasets and sort them
+                    const allDatesSet = new Set(allMuniData.flat().map(d => d.date));
+                    const unifiedTimeline = Array.from(allDatesSet).sort().map(date => ({
+                        date,
+                        time: new Date(date).getTime() 
+                    }));
+
+                    const completedMuniData = allMuniData.map(muniData => {
+                        if (muniData.length === 0) return [];
+                        // Sort individual muni data by time to enable interpolation
+                        const sortedData = [...muniData].sort((a, b) => a.time - b.time);
+
+                        return unifiedTimeline.map(({ date, time }) => {
+                            const existingPoint = sortedData.find(p => p.time === time);
+                            if (existingPoint) return { date, luminosity: existingPoint.luminosity };
+
+                            // Find points before and after the missing date
+                            const prevPoint = sortedData.slice().reverse().find(p => p.time < time);
+                            const nextPoint = sortedData.find(p => p.time > time);
+
+                            let luminosity;
+                            if (prevPoint && nextPoint) {
+                                // --- Interpolate: The date is between two points ---
+                                const timeDiff = nextPoint.time - prevPoint.time;
+                                const valueDiff = nextPoint.luminosity - prevPoint.luminosity;
+                                const timeRatio = (time - prevPoint.time) / timeDiff;
+                                luminosity = prevPoint.luminosity + (valueDiff * timeRatio);
+                            } else if (prevPoint) {
+                                // --- Extrapolate: Use nearest point at the end ---
+                                luminosity = prevPoint.luminosity;
+                            } else if (nextPoint) {
+                                // --- Extrapolate: Use nearest point at the beginning ---
+                                luminosity = nextPoint.luminosity;
+                            } else {
+                                luminosity = 0; // Fallback if a muni has no data at all
+                            }
+                            return { date, luminosity };
+                        });
+                    });
+
+                    // --- 4. Aggregate the Completed Datasets ---
+                    const aggregatedData = {};
+                    completedMuniData.forEach(dataSet => {
+                        dataSet.forEach(({ date, luminosity }) => {
+                            if (!aggregatedData[date]) {
+                                aggregatedData[date] = 0;
+                            }
+                            aggregatedData[date] += luminosity;
+                        });
+                    });
+
+                    const finalChartData = Object.entries(aggregatedData).map(([date, luminosity]) => ({ date, luminosity }));
+
+                    if (finalChartData.length === 0) {
+                        throw new Error("No data available to plot for this country.");
+                    }
+                    
+                    // --- 5. Draw the Chart ---
+                    drawChart(finalChartData, countryData.events || [], [], `Aggregated Luminosity in ${countryData.displayName}`);
+
+                } catch (error) {
+                    console.error("Error displaying country aggregate:", error);
+                    chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;
                 }
             }
             

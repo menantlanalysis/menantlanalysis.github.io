@@ -609,12 +609,13 @@
                     });
                     annotations.push({
                         x: event.start_date,
-                        y: 0.95,
+                        y: 0.1,
                         yref: 'paper',
                         text: `${event.name}`,
                         showarrow: false,
                         xanchor: 'left',
-                        font: { color: '#b71c1c' }
+                        textangle: -90,
+                        font: { color: '#b71c1c', size: 13 }
                     });
                 });
 
@@ -632,12 +633,13 @@
                     });
                     annotations.push({
                         x: event.start_date,
-                        y: 0.90,
+                        y: 0.1,
                         yref: 'paper',
                         text: `${event.name}`,
                         showarrow: false,
                         xanchor: 'left',
-                        font: { color: '#0d47a1' }
+                        textangle: -90,
+                        font: { color: '#0d47a1', size: 13 }
                     });
                 });
 

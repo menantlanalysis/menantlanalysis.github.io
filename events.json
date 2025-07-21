@@ -29,5 +29,50 @@
                 }]
             }
         }
-    }
+    },
+    "egypt" : {
+        "events": [{
+            "name": "Ramadan",
+            "start_date": "2025-2-28",
+            "end_date": "2025-3-29"
+        }],
+        "municipalities": {
+        }
+    },
+    "iran" : {
+        "events": [{
+            "name": "Ramadan",
+            "start_date": "2025-2-28",
+            "end_date": "2025-3-29"
+        }],
+        "municipalities": {
+        }
+    },
+    "lebanon" : {
+        "events": [{
+            "name": "Ramadan",
+            "start_date": "2025-2-28",
+            "end_date": "2025-3-29"
+        }],
+        "municipalities": {
+        }
+    },
+    "libya" : {
+        "events": [{
+            "name": "Ramadan",
+            "start_date": "2025-2-28",
+            "end_date": "2025-3-29"
+        }],
+        "municipalities": {
+        }
+    },
+    "yemen" : {
+        "events": [{
+            "name": "Ramadan",
+            "start_date": "2025-2-28",
+            "end_date": "2025-3-29"
+        }],
+        "municipalities": {
+        }
+    },
 }

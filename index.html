@@ -656,10 +656,10 @@
                         x: 0
                     },
                     xaxis: {
-                        title: 'Date',
+                        title: { text: 'Date' },
                         range: [minDate.toISOString().slice(0, 10), maxDate.toISOString().slice(0, 10)],
                     },
-                    yaxis: { title: 'Luminosity' },
+                    yaxis: { title: { text: 'Luminosity (nW/sr/cm²)' } },
                     shapes: shapes,
                     annotations: annotations,
                     showlegend: true,

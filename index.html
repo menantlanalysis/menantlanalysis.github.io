@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,10 +88,17 @@
         background-color: #000;
     }
     h3 {
-        border-bottom: 2px solid #0056b3;
+        /* border-bottom: 2px solid #0056b3; */ /* This line is removed */
         padding-bottom: 5px;
         margin-top: 0;
     }
+    .chart-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #0056b3; /* Border is now on the container */
+        margin-bottom: 15px;
+    }   
     .loader, .error-message {
         text-align: center;
         padding: 40px;
@@ -262,7 +270,10 @@
                 <video id="video-player" controls autoplay muted playsinline></video>
             </div>
             <div id="chart-wrapper" style="display:none;">
-                <h3>Data Chart 📈</h3>
+                <div class="chart-header">
+                    <h3>Data Chart 📈</h3>
+                    <a id="download-csv-link" class="download-link" style="display:none;" download>Download CSV</a>
+                </div>
                 <div id="chart-container">
                     <div class="loader">Loading Chart...</div>
                 </div>
@@ -277,8 +288,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
-            // NEW: Global URL for fetch requests. Empty for local, or e.g., "https://your-server.com/"
             const API_BASE_URL = "";
 
             const menuToggle = document.getElementById('menu-toggle');
@@ -294,6 +303,7 @@
             const chartWrapper = document.getElementById('chart-wrapper');
             const chartContainer = document.getElementById('chart-container');
             const mainFooter = document.getElementById('main-footer');
+            const downloadCsvLink = document.getElementById('download-csv-link');
             
             let websiteData = {};
 
@@ -417,6 +427,7 @@
             async function displayCountry(countryKey, shouldUpdateUrl = true) {
                 chartWrapper.style.display = 'block';
                 showChartLoader();
+                downloadCsvLink.style.display = 'none'; // Hide link while loading
 
                 if (shouldUpdateUrl) {
                     updateUrl(countryKey);
@@ -498,7 +509,12 @@
                     if (finalChartData.length === 0) {
                         throw new Error("No data available to plot for this country.");
                     }
-                    
+                    const csvString = Papa.unparse(finalChartData);
+                    const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' });
+                    const url = URL.createObjectURL(blob);
+                    downloadCsvLink.href = url;
+                    downloadCsvLink.download = `${countryKey}_aggregated.csv`;
+                    downloadCsvLink.style.display = 'inline-block';
                     drawChart(finalChartData, countryData.events || [], [], `Aggregated Luminosity in ${countryData.displayName}`);
 
                 } catch (error) {
@@ -510,6 +526,7 @@
             async function displayMunicipality(countryKey, muniKey, shouldUpdateUrl = true) {
                 chartWrapper.style.display = 'block';
                 showChartLoader();
+                downloadCsvLink.style.display = 'none';
 
                 try {
                     if (shouldUpdateUrl) {
@@ -533,7 +550,9 @@
                         complete: (results) => {
                             const chartData = results.data.filter(d => d.date && d.luminosity !== undefined);
                             if (chartData.length === 0) throw new Error("No valid data found in CSV.");
-                            
+                            downloadCsvLink.href = API_BASE_URL + muniData.csv;
+                            downloadCsvLink.download = `${muniKey}.csv`;
+                            downloadCsvLink.style.display = 'inline-block';
                             const countryEvents = countryData.events || [];
                             const muniEvents = muniData.events || [];
                             drawChart(chartData, countryEvents, muniEvents, title);
@@ -553,7 +572,7 @@
                 
                 const scatterTrace = { x: dates, y: values, mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'grey', opacity: 0.7 } };
 
-                const bandwidth = 0.4;
+                const bandwidth = 0.25;
                 const numericDates = dates.map(d => new Date(d).getTime());
                 const loessGenerator = science.stats.loess().bandwidth(bandwidth);
                 const loessData = loessGenerator(numericDates, values);

@@ -61,7 +61,477 @@
                     "csv": "tables/syria/damascus/data.csv"
                 }
             }
+        },
+        "lebanon": {
+            "displayName": "Lebanon",
+            "video": "videos/lebanon/video.mp4",
+            "municipalities": {
+                "north": {
+                    "video": "videos/lebanon/north/video.mp4",
+                    "csv": "tables/lebanon/north/data.csv"
+                },
+                "baalbek-el_hermel": {
+                    "video": "videos/lebanon/baalbek-el_hermel/video.mp4",
+                    "csv": "tables/lebanon/baalbek-el_hermel/data.csv"
+                },
+                "mount_lebanon": {
+                    "video": "videos/lebanon/mount_lebanon/video.mp4",
+                    "csv": "tables/lebanon/mount_lebanon/data.csv"
+                },
+                "south": {
+                    "video": "videos/lebanon/south/video.mp4",
+                    "csv": "tables/lebanon/south/data.csv"
+                },
+                "el_nabatieh": {
+                    "video": "videos/lebanon/el_nabatieh/video.mp4",
+                    "csv": "tables/lebanon/el_nabatieh/data.csv"
+                },
+                "akkar": {
+                    "video": "videos/lebanon/akkar/video.mp4",
+                    "csv": "tables/lebanon/akkar/data.csv"
+                },
+                "bekaa": {
+                    "video": "videos/lebanon/bekaa/video.mp4",
+                    "csv": "tables/lebanon/bekaa/data.csv"
+                },
+                "beirut": {
+                    "video": "videos/lebanon/beirut/video.mp4",
+                    "csv": "tables/lebanon/beirut/data.csv"
+                }
+            }
+        },
+        "yemen": {
+            "displayName": "Yemen",
+            "video": "videos/yemen/video.mp4",
+            "municipalities": {
+                "ibb": {
+                    "video": "videos/yemen/ibb/video.mp4",
+                    "csv": "tables/yemen/ibb/data.csv"
+                },
+                "abyan": {
+                    "video": "videos/yemen/abyan/video.mp4",
+                    "csv": "tables/yemen/abyan/data.csv"
+                },
+                "sana'a_city": {
+                    "video": "videos/yemen/sana'a_city/video.mp4",
+                    "csv": "tables/yemen/sana'a_city/data.csv"
+                },
+                "al_bayda": {
+                    "video": "videos/yemen/al_bayda/video.mp4",
+                    "csv": "tables/yemen/al_bayda/data.csv"
+                },
+                "ta'iz": {
+                    "video": "videos/yemen/ta'iz/video.mp4",
+                    "csv": "tables/yemen/ta'iz/data.csv"
+                },
+                "al_jawf": {
+                    "video": "videos/yemen/al_jawf/video.mp4",
+                    "csv": "tables/yemen/al_jawf/data.csv"
+                },
+                "hajjah": {
+                    "video": "videos/yemen/hajjah/video.mp4",
+                    "csv": "tables/yemen/hajjah/data.csv"
+                },
+                "al_hodeidah": {
+                    "video": "videos/yemen/al_hodeidah/video.mp4",
+                    "csv": "tables/yemen/al_hodeidah/data.csv"
+                },
+                "hadramawt": {
+                    "video": "videos/yemen/hadramawt/video.mp4",
+                    "csv": "tables/yemen/hadramawt/data.csv"
+                },
+                "dhamar": {
+                    "video": "videos/yemen/dhamar/video.mp4",
+                    "csv": "tables/yemen/dhamar/data.csv"
+                },
+                "shabwah": {
+                    "video": "videos/yemen/shabwah/video.mp4",
+                    "csv": "tables/yemen/shabwah/data.csv"
+                },
+                "sa'dah": {
+                    "video": "videos/yemen/sa'dah/video.mp4",
+                    "csv": "tables/yemen/sa'dah/data.csv"
+                },
+                "sana'a": {
+                    "video": "videos/yemen/sana'a/video.mp4",
+                    "csv": "tables/yemen/sana'a/data.csv"
+                },
+                "aden": {
+                    "video": "videos/yemen/aden/video.mp4",
+                    "csv": "tables/yemen/aden/data.csv"
+                },
+                "lahj": {
+                    "video": "videos/yemen/lahj/video.mp4",
+                    "csv": "tables/yemen/lahj/data.csv"
+                },
+                "ma'rib": {
+                    "video": "videos/yemen/ma'rib/video.mp4",
+                    "csv": "tables/yemen/ma'rib/data.csv"
+                },
+                "al_mahwit": {
+                    "video": "videos/yemen/al_mahwit/video.mp4",
+                    "csv": "tables/yemen/al_mahwit/data.csv"
+                },
+                "al_maharah": {
+                    "video": "videos/yemen/al_maharah/video.mp4",
+                    "csv": "tables/yemen/al_maharah/data.csv"
+                },
+                "amran": {
+                    "video": "videos/yemen/amran/video.mp4",
+                    "csv": "tables/yemen/amran/data.csv"
+                },
+                "ad_dali'": {
+                    "video": "videos/yemen/ad_dali'/video.mp4",
+                    "csv": "tables/yemen/ad_dali'/data.csv"
+                },
+                "raymah": {
+                    "video": "videos/yemen/raymah/video.mp4",
+                    "csv": "tables/yemen/raymah/data.csv"
+                },
+                "socotra": {
+                    "video": "videos/yemen/socotra/video.mp4",
+                    "csv": "tables/yemen/socotra/data.csv"
+                }
+            }
+        },
+        "libya": {
+            "displayName": "Libya",
+            "video": "videos/libya/video.mp4",
+            "municipalities": {
+                "nalut": {
+                    "video": "videos/libya/nalut/video.mp4",
+                    "csv": "tables/libya/nalut/data.csv"
+                },
+                "an_nuqat_al_khams": {
+                    "video": "videos/libya/an_nuqat_al_khams/video.mp4",
+                    "csv": "tables/libya/an_nuqat_al_khams/data.csv"
+                },
+                "al_kufrah": {
+                    "video": "videos/libya/al_kufrah/video.mp4",
+                    "csv": "tables/libya/al_kufrah/data.csv"
+                },
+                "murzuq": {
+                    "video": "videos/libya/murzuq/video.mp4",
+                    "csv": "tables/libya/murzuq/data.csv"
+                },
+                "al_butnan": {
+                    "video": "videos/libya/al_butnan/video.mp4",
+                    "csv": "tables/libya/al_butnan/data.csv"
+                },
+                "oases": {
+                    "video": "videos/libya/oases/video.mp4",
+                    "csv": "tables/libya/oases/data.csv"
+                },
+                "ash_shati'": {
+                    "video": "videos/libya/ash_shati'/video.mp4",
+                    "csv": "tables/libya/ash_shati'/data.csv"
+                },
+                "ghat": {
+                    "video": "videos/libya/ghat/video.mp4",
+                    "csv": "tables/libya/ghat/data.csv"
+                },
+                "surt": {
+                    "video": "videos/libya/surt/video.mp4",
+                    "csv": "tables/libya/surt/data.csv"
+                },
+                "misratah": {
+                    "video": "videos/libya/misratah/video.mp4",
+                    "csv": "tables/libya/misratah/data.csv"
+                },
+                "al_marqab": {
+                    "video": "videos/libya/al_marqab/video.mp4",
+                    "csv": "tables/libya/al_marqab/data.csv"
+                },
+                "tr\u00edpoli": {
+                    "video": "videos/libya/tr\u00edpoli/video.mp4",
+                    "csv": "tables/libya/tr\u00edpoli/data.csv"
+                },
+                "az_zawiyah": {
+                    "video": "videos/libya/az_zawiyah/video.mp4",
+                    "csv": "tables/libya/az_zawiyah/data.csv"
+                },
+                "derna": {
+                    "video": "videos/libya/derna/video.mp4",
+                    "csv": "tables/libya/derna/data.csv"
+                },
+                "al_jabal_al_akhdar": {
+                    "video": "videos/libya/al_jabal_al_akhdar/video.mp4",
+                    "csv": "tables/libya/al_jabal_al_akhdar/data.csv"
+                },
+                "al_marj": {
+                    "video": "videos/libya/al_marj/video.mp4",
+                    "csv": "tables/libya/al_marj/data.csv"
+                },
+                "benghazi": {
+                    "video": "videos/libya/benghazi/video.mp4",
+                    "csv": "tables/libya/benghazi/data.csv"
+                },
+                "al_jifarah": {
+                    "video": "videos/libya/al_jifarah/video.mp4",
+                    "csv": "tables/libya/al_jifarah/data.csv"
+                },
+                "al_jabal_al_gharbi": {
+                    "video": "videos/libya/al_jabal_al_gharbi/video.mp4",
+                    "csv": "tables/libya/al_jabal_al_gharbi/data.csv"
+                },
+                "al_jufrah": {
+                    "video": "videos/libya/al_jufrah/video.mp4",
+                    "csv": "tables/libya/al_jufrah/data.csv"
+                },
+                "sabha": {
+                    "video": "videos/libya/sabha/video.mp4",
+                    "csv": "tables/libya/sabha/data.csv"
+                },
+                "wadi_al_hayaa": {
+                    "video": "videos/libya/wadi_al_hayaa/video.mp4",
+                    "csv": "tables/libya/wadi_al_hayaa/data.csv"
+                }
+            }
+        },
+        "iran": {
+            "displayName": "Iran",
+            "video": "videos/iran/video.mp4",
+            "municipalities": {
+                "west_azarbaijan": {
+                    "video": "videos/iran/west_azarbaijan/video.mp4",
+                    "csv": "tables/iran/west_azarbaijan/data.csv"
+                },
+                "east_azarbaijan": {
+                    "video": "videos/iran/east_azarbaijan/video.mp4",
+                    "csv": "tables/iran/east_azarbaijan/data.csv"
+                },
+                "ardebil": {
+                    "video": "videos/iran/ardebil/video.mp4",
+                    "csv": "tables/iran/ardebil/data.csv"
+                },
+                "gilan": {
+                    "video": "videos/iran/gilan/video.mp4",
+                    "csv": "tables/iran/gilan/data.csv"
+                },
+                "kordestan": {
+                    "video": "videos/iran/kordestan/video.mp4",
+                    "csv": "tables/iran/kordestan/data.csv"
+                },
+                "kermanshah": {
+                    "video": "videos/iran/kermanshah/video.mp4",
+                    "csv": "tables/iran/kermanshah/data.csv"
+                },
+                "ilam": {
+                    "video": "videos/iran/ilam/video.mp4",
+                    "csv": "tables/iran/ilam/data.csv"
+                },
+                "khuzestan": {
+                    "video": "videos/iran/khuzestan/video.mp4",
+                    "csv": "tables/iran/khuzestan/data.csv"
+                },
+                "north_khorasan": {
+                    "video": "videos/iran/north_khorasan/video.mp4",
+                    "csv": "tables/iran/north_khorasan/data.csv"
+                },
+                "golestan": {
+                    "video": "videos/iran/golestan/video.mp4",
+                    "csv": "tables/iran/golestan/data.csv"
+                },
+                "razavi_khorasan": {
+                    "video": "videos/iran/razavi_khorasan/video.mp4",
+                    "csv": "tables/iran/razavi_khorasan/data.csv"
+                },
+                "south_khorasan": {
+                    "video": "videos/iran/south_khorasan/video.mp4",
+                    "csv": "tables/iran/south_khorasan/data.csv"
+                },
+                "sistan_and_baluchestan": {
+                    "video": "videos/iran/sistan_and_baluchestan/video.mp4",
+                    "csv": "tables/iran/sistan_and_baluchestan/data.csv"
+                },
+                "bushehr": {
+                    "video": "videos/iran/bushehr/video.mp4",
+                    "csv": "tables/iran/bushehr/data.csv"
+                },
+                "hormozgan": {
+                    "video": "videos/iran/hormozgan/video.mp4",
+                    "csv": "tables/iran/hormozgan/data.csv"
+                },
+                "mazandaran": {
+                    "video": "videos/iran/mazandaran/video.mp4",
+                    "csv": "tables/iran/mazandaran/data.csv"
+                },
+                "semnan": {
+                    "video": "videos/iran/semnan/video.mp4",
+                    "csv": "tables/iran/semnan/data.csv"
+                },
+                "zanjan": {
+                    "video": "videos/iran/zanjan/video.mp4",
+                    "csv": "tables/iran/zanjan/data.csv"
+                },
+                "qazvin": {
+                    "video": "videos/iran/qazvin/video.mp4",
+                    "csv": "tables/iran/qazvin/data.csv"
+                },
+                "markazi": {
+                    "video": "videos/iran/markazi/video.mp4",
+                    "csv": "tables/iran/markazi/data.csv"
+                },
+                "esfahan": {
+                    "video": "videos/iran/esfahan/video.mp4",
+                    "csv": "tables/iran/esfahan/data.csv"
+                },
+                "chahar_mahall_and_bakhtiari": {
+                    "video": "videos/iran/chahar_mahall_and_bakhtiari/video.mp4",
+                    "csv": "tables/iran/chahar_mahall_and_bakhtiari/data.csv"
+                },
+                "kohgiluyeh_and_buyer_ahmad": {
+                    "video": "videos/iran/kohgiluyeh_and_buyer_ahmad/video.mp4",
+                    "csv": "tables/iran/kohgiluyeh_and_buyer_ahmad/data.csv"
+                },
+                "fars": {
+                    "video": "videos/iran/fars/video.mp4",
+                    "csv": "tables/iran/fars/data.csv"
+                },
+                "kerman": {
+                    "video": "videos/iran/kerman/video.mp4",
+                    "csv": "tables/iran/kerman/data.csv"
+                },
+                "hamadan": {
+                    "video": "videos/iran/hamadan/video.mp4",
+                    "csv": "tables/iran/hamadan/data.csv"
+                },
+                "lorestan": {
+                    "video": "videos/iran/lorestan/video.mp4",
+                    "csv": "tables/iran/lorestan/data.csv"
+                },
+                "yazd": {
+                    "video": "videos/iran/yazd/video.mp4",
+                    "csv": "tables/iran/yazd/data.csv"
+                },
+                "qom": {
+                    "video": "videos/iran/qom/video.mp4",
+                    "csv": "tables/iran/qom/data.csv"
+                },
+                "tehran": {
+                    "video": "videos/iran/tehran/video.mp4",
+                    "csv": "tables/iran/tehran/data.csv"
+                },
+                "alborz": {
+                    "video": "videos/iran/alborz/video.mp4",
+                    "csv": "tables/iran/alborz/data.csv"
+                }
+            }
+        },
+        "egypt": {
+            "displayName": "Egypt",
+            "video": "videos/egypt/video.mp4",
+            "municipalities": {
+                "shamal_sina'": {
+                    "video": "videos/egypt/shamal_sina'/video.mp4",
+                    "csv": "tables/egypt/shamal_sina'/data.csv"
+                },
+                "aswan": {
+                    "video": "videos/egypt/aswan/video.mp4",
+                    "csv": "tables/egypt/aswan/data.csv"
+                },
+                "al_bahr_al_ahmar": {
+                    "video": "videos/egypt/al_bahr_al_ahmar/video.mp4",
+                    "csv": "tables/egypt/al_bahr_al_ahmar/data.csv"
+                },
+                "matruh": {
+                    "video": "videos/egypt/matruh/video.mp4",
+                    "csv": "tables/egypt/matruh/data.csv"
+                },
+                "al_wadi_at_jadid": {
+                    "video": "videos/egypt/al_wadi_at_jadid/video.mp4",
+                    "csv": "tables/egypt/al_wadi_at_jadid/data.csv"
+                },
+                "as_suways": {
+                    "video": "videos/egypt/as_suways/video.mp4",
+                    "csv": "tables/egypt/as_suways/data.csv"
+                },
+                "janub_sina'": {
+                    "video": "videos/egypt/janub_sina'/video.mp4",
+                    "csv": "tables/egypt/janub_sina'/data.csv"
+                },
+                "bur_sa`id": {
+                    "video": "videos/egypt/bur_sa`id/video.mp4",
+                    "csv": "tables/egypt/bur_sa`id/data.csv"
+                },
+                "ad_daqahliyah": {
+                    "video": "videos/egypt/ad_daqahliyah/video.mp4",
+                    "csv": "tables/egypt/ad_daqahliyah/data.csv"
+                },
+                "ash_sharqiyah": {
+                    "video": "videos/egypt/ash_sharqiyah/video.mp4",
+                    "csv": "tables/egypt/ash_sharqiyah/data.csv"
+                },
+                "al_isma`iliyah": {
+                    "video": "videos/egypt/al_isma`iliyah/video.mp4",
+                    "csv": "tables/egypt/al_isma`iliyah/data.csv"
+                },
+                "dumyat": {
+                    "video": "videos/egypt/dumyat/video.mp4",
+                    "csv": "tables/egypt/dumyat/data.csv"
+                },
+                "kafr_ash_shaykh": {
+                    "video": "videos/egypt/kafr_ash_shaykh/video.mp4",
+                    "csv": "tables/egypt/kafr_ash_shaykh/data.csv"
+                },
+                "al_buhayrah": {
+                    "video": "videos/egypt/al_buhayrah/video.mp4",
+                    "csv": "tables/egypt/al_buhayrah/data.csv"
+                },
+                "al_iskandariyah": {
+                    "video": "videos/egypt/al_iskandariyah/video.mp4",
+                    "csv": "tables/egypt/al_iskandariyah/data.csv"
+                },
+                "al_qahirah": {
+                    "video": "videos/egypt/al_qahirah/video.mp4",
+                    "csv": "tables/egypt/al_qahirah/data.csv"
+                },
+                "al_jizah": {
+                    "video": "videos/egypt/al_jizah/video.mp4",
+                    "csv": "tables/egypt/al_jizah/data.csv"
+                },
+                "al_minya": {
+                    "video": "videos/egypt/al_minya/video.mp4",
+                    "csv": "tables/egypt/al_minya/data.csv"
+                },
+                "al_fayyum": {
+                    "video": "videos/egypt/al_fayyum/video.mp4",
+                    "csv": "tables/egypt/al_fayyum/data.csv"
+                },
+                "bani_suwayf": {
+                    "video": "videos/egypt/bani_suwayf/video.mp4",
+                    "csv": "tables/egypt/bani_suwayf/data.csv"
+                },
+                "al_minufiyah": {
+                    "video": "videos/egypt/al_minufiyah/video.mp4",
+                    "csv": "tables/egypt/al_minufiyah/data.csv"
+                },
+                "al_qalyubiyah": {
+                    "video": "videos/egypt/al_qalyubiyah/video.mp4",
+                    "csv": "tables/egypt/al_qalyubiyah/data.csv"
+                },
+                "al_gharbiyah": {
+                    "video": "videos/egypt/al_gharbiyah/video.mp4",
+                    "csv": "tables/egypt/al_gharbiyah/data.csv"
+                },
+                "suhaj": {
+                    "video": "videos/egypt/suhaj/video.mp4",
+                    "csv": "tables/egypt/suhaj/data.csv"
+                },
+                "qina": {
+                    "video": "videos/egypt/qina/video.mp4",
+                    "csv": "tables/egypt/qina/data.csv"
+                },
+                "asyut": {
+                    "video": "videos/egypt/asyut/video.mp4",
+                    "csv": "tables/egypt/asyut/data.csv"
+                },
+                "luxor": {
+                    "video": "videos/egypt/luxor/video.mp4",
+                    "csv": "tables/egypt/luxor/data.csv"
+                }
+            }
         }
     },
-    "last_run_date": "2025-07-16"
+    "last_run_date": "2025-07-20"
 }

@@ -664,7 +664,8 @@
                     annotations: annotations,
                     showlegend: true,
                     legend: { x: 1, xanchor: 'right', y: 1 },
-                    margin: { l: 60, r: 20, t: 80, b: 50 }
+                    margin: { l: 60, r: 20, t: 80, b: 50 },
+                    dragmode: 'pan'
                 };
 
                 Plotly.newPlot(chartContainer, [scatterTrace, loessTrace], layout, { responsive: true });

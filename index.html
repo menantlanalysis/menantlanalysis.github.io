@@ -68,8 +68,8 @@
         padding: 20px;
         overflow-y: auto;
     }
-    #video-container, #chart-wrapper {
-        background-color: #fff;
+    .content-card {
+        background-color: #ffffff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -245,6 +245,61 @@
             padding: 15px;
         }
     }
+    #stats-table {
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 1em;
+    }
+
+    #stats-table th,
+    #stats-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #e0e0e0; /* Restored visible vertical borders */
+    }
+
+    #stats-table th {
+        background-color: #f8f8f8; /* Added a light background to header row */
+        color: #555;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 0.5px;
+    }
+
+    /* Right-align the "Change" header and its data cells */
+    #stats-table th:last-child,
+    #stats-table td:last-child {
+        text-align: right;
+    }
+
+    #stats-table td:first-child {
+        color: #444;
+    }
+
+    #stats-table td:last-child {
+        font-weight: 700;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+
+    #stats-container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    #stats-container h4 {
+        text-align: left;
+        margin-top: 0;
+        font-weight: 600;
+        color: #333;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
    </style>
 </head>
 <body>
@@ -278,6 +333,32 @@
                     <div class="loader">Loading Chart...</div>
                 </div>
             </div>
+
+            <div id="stats-container" style="display:none;">
+                <h4>Statistics Summary</h4>
+                <table id="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Year-over-Year</td>
+                            <td id="yoy-change">--</td>
+                        </tr>
+                        <tr>
+                            <td>This Year-to-Date</td>
+                            <td id="ytd-change">--</td>
+                        </tr>
+                        <tr>
+                            <td>This Quarter-to-Date</td>
+                            <td id="qtd-change">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
     </div>
     <footer id="main-footer"></footer>
@@ -304,6 +385,7 @@
             const chartContainer = document.getElementById('chart-container');
             const mainFooter = document.getElementById('main-footer');
             const downloadCsvLink = document.getElementById('download-csv-link');
+            const statsSummary = document.getElementById('stats-container');
             
             let websiteData = {};
 
@@ -316,7 +398,63 @@
 
             function showChartLoader() {
                 chartContainer.innerHTML = `<div class="loader">Loading Chart...</div>`;
+                statsSummary.style.display = 'none';
             }
+
+            function calculateAndDisplayStats(dates, loessValues) {
+            const statsContainer = document.getElementById('stats-summary');
+            const yoyCell = document.getElementById('yoy-change');
+            const ytdCell = document.getElementById('ytd-change');
+            const qtdCell = document.getElementById('qtd-change');
+
+            const smoothedData = dates.map((date, i) => ({
+                date: new Date(date),
+                value: loessValues[i]
+            })).sort((a, b) => a.date - b.date);
+
+            if (smoothedData.length < 2) {
+                statsContainer.style.display = 'none';
+                return;
+            }
+
+            const lastPoint = smoothedData[smoothedData.length - 1];
+            const lastDate = lastPoint.date;
+
+            const findClosestPoint = (targetDate) => {
+                return smoothedData.reduce((prev, curr) => {
+                    return (Math.abs(curr.date - targetDate) < Math.abs(prev.date - targetDate) ? curr : prev);
+                });
+            };
+            
+            const calculateChange = (startPoint, endPoint) => {
+                if (!startPoint || !endPoint || startPoint.value === 0 || startPoint.date >= endPoint.date) {
+                    return 'N/A';
+                }
+                const change = ((endPoint.value - startPoint.value) / startPoint.value) * 100;
+                const color = change >= 0 ? 'green' : 'red';
+                const sign = change >= 0 ? '▲ ' : '▼ ';
+                return `<span style="color: ${color};">${sign}${Math.abs(change).toFixed(2)}%</span>`;
+            };
+
+            // YoY Calculation
+            const oneYearAgoDate = new Date(lastDate);
+            oneYearAgoDate.setFullYear(lastDate.getFullYear() - 1);
+            const oneYearAgoPoint = findClosestPoint(oneYearAgoDate);
+            yoyCell.innerHTML = calculateChange(oneYearAgoPoint, lastPoint);
+
+            // YTD Calculation
+            const startOfYearDate = new Date(lastDate.getFullYear(), 0, 1);
+            const ytdStartPoint = findClosestPoint(startOfYearDate);
+            ytdCell.innerHTML = calculateChange(ytdStartPoint, lastPoint);
+
+            // QTD Calculation
+            const quarter = Math.floor(lastDate.getMonth() / 3);
+            const startOfQuarterDate = new Date(lastDate.getFullYear(), quarter * 3, 1);
+            const qtdStartPoint = findClosestPoint(startOfQuarterDate);
+            qtdCell.innerHTML = calculateChange(qtdStartPoint, lastPoint);
+
+            statsContainer.style.display = 'block';
+        }
 
             async function initialize() {
                 mainHeader.querySelector('h1').textContent = document.title;
@@ -669,6 +807,7 @@
                 };
 
                 Plotly.newPlot(chartContainer, [scatterTrace, loessTrace], layout, { responsive: true });
+                calculateAndDisplayStats(dates, loessData);
             }
 
 

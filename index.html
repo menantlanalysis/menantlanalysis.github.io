@@ -68,8 +68,8 @@
         padding: 20px;
         overflow-y: auto;
     }
-    .content-card {
-        background-color: #ffffff;
+    #video-container, #chart-wrapper, #stats-summary {
+        background-color: #fff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -241,7 +241,7 @@
             box-sizing: border-box;
         }
 
-        #video-container, #chart-wrapper {
+        #video-container, #chart-wrapper, #stats-summary {
             padding: 15px;
         }
     }
@@ -282,24 +282,6 @@
         font-weight: 700;
         font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     }
-
-    #stats-container {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-    }
-
-    #stats-container h4 {
-        text-align: left;
-        margin-top: 0;
-        font-weight: 600;
-        color: #333;
-        border-bottom: 2px solid #0056b3;
-        padding-bottom: 5px;
-        margin-bottom: 20px;
-    }
    </style>
 </head>
 <body>
@@ -333,9 +315,8 @@
                     <div class="loader">Loading Chart...</div>
                 </div>
             </div>
-
-            <div id="stats-container" style="display:none;">
-                <h4>Statistics Summary</h4>
+            <div id="stats-summary" style="display:none;">
+                <h3>Summary (LOESS) 📊</h3>
                 <table id="stats-table">
                     <thead>
                         <tr>
@@ -349,11 +330,11 @@
                             <td id="yoy-change">--</td>
                         </tr>
                         <tr>
-                            <td>This Year-to-Date</td>
+                            <td>Year-to-Date</td>
                             <td id="ytd-change">--</td>
                         </tr>
                         <tr>
-                            <td>This Quarter-to-Date</td>
+                            <td>Quarter-to-Date</td>
                             <td id="qtd-change">--</td>
                         </tr>
                     </tbody>
@@ -385,7 +366,7 @@
             const chartContainer = document.getElementById('chart-container');
             const mainFooter = document.getElementById('main-footer');
             const downloadCsvLink = document.getElementById('download-csv-link');
-            const statsSummary = document.getElementById('stats-container');
+            const statsSummary = document.getElementById('stats-summary');
             
             let websiteData = {};
 

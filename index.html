@@ -801,11 +801,25 @@
                         });
                     }
                 });
-
+                
                 const centerLon = (minLon + maxLon) / 2;
                 const centerLat = (minLat + maxLat) / 2;
-                console.log(centerLat);
-                console.log(centerLon);
+                
+                function estimateZoom(minLon, maxLon, minLat, maxLat) {
+                    const lonSpan = maxLon - minLon;
+                    const latSpan = maxLat - minLat;
+                    const maxSpan = Math.max(lonSpan, latSpan);
+
+                    if (maxSpan > 40) return 3;
+                    if (maxSpan > 20) return 4;
+                    if (maxSpan > 10) return 5;
+                    if (maxSpan > 5) return 6;
+                    if (maxSpan > 2) return 7;
+                    return 8; // Very small area
+                }
+
+                const zoomLevel = estimateZoom(minLon, maxLon, minLat, maxLat);
+
 
                 const layout = {
                     title: {
@@ -819,11 +833,13 @@
                     map: {
                         style: 'light',
                         center: { lon: centerLon, lat: centerLat },
-                        zoom: 6
+                        zoom: zoomLevel
                     },
                     margin: { l: 0, r: 0, t: 80, b: 0 },
                     autosize: true
                 };
+
+
 
                 Plotly.newPlot(mapContainer, [choroplethTrace], layout, { responsive: true });
             }

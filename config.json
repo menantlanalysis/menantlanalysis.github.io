@@ -3,6 +3,7 @@
         "syria": {
             "displayName": "Syria",
             "video": "videos/syria/video.mp4",
+            "map": "maps/syria.json",
             "municipalities": {
                 "homs_(hims)": {
                     "video": "videos/syria/homs_(hims)/video.mp4",
@@ -65,6 +66,7 @@
         "lebanon": {
             "displayName": "Lebanon",
             "video": "videos/lebanon/video.mp4",
+            "map": "maps/lebanon.json",
             "municipalities": {
                 "north": {
                     "video": "videos/lebanon/north/video.mp4",
@@ -103,6 +105,7 @@
         "yemen": {
             "displayName": "Yemen",
             "video": "videos/yemen/video.mp4",
+            "map": "maps/yemen.json",
             "municipalities": {
                 "ibb": {
                     "video": "videos/yemen/ibb/video.mp4",
@@ -197,6 +200,7 @@
         "libya": {
             "displayName": "Libya",
             "video": "videos/libya/video.mp4",
+            "map": "maps/libya.json",
             "municipalities": {
                 "nalut": {
                     "video": "videos/libya/nalut/video.mp4",
@@ -291,6 +295,7 @@
         "iran": {
             "displayName": "Iran",
             "video": "videos/iran/video.mp4",
+            "map": "maps/iran.json",
             "municipalities": {
                 "west_azarbaijan": {
                     "video": "videos/iran/west_azarbaijan/video.mp4",
@@ -421,6 +426,7 @@
         "egypt": {
             "displayName": "Egypt",
             "video": "videos/egypt/video.mp4",
+            "map": "maps/egypt.json",
             "municipalities": {
                 "shamal_sina'": {
                     "video": "videos/egypt/shamal_sina'/video.mp4",

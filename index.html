@@ -339,6 +339,8 @@
                         </tr>
                     </tbody>
                 </table>
+                <div id="stats-map" style="display:none;">
+                </div>
             </div>
         </main>
     </div>
@@ -367,6 +369,7 @@
             const mainFooter = document.getElementById('main-footer');
             const downloadCsvLink = document.getElementById('download-csv-link');
             const statsSummary = document.getElementById('stats-summary');
+            const loess_bandwidth = 0.25;
             
             let websiteData = {};
 
@@ -383,59 +386,66 @@
             }
 
             function calculateAndDisplayStats(dates, loessValues) {
-            const statsContainer = document.getElementById('stats-summary');
-            const yoyCell = document.getElementById('yoy-change');
-            const ytdCell = document.getElementById('ytd-change');
-            const qtdCell = document.getElementById('qtd-change');
+                const statsContainer = document.getElementById('stats-summary');
+                const yoyCell = document.getElementById('yoy-change');
+                const ytdCell = document.getElementById('ytd-change');
+                const qtdCell = document.getElementById('qtd-change');
 
-            const smoothedData = dates.map((date, i) => ({
-                date: new Date(date),
-                value: loessValues[i]
-            })).sort((a, b) => a.date - b.date);
+                const smoothedData = dates.map((date, i) => ({
+                    date: new Date(date),
+                    value: loessValues[i]
+                })).sort((a, b) => a.date - b.date);
 
-            if (smoothedData.length < 2) {
-                statsContainer.style.display = 'none';
-                return;
+                if (smoothedData.length < 2) {
+                    statsContainer.style.display = 'none';
+                    return;
+                }
+
+                const lastPoint = smoothedData[smoothedData.length - 1];
+                const lastDate = lastPoint.date;
+
+                const findClosestPoint = (targetDate) => {
+                    return smoothedData.reduce((prev, curr) => {
+                        return (Math.abs(curr.date - targetDate) < Math.abs(prev.date - targetDate) ? curr : prev);
+                    });
+                };
+                
+                const calculateChange = (startPoint, endPoint) => {
+                    if (!startPoint || !endPoint || startPoint.value === 0 || startPoint.date >= endPoint.date) {
+                        return 'N/A';
+                    }
+                    const change = ((endPoint.value - startPoint.value) / startPoint.value) * 100;
+                    const color = change >= 0 ? 'green' : 'red';
+                    const sign = change >= 0 ? '▲ ' : '▼ ';
+                    return `<span style="color: ${color};">${sign}${Math.abs(change).toFixed(2)}%</span>`;
+                };
+
+                // YoY Calculation
+                const oneYearAgoDate = new Date(lastDate);
+                oneYearAgoDate.setFullYear(lastDate.getFullYear() - 1);
+                const oneYearAgoPoint = findClosestPoint(oneYearAgoDate);
+                yoyCell.innerHTML = calculateChange(oneYearAgoPoint, lastPoint);
+
+                // YTD Calculation
+                const startOfYearDate = new Date(lastDate.getFullYear(), 0, 1);
+                const ytdStartPoint = findClosestPoint(startOfYearDate);
+                ytdCell.innerHTML = calculateChange(ytdStartPoint, lastPoint);
+
+                // QTD Calculation
+                const quarter = Math.floor(lastDate.getMonth() / 3);
+                const startOfQuarterDate = new Date(lastDate.getFullYear(), quarter * 3, 1);
+                const qtdStartPoint = findClosestPoint(startOfQuarterDate);
+                qtdCell.innerHTML = calculateChange(qtdStartPoint, lastPoint);
+
+                statsContainer.style.display = 'block';
             }
 
-            const lastPoint = smoothedData[smoothedData.length - 1];
-            const lastDate = lastPoint.date;
-
-            const findClosestPoint = (targetDate) => {
-                return smoothedData.reduce((prev, curr) => {
-                    return (Math.abs(curr.date - targetDate) < Math.abs(prev.date - targetDate) ? curr : prev);
-                });
-            };
-            
-            const calculateChange = (startPoint, endPoint) => {
-                if (!startPoint || !endPoint || startPoint.value === 0 || startPoint.date >= endPoint.date) {
-                    return 'N/A';
-                }
-                const change = ((endPoint.value - startPoint.value) / startPoint.value) * 100;
-                const color = change >= 0 ? 'green' : 'red';
-                const sign = change >= 0 ? '▲ ' : '▼ ';
-                return `<span style="color: ${color};">${sign}${Math.abs(change).toFixed(2)}%</span>`;
-            };
-
-            // YoY Calculation
-            const oneYearAgoDate = new Date(lastDate);
-            oneYearAgoDate.setFullYear(lastDate.getFullYear() - 1);
-            const oneYearAgoPoint = findClosestPoint(oneYearAgoDate);
-            yoyCell.innerHTML = calculateChange(oneYearAgoPoint, lastPoint);
-
-            // YTD Calculation
-            const startOfYearDate = new Date(lastDate.getFullYear(), 0, 1);
-            const ytdStartPoint = findClosestPoint(startOfYearDate);
-            ytdCell.innerHTML = calculateChange(ytdStartPoint, lastPoint);
-
-            // QTD Calculation
-            const quarter = Math.floor(lastDate.getMonth() / 3);
-            const startOfQuarterDate = new Date(lastDate.getFullYear(), quarter * 3, 1);
-            const qtdStartPoint = findClosestPoint(startOfQuarterDate);
-            qtdCell.innerHTML = calculateChange(qtdStartPoint, lastPoint);
-
-            statsContainer.style.display = 'block';
-        }
+            function sanitizeName(name) {
+                return name.replace(/\//g, "_")
+                        .replace(/ /g, "_")
+                        .trim()
+                        .toLowerCase();
+            }
 
             async function initialize() {
                 mainHeader.querySelector('h1').textContent = document.title;
@@ -543,7 +553,36 @@
                 }
             }
 
-            async function displayCountry(countryKey, shouldUpdateUrl = true) {
+            async function getAllMuniData(countryData) {
+                const municipalities = Object.entries(countryData.municipalities);
+                const promises = municipalities.map(async ([key, muni]) => {
+                    if (!muni.csv) return [key, []];
+                    try {
+                        const response = await fetch(API_BASE_URL + muni.csv);
+                        if (!response.ok) throw new Error(`Failed to fetch ${muni.csv}`);
+                        const csvText = await response.text();
+                        return new Promise((resolve, reject) => {
+                            Papa.parse(csvText, {
+                                header: true,
+                                dynamicTyping: true,
+                                skipEmptyLines: true,
+                                complete: (results) => {
+                                    const data = results.data.filter(d => d.date && d.luminosity !== undefined);
+                                    resolve([key, data.map(d => ({ ...d, time: new Date(d.date).getTime() }))]);
+                                },
+                                error: (err) => reject(new Error(`Parsing error in ${muni.csv}: ${err.message}`))
+                            });
+                        });
+                    } catch (fetchErr) {
+                        return [key, []];  // On fetch failure, empty list
+                    }
+                });
+
+                const entries = await Promise.all(promises);
+                return Object.fromEntries(entries);
+            }
+
+            async function displayCountry(countryKey, allMuniData, shouldUpdateUrl = true) {
                 chartWrapper.style.display = 'block';
                 showChartLoader();
                 downloadCsvLink.style.display = 'none'; // Hide link while loading
@@ -554,73 +593,55 @@
                 
                 try {
                     const countryData = websiteData.countries[countryKey];
-                    
-                    videoTitle.textContent = `Video: ${countryData.displayName}`;
+
+                    videoTitle.textContent = `${countryData.displayName}`;
                     videoPlayer.src = API_BASE_URL + countryData.video;
                     videoContainer.style.display = 'block';
 
-                    const municipalities = Object.values(countryData.municipalities);
-                    const promises = municipalities.map(muni => {
-                        return new Promise(async (resolve, reject) => {
-                            if (!muni.csv) return resolve([]);
-                            try {
-                                const response = await fetch(API_BASE_URL + muni.csv);
-                                if (!response.ok) throw new Error(`Failed to fetch ${muni.csv}`);
-                                const csvText = await response.text();
-                                Papa.parse(csvText, {
-                                    header: true, dynamicTyping: true, skipEmptyLines: true,
-                                    complete: (results) => {
-                                        const data = results.data.filter(d => d.date && d.luminosity !== undefined);
-                                        resolve(data.map(d => ({ ...d, time: new Date(d.date).getTime() })));
-                                    },
-                                    error: (err) => reject(new Error(`Parsing error in ${muni.csv}: ${err.message}`))
-                                });
-                            } catch (fetchErr) {
-                                reject(fetchErr);
-                            }
-                        });
-                    });
-
-                    const allMuniData = await Promise.all(promises);
-                    const allDatesSet = new Set(allMuniData.flat().map(d => d.date));
+                    
+                    const allMuniData = await getAllMuniData(countryData);
+                    const allDatesSet = new Set(
+                        Object.values(allMuniData)
+                            .flat()
+                            .map(d => d.date)
+                    );
                     const unifiedTimeline = Array.from(allDatesSet).sort().map(date => ({
                         date, time: new Date(date).getTime() 
                     }));
 
-                    const completedMuniData = allMuniData.map(muniData => {
-                        if (muniData.length === 0) return [];
-                        const sortedData = [...muniData].sort((a, b) => a.time - b.time);
+                    const completedMuniData = Object.values(allMuniData)
+                        .flatMap(muniData => {
+                            if (muniData.length === 0) return [];
+                            const sortedData = [...muniData].sort((a, b) => a.time - b.time);
+                            return unifiedTimeline.map(({ date, time }) => {
+                                const existingPoint = sortedData.find(p => p.time === time);
+                                if (existingPoint) return { date, luminosity: existingPoint.luminosity };
 
-                        return unifiedTimeline.map(({ date, time }) => {
-                            const existingPoint = sortedData.find(p => p.time === time);
-                            if (existingPoint) return { date, luminosity: existingPoint.luminosity };
+                                const prevPoint = [...sortedData].reverse().find(p => p.time < time);
+                                const nextPoint = sortedData.find(p => p.time > time);
 
-                            const prevPoint = sortedData.slice().reverse().find(p => p.time < time);
-                            const nextPoint = sortedData.find(p => p.time > time);
+                                let luminosity;
+                                if (prevPoint && nextPoint) {
+                                    const timeDiff = nextPoint.time - prevPoint.time;
+                                    const valueDiff = nextPoint.luminosity - prevPoint.luminosity;
+                                    const timeRatio = (time - prevPoint.time) / timeDiff;
+                                    luminosity = prevPoint.luminosity + (valueDiff * timeRatio);
+                                } else if (prevPoint) {
+                                    luminosity = prevPoint.luminosity;
+                                } else if (nextPoint) {
+                                    luminosity = nextPoint.luminosity;
+                                } else {
+                                    luminosity = 0;
+                                }
 
-                            let luminosity;
-                            if (prevPoint && nextPoint) {
-                                const timeDiff = nextPoint.time - prevPoint.time;
-                                const valueDiff = nextPoint.luminosity - prevPoint.luminosity;
-                                const timeRatio = (time - prevPoint.time) / timeDiff;
-                                luminosity = prevPoint.luminosity + (valueDiff * timeRatio);
-                            } else if (prevPoint) {
-                                luminosity = prevPoint.luminosity;
-                            } else if (nextPoint) {
-                                luminosity = nextPoint.luminosity;
-                            } else {
-                                luminosity = 0;
-                            }
-                            return { date, luminosity };
+                                return { date, luminosity };
+                            });
                         });
-                    });
 
                     const aggregatedData = {};
-                    completedMuniData.forEach(dataSet => {
-                        dataSet.forEach(({ date, luminosity }) => {
-                            if (!aggregatedData[date]) aggregatedData[date] = 0;
-                            aggregatedData[date] += luminosity;
-                        });
+                    completedMuniData.forEach(({ date, luminosity }) => {
+                        if (!aggregatedData[date]) aggregatedData[date] = 0;
+                        aggregatedData[date] += luminosity;
                     });
 
                     const finalChartData = Object.entries(aggregatedData).map(([date, luminosity]) => ({ date, luminosity }));
@@ -635,12 +656,178 @@
                     downloadCsvLink.download = `${countryKey}_aggregated.csv`;
                     downloadCsvLink.style.display = 'inline-block';
                     drawChart(finalChartData, countryData.events || [], [], countryData.displayName);
-
+                    const response = await fetch(API_BASE_URL + countryData.map);
+                    if (!response.ok) throw new Error(`Could not fetch ${countryData.map}`);
+                    drawMuniMap(allMuniData, await response.json(), "stats-map", "By Region");
                 } catch (error) {
                     console.error("Error displaying country aggregate:", error);
                     chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;
                 }
             }
+
+            /**
+             * Draws a choropleth map of municipalities, colored by Year-over-Year (YoY) luminosity change.
+             *
+             * @param {Array<Object>} muniData - Array of municipality data, each object should have:
+             * {id: string, name: string, date: string, luminosity: number}.
+             * 'id' should correspond to a 'properties.id' or similar in the GeoJSON features.
+             * @param {Object} geojsonData - The GeoJSON object for the municipalities (FeatureCollection).
+             * @param {string} chartContainerId - The ID of the HTML element where the chart will be drawn.
+             * @param {string} title - The title of the map.
+             * @param {string} featureIdKey - The key in the GeoJSON properties that matches `muniData[i].id`.
+             * For example, if your GeoJSON features have `properties.muni_id`, then
+             * this should be 'properties.muni_id'.
+             */
+            function drawMuniMap(muniData, geojsonData, chartContainerId, title) {
+                const mapContainer = document.getElementById(chartContainerId);
+                mapContainer.style.display = 'block';
+                if (!mapContainer) {
+                    console.error(`Map container with ID '${chartContainerId}' not found.`);
+                    return;
+                }
+
+                const muniYoYChanges = {};
+                Object.entries(muniData).forEach(([key, data]) => {
+                    const dates = data.map(row => row.date);
+                    const values = data.map(row => row.luminosity);
+
+                    const numericDates = dates.map(d => new Date(d).getTime());
+                    const loessGenerator = science.stats.loess().bandwidth(loess_bandwidth);
+                    const loessValues = loessGenerator(numericDates, values);
+
+                    const smoothedData = dates.map((date, i) => ({
+                        date: new Date(date),
+                        value: loessValues[i]
+                    })).sort((a, b) => a.date - b.date);
+
+                    if (smoothedData.length < 2) {
+                        return;
+                    }
+
+                    const lastPoint = smoothedData[smoothedData.length - 1];
+                    const lastDate = lastPoint.date;
+
+                    const findClosestPoint = (targetDate) => {
+                        return smoothedData.reduce((prev, curr) => {
+                            return (Math.abs(curr.date - targetDate) < Math.abs(prev.date - targetDate) ? curr : prev);
+                        });
+                    };
+
+                    const calculateChange = (startPoint, endPoint) => {
+                        if (!startPoint || !endPoint || startPoint.value === 0 || startPoint.date >= endPoint.date) {
+                            return null;
+                        }
+                        const change = ((endPoint.value - startPoint.value) / startPoint.value) * 100;
+                        return change;
+                    };
+
+                    const oneYearAgoDate = new Date(lastDate);
+                    oneYearAgoDate.setFullYear(lastDate.getFullYear() - 1);
+                    const oneYearAgoPoint = findClosestPoint(oneYearAgoDate);
+                    muniYoYChanges[key] = calculateChange(oneYearAgoPoint, lastPoint);
+                });
+
+                const locations = [];
+                const zValues = [];
+                const hoverTexts = [];
+
+                geojsonData.features.forEach(feature => {
+                    const muniName = feature.properties['name'];
+                    const muniId = sanitizeName(feature.properties['name']);
+                    if (muniId !== undefined) {
+                        locations.push(muniName);
+                        const yoyChange = muniYoYChanges[muniId];
+
+                        if (yoyChange !== null && yoyChange !== undefined) {
+                            zValues.push(yoyChange);
+                            const color = yoyChange >= 0 ? 'green' : 'red';
+                            const sign = yoyChange >= 0 ? '▲' : '▼';
+                            hoverTexts.push(`${muniName}<br>YoY Change: <span style="color: ${color};">${sign} ${Math.abs(yoyChange).toFixed(2)}%</span>`);
+                        } else {
+                            zValues.push(null);
+                            hoverTexts.push(`${muniName}<br>YoY Change: N/A`);
+                        }
+                    } else {
+                        console.warn(`GeoJSON feature missing 'name' property:`, feature);
+                    }
+                });
+
+                const maxAbs = Math.max(...zValues.map(v => Math.abs(v) || 0));
+                const choroplethTrace = {
+                    type: 'choroplethmap',
+                    geojson: geojsonData,
+                    locations: locations,
+                    z: zValues,
+                    zmin: -maxAbs,
+                    zmax: maxAbs,
+                    featureidkey: `properties.name`,
+                    colorscale: [
+                        [0, 'red'],
+                        [0.5, 'white'],
+                        [1, 'green']
+                    ],
+                    autocolorscale: false,
+                    reversescale: false,
+                    colorbar: {
+                        title: 'YoY Luminosity Change (%)',
+                        titleside: 'right'
+                    },
+                    hoverinfo: 'text',
+                    hovertext: hoverTexts,
+                    marker: {
+                        line: {
+                            color: 'white',
+                            width: 0.8
+                        }
+                    },
+                    name: 'YoY Change'
+                };
+
+                // Calculate center
+                let minLon = 180, maxLon = -180, minLat = 90, maxLat = -90;
+                geojsonData.features.forEach(feature => {
+                    if (feature.geometry && feature.geometry.coordinates) {
+                        feature.geometry.coordinates.forEach(polygon => {
+                            polygon.forEach(coord => {
+                                if (Number.isFinite(coord[0]) && Number.isFinite(coord[1])) {
+                                    minLon = Math.min(minLon, coord[0]);
+                                    maxLon = Math.max(maxLon, coord[0]);
+                                    minLat = Math.min(minLat, coord[1]);
+                                    maxLat = Math.max(maxLat, coord[1]);
+                                } else {
+                                    console.log(coord);
+                                }
+                            });
+                        });
+                    }
+                });
+
+                const centerLon = (minLon + maxLon) / 2;
+                const centerLat = (minLat + maxLat) / 2;
+                console.log(centerLat);
+                console.log(centerLon);
+
+                const layout = {
+                    title: {
+                        text: title,
+                        font: { size: 20 },
+                        xref: 'paper',
+                        x: 0
+                    },
+                    height: 600,
+                    autosize: false,
+                    map: {
+                        style: 'light',
+                        center: { lon: centerLon, lat: centerLat },
+                        zoom: 6
+                    },
+                    margin: { l: 0, r: 0, t: 80, b: 0 },
+                    autosize: true
+                };
+
+                Plotly.newPlot(mapContainer, [choroplethTrace], layout, { responsive: true });
+            }
+
             
             async function displayMunicipality(countryKey, muniKey, shouldUpdateUrl = true) {
                 chartWrapper.style.display = 'block';
@@ -685,6 +872,7 @@
                 }
             }
 
+
             function drawChart(data, countryEvents, muniEvents, title) {
                 const dates = data.map(row => row.date);
                 const values = data.map(row => row.luminosity);
@@ -698,16 +886,15 @@
                     marker: { color: 'grey', opacity: 0.7 }
                 };
 
-                const bandwidth = 0.25;
                 const numericDates = dates.map(d => new Date(d).getTime());
-                const loessGenerator = science.stats.loess().bandwidth(bandwidth);
+                const loessGenerator = science.stats.loess().bandwidth(loess_bandwidth);
                 const loessData = loessGenerator(numericDates, values);
 
                 const loessTrace = {
                     x: dates,
                     y: loessData,
                     mode: 'lines',
-                    name: `LOESS Fit (${bandwidth})`,
+                    name: `LOESS Fit (${loess_bandwidth})`,
                     line: { color: '#0056b3', width: 3 }
                 };
 

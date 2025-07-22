@@ -352,7 +352,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const API_BASE_URL = "";
+            const API_BASE_URL = "https://menantlanalysis.github.io/";
 
             const menuToggle = document.getElementById('menu-toggle');
             const menu = document.getElementById('menu');
@@ -369,6 +369,7 @@
             const mainFooter = document.getElementById('main-footer');
             const downloadCsvLink = document.getElementById('download-csv-link');
             const statsSummary = document.getElementById('stats-summary');
+            const mapContainer = document.getElementById('stats-map');
             const loess_bandwidth = 0.25;
             
             let websiteData = {};
@@ -658,7 +659,7 @@
                     drawChart(finalChartData, countryData.events || [], [], countryData.displayName);
                     const response = await fetch(API_BASE_URL + countryData.map);
                     if (!response.ok) throw new Error(`Could not fetch ${countryData.map}`);
-                    drawMuniMap(allMuniData, await response.json(), "stats-map", "By Region");
+                    drawMuniMap(allMuniData, await response.json(), "By Region");
                 } catch (error) {
                     console.error("Error displaying country aggregate:", error);
                     chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;
@@ -672,19 +673,13 @@
              * {id: string, name: string, date: string, luminosity: number}.
              * 'id' should correspond to a 'properties.id' or similar in the GeoJSON features.
              * @param {Object} geojsonData - The GeoJSON object for the municipalities (FeatureCollection).
-             * @param {string} chartContainerId - The ID of the HTML element where the chart will be drawn.
              * @param {string} title - The title of the map.
              * @param {string} featureIdKey - The key in the GeoJSON properties that matches `muniData[i].id`.
              * For example, if your GeoJSON features have `properties.muni_id`, then
              * this should be 'properties.muni_id'.
              */
-            function drawMuniMap(muniData, geojsonData, chartContainerId, title) {
-                const mapContainer = document.getElementById(chartContainerId);
+            function drawMuniMap(muniData, geojsonData, title) {
                 mapContainer.style.display = 'block';
-                if (!mapContainer) {
-                    console.error(`Map container with ID '${chartContainerId}' not found.`);
-                    return;
-                }
 
                 const muniYoYChanges = {};
                 Object.entries(muniData).forEach(([key, data]) => {
@@ -810,12 +805,12 @@
                     const latSpan = maxLat - minLat;
                     const maxSpan = Math.max(lonSpan, latSpan);
 
-                    if (maxSpan > 40) return 3;
-                    if (maxSpan > 20) return 4;
-                    if (maxSpan > 10) return 5;
-                    if (maxSpan > 5) return 6;
-                    if (maxSpan > 2) return 7;
-                    return 8; // Very small area
+                    if (maxSpan > 40) return 2;
+                    if (maxSpan > 20) return 3;
+                    if (maxSpan > 10) return 4;
+                    if (maxSpan > 5) return 5;
+                    if (maxSpan > 2) return 6;
+                    return 7; // Very small area
                 }
 
                 const zoomLevel = estimateZoom(minLon, maxLon, minLat, maxLat);
@@ -829,14 +824,13 @@
                         x: 0
                     },
                     height: 600,
-                    autosize: false,
+                    autosize: true,
                     map: {
                         style: 'light',
                         center: { lon: centerLon, lat: centerLat },
                         zoom: zoomLevel
                     },
-                    margin: { l: 0, r: 0, t: 80, b: 0 },
-                    autosize: true
+                    margin: { l: 0, r: 0, t: 80, b: 0 }
                 };
 
 
@@ -849,6 +843,7 @@
                 chartWrapper.style.display = 'block';
                 showChartLoader();
                 downloadCsvLink.style.display = 'none';
+                mapContainer.style.display = 'none';
 
                 try {
                     if (shouldUpdateUrl) {

@@ -337,7 +337,7 @@
         </nav>
         <main id="content">
             <div id="video-container" style="display:none;">
-                <h3 id="video-title">Video</h3>
+                <h3 id="video-title">Timelapse</h3>
                 <video id="video-player" controls autoplay muted playsinline></video>
             </div>
             <div id="chart-wrapper" style="display:none;">
@@ -631,7 +631,7 @@
                 try {
                     const countryData = websiteData.countries[countryKey];
 
-                    videoTitle.textContent = `${countryData.displayName}`;
+                    videoTitle.textContent = `Timelapse: ${countryData.displayName}`;
                     videoPlayer.src = API_BASE_URL + countryData.video;
                     videoContainer.style.display = 'block';
 
@@ -695,7 +695,7 @@
                     drawChart(finalChartData, countryData.events || [], [], countryData.displayName);
                     const response = await fetch(API_BASE_URL + countryData.map);
                     if (!response.ok) throw new Error(`Could not fetch ${countryData.map}`);
-                    drawMuniMap(allMuniData, await response.json(), "By Region");
+                    drawMuniMap(allMuniData, await response.json(), "Visual Map");
                 } catch (error) {
                     console.error("Error displaying country aggregate:", error);
                     chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;
@@ -798,7 +798,7 @@
                     autocolorscale: false,
                     reversescale: false,
                     colorbar: {
-                        title: 'YoY Luminosity Change (%)',
+                        title: { text: 'YoY (%)' },
                         titleside: 'right'
                     },
                     hoverinfo: 'text',

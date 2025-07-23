@@ -695,7 +695,7 @@
                     drawChart(finalChartData, countryData.events || [], [], countryData.displayName);
                     const response = await fetch(API_BASE_URL + countryData.map);
                     if (!response.ok) throw new Error(`Could not fetch ${countryData.map}`);
-                    drawMuniMap(allMuniData, await response.json(), "Visual Map");
+                    drawMuniMap(allMuniData, await response.json(), "Visualized Luminosity Change (YoY)");
                 } catch (error) {
                     console.error("Error displaying country aggregate:", error);
                     chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;

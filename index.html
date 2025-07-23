@@ -189,7 +189,12 @@
     @media (max-width: 768px) {
         body {
             padding-top: 60px; /* Space for new fixed header */
-            padding-bottom: 80px; /* More space for footer on mobile */
+            padding-bottom: 0px; /* More space for footer on mobile */
+        }
+
+        footer {
+            position: static;
+            padding: 20px 15px;
         }
         
         #main-header {
@@ -245,37 +250,58 @@
             padding: 15px;
         }
     }
+    
+    .summary-content-wrapper {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    }
+
+    #stats-map {
+        /* flex-grow, flex-shrink, flex-basis */
+        flex: 2 1 400px; 
+        /* Set a minimum width to prevent it from being squished */
+        min-width: 350px;
+    }
+
     #stats-table {
         width: 100%;
+        max-width: 550px;
         margin: 0 auto;
         border-collapse: collapse;
         font-size: 1em;
+        table-layout: fixed; /* Ensures equal column widths */
     }
 
     #stats-table th,
     #stats-table td {
-        padding: 12px 15px;
+        padding: 16px; /* Increased padding for better spacing */
         text-align: left;
-        border: 1px solid #e0e0e0; /* Restored visible vertical borders */
+        border: none; /* Remove all cell borders */
+        border-bottom: 1px solid #f0f0f0; /* Use subtle horizontal separators */
+    }
+
+    /* Remove the bottom border from the last row for a clean finish */
+    #stats-table tr:last-child td {
+        border-bottom: none;
     }
 
     #stats-table th {
-        background-color: #f8f8f8; /* Added a light background to header row */
-        color: #555;
+        background-color: transparent;
+        color: #666;
         font-weight: 600;
-        text-transform: uppercase;
-        font-size: 0.8em;
-        letter-spacing: 0.5px;
+        font-size: 0.9em;
     }
 
-    /* Right-align the "Change" header and its data cells */
     #stats-table th:last-child,
     #stats-table td:last-child {
         text-align: right;
     }
 
     #stats-table td:first-child {
-        color: #444;
+        color: #333;
+        font-weight: 500;
     }
 
     #stats-table td:last-child {
@@ -284,6 +310,14 @@
     }
    </style>
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20740W8TXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-20740W8TXW');
+</script>
 <body>
 
     <header id="main-header">
@@ -316,30 +350,32 @@
                 </div>
             </div>
             <div id="stats-summary" style="display:none;">
-                <h3>Summary (LOESS) 📊</h3>
-                <table id="stats-table">
-                    <thead>
-                        <tr>
-                            <th>Metric</th>
-                            <th>Change</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Year-over-Year</td>
-                            <td id="yoy-change">--</td>
-                        </tr>
-                        <tr>
-                            <td>Year-to-Date</td>
-                            <td id="ytd-change">--</td>
-                        </tr>
-                        <tr>
-                            <td>Quarter-to-Date</td>
-                            <td id="qtd-change">--</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div id="stats-map" style="display:none;">
+                <h3>Luminosity Change (LOESS) 📊</h3>
+                <div class="summary-content-wrapper">
+                    <div id="stats-map" style="display:none;">
+                        </div>
+                    <table id="stats-table">
+                        <thead>
+                            <tr>
+                                <th>Timeframe</th>
+                                <th>Luminosity Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Change from Last Year</td>
+                                <td id="yoy-change">--</td>
+                            </tr>
+                            <tr>
+                                <td>Change This Year (YTD)</td>
+                                <td id="ytd-change">--</td>
+                            </tr>
+                            <tr>
+                                <td>Change This Quarter (QTD)</td>
+                                <td id="qtd-change">--</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
@@ -666,18 +702,16 @@
                 }
             }
 
-            /**
-             * Draws a choropleth map of municipalities, colored by Year-over-Year (YoY) luminosity change.
-             *
-             * @param {Array<Object>} muniData - Array of municipality data, each object should have:
-             * {id: string, name: string, date: string, luminosity: number}.
-             * 'id' should correspond to a 'properties.id' or similar in the GeoJSON features.
-             * @param {Object} geojsonData - The GeoJSON object for the municipalities (FeatureCollection).
-             * @param {string} title - The title of the map.
-             * @param {string} featureIdKey - The key in the GeoJSON properties that matches `muniData[i].id`.
-             * For example, if your GeoJSON features have `properties.muni_id`, then
-             * this should be 'properties.muni_id'.
-             */
+
+            function hideMapLibreControls() {
+                const controlContainer = document.querySelector('.maplibregl-control-container');
+
+                if (controlContainer) {
+                    controlContainer.style.display = 'none';
+                }
+            }
+
+
             function drawMuniMap(muniData, geojsonData, title) {
                 mapContainer.style.display = 'block';
 
@@ -789,8 +823,6 @@
                                     maxLon = Math.max(maxLon, coord[0]);
                                     minLat = Math.min(minLat, coord[1]);
                                     maxLat = Math.max(maxLat, coord[1]);
-                                } else {
-                                    console.log(coord);
                                 }
                             });
                         });
@@ -810,7 +842,7 @@
                     if (maxSpan > 10) return 4;
                     if (maxSpan > 5) return 5;
                     if (maxSpan > 2) return 6;
-                    return 7; // Very small area
+                    return 7;
                 }
 
                 const zoomLevel = estimateZoom(minLon, maxLon, minLat, maxLat);
@@ -833,9 +865,8 @@
                     margin: { l: 0, r: 0, t: 80, b: 0 }
                 };
 
-
-
                 Plotly.newPlot(mapContainer, [choroplethTrace], layout, { responsive: true });
+                hideMapLibreControls()
             }
 
             
@@ -854,7 +885,7 @@
                     const prettyMuniName = muniKey.replace(/_\(.*\)|_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()).trim();
                     const title = `${prettyMuniName}, ${countryData.displayName}`;
 
-                    videoTitle.textContent = `Video: ${title}`;
+                    videoTitle.textContent = `Timelapse: ${title}`;
                     videoPlayer.src = API_BASE_URL + muniData.video;
                     videoContainer.style.display = 'block';
 

@@ -622,7 +622,7 @@
             async function displayCountry(countryKey, allMuniData, shouldUpdateUrl = true) {
                 chartWrapper.style.display = 'block';
                 showChartLoader();
-                downloadCsvLink.style.display = 'none'; // Hide link while loading
+                downloadCsvLink.style.display = 'none';
 
                 if (shouldUpdateUrl) {
                     updateUrl(countryKey);
@@ -847,7 +847,6 @@
 
                 const zoomLevel = estimateZoom(minLon, maxLon, minLat, maxLat);
 
-
                 const layout = {
                     title: {
                         text: title,
@@ -864,6 +863,21 @@
                     },
                     margin: { l: 0, r: 0, t: 80, b: 0 }
                 };
+
+                const isMobile = window.innerWidth < 768;
+                if (isMobile) {
+                    choroplethTrace.colorbar = {
+                        title: { text: 'YoY (%)' },
+                        orientation: 'h',      
+                        y: 1,                 
+                        yanchor: 'bottom',     
+                        x: 0.5,                
+                        xanchor: 'center',
+                        len: 0.9,             
+                        lenmode: 'fraction'
+                    };
+                    layout.margin.t = 120;
+                }
 
                 Plotly.newPlot(mapContainer, [choroplethTrace], layout, { responsive: true });
                 hideMapLibreControls()
@@ -945,48 +959,32 @@
 
                 countryEvents.forEach((event) => {
                     shapes.push({
-                        type: 'rect',
-                        xref: 'x',
-                        yref: 'paper',
-                        x0: event.start_date,
-                        y0: 0,
-                        x1: event.end_date,
-                        y1: 1,
+                        type: 'rect', xref: 'x', yref: 'paper',
+                        x0: event.start_date, y0: 0,
+                        x1: event.end_date, y1: 1,
                         fillcolor: 'rgba(211, 47, 47, 0.2)',
                         line: { width: 0 }
                     });
                     annotations.push({
-                        x: event.start_date,
-                        y: 0.1,
-                        yref: 'paper',
-                        text: `${event.name}`,
-                        showarrow: false,
-                        xanchor: 'left',
-                        textangle: -90,
+                        x: event.start_date, y: 0.1, yref: 'paper',
+                        text: `${event.name}`, showarrow: false,
+                        xanchor: 'left', textangle: -90,
                         font: { color: '#b71c1c', size: 13 }
                     });
                 });
 
                 muniEvents.forEach((event) => {
                     shapes.push({
-                        type: 'rect',
-                        xref: 'x',
-                        yref: 'paper',
-                        x0: event.start_date,
-                        y0: 0,
-                        x1: event.end_date,
-                        y1: 1,
+                        type: 'rect', xref: 'x', yref: 'paper',
+                        x0: event.start_date, y0: 0,
+                        x1: event.end_date, y1: 1,
                         fillcolor: 'rgba(25, 118, 210, 0.2)',
                         line: { width: 0 }
                     });
                     annotations.push({
-                        x: event.start_date,
-                        y: 0.1,
-                        yref: 'paper',
-                        text: `${event.name}`,
-                        showarrow: false,
-                        xanchor: 'left',
-                        textangle: -90,
+                        x: event.start_date, y: 0.1, yref: 'paper',
+                        text: `${event.name}`, showarrow: false,
+                        xanchor: 'left', textangle: -90,
                         font: { color: '#0d47a1', size: 13 }
                     });
                 });
@@ -1006,6 +1004,8 @@
                     xaxis: {
                         title: { text: 'Date' },
                         range: [minDate.toISOString().slice(0, 10), maxDate.toISOString().slice(0, 10)],
+                        rangeslider: { visible: true },
+                        type: 'date'
                     },
                     yaxis: { title: { text: 'Luminosity (nW/sr/cm²)' } },
                     shapes: shapes,

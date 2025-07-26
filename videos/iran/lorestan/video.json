@@ -1,0 +1,216 @@
+{
+    "images": [
+        {
+            "path": "iran_20240801_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240802_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240803_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240804_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240805_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240806_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240807_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240808_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240809_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240830_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240831_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240901_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240903_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240904_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240905_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240906_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240907_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20240930_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241001_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241002_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241003_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241004_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241005_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241006_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241007_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241028_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241029_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241030_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241031_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241101_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241127_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241128_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241129_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241130_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241201_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241202_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241203_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241204_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241205_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20241228_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250130_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250131_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250201_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250202_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250326_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250327_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250328_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250329_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250425_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250426_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250427_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250428_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250429_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250430_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250501_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250524_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250525_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250526_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250528_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250529_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250530_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250622_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250623_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250624_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250629_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250722_lorestan.jpeg"
+        },
+        {
+            "path": "iran_20250723_lorestan.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

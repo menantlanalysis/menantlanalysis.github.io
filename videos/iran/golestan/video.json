@@ -1,0 +1,225 @@
+{
+    "images": [
+        {
+            "path": "iran_20240802_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240804_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240805_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240806_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240808_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240809_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240830_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240831_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240901_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240903_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240904_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240905_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240906_golestan.jpeg"
+        },
+        {
+            "path": "iran_20240907_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241001_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241002_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241003_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241004_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241005_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241006_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241007_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241028_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241029_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241030_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241031_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241101_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241128_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241130_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241201_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241203_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241204_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241205_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241227_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241229_golestan.jpeg"
+        },
+        {
+            "path": "iran_20241230_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250101_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250102_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250103_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250104_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250129_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250130_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250131_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250201_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250202_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250225_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250226_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250227_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250228_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250326_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250328_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250329_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250330_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250401_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250402_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250425_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250426_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250427_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250428_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250430_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250501_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250524_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250525_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250526_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250527_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250528_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250529_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250530_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250629_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250722_golestan.jpeg"
+        },
+        {
+            "path": "iran_20250723_golestan.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

@@ -1,0 +1,219 @@
+{
+    "images": [
+        {
+            "path": "iran_20240801_qom.jpeg"
+        },
+        {
+            "path": "iran_20240802_qom.jpeg"
+        },
+        {
+            "path": "iran_20240803_qom.jpeg"
+        },
+        {
+            "path": "iran_20240804_qom.jpeg"
+        },
+        {
+            "path": "iran_20240805_qom.jpeg"
+        },
+        {
+            "path": "iran_20240806_qom.jpeg"
+        },
+        {
+            "path": "iran_20240807_qom.jpeg"
+        },
+        {
+            "path": "iran_20240808_qom.jpeg"
+        },
+        {
+            "path": "iran_20240830_qom.jpeg"
+        },
+        {
+            "path": "iran_20240831_qom.jpeg"
+        },
+        {
+            "path": "iran_20240901_qom.jpeg"
+        },
+        {
+            "path": "iran_20240903_qom.jpeg"
+        },
+        {
+            "path": "iran_20240904_qom.jpeg"
+        },
+        {
+            "path": "iran_20240906_qom.jpeg"
+        },
+        {
+            "path": "iran_20240907_qom.jpeg"
+        },
+        {
+            "path": "iran_20240930_qom.jpeg"
+        },
+        {
+            "path": "iran_20241002_qom.jpeg"
+        },
+        {
+            "path": "iran_20241003_qom.jpeg"
+        },
+        {
+            "path": "iran_20241004_qom.jpeg"
+        },
+        {
+            "path": "iran_20241005_qom.jpeg"
+        },
+        {
+            "path": "iran_20241006_qom.jpeg"
+        },
+        {
+            "path": "iran_20241007_qom.jpeg"
+        },
+        {
+            "path": "iran_20241028_qom.jpeg"
+        },
+        {
+            "path": "iran_20241029_qom.jpeg"
+        },
+        {
+            "path": "iran_20241030_qom.jpeg"
+        },
+        {
+            "path": "iran_20241127_qom.jpeg"
+        },
+        {
+            "path": "iran_20241128_qom.jpeg"
+        },
+        {
+            "path": "iran_20241129_qom.jpeg"
+        },
+        {
+            "path": "iran_20241130_qom.jpeg"
+        },
+        {
+            "path": "iran_20241201_qom.jpeg"
+        },
+        {
+            "path": "iran_20241202_qom.jpeg"
+        },
+        {
+            "path": "iran_20241203_qom.jpeg"
+        },
+        {
+            "path": "iran_20241204_qom.jpeg"
+        },
+        {
+            "path": "iran_20241228_qom.jpeg"
+        },
+        {
+            "path": "iran_20250101_qom.jpeg"
+        },
+        {
+            "path": "iran_20250102_qom.jpeg"
+        },
+        {
+            "path": "iran_20250103_qom.jpeg"
+        },
+        {
+            "path": "iran_20250104_qom.jpeg"
+        },
+        {
+            "path": "iran_20250128_qom.jpeg"
+        },
+        {
+            "path": "iran_20250129_qom.jpeg"
+        },
+        {
+            "path": "iran_20250130_qom.jpeg"
+        },
+        {
+            "path": "iran_20250131_qom.jpeg"
+        },
+        {
+            "path": "iran_20250201_qom.jpeg"
+        },
+        {
+            "path": "iran_20250202_qom.jpeg"
+        },
+        {
+            "path": "iran_20250226_qom.jpeg"
+        },
+        {
+            "path": "iran_20250227_qom.jpeg"
+        },
+        {
+            "path": "iran_20250228_qom.jpeg"
+        },
+        {
+            "path": "iran_20250302_qom.jpeg"
+        },
+        {
+            "path": "iran_20250328_qom.jpeg"
+        },
+        {
+            "path": "iran_20250329_qom.jpeg"
+        },
+        {
+            "path": "iran_20250425_qom.jpeg"
+        },
+        {
+            "path": "iran_20250426_qom.jpeg"
+        },
+        {
+            "path": "iran_20250427_qom.jpeg"
+        },
+        {
+            "path": "iran_20250428_qom.jpeg"
+        },
+        {
+            "path": "iran_20250429_qom.jpeg"
+        },
+        {
+            "path": "iran_20250430_qom.jpeg"
+        },
+        {
+            "path": "iran_20250501_qom.jpeg"
+        },
+        {
+            "path": "iran_20250525_qom.jpeg"
+        },
+        {
+            "path": "iran_20250527_qom.jpeg"
+        },
+        {
+            "path": "iran_20250528_qom.jpeg"
+        },
+        {
+            "path": "iran_20250529_qom.jpeg"
+        },
+        {
+            "path": "iran_20250530_qom.jpeg"
+        },
+        {
+            "path": "iran_20250622_qom.jpeg"
+        },
+        {
+            "path": "iran_20250623_qom.jpeg"
+        },
+        {
+            "path": "iran_20250624_qom.jpeg"
+        },
+        {
+            "path": "iran_20250629_qom.jpeg"
+        },
+        {
+            "path": "iran_20250722_qom.jpeg"
+        },
+        {
+            "path": "iran_20250723_qom.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

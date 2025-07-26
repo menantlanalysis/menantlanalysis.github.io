@@ -1,0 +1,186 @@
+{
+    "images": [
+        {
+            "path": "lebanon_20240801_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240804_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240805_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240806_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240807_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240809_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240830_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240831_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240901_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240903_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240904_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240905_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240906_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20240907_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241001_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241002_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241003_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241004_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241006_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241007_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241028_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241029_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241030_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241031_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241127_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241129_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241130_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241202_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241203_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241205_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20241231_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250101_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250102_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250127_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250128_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250129_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250130_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250201_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250225_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250226_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250301_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250330_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250401_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250402_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250425_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250427_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250428_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250429_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250430_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250525_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250526_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250527_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250530_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250622_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250623_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250629_baalbek-el_hermel.jpeg"
+        },
+        {
+            "path": "lebanon_20250722_baalbek-el_hermel.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

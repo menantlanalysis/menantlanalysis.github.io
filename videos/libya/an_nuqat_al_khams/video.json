@@ -1,0 +1,183 @@
+{
+    "images": [
+        {
+            "path": "libya_20240801_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240802_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240803_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240804_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240805_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240806_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240807_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240808_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240809_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240830_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240831_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240901_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240903_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240905_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20240930_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241001_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241002_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241003_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241029_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241030_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241101_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241127_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241128_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241130_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20241202_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250102_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250127_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250129_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250130_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250202_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250225_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250226_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250228_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250301_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250302_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250303_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250328_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250425_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250426_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250427_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250428_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250429_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250430_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250501_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250526_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250527_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250528_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250529_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250622_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250623_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250624_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250629_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250721_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250722_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250723_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250724_an_nuqat_al_khams.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

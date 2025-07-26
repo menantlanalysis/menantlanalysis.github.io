@@ -1,0 +1,111 @@
+{
+    "images": [
+        {
+            "path": "libya_20240801_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240802_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240803_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240804_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240805_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240806_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240807_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240808_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240809_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240903_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240904_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20240930_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20241004_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20241005_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20241006_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20241028_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250426_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250427_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250428_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250429_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250430_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250501_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250526_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250528_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250622_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250623_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250624_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250629_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250721_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250722_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250723_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20250724_al_marj.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

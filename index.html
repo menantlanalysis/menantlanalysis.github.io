@@ -84,9 +84,9 @@
     }
     /* Style for chart container to prevent collapse */
     #chart-container {
-        min-width: 300px;
         min-height: 500px;
-        flex: 7;
+        flex-basis: 70%;
+        flex-grow: 1;
     }
     #video-player {
         width: 100%;
@@ -257,6 +257,12 @@
         #video-container, #chart-wrapper, #stats-summary {
             padding: 15px;
         }
+        #chart-container {
+            flex-basis: 100%;
+        }
+        #stats-table {
+            flex-grow: 1;
+        }
     }
     
     .summary-content-wrapper {
@@ -268,11 +274,10 @@
 
     #stats-map {
         width: 100%;
-        min-width: 300px;
     }
 
     #stats-table {
-        flex: 3; 
+        flex-basis: 30%; 
         max-width: 320px;
     }
 
@@ -349,7 +354,7 @@
                 </div>
                 <div style="display: flex; flex-wrap: wrap;">
                     <div id="chart-container">
-                        <div class="loader">Loading Chart...</div>
+                        <div class="loader" id="chart-loader">Loading Chart...</div>
                     </div>
                     <table id="stats-table">
                             <thead>
@@ -408,8 +413,9 @@
             const chartContainer = document.getElementById('chart-container');
             const mainFooter = document.getElementById('main-footer');
             const downloadCsvLink = document.getElementById('download-csv-link');
-            const statsSummary = document.getElementById('stats-summary');
+            const statsContainer = document.getElementById('stats-summary');
             const mapContainer = document.getElementById('stats-map');
+            const chartLoader = document.getElementById('chart-loader');
             const loess_bandwidth = 0.25;
             
             let websiteData = {};
@@ -422,12 +428,10 @@
             menuOverlay.addEventListener('click', toggleMenu);
 
             function showChartLoader() {
-                chartContainer.innerHTML = `<div class="loader">Loading Chart...</div>`;
-                statsSummary.style.display = 'none';
+                chartLoader.style.display = 'block';
             }
 
             function calculateAndDisplayStats(dates, loessValues) {
-                const statsContainer = document.getElementById('stats-summary');
                 const yoyCell = document.getElementById('yoy-change');
                 const ytdCell = document.getElementById('ytd-change');
                 const qtdCell = document.getElementById('qtd-change');
@@ -697,8 +701,8 @@
                     downloadCsvLink.href = url;
                     downloadCsvLink.download = `${countryKey}_aggregated.csv`;
                     downloadCsvLink.style.display = 'inline-block';
-                    chartContainer.innerHTML = "";
                     drawChart(finalChartData, countryData.events || [], [], countryData.displayName);
+                    chartLoader.style.display = 'none';
                     const response = await fetch(API_BASE_URL + countryData.map);
                     if (!response.ok) throw new Error(`Could not fetch ${countryData.map}`);
                     drawMuniMap(allMuniData, await response.json(), "Year-over-year Regional Luminosity Shift");
@@ -924,9 +928,11 @@
                             const countryEvents = countryData.events || [];
                             const muniEvents = muniData.events || [];
                             drawChart(chartData, countryEvents, muniEvents, title);
+                            chartLoader.style.display = 'none';
                         },
                         error: (err) => { throw new Error(`CSV Parsing Error: ${err.message}`); }
                     });
+                    statsContainer.style.display = 'none';
                 } catch (error) {
                     console.error("Error displaying municipality:", error);
                     chartContainer.innerHTML = `<div class="error-message">${error.message}</div>`;

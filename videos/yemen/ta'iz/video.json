@@ -1,0 +1,207 @@
+{
+    "images": [
+        {
+            "path": "yemen_20240901_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20240903_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20240905_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20240906_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20240907_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241003_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241004_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241005_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241006_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241007_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241028_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241030_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241031_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241101_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241127_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241128_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241129_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241202_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241203_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241204_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241205_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241227_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241228_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241229_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241230_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20241231_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250101_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250102_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250103_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250104_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250126_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250127_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250128_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250129_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250130_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250201_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250202_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250224_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250225_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250226_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250227_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250228_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250301_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250302_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250303_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250326_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250327_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250328_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250329_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250330_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250331_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250401_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250402_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250425_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250426_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250427_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250428_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250429_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250430_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250501_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250524_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250526_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250622_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20250629_ta'iz.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

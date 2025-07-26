@@ -1,0 +1,174 @@
+{
+    "images": [
+        {
+            "path": "yemen_20240805_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20240808_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20240831_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20240901_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20240905_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20240907_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20240930_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241001_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241002_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241003_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241004_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241005_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241028_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241029_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241030_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241031_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241101_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241128_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241130_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241201_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241202_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20241203_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250130_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250131_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250201_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250225_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250226_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250227_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250228_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250301_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250302_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250326_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250327_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250329_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250330_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250331_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250401_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250402_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250425_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250426_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250427_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250428_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250429_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250430_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250501_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250524_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250525_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250526_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250527_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250529_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250623_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250629_socotra.jpeg"
+        },
+        {
+            "path": "yemen_20250722_socotra.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

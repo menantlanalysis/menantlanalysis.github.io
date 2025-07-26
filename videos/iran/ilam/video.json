@@ -1,0 +1,207 @@
+{
+    "images": [
+        {
+            "path": "iran_20240801_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240802_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240803_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240804_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240805_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240806_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240807_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240808_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240809_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240830_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240831_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240901_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240903_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240904_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240905_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240906_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240907_ilam.jpeg"
+        },
+        {
+            "path": "iran_20240930_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241001_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241002_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241003_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241004_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241005_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241006_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241007_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241028_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241029_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241030_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241031_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241128_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241129_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241130_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241201_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241202_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241203_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241204_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241205_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241229_ilam.jpeg"
+        },
+        {
+            "path": "iran_20241230_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250128_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250129_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250202_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250326_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250327_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250328_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250425_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250426_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250427_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250428_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250429_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250430_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250501_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250524_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250525_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250527_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250528_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250529_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250530_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250622_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250623_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250624_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250629_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250722_ilam.jpeg"
+        },
+        {
+            "path": "iran_20250723_ilam.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

@@ -1,0 +1,165 @@
+{
+    "images": [
+        {
+            "path": "iran_20240804_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240806_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240807_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240808_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240809_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240830_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240831_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240901_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240903_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240904_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240905_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240906_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20240930_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241002_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241003_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241005_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241006_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241007_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241028_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241101_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241127_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241128_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241202_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241203_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241204_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20241228_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250101_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250102_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250103_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250104_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250130_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250202_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250326_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250328_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250329_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250402_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250425_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250426_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250427_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250430_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250501_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250526_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250528_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250529_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250530_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250623_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250624_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250629_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250722_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20250723_qazvin.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

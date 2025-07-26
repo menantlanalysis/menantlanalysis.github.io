@@ -1,0 +1,231 @@
+{
+    "images": [
+        {
+            "path": "syria_20240801_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240802_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240803_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240804_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240805_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240806_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240807_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240808_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240809_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240830_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240831_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240901_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240903_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240904_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240905_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240906_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240907_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20240930_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241002_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241003_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241004_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241005_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241006_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241007_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241028_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241030_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241031_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241101_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241127_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241128_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241129_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241130_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241201_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241202_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241203_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241205_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241227_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20241231_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250101_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250102_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250103_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250127_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250128_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250129_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250131_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250201_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250202_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250224_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250226_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250227_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250301_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250303_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250327_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250330_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250331_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250425_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250426_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250427_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250428_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250429_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250430_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250501_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250527_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250528_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250530_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250622_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250623_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250624_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250629_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250721_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250722_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20250724_aleppo.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

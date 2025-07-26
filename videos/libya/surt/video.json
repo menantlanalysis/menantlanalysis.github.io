@@ -1,0 +1,237 @@
+{
+    "images": [
+        {
+            "path": "libya_20240801_surt.jpeg"
+        },
+        {
+            "path": "libya_20240802_surt.jpeg"
+        },
+        {
+            "path": "libya_20240803_surt.jpeg"
+        },
+        {
+            "path": "libya_20240804_surt.jpeg"
+        },
+        {
+            "path": "libya_20240805_surt.jpeg"
+        },
+        {
+            "path": "libya_20240806_surt.jpeg"
+        },
+        {
+            "path": "libya_20240807_surt.jpeg"
+        },
+        {
+            "path": "libya_20240808_surt.jpeg"
+        },
+        {
+            "path": "libya_20240809_surt.jpeg"
+        },
+        {
+            "path": "libya_20240830_surt.jpeg"
+        },
+        {
+            "path": "libya_20240831_surt.jpeg"
+        },
+        {
+            "path": "libya_20240901_surt.jpeg"
+        },
+        {
+            "path": "libya_20240903_surt.jpeg"
+        },
+        {
+            "path": "libya_20240904_surt.jpeg"
+        },
+        {
+            "path": "libya_20240905_surt.jpeg"
+        },
+        {
+            "path": "libya_20240906_surt.jpeg"
+        },
+        {
+            "path": "libya_20240930_surt.jpeg"
+        },
+        {
+            "path": "libya_20241002_surt.jpeg"
+        },
+        {
+            "path": "libya_20241003_surt.jpeg"
+        },
+        {
+            "path": "libya_20241004_surt.jpeg"
+        },
+        {
+            "path": "libya_20241005_surt.jpeg"
+        },
+        {
+            "path": "libya_20241028_surt.jpeg"
+        },
+        {
+            "path": "libya_20241029_surt.jpeg"
+        },
+        {
+            "path": "libya_20241030_surt.jpeg"
+        },
+        {
+            "path": "libya_20241031_surt.jpeg"
+        },
+        {
+            "path": "libya_20241101_surt.jpeg"
+        },
+        {
+            "path": "libya_20241127_surt.jpeg"
+        },
+        {
+            "path": "libya_20241128_surt.jpeg"
+        },
+        {
+            "path": "libya_20241129_surt.jpeg"
+        },
+        {
+            "path": "libya_20241130_surt.jpeg"
+        },
+        {
+            "path": "libya_20241201_surt.jpeg"
+        },
+        {
+            "path": "libya_20241202_surt.jpeg"
+        },
+        {
+            "path": "libya_20241205_surt.jpeg"
+        },
+        {
+            "path": "libya_20241227_surt.jpeg"
+        },
+        {
+            "path": "libya_20241229_surt.jpeg"
+        },
+        {
+            "path": "libya_20250101_surt.jpeg"
+        },
+        {
+            "path": "libya_20250102_surt.jpeg"
+        },
+        {
+            "path": "libya_20250104_surt.jpeg"
+        },
+        {
+            "path": "libya_20250128_surt.jpeg"
+        },
+        {
+            "path": "libya_20250129_surt.jpeg"
+        },
+        {
+            "path": "libya_20250130_surt.jpeg"
+        },
+        {
+            "path": "libya_20250131_surt.jpeg"
+        },
+        {
+            "path": "libya_20250201_surt.jpeg"
+        },
+        {
+            "path": "libya_20250202_surt.jpeg"
+        },
+        {
+            "path": "libya_20250226_surt.jpeg"
+        },
+        {
+            "path": "libya_20250227_surt.jpeg"
+        },
+        {
+            "path": "libya_20250301_surt.jpeg"
+        },
+        {
+            "path": "libya_20250326_surt.jpeg"
+        },
+        {
+            "path": "libya_20250329_surt.jpeg"
+        },
+        {
+            "path": "libya_20250330_surt.jpeg"
+        },
+        {
+            "path": "libya_20250331_surt.jpeg"
+        },
+        {
+            "path": "libya_20250401_surt.jpeg"
+        },
+        {
+            "path": "libya_20250402_surt.jpeg"
+        },
+        {
+            "path": "libya_20250425_surt.jpeg"
+        },
+        {
+            "path": "libya_20250426_surt.jpeg"
+        },
+        {
+            "path": "libya_20250427_surt.jpeg"
+        },
+        {
+            "path": "libya_20250428_surt.jpeg"
+        },
+        {
+            "path": "libya_20250429_surt.jpeg"
+        },
+        {
+            "path": "libya_20250430_surt.jpeg"
+        },
+        {
+            "path": "libya_20250501_surt.jpeg"
+        },
+        {
+            "path": "libya_20250524_surt.jpeg"
+        },
+        {
+            "path": "libya_20250525_surt.jpeg"
+        },
+        {
+            "path": "libya_20250526_surt.jpeg"
+        },
+        {
+            "path": "libya_20250527_surt.jpeg"
+        },
+        {
+            "path": "libya_20250528_surt.jpeg"
+        },
+        {
+            "path": "libya_20250530_surt.jpeg"
+        },
+        {
+            "path": "libya_20250622_surt.jpeg"
+        },
+        {
+            "path": "libya_20250623_surt.jpeg"
+        },
+        {
+            "path": "libya_20250624_surt.jpeg"
+        },
+        {
+            "path": "libya_20250629_surt.jpeg"
+        },
+        {
+            "path": "libya_20250721_surt.jpeg"
+        },
+        {
+            "path": "libya_20250722_surt.jpeg"
+        },
+        {
+            "path": "libya_20250723_surt.jpeg"
+        },
+        {
+            "path": "libya_20250724_surt.jpeg"
+        }
+    ],
+    "codec": "libx264",
+    "fps": 24,
+    "desired_video_duration_seconds": 30.0,
+    "transition_duration_seconds": 1,
+    "crf": 23,
+    "preset": "medium",
+    "pixelformat": "yuv420p",
+    "gop_size": 240,
+    "profile": "main",
+    "level": "3.1",
+    "tune": "stillimage"
+}

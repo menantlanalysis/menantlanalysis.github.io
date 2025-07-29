@@ -131,7 +131,7 @@
                     "path": "images/yemen/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-07-27",
+                    "date": "2025-07-28",
                     "path": "images/yemen/latest.jpeg"
                 }
             },
@@ -341,7 +341,7 @@
                     "path": "images/iran/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-07-27",
+                    "date": "2025-07-28",
                     "path": "images/iran/latest.jpeg"
                 }
             },
@@ -599,5 +599,5 @@
             }
         }
     },
-    "last_run_date": "2025-07-27"
+    "last_run_date": "2025-07-28"
 }

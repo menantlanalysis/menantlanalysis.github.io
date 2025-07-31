@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fillcolor: e.color === 'country' ? 'rgba(211, 47, 47, 0.2)' : 'rgba(25, 118, 210, 0.2)', line: { width: 0 }
         }));
         const eventAnnotations = events.map(e => ({
-            x: e.start_date, y: 0.1, yref: 'paper', text: e.name, showarrow: false, xanchor: 'left', textangle: -90,
+            x: e.start_date, y: e.color === 'country' ? 0.1 : 0.9, yref: 'paper', text: e.name, showarrow: false, xanchor: e.color === 'country' ? 'left' : 'right', textangle: -90,
             font: { color: e.color === 'country' ? '#b71c1c' : '#0d47a1', size: 13 }
         }));
 

@@ -25,6 +25,11 @@
                 "name": "200% Salary Increase",
                 "start_date": "2025-7-30",
                 "end_date": "2025-7-31"
+            },
+            {
+                "name": "Azerbaijani Gas",
+                "start_date": "2025-8-2",
+                "end_date": "2025-8-3"
             }
         ],
         "municipalities": {
@@ -43,15 +48,6 @@
                         "name": "Coastal Insurgency",
                         "start_date": "2025-3-5",
                         "end_date": "2025-3-8"
-                    }
-                ]
-            },
-            "aleppo": {
-                "events": [
-                    {
-                        "name": "Azerbaijani Gas",
-                        "start_date": "2025-8-2",
-                        "end_date": "2025-8-3"
                     }
                 ]
             }

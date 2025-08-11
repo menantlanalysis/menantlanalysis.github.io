@@ -5,7 +5,7 @@
             "video": "videos/syria/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-08-09",
+                    "date": "2024-08-30",
                     "path": "images/syria/earliest.jpeg"
                 },
                 "latest": {
@@ -78,7 +78,7 @@
             "video": "videos/lebanon/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-08-09",
+                    "date": "2024-08-30",
                     "path": "images/lebanon/earliest.jpeg"
                 },
                 "latest": {
@@ -127,7 +127,7 @@
             "video": "videos/yemen/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-08-09",
+                    "date": "2024-08-30",
                     "path": "images/yemen/earliest.jpeg"
                 },
                 "latest": {
@@ -232,7 +232,7 @@
             "video": "videos/libya/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-08-09",
+                    "date": "2024-08-30",
                     "path": "images/libya/earliest.jpeg"
                 },
                 "latest": {
@@ -337,7 +337,7 @@
             "video": "videos/iran/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-08-09",
+                    "date": "2024-08-30",
                     "path": "images/iran/earliest.jpeg"
                 },
                 "latest": {
@@ -478,7 +478,7 @@
             "video": "videos/egypt/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-08-09",
+                    "date": "2024-08-30",
                     "path": "images/egypt/earliest.jpeg"
                 },
                 "latest": {
@@ -599,5 +599,5 @@
             }
         }
     },
-    "last_run_date": "2025-08-09"
+    "last_run_date": "2025-08-10"
 }

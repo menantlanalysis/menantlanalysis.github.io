@@ -164,6 +164,12 @@
         },
         {
             "path": "libya_20250727_al_marqab.jpeg"
+        },
+        {
+            "path": "libya_20250821_al_marqab.jpeg"
+        },
+        {
+            "path": "libya_20250822_al_marqab.jpeg"
         }
     ],
     "codec": "libx264",

@@ -155,6 +155,12 @@
         },
         {
             "path": "libya_20250727_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250821_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250822_benghazi.jpeg"
         }
     ],
     "codec": "libx264",

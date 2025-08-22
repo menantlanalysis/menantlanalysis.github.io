@@ -185,6 +185,12 @@
         },
         {
             "path": "libya_20250727_al_butnan.jpeg"
+        },
+        {
+            "path": "libya_20250821_al_butnan.jpeg"
+        },
+        {
+            "path": "libya_20250822_al_butnan.jpeg"
         }
     ],
     "codec": "libx264",

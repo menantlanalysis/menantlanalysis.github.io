@@ -152,6 +152,12 @@
         },
         {
             "path": "libya_20250727_oases.jpeg"
+        },
+        {
+            "path": "libya_20250821_oases.jpeg"
+        },
+        {
+            "path": "libya_20250822_oases.jpeg"
         }
     ],
     "codec": "libx264",

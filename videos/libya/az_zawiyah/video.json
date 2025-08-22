@@ -188,6 +188,12 @@
         },
         {
             "path": "libya_20250727_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250821_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250822_az_zawiyah.jpeg"
         }
     ],
     "codec": "libx264",

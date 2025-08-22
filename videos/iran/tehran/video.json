@@ -140,6 +140,9 @@
         },
         {
             "path": "iran_20250722_tehran.jpeg"
+        },
+        {
+            "path": "iran_20250822_tehran.jpeg"
         }
     ],
     "codec": "libx264",

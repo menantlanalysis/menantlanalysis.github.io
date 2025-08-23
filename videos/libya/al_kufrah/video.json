@@ -227,6 +227,9 @@
         },
         {
             "path": "libya_20250822_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250823_al_kufrah.jpeg"
         }
     ],
     "codec": "libx264",

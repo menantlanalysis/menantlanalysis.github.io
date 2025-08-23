@@ -134,6 +134,9 @@
         },
         {
             "path": "lebanon_20250727_north.jpeg"
+        },
+        {
+            "path": "lebanon_20250823_north.jpeg"
         }
     ],
     "codec": "libx264",

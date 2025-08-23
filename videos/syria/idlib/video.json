@@ -212,6 +212,9 @@
         },
         {
             "path": "syria_20250822_idlib.jpeg"
+        },
+        {
+            "path": "syria_20250823_idlib.jpeg"
         }
     ],
     "codec": "libx264",

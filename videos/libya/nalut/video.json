@@ -206,6 +206,9 @@
         },
         {
             "path": "libya_20250822_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250823_nalut.jpeg"
         }
     ],
     "codec": "libx264",

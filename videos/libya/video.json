@@ -263,6 +263,9 @@
         },
         {
             "path": "libya_20250822.jpeg"
+        },
+        {
+            "path": "libya_20250823.jpeg"
         }
     ],
     "codec": "libx264",

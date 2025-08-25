@@ -30,6 +30,11 @@
                 "name": "Azerbaijani Gas",
                 "start_date": "2025-8-11",
                 "end_date": "2025-8-12"
+            },
+            {
+                "name": "SWIFT Return",
+                "start_date": "2025-8-25",
+                "end_date": "2025-8-26"
             }
         ],
         "municipalities": {

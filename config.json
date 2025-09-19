@@ -82,7 +82,7 @@
                     "path": "images/lebanon/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-08-26",
+                    "date": "2025-09-18",
                     "path": "images/lebanon/latest.jpeg"
                 }
             },
@@ -131,7 +131,7 @@
                     "path": "images/yemen/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-08-27",
+                    "date": "2025-09-18",
                     "path": "images/yemen/latest.jpeg"
                 }
             },
@@ -236,7 +236,7 @@
                     "path": "images/libya/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-08-27",
+                    "date": "2025-09-18",
                     "path": "images/libya/latest.jpeg"
                 }
             },
@@ -482,7 +482,7 @@
                     "path": "images/egypt/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-08-27",
+                    "date": "2025-09-18",
                     "path": "images/egypt/latest.jpeg"
                 }
             },
@@ -599,5 +599,5 @@
             }
         }
     },
-    "last_run_date": "2025-09-17"
+    "last_run_date": "2025-09-18"
 }

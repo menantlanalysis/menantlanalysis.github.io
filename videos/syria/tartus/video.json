@@ -80,6 +80,9 @@
         },
         {
             "path": "syria_20250921_tartus.jpeg"
+        },
+        {
+            "path": "syria_20250923_tartus.jpeg"
         }
     ],
     "codec": "libx264",

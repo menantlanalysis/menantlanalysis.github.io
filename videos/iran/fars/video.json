@@ -185,6 +185,9 @@
         },
         {
             "path": "iran_20250923_fars.jpeg"
+        },
+        {
+            "path": "iran_20250924_fars.jpeg"
         }
     ],
     "codec": "libx264",

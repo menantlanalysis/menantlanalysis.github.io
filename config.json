@@ -9,7 +9,7 @@
                     "path": "images/syria/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-09-24",
+                    "date": "2025-10-17",
                     "path": "images/syria/latest.jpeg"
                 }
             },
@@ -82,7 +82,7 @@
                     "path": "images/lebanon/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-09-24",
+                    "date": "2025-10-17",
                     "path": "images/lebanon/latest.jpeg"
                 }
             },
@@ -131,7 +131,7 @@
                     "path": "images/yemen/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-09-24",
+                    "date": "2025-10-17",
                     "path": "images/yemen/latest.jpeg"
                 }
             },
@@ -599,5 +599,5 @@
             }
         }
     },
-    "last_run_date": "2025-10-16"
+    "last_run_date": "2025-10-17"
 }

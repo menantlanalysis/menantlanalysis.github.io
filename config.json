@@ -13,6 +13,7 @@
                     "path": "images/syria/latest.jpeg"
                 }
             },
+            "diff": "images/syria/diff.jpeg",
             "map": "maps/syria.json",
             "municipalities": {
                 "homs_(hims)": {
@@ -86,6 +87,7 @@
                     "path": "images/lebanon/latest.jpeg"
                 }
             },
+            "diff": "images/lebanon/diff.jpeg",
             "map": "maps/lebanon.json",
             "municipalities": {
                 "north": {
@@ -135,6 +137,7 @@
                     "path": "images/yemen/latest.jpeg"
                 }
             },
+            "diff": "images/yemen/diff.jpeg",
             "map": "maps/yemen.json",
             "municipalities": {
                 "ibb": {
@@ -240,6 +243,7 @@
                     "path": "images/libya/latest.jpeg"
                 }
             },
+            "diff": "images/libya/diff.jpeg",
             "map": "maps/libya.json",
             "municipalities": {
                 "nalut": {
@@ -345,6 +349,7 @@
                     "path": "images/iran/latest.jpeg"
                 }
             },
+            "diff": "images/iran/diff.jpeg",
             "map": "maps/iran.json",
             "municipalities": {
                 "west_azarbaijan": {
@@ -486,6 +491,7 @@
                     "path": "images/egypt/latest.jpeg"
                 }
             },
+            "diff": "images/egypt/diff.jpeg",
             "map": "maps/egypt.json",
             "municipalities": {
                 "shamal_sina'": {

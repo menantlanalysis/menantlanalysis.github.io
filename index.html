@@ -52,7 +52,7 @@
             padding: 20px;
             overflow-y: auto;
         }
-        #video-container, #chart-wrapper, #stats-summary, #lightbox-container {
+        #video-container, #chart-wrapper, #stats-summary, #lightbox-container, #diff-container {
             background-color: var(--bg-color);
             padding: 20px;
             border-radius: var(--border-radius);
@@ -247,7 +247,7 @@
             body.menu-is-open #menu-toggle span:nth-child(2) { opacity: 0; }
             body.menu-is-open #menu-toggle span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
             #content { width: 100%; padding: 15px; box-sizing: border-box; }
-            #video-container, #chart-wrapper, #stats-summary, #lightbox-container { padding: 15px; }
+            #video-container, #chart-wrapper, #stats-summary, #lightbox-container, #diff-container { padding: 15px; }
             #chart-container, #stats-table { flex-basis: 100%; }
         }
     </style>
@@ -285,6 +285,10 @@
                 <h3>Satellite Image Comparison </h3>
                 <div id="lightbox-content">
                 </div>
+            </div>
+            <div id="diff-container"  style="display: none;">
+                <h3>YoY Comparison </h3>
+                <image id="diff-content"/>
             </div>
             <div id="chart-wrapper" style="display: none;">
                 <div class="chart-header">

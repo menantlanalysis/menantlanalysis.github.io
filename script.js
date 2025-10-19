@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         chartContainer: document.getElementById('chart-container'),
         lightBoxContainer: document.getElementById('lightbox-container'),
         lightBoxContent: document.getElementById('lightbox-content'),
+        diffContainer: document.getElementById('diff-container'),
+        diffContent:  document.getElementById('diff-content'),
         mainFooter: document.getElementById('main-footer'),
         downloadCsvLink: document.getElementById('download-csv-link'),
         statsContainer: document.getElementById('stats-summary'),
@@ -370,6 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.statsContainer.style.display = 'none';
         elements.mapContainer.style.display = 'none';
         elements.lightBoxContainer.style.display = 'none';
+        elements.diffContainer.style.display = 'none';
 
         try {
             if (shouldUpdateUrl) updateUrl(countryKey, muniKey);
@@ -416,6 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.videoContainer.style.display = 'block';
         elements.chartWrapper.style.display = 'block';
         elements.lightBoxContainer.style.display = 'block';
+        elements.diffContainer.style.display = 'block';
         
         try {
             if (shouldUpdateUrl) updateUrl(countryKey);
@@ -448,6 +452,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const allEvents = (country.events || []).map(e => ({...e, color: 'country'}));
             drawChart(aggregated, allEvents, country.displayName);
             drawMap(allMuniData, geojsonData, "Year-over-year Regional Luminosity Shift");
+
+            elements.diffContent.src = API_BASE_URL + country.diff;
 
             createJuxtaposeSlider('#lightbox-content', country.lightbox.earliest,  country.lightbox.latest);
         } catch (error) {

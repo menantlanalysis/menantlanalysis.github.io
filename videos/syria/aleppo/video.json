@@ -164,6 +164,12 @@
         },
         {
             "path": "syria_20250924_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20251023_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20251025_aleppo.jpeg"
         }
     ],
     "codec": "libx264",

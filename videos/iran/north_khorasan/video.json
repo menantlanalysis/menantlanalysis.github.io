@@ -113,6 +113,15 @@
         },
         {
             "path": "iran_20250924_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251021_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251023_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251025_north_khorasan.jpeg"
         }
     ],
     "codec": "libx264",

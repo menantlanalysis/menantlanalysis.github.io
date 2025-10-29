@@ -167,6 +167,12 @@
         },
         {
             "path": "iran_20250924_golestan.jpeg"
+        },
+        {
+            "path": "iran_20251023_golestan.jpeg"
+        },
+        {
+            "path": "iran_20251025_golestan.jpeg"
         }
     ],
     "codec": "libx264",

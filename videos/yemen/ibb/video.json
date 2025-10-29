@@ -185,6 +185,12 @@
         },
         {
             "path": "yemen_20250823_ibb.jpeg"
+        },
+        {
+            "path": "yemen_20251020_ibb.jpeg"
+        },
+        {
+            "path": "yemen_20251021_ibb.jpeg"
         }
     ],
     "codec": "libx264",

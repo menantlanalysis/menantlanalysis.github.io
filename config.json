@@ -9,7 +9,7 @@
                     "path": "images/syria/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-17",
+                    "date": "2025-10-25",
                     "path": "images/syria/latest.jpeg"
                 }
             },
@@ -83,7 +83,7 @@
                     "path": "images/lebanon/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-17",
+                    "date": "2025-10-23",
                     "path": "images/lebanon/latest.jpeg"
                 }
             },
@@ -133,7 +133,7 @@
                     "path": "images/yemen/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-17",
+                    "date": "2025-10-25",
                     "path": "images/yemen/latest.jpeg"
                 }
             },
@@ -235,11 +235,11 @@
             "video": "videos/libya/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-09-04",
+                    "date": "2024-10-04",
                     "path": "images/libya/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-09-24",
+                    "date": "2025-10-26",
                     "path": "images/libya/latest.jpeg"
                 }
             },
@@ -341,11 +341,11 @@
             "video": "videos/iran/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-09-04",
+                    "date": "2024-10-04",
                     "path": "images/iran/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-09-24",
+                    "date": "2025-10-26",
                     "path": "images/iran/latest.jpeg"
                 }
             },
@@ -483,11 +483,11 @@
             "video": "videos/egypt/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-09-04",
+                    "date": "2024-10-04",
                     "path": "images/egypt/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-09-24",
+                    "date": "2025-10-26",
                     "path": "images/egypt/latest.jpeg"
                 }
             },
@@ -605,5 +605,5 @@
             }
         }
     },
-    "last_run_date": "2025-10-18"
+    "last_run_date": "2025-10-28"
 }

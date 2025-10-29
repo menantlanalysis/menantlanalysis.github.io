@@ -77,6 +77,12 @@
         },
         {
             "path": "libya_20250924_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20251019_al_marj.jpeg"
+        },
+        {
+            "path": "libya_20251026_al_marj.jpeg"
         }
     ],
     "codec": "libx264",

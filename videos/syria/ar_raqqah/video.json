@@ -179,6 +179,12 @@
         },
         {
             "path": "syria_20251017_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251023_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251025_ar_raqqah.jpeg"
         }
     ],
     "codec": "libx264",

@@ -37,6 +37,38 @@ document.addEventListener('DOMContentLoaded', () => {
             const loess = science.stats.loess().bandwidth(LOESS_BANDWIDTH)(dates, values);
             return data.map((d, i) => ({ date: new Date(d.date), value: loess[i] }));
         },
+        getSlidingWindowAverage: (data, days = 30) => {
+            if (data.length === 0) return [];
+            const processedData = data.map(d => ({
+                date: new Date(d.date),
+                value: d.luminosity
+            })).sort((a, b) => a.date - b.date);
+
+            const averagedData = [];
+            const windowMs = days * 24 * 60 * 60 * 1000; 
+            let startPtr = 0;  
+            let windowSum = 0; 
+
+            for (let endPtr = 0; endPtr < processedData.length; endPtr++) {
+                const currentPoint = processedData[endPtr];
+                const endDate = currentPoint.date.getTime();
+                
+                windowSum += currentPoint.value;
+
+                const startDate = endDate - windowMs;
+
+                while (processedData[startPtr].date.getTime() < startDate) {
+                    windowSum -= processedData[startPtr].value;
+                    startPtr++;
+                }
+
+                const windowCount = endPtr - startPtr + 1;
+                const average = windowSum / windowCount;
+                averagedData.push({ date: currentPoint.date, value: average });
+            }
+
+            return averagedData;
+        },
         calculateChange: (start, end) => {
             if (!start || !end || start.value === 0 || start.date >= end.date) return null;
             return ((end.value - start.value) / start.value) * 100;
@@ -49,6 +81,27 @@ document.addEventListener('DOMContentLoaded', () => {
             const color = change >= 0 ? 'green' : 'red';
             const sign = change >= 0 ? '▲' : '▼';
             return `<span style="color: ${color};">${sign} ${Math.abs(change).toFixed(2)}%</span>`;
+        },
+        getAverageForWindow: (data, startDate, endDate) => {
+            const startDateMs = new Date(startDate).getTime();
+            const endDateMs = new Date(endDate).getTime();
+
+            if (startDateMs > endDateMs) {
+                return null;
+            }
+
+            const pointsInWindow = data.filter(d => {
+                const pointDateMs = new Date(d.date).getTime();
+                return pointDateMs >= startDateMs && pointDateMs <= endDateMs;
+            });
+
+            if (pointsInWindow.length === 0) {
+                return null;
+            }
+
+            const sum = pointsInWindow.reduce((acc, curr) => acc + curr.luminosity, 0);
+            const average = sum / pointsInWindow.length;
+            return { date: new Date(endDate), value: average };
         }
     };
 
@@ -80,6 +133,54 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.yoyCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(yoyDate, smoothed), lastPoint));
             elements.ytdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(ytdDate, smoothed), lastPoint));
             elements.qtdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(qtdDate, smoothed), lastPoint));
+            elements.statsContainer.style.display = 'block';
+        },
+        updateStats30Day: (data) => {
+            if (data.length < 2) {
+                elements.statsContainer.style.display = 'none';
+                return;
+            }
+
+            const windowSizeDays = 30;
+            // Convert window size to milliseconds (minus 1ms to make the window start correct)
+            // E.g., for a 30-day window ending today, we want 29 days *ago* + today.
+            const windowMs = (windowSizeDays - 1) * 24 * 60 * 60 * 1000;
+
+            // Find the most recent date from the raw data
+            const allDates = data.map(d => new Date(d.date).getTime());
+            const lastDateMs = Math.max(...allDates);
+            const lastDate = new Date(lastDateMs);
+
+            // --- Define Window Start/End Dates ---
+
+            // 1. Last 30-day window (Trailing)
+            const lastWindowStartDate = new Date(lastDateMs - windowMs);
+            const lastWindowEndDate = lastDate;
+
+            // 2. YoY window (Trailing)
+            const yoyEndDate = new Date(lastDate);
+            yoyEndDate.setFullYear(lastDate.getFullYear() - 1);
+            const yoyStartDate = new Date(yoyEndDate.getTime() - windowMs);
+
+            // 3. YTD window (Starting)
+            const ytdStartDate = new Date(lastDate.getFullYear(), 0, 1); // Jan 1st
+            const ytdEndDate = new Date(ytdStartDate.getTime() + windowMs);
+
+            // 4. QTD window (Starting)
+            const qtdStartDate = new Date(lastDate.getFullYear(), Math.floor(lastDate.getMonth() / 3) * 3, 1);
+            const qtdEndDate = new Date(qtdStartDate.getTime() + windowMs);
+
+            // --- Calculate Averages using the *single* new helper ---
+            const lastWindowAvg = statsUtil.getAverageForWindow(data, lastWindowStartDate, lastWindowEndDate);
+            const yoyWindowAvg = statsUtil.getAverageForWindow(data, yoyStartDate, yoyEndDate);
+            const ytdWindowAvg = statsUtil.getAverageForWindow(data, ytdStartDate, ytdEndDate);
+            const qtdWindowAvg = statsUtil.getAverageForWindow(data, qtdStartDate, qtdEndDate);
+
+            // --- Update UI ---
+            elements.yoyCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(yoyWindowAvg, lastWindowAvg));
+            elements.ytdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(ytdWindowAvg, lastWindowAvg));
+            elements.qtdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(qtdWindowAvg, lastWindowAvg));
+
             elements.statsContainer.style.display = 'block';
         },
         updateFooter: (lastRunDate) => {
@@ -162,7 +263,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const drawChart = (data, events, title) => {
         const dates = data.map(d => d.date);
+
+        // --- MODIFICATIONS START ---
+        // 1. Calculate both smoothed and averaged data
         const smoothed = statsUtil.getSmoothedData(data);
+        const movingAverage = statsUtil.getSlidingWindowAverage(data, 30); // Or just statsUtil.getSlidingWindowAverage(data)
+        // --- MODIFICATIONS END ---
+
         const eventShapes = events.map(e => ({
             type: 'rect', xref: 'x', yref: 'paper', x0: e.start_date, y0: 0, x1: e.end_date, y1: 1,
             fillcolor: e.color === 'country' ? 'rgba(211, 47, 47, 0.2)' : 'rgba(25, 118, 210, 0.2)', line: { width: 0 }
@@ -180,7 +287,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         Plotly.newPlot(elements.chartContainer, [
             { x: dates, y: data.map(d => d.luminosity), mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'grey', opacity: 0.7 } },
-            { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: '#0056b3', width: 3 } }
+            { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: '#0056b3', width: 3 } },
+            
+            // --- MODIFICATIONS START ---
+            // 2. Add the new trace for the moving average
+            { 
+                x: movingAverage.map(d => d.date), 
+                y: movingAverage.map(d => d.value), 
+                mode: 'lines', 
+                name: `30-Day Avg`, 
+                line: { color: '#ff7f0e', width: 2, dash: 'dot' } // Example: orange, dotted line
+            }
+            // --- MODIFICATIONS END ---
+
         ], {
             title: { text: `Total Nighttime Luminosity: ${title}`, font: { size: 20 }, x: 0.5 },
             xaxis: { title: 'Date', rangeslider: { visible: true }, type: 'date', range: [priorDate.toISOString().slice(0, 10), latestDate.toISOString().slice(0, 10)] },
@@ -188,6 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
             shapes: eventShapes, annotations: eventAnnotations, showlegend: true, legend: { x: 1, xanchor: 'right', y: 1 }, margin: { l: 60, r: 20, t: 80, b: 50 }, dragmode: 'pan'
         }, { responsive: true });
         
+        // Assuming 'ui' is defined elsewhere
         ui.updateStats(data);
         ui.setLoading(false);
     };

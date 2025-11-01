@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         yoyCell: document.getElementById('yoy-change'),
         ytdCell: document.getElementById('ytd-change'),
         qtdCell: document.getElementById('qtd-change'),
+        peakCell: document.getElementById('peak-change'),
     };
 
     const statsUtil = {
@@ -68,6 +69,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             return averagedData;
+        },
+        getPeakNDayAverageForYear: (slidingWindowData, year) => {
+            const yearData = slidingWindowData.filter(d => 
+                new Date(d.date).getFullYear() === year
+            );
+
+            if (yearData.length === 0) {
+                return null;
+            }
+
+            const peakPoint = yearData.reduce((prev, curr) => 
+                (curr.value > prev.value) ? curr : prev
+            );
+            
+            return peakPoint;
         },
         calculateChange: (start, end) => {
             if (!start || !end || start.value === 0 || start.date >= end.date) return null;
@@ -133,6 +149,20 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.yoyCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(yoyDate, smoothed), lastPoint));
             elements.ytdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(ytdDate, smoothed), lastPoint));
             elements.qtdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(qtdDate, smoothed), lastPoint));
+
+            const slidingWindowAvgs = statsUtil.getSlidingWindowAverage(data, 90);
+        
+            if (slidingWindowAvgs.length > 0 && elements.peakCell) {
+                const currentYear = lastDate.getFullYear();
+                const previousYear = currentYear - 1;
+                const prevYearPeak = statsUtil.getPeakNDayAverageForYear(slidingWindowAvgs, previousYear);
+                const currentYearPeak = statsUtil.getPeakNDayAverageForYear(slidingWindowAvgs, currentYear);
+                const peakChange = statsUtil.calculateChange(prevYearPeak, currentYearPeak);
+                elements.peakCell.innerHTML = statsUtil.formatChange(peakChange);
+                
+            } else if (elements.peakCell) {
+                elements.peakCell.innerHTML = 'N/A';
+            }
             elements.statsContainer.style.display = 'block';
         },
         updateStats30Day: (data) => {
@@ -264,11 +294,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const drawChart = (data, events, title) => {
         const dates = data.map(d => d.date);
 
-        // --- MODIFICATIONS START ---
-        // 1. Calculate both smoothed and averaged data
         const smoothed = statsUtil.getSmoothedData(data);
-        const movingAverage = statsUtil.getSlidingWindowAverage(data, 30); // Or just statsUtil.getSlidingWindowAverage(data)
-        // --- MODIFICATIONS END ---
+        const movingAverage = statsUtil.getSlidingWindowAverage(data, 90); 
 
         const eventShapes = events.map(e => ({
             type: 'rect', xref: 'x', yref: 'paper', x0: e.start_date, y0: 0, x1: e.end_date, y1: 1,
@@ -289,16 +316,13 @@ document.addEventListener('DOMContentLoaded', () => {
             { x: dates, y: data.map(d => d.luminosity), mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'grey', opacity: 0.7 } },
             { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: '#0056b3', width: 3 } },
             
-            // --- MODIFICATIONS START ---
-            // 2. Add the new trace for the moving average
             { 
                 x: movingAverage.map(d => d.date), 
                 y: movingAverage.map(d => d.value), 
                 mode: 'lines', 
-                name: `30-Day Avg`, 
-                line: { color: '#ff7f0e', width: 2, dash: 'dot' } // Example: orange, dotted line
+                name: `90-Day Avg`, 
+                line: { color: '#ff7f0e', width: 2, dash: 'dot' }
             }
-            // --- MODIFICATIONS END ---
 
         ], {
             title: { text: `Total Nighttime Luminosity: ${title}`, font: { size: 20 }, x: 0.5 },

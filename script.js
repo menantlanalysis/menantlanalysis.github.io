@@ -70,8 +70,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
             return averagedData;
         },
-        getPeakNDayAverageForYear: (slidingWindowData, year) => {
-            const yearData = slidingWindowData.filter(d => 
+        getMonthlyAverage: (data) => {
+            if (data.length === 0) return [];
+            const allDatesMs = data.map(d => new Date(d.date).getTime());
+            const latestDataDateMs = Math.max(...allDatesMs);
+            const latestDataDate = new Date(latestDataDateMs);
+            const latestYear = latestDataDate.getFullYear();
+            const latestMonth = latestDataDate.getMonth(); // 0-11
+
+            const monthlyAggregates = new Map();
+            for (const d of data) {
+                const date = new Date(d.date);
+                const value = d.luminosity;
+                const year = date.getFullYear();
+                const month = date.getMonth();
+                
+                const key = `${year}-${month}`;
+
+                if (!monthlyAggregates.has(key)) {
+                    monthlyAggregates.set(key, { 
+                        sum: 0, 
+                        count: 0, 
+                        lastDateMsInMonth: date.getTime() 
+                    });
+                }
+                
+                const current = monthlyAggregates.get(key);
+                current.sum += value;
+                current.count += 1;
+                
+                if (date.getTime() > current.lastDateMsInMonth) {
+                    current.lastDateMsInMonth = date.getTime();
+                }
+            }
+
+            const result = [];
+            for (const [key, { sum, count, lastDateMsInMonth }] of monthlyAggregates.entries()) {
+                const [yearStr, monthStr] = key.split('-');
+                const year = parseInt(yearStr, 10);
+                const month = parseInt(monthStr, 10);
+                
+                const average = sum / count;
+                
+                let plotDate;
+
+                const isLatestMonth = (year === latestYear && month === latestMonth);
+
+                if (isLatestMonth) {
+                    plotDate = new Date(lastDateMsInMonth);
+                } else {
+                    plotDate = new Date(year, month + 1, 0);
+                }
+                
+                result.push({ date: plotDate, value: average });
+            }
+            result.sort((a, b) => a.date - b.date);
+            
+            return result;
+        },
+        getMaxForYear: (data, year) => {
+            const yearData = data.filter(d => 
                 new Date(d.date).getFullYear() === year
             );
 
@@ -149,14 +207,12 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.yoyCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(yoyDate, smoothed), lastPoint));
             elements.ytdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(ytdDate, smoothed), lastPoint));
             elements.qtdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(qtdDate, smoothed), lastPoint));
-
-            const slidingWindowAvgs = statsUtil.getSlidingWindowAverage(data, 90);
         
-            if (slidingWindowAvgs.length > 0 && elements.peakCell) {
+            if (smoothed.length > 0 && elements.peakCell) {
                 const currentYear = lastDate.getFullYear();
                 const previousYear = currentYear - 1;
-                const prevYearPeak = statsUtil.getPeakNDayAverageForYear(slidingWindowAvgs, previousYear);
-                const currentYearPeak = statsUtil.getPeakNDayAverageForYear(slidingWindowAvgs, currentYear);
+                const prevYearPeak = statsUtil.getMaxForYear(smoothed, previousYear);
+                const currentYearPeak = statsUtil.getMaxForYear(smoothed, currentYear);
                 const peakChange = statsUtil.calculateChange(prevYearPeak, currentYearPeak);
                 elements.peakCell.innerHTML = statsUtil.formatChange(peakChange);
                 
@@ -295,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dates = data.map(d => d.date);
 
         const smoothed = statsUtil.getSmoothedData(data);
-        const movingAverage = statsUtil.getSlidingWindowAverage(data, 90); 
+        const monthlyAverage = statsUtil.getMonthlyAverage(data); 
 
         const eventShapes = events.map(e => ({
             type: 'rect', xref: 'x', yref: 'paper', x0: e.start_date, y0: 0, x1: e.end_date, y1: 1,
@@ -313,17 +369,15 @@ document.addEventListener('DOMContentLoaded', () => {
         priorDate.setFullYear(priorDate.getFullYear() - yearsToShow);
 
         Plotly.newPlot(elements.chartContainer, [
-            { x: dates, y: data.map(d => d.luminosity), mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'grey', opacity: 0.7 } },
-            { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: '#0056b3', width: 3 } },
-            
+            { x: dates, y: data.map(d => d.luminosity), mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'green', opacity: 0.7 } },
+            { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: 'blue', width: 3 } },  
             { 
-                x: movingAverage.map(d => d.date), 
-                y: movingAverage.map(d => d.value), 
-                mode: 'lines', 
-                name: `90-Day Avg`, 
-                line: { color: '#ff7f0e', width: 2, dash: 'dot' }
+                x: monthlyAverage.map(d => d.date), 
+                y: monthlyAverage.map(d => d.value), 
+                type: 'bar', 
+                name: `Monthly Avg`, 
+                marker: { color: 'lightblue', width: '0.8', opacity: '0.7'}
             }
-
         ], {
             title: { text: `Total Nighttime Luminosity: ${title}`, font: { size: 20 }, x: 0.5 },
             xaxis: { title: 'Date', rangeslider: { visible: true }, type: 'date', range: [priorDate.toISOString().slice(0, 10), latestDate.toISOString().slice(0, 10)] },
@@ -360,6 +414,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const lastPoint = smoothedData[smoothedData.length - 1];
             const lastDate = lastPoint.date;
 
+            const prevYearPeak = statsUtil.getMaxForYear(smoothedData, lastDate.getFullYear() - 1);
+            const currentYearPeak = statsUtil.getMaxForYear(smoothedData, lastDate.getFullYear());
+            const peakChange = statsUtil.calculateChange(prevYearPeak, currentYearPeak);
+
+
             const findClosestPoint = (targetDate) => {
                 return smoothedData.reduce((prev, curr) => {
                     return (Math.abs(curr.date - targetDate) < Math.abs(prev.date - targetDate) ? curr : prev);
@@ -377,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const oneYearAgoDate = new Date(lastDate);
             oneYearAgoDate.setFullYear(lastDate.getFullYear() - 1);
             const oneYearAgoPoint = findClosestPoint(oneYearAgoDate);
-            muniYoYChanges[key] = calculateChange(oneYearAgoPoint, lastPoint);
+            muniYoYChanges[key] = peakChange;
         });
 
         const locations = [];
@@ -424,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
             autocolorscale: false,
             reversescale: false,
             colorbar: {
-                title: { text: 'YoY (%)' },
+                title: { text: 'Peak YoY (%)' },
                 titleside: 'right'
             },
             hoverinfo: 'text',
@@ -493,7 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isMobile = window.innerWidth < 768;
         if (isMobile) {
             choroplethTrace.colorbar = {
-                title: { text: 'YoY (%)' },
+                title: { text: 'Peak YoY (%)' },
                 orientation: 'h',      
                 y: 1,                 
                 yanchor: 'bottom',     
@@ -595,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const allEvents = (country.events || []).map(e => ({...e, color: 'country'}));
             drawChart(aggregated, allEvents, country.displayName);
-            drawMap(allMuniData, geojsonData, "Year-over-year Regional Luminosity Shift");
+            drawMap(allMuniData, geojsonData, "Year-over-year Peak Regional Luminosity Shift");
 
             elements.diffContent.src = API_BASE_URL + country.diff;
 

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lightBoxContainer: document.getElementById('lightbox-container'),
         lightBoxContent: document.getElementById('lightbox-content'),
         diffContainer: document.getElementById('diff-container'),
-        diffContent:  document.getElementById('diff-content'),
+        diffContent: document.getElementById('diff-content'),
         mainFooter: document.getElementById('main-footer'),
         downloadCsvLink: document.getElementById('download-csv-link'),
         statsContainer: document.getElementById('stats-summary'),
@@ -46,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
             })).sort((a, b) => a.date - b.date);
 
             const averagedData = [];
-            const windowMs = days * 24 * 60 * 60 * 1000; 
-            let startPtr = 0;  
-            let windowSum = 0; 
+            const windowMs = days * 24 * 60 * 60 * 1000;
+            let startPtr = 0;
+            let windowSum = 0;
 
             for (let endPtr = 0; endPtr < processedData.length; endPtr++) {
                 const currentPoint = processedData[endPtr];
                 const endDate = currentPoint.date.getTime();
-                
+
                 windowSum += currentPoint.value;
 
                 const startDate = endDate - windowMs;
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const latestDataDateMs = Math.max(...allDatesMs);
             const latestDataDate = new Date(latestDataDateMs);
             const latestYear = latestDataDate.getFullYear();
-            const latestMonth = latestDataDate.getMonth(); // 0-11
+            const latestMonth = latestDataDate.getMonth();
 
             const monthlyAggregates = new Map();
             for (const d of data) {
@@ -84,21 +84,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 const value = d.luminosity;
                 const year = date.getFullYear();
                 const month = date.getMonth();
-                
+
                 const key = `${year}-${month}`;
 
                 if (!monthlyAggregates.has(key)) {
-                    monthlyAggregates.set(key, { 
-                        sum: 0, 
-                        count: 0, 
-                        lastDateMsInMonth: date.getTime() 
+                    monthlyAggregates.set(key, {
+                        sum: 0,
+                        count: 0,
+                        lastDateMsInMonth: date.getTime()
                     });
                 }
-                
+
                 const current = monthlyAggregates.get(key);
                 current.sum += value;
                 current.count += 1;
-                
+
                 if (date.getTime() > current.lastDateMsInMonth) {
                     current.lastDateMsInMonth = date.getTime();
                 }
@@ -109,27 +109,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const [yearStr, monthStr] = key.split('-');
                 const year = parseInt(yearStr, 10);
                 const month = parseInt(monthStr, 10);
-                
+
                 const average = sum / count;
-                
-                let plotDate;
+                let plotDate = new Date(year, month + 1, 0);
 
-                const isLatestMonth = (year === latestYear && month === latestMonth);
-
-                if (isLatestMonth) {
-                    plotDate = new Date(lastDateMsInMonth);
-                } else {
-                    plotDate = new Date(year, month + 1, 0);
-                }
-                
                 result.push({ date: plotDate, value: average });
             }
             result.sort((a, b) => a.date - b.date);
-            
+
             return result;
         },
         getMaxForYear: (data, year) => {
-            const yearData = data.filter(d => 
+            const yearData = data.filter(d =>
                 new Date(d.date).getFullYear() === year
             );
 
@@ -137,10 +128,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 return null;
             }
 
-            const peakPoint = yearData.reduce((prev, curr) => 
+            const peakPoint = yearData.reduce((prev, curr) =>
                 (curr.value > prev.value) ? curr : prev
             );
-            
+
+            return peakPoint;
+        },
+        getMaxForWindow: (data, endDate, windowDays) => {
+            const endDateMs = new Date(endDate).getTime();
+            const windowMs = windowDays * 24 * 60 * 60 * 1000;
+            const startDateMs = endDateMs - windowMs;
+
+            const pointsInWindow = data.filter(d => {
+                const pointDateMs = new Date(d.date).getTime();
+                return pointDateMs >= startDateMs && pointDateMs <= endDateMs;
+            });
+
+            if (pointsInWindow.length === 0) {
+                return null;
+            }
+
+            const peakPoint = pointsInWindow.reduce((prev, curr) =>
+                (curr.value > prev.value) ? curr : prev
+            );
+
             return peakPoint;
         },
         calculateChange: (start, end) => {
@@ -200,22 +211,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const lastPoint = smoothed[smoothed.length - 1];
             const lastDate = lastPoint.date;
-            const yoyDate = new Date(lastDate); yoyDate.setFullYear(lastDate.getFullYear() - 1);
+            const yoyDate = new Date(lastDate);
+            yoyDate.setFullYear(lastDate.getFullYear() - 1);
             const ytdDate = new Date(lastDate.getFullYear(), 0, 1);
             const qtdDate = new Date(lastDate.getFullYear(), Math.floor(lastDate.getMonth() / 3) * 3, 1);
 
             elements.yoyCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(yoyDate, smoothed), lastPoint));
             elements.ytdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(ytdDate, smoothed), lastPoint));
             elements.qtdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(statsUtil.findClosestPoint(qtdDate, smoothed), lastPoint));
-        
+
             if (smoothed.length > 0 && elements.peakCell) {
-                const currentYear = lastDate.getFullYear();
-                const previousYear = currentYear - 1;
-                const prevYearPeak = statsUtil.getMaxForYear(smoothed, previousYear);
-                const currentYearPeak = statsUtil.getMaxForYear(smoothed, currentYear);
+                const prevYearPeak = statsUtil.getMaxForWindow(smoothed, yoyDate, 60);
+                const currentYearPeak = statsUtil.getMaxForWindow(smoothed, lastDate, 60);
                 const peakChange = statsUtil.calculateChange(prevYearPeak, currentYearPeak);
                 elements.peakCell.innerHTML = statsUtil.formatChange(peakChange);
-                
+
             } else if (elements.peakCell) {
                 elements.peakCell.innerHTML = 'N/A';
             }
@@ -285,11 +295,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let minLon = 180, maxLon = -180, minLat = 90, maxLat = -90;
             const coords = geojson.features.flatMap(f => f.geometry.coordinates.flat(2));
             for (let i = 0; i < coords.length; i += 2) {
-                if (Number.isFinite(coords[i]) && Number.isFinite(coords[i+1])) {
+                if (Number.isFinite(coords[i]) && Number.isFinite(coords[i + 1])) {
                     minLon = Math.min(minLon, coords[i]);
                     maxLon = Math.max(maxLon, coords[i]);
-                    minLat = Math.min(minLat, coords[i+1]);
-                    maxLat = Math.max(maxLat, coords[i+1]);
+                    minLat = Math.min(minLat, coords[i + 1]);
+                    maxLat = Math.max(maxLat, coords[i + 1]);
                 }
             }
             return { minLon, maxLon, minLat, maxLat };
@@ -329,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
             countryNameH3.className = 'country-name';
             countryNameH3.textContent = country.displayName;
             countryNameH3.dataset.countryKey = countryKey;
-            
+
             const muniList = document.createElement('ul');
             muniList.className = 'muni-list';
             for (const muniKey in country.municipalities) {
@@ -351,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dates = data.map(d => d.date);
 
         const smoothed = statsUtil.getSmoothedData(data);
-        const monthlyAverage = statsUtil.getMonthlyAverage(data); 
+        const monthlyAverage = statsUtil.getMonthlyAverage(data);
 
         const eventShapes = events.map(e => ({
             type: 'rect', xref: 'x', yref: 'paper', x0: e.start_date, y0: 0, x1: e.end_date, y1: 1,
@@ -370,13 +380,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         Plotly.newPlot(elements.chartContainer, [
             { x: dates, y: data.map(d => d.luminosity), mode: 'markers', type: 'scatter', name: 'Data Points', marker: { color: 'green', opacity: 0.7 } },
-            { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: 'blue', width: 3 } },  
-            { 
-                x: monthlyAverage.map(d => d.date), 
-                y: monthlyAverage.map(d => d.value), 
-                type: 'bar', 
-                name: `Monthly Avg`, 
-                marker: { color: 'lightblue', width: '0.8', opacity: '0.7'}
+            { x: smoothed.map(d => d.date), y: smoothed.map(d => d.value), mode: 'lines', name: `LOESS Fit`, line: { color: 'blue', width: 3 } },
+            {
+                x: monthlyAverage.map(d => d.date),
+                y: monthlyAverage.map(d => d.value),
+                type: 'bar',
+                name: `Monthly Avg`,
+                marker: { color: 'lightblue', width: '0.8', opacity: '0.7' }
             }
         ], {
             title: { text: `Total Nighttime Luminosity: ${title}`, font: { size: 20 }, x: 0.5 },
@@ -384,8 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
             yaxis: { title: 'Luminosity (nW/sr/cm²)' },
             shapes: eventShapes, annotations: eventAnnotations, showlegend: true, legend: { x: 1, xanchor: 'right', y: 1 }, margin: { l: 60, r: 20, t: 80, b: 50 }, dragmode: 'pan'
         }, { responsive: true });
-        
-        // Assuming 'ui' is defined elsewhere
+
         ui.updateStats(data);
         ui.setLoading(false);
     };
@@ -413,29 +422,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const lastPoint = smoothedData[smoothedData.length - 1];
             const lastDate = lastPoint.date;
+            const yoyDate = new Date(lastDate);
+            yoyDate.setFullYear(lastDate.getFullYear() - 1);
 
-            const prevYearPeak = statsUtil.getMaxForYear(smoothedData, lastDate.getFullYear() - 1);
-            const currentYearPeak = statsUtil.getMaxForYear(smoothedData, lastDate.getFullYear());
+            const prevYearPeak = statsUtil.getMaxForWindow(smoothedData, yoyDate, 60);
+            const currentYearPeak = statsUtil.getMaxForWindow(smoothedData, lastDate, 60);
             const peakChange = statsUtil.calculateChange(prevYearPeak, currentYearPeak);
-
-
-            const findClosestPoint = (targetDate) => {
-                return smoothedData.reduce((prev, curr) => {
-                    return (Math.abs(curr.date - targetDate) < Math.abs(prev.date - targetDate) ? curr : prev);
-                });
-            };
-
-            const calculateChange = (startPoint, endPoint) => {
-                if (!startPoint || !endPoint || startPoint.value === 0 || startPoint.date >= endPoint.date) {
-                    return null;
-                }
-                const change = ((endPoint.value - startPoint.value) / startPoint.value) * 100;
-                return change;
-            };
 
             const oneYearAgoDate = new Date(lastDate);
             oneYearAgoDate.setFullYear(lastDate.getFullYear() - 1);
-            const oneYearAgoPoint = findClosestPoint(oneYearAgoDate);
             muniYoYChanges[key] = peakChange;
         });
 
@@ -513,10 +508,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
-        
+
         const centerLon = (minLon + maxLon) / 2;
         const centerLat = (minLat + maxLat) / 2;
-        
+
         function estimateZoom(minLon, maxLon, minLat, maxLat) {
             const lonSpan = maxLon - minLon;
             const latSpan = maxLat - minLat;
@@ -553,12 +548,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isMobile) {
             choroplethTrace.colorbar = {
                 title: { text: 'Peak YoY (%)' },
-                orientation: 'h',      
-                y: 1,                 
-                yanchor: 'bottom',     
-                x: 0.5,                
+                orientation: 'h',
+                y: 1,
+                yanchor: 'bottom',
+                x: 0.5,
                 xanchor: 'center',
-                len: 0.9,             
+                len: 0.9,
                 lenmode: 'fraction'
             };
             layout.margin.t = 120;
@@ -588,10 +583,10 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.downloadCsvLink.href = API_BASE_URL + muni.csv;
             elements.downloadCsvLink.download = `${muniKey}.csv`;
             elements.downloadCsvLink.style.display = 'inline-block';
-            
+
             const csvText = await fetchData(muni.csv);
             const data = await parseCsv(csvText);
-            const allEvents = [...(country.events || []).map(e => ({...e, color: 'country'})), ...(muni.events || []).map(e => ({...e, color: 'muni'}))];
+            const allEvents = [...(country.events || []).map(e => ({ ...e, color: 'country' })), ...(muni.events || []).map(e => ({ ...e, color: 'muni' }))];
             drawChart(data, allEvents, title);
             elements.statsContainer.style.display = 'none';
         } catch (error) {
@@ -616,14 +611,14 @@ document.addEventListener('DOMContentLoaded', () => {
             makeResponsive: true
         });
     };
-    
+
     const displayCountry = async (countryKey, shouldUpdateUrl = true) => {
         ui.setLoading(true);
         elements.videoContainer.style.display = 'block';
         elements.chartWrapper.style.display = 'block';
         elements.lightBoxContainer.style.display = 'block';
         elements.diffContainer.style.display = 'block';
-        
+
         try {
             if (shouldUpdateUrl) updateUrl(countryKey);
             const country = appData.countries[countryKey];
@@ -640,25 +635,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             const [geojsonData, ...muniResults] = await Promise.all([fetchData(country.map), ...muniDataPromises]);
             const allMuniData = Object.fromEntries(muniResults);
-            
+
             const allDates = [...new Set(Object.values(allMuniData).flat().map(d => d.date))].sort();
             const aggregated = allDates.map(date => ({ date, luminosity: 0 }));
-            
+
             Object.values(allMuniData).forEach(muniData => {
                 if (muniData.length === 0) return;
                 const dataMap = new Map(muniData.map(d => [d.date, d.luminosity]));
                 aggregated.forEach((agg, i) => {
-                    agg.luminosity += dataMap.get(agg.date) ?? (dataMap.get(aggregated[i-1]?.date) ?? 0);
+                    agg.luminosity += dataMap.get(agg.date) ?? (dataMap.get(aggregated[i - 1]?.date) ?? 0);
                 });
             });
 
-            const allEvents = (country.events || []).map(e => ({...e, color: 'country'}));
+            const allEvents = (country.events || []).map(e => ({ ...e, color: 'country' }));
             drawChart(aggregated, allEvents, country.displayName);
             drawMap(allMuniData, geojsonData, "Year-over-year Peak Regional Luminosity Shift");
 
             elements.diffContent.src = API_BASE_URL + country.diff;
 
-            createJuxtaposeSlider('#lightbox-content', country.lightbox.earliest,  country.lightbox.latest);
+            createJuxtaposeSlider('#lightbox-content', country.lightbox.earliest, country.lightbox.latest);
         } catch (error) {
             ui.showError(error);
         }
@@ -675,7 +670,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.innerWidth <= 768) ui.toggleMenu();
         }
     };
-    
+
     const handleUrlOnLoad = () => {
         const view = new URLSearchParams(window.location.search).get('view');
         if (!view) return;

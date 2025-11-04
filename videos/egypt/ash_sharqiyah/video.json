@@ -10,9 +10,6 @@
             "path": "egypt_20250302_ash_sharqiyah.jpeg"
         },
         {
-            "path": "egypt_20250303_ash_sharqiyah.jpeg"
-        },
-        {
             "path": "egypt_20250328_ash_sharqiyah.jpeg"
         },
         {
@@ -23,9 +20,6 @@
         },
         {
             "path": "egypt_20250401_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250402_ash_sharqiyah.jpeg"
         },
         {
             "path": "egypt_20250426_ash_sharqiyah.jpeg"
@@ -43,12 +37,6 @@
             "path": "egypt_20250430_ash_sharqiyah.jpeg"
         },
         {
-            "path": "egypt_20250501_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250524_ash_sharqiyah.jpeg"
-        },
-        {
             "path": "egypt_20250525_ash_sharqiyah.jpeg"
         },
         {
@@ -64,31 +52,16 @@
             "path": "egypt_20250529_ash_sharqiyah.jpeg"
         },
         {
-            "path": "egypt_20250530_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250622_ash_sharqiyah.jpeg"
-        },
-        {
             "path": "egypt_20250623_ash_sharqiyah.jpeg"
         },
         {
             "path": "egypt_20250624_ash_sharqiyah.jpeg"
         },
         {
-            "path": "egypt_20250629_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250722_ash_sharqiyah.jpeg"
-        },
-        {
             "path": "egypt_20250822_ash_sharqiyah.jpeg"
         },
         {
             "path": "egypt_20250823_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250918_ash_sharqiyah.jpeg"
         },
         {
             "path": "egypt_20250923_ash_sharqiyah.jpeg"
@@ -101,12 +74,6 @@
         },
         {
             "path": "egypt_20251023_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20251025_ash_sharqiyah.jpeg"
-        },
-        {
-            "path": "egypt_20251026_ash_sharqiyah.jpeg"
         }
     ],
     "codec": "libx264",

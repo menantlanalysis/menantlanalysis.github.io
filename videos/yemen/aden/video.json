@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241127_aden.jpeg"
-        },
-        {
             "path": "yemen_20241128_aden.jpeg"
         },
         {
@@ -22,9 +19,6 @@
             "path": "yemen_20241203_aden.jpeg"
         },
         {
-            "path": "yemen_20241205_aden.jpeg"
-        },
-        {
             "path": "yemen_20241229_aden.jpeg"
         },
         {
@@ -35,12 +29,6 @@
         },
         {
             "path": "yemen_20250102_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250103_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250104_aden.jpeg"
         },
         {
             "path": "yemen_20250127_aden.jpeg"
@@ -61,12 +49,6 @@
             "path": "yemen_20250201_aden.jpeg"
         },
         {
-            "path": "yemen_20250224_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250225_aden.jpeg"
-        },
-        {
             "path": "yemen_20250226_aden.jpeg"
         },
         {
@@ -80,12 +62,6 @@
         },
         {
             "path": "yemen_20250302_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250303_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250326_aden.jpeg"
         },
         {
             "path": "yemen_20250327_aden.jpeg"
@@ -106,12 +82,6 @@
             "path": "yemen_20250401_aden.jpeg"
         },
         {
-            "path": "yemen_20250402_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250425_aden.jpeg"
-        },
-        {
             "path": "yemen_20250426_aden.jpeg"
         },
         {
@@ -127,12 +97,6 @@
             "path": "yemen_20250430_aden.jpeg"
         },
         {
-            "path": "yemen_20250501_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250524_aden.jpeg"
-        },
-        {
             "path": "yemen_20250525_aden.jpeg"
         },
         {
@@ -142,22 +106,13 @@
             "path": "yemen_20250528_aden.jpeg"
         },
         {
-            "path": "yemen_20250530_aden.jpeg"
-        },
-        {
             "path": "yemen_20250623_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250629_aden.jpeg"
         },
         {
             "path": "yemen_20251020_aden.jpeg"
         },
         {
             "path": "yemen_20251021_aden.jpeg"
-        },
-        {
-            "path": "yemen_20251025_aden.jpeg"
         }
     ],
     "codec": "libx264",

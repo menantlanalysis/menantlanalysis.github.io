@@ -1,25 +1,16 @@
 {
     "images": [
         {
-            "path": "egypt_20241127_al_iskandariyah.jpeg"
-        },
-        {
             "path": "egypt_20241202_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20241203_al_iskandariyah.jpeg"
         },
         {
-            "path": "egypt_20241205_al_iskandariyah.jpeg"
-        },
-        {
             "path": "egypt_20241228_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20241231_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20250126_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20250128_al_iskandariyah.jpeg"
@@ -37,9 +28,6 @@
             "path": "egypt_20250301_al_iskandariyah.jpeg"
         },
         {
-            "path": "egypt_20250303_al_iskandariyah.jpeg"
-        },
-        {
             "path": "egypt_20250328_al_iskandariyah.jpeg"
         },
         {
@@ -50,9 +38,6 @@
         },
         {
             "path": "egypt_20250331_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20250425_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20250426_al_iskandariyah.jpeg"
@@ -70,12 +55,6 @@
             "path": "egypt_20250430_al_iskandariyah.jpeg"
         },
         {
-            "path": "egypt_20250501_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20250524_al_iskandariyah.jpeg"
-        },
-        {
             "path": "egypt_20250525_al_iskandariyah.jpeg"
         },
         {
@@ -88,31 +67,16 @@
             "path": "egypt_20250528_al_iskandariyah.jpeg"
         },
         {
-            "path": "egypt_20250622_al_iskandariyah.jpeg"
-        },
-        {
             "path": "egypt_20250623_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20250624_al_iskandariyah.jpeg"
         },
         {
-            "path": "egypt_20250629_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20250722_al_iskandariyah.jpeg"
-        },
-        {
             "path": "egypt_20250822_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20250823_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20250827_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20250918_al_iskandariyah.jpeg"
         },
         {
             "path": "egypt_20250923_al_iskandariyah.jpeg"
@@ -125,12 +89,6 @@
         },
         {
             "path": "egypt_20251023_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20251025_al_iskandariyah.jpeg"
-        },
-        {
-            "path": "egypt_20251026_al_iskandariyah.jpeg"
         }
     ],
     "codec": "libx264",

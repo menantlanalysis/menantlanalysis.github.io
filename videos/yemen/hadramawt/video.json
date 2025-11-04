@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241127_hadramawt.jpeg"
-        },
-        {
             "path": "yemen_20241128_hadramawt.jpeg"
         },
         {
@@ -25,12 +22,6 @@
             "path": "yemen_20241204_hadramawt.jpeg"
         },
         {
-            "path": "yemen_20241205_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20241227_hadramawt.jpeg"
-        },
-        {
             "path": "yemen_20241228_hadramawt.jpeg"
         },
         {
@@ -47,15 +38,6 @@
         },
         {
             "path": "yemen_20250102_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250103_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250104_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250126_hadramawt.jpeg"
         },
         {
             "path": "yemen_20250127_hadramawt.jpeg"
@@ -76,15 +58,6 @@
             "path": "yemen_20250201_hadramawt.jpeg"
         },
         {
-            "path": "yemen_20250202_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250224_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250225_hadramawt.jpeg"
-        },
-        {
             "path": "yemen_20250226_hadramawt.jpeg"
         },
         {
@@ -98,12 +71,6 @@
         },
         {
             "path": "yemen_20250302_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250303_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250326_hadramawt.jpeg"
         },
         {
             "path": "yemen_20250328_hadramawt.jpeg"
@@ -121,12 +88,6 @@
             "path": "yemen_20250401_hadramawt.jpeg"
         },
         {
-            "path": "yemen_20250402_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250425_hadramawt.jpeg"
-        },
-        {
             "path": "yemen_20250426_hadramawt.jpeg"
         },
         {
@@ -140,12 +101,6 @@
         },
         {
             "path": "yemen_20250430_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250501_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250524_hadramawt.jpeg"
         },
         {
             "path": "yemen_20250525_hadramawt.jpeg"
@@ -169,19 +124,10 @@
             "path": "yemen_20250624_hadramawt.jpeg"
         },
         {
-            "path": "yemen_20250722_hadramawt.jpeg"
-        },
-        {
             "path": "yemen_20250822_hadramawt.jpeg"
         },
         {
             "path": "yemen_20250823_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250827_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20250918_hadramawt.jpeg"
         },
         {
             "path": "yemen_20250919_hadramawt.jpeg"
@@ -193,16 +139,10 @@
             "path": "yemen_20250924_hadramawt.jpeg"
         },
         {
-            "path": "yemen_20251017_hadramawt.jpeg"
-        },
-        {
             "path": "yemen_20251020_hadramawt.jpeg"
         },
         {
             "path": "yemen_20251021_hadramawt.jpeg"
-        },
-        {
-            "path": "yemen_20251025_hadramawt.jpeg"
         }
     ],
     "codec": "libx264",

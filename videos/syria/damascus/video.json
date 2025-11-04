@@ -19,9 +19,6 @@
             "path": "syria_20241203_damascus.jpeg"
         },
         {
-            "path": "syria_20241205_damascus.jpeg"
-        },
-        {
             "path": "syria_20241228_damascus.jpeg"
         },
         {
@@ -49,12 +46,6 @@
             "path": "syria_20250201_damascus.jpeg"
         },
         {
-            "path": "syria_20250224_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250225_damascus.jpeg"
-        },
-        {
             "path": "syria_20250226_damascus.jpeg"
         },
         {
@@ -64,16 +55,7 @@
             "path": "syria_20250301_damascus.jpeg"
         },
         {
-            "path": "syria_20250326_damascus.jpeg"
-        },
-        {
             "path": "syria_20250330_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250402_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250425_damascus.jpeg"
         },
         {
             "path": "syria_20250426_damascus.jpeg"
@@ -91,12 +73,6 @@
             "path": "syria_20250430_damascus.jpeg"
         },
         {
-            "path": "syria_20250501_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250524_damascus.jpeg"
-        },
-        {
             "path": "syria_20250526_damascus.jpeg"
         },
         {
@@ -106,22 +82,10 @@
             "path": "syria_20250528_damascus.jpeg"
         },
         {
-            "path": "syria_20250530_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250622_damascus.jpeg"
-        },
-        {
             "path": "syria_20250623_damascus.jpeg"
         },
         {
             "path": "syria_20250624_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250629_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250722_damascus.jpeg"
         },
         {
             "path": "syria_20250726_damascus.jpeg"
@@ -136,9 +100,6 @@
             "path": "syria_20250824_damascus.jpeg"
         },
         {
-            "path": "syria_20250827_damascus.jpeg"
-        },
-        {
             "path": "syria_20250919_damascus.jpeg"
         },
         {
@@ -151,16 +112,10 @@
             "path": "syria_20250924_damascus.jpeg"
         },
         {
-            "path": "syria_20251017_damascus.jpeg"
-        },
-        {
             "path": "syria_20251020_damascus.jpeg"
         },
         {
             "path": "syria_20251023_damascus.jpeg"
-        },
-        {
-            "path": "syria_20251025_damascus.jpeg"
         }
     ],
     "codec": "libx264",

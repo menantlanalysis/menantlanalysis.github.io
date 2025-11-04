@@ -25,34 +25,16 @@
             "path": "libya_20250201_al_marqab.jpeg"
         },
         {
-            "path": "libya_20250202_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250225_al_marqab.jpeg"
-        },
-        {
             "path": "libya_20250226_al_marqab.jpeg"
         },
         {
             "path": "libya_20250301_al_marqab.jpeg"
         },
         {
-            "path": "libya_20250303_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250326_al_marqab.jpeg"
-        },
-        {
             "path": "libya_20250328_al_marqab.jpeg"
         },
         {
             "path": "libya_20250330_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250402_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250425_al_marqab.jpeg"
         },
         {
             "path": "libya_20250426_al_marqab.jpeg"
@@ -70,9 +52,6 @@
             "path": "libya_20250430_al_marqab.jpeg"
         },
         {
-            "path": "libya_20250501_al_marqab.jpeg"
-        },
-        {
             "path": "libya_20250526_al_marqab.jpeg"
         },
         {
@@ -85,25 +64,10 @@
             "path": "libya_20250529_al_marqab.jpeg"
         },
         {
-            "path": "libya_20250530_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250622_al_marqab.jpeg"
-        },
-        {
             "path": "libya_20250623_al_marqab.jpeg"
         },
         {
             "path": "libya_20250624_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250629_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250721_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250722_al_marqab.jpeg"
         },
         {
             "path": "libya_20250725_al_marqab.jpeg"
@@ -124,12 +88,6 @@
             "path": "libya_20250826_al_marqab.jpeg"
         },
         {
-            "path": "libya_20250827_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20250918_al_marqab.jpeg"
-        },
-        {
             "path": "libya_20250922_al_marqab.jpeg"
         },
         {
@@ -140,12 +98,6 @@
         },
         {
             "path": "libya_20251020_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20251025_al_marqab.jpeg"
-        },
-        {
-            "path": "libya_20251026_al_marqab.jpeg"
         }
     ],
     "codec": "libx264",

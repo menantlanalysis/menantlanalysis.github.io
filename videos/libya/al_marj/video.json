@@ -16,31 +16,16 @@
             "path": "libya_20250430_al_marj.jpeg"
         },
         {
-            "path": "libya_20250501_al_marj.jpeg"
-        },
-        {
             "path": "libya_20250526_al_marj.jpeg"
         },
         {
             "path": "libya_20250528_al_marj.jpeg"
         },
         {
-            "path": "libya_20250622_al_marj.jpeg"
-        },
-        {
             "path": "libya_20250623_al_marj.jpeg"
         },
         {
             "path": "libya_20250624_al_marj.jpeg"
-        },
-        {
-            "path": "libya_20250629_al_marj.jpeg"
-        },
-        {
-            "path": "libya_20250721_al_marj.jpeg"
-        },
-        {
-            "path": "libya_20250722_al_marj.jpeg"
         },
         {
             "path": "libya_20250725_al_marj.jpeg"
@@ -61,12 +46,6 @@
             "path": "libya_20250826_al_marj.jpeg"
         },
         {
-            "path": "libya_20250827_al_marj.jpeg"
-        },
-        {
-            "path": "libya_20250918_al_marj.jpeg"
-        },
-        {
             "path": "libya_20250922_al_marj.jpeg"
         },
         {
@@ -77,9 +56,6 @@
         },
         {
             "path": "libya_20251019_al_marj.jpeg"
-        },
-        {
-            "path": "libya_20251026_al_marj.jpeg"
         }
     ],
     "codec": "libx264",

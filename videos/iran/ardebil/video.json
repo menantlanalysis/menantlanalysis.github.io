@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241127_ardebil.jpeg"
-        },
-        {
             "path": "iran_20241231_ardebil.jpeg"
         },
         {
@@ -13,22 +10,10 @@
             "path": "iran_20250102_ardebil.jpeg"
         },
         {
-            "path": "iran_20250103_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250104_ardebil.jpeg"
-        },
-        {
             "path": "iran_20250127_ardebil.jpeg"
         },
         {
             "path": "iran_20250131_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250202_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250224_ardebil.jpeg"
         },
         {
             "path": "iran_20250227_ardebil.jpeg"
@@ -40,12 +25,6 @@
             "path": "iran_20250302_ardebil.jpeg"
         },
         {
-            "path": "iran_20250402_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250425_ardebil.jpeg"
-        },
-        {
             "path": "iran_20250426_ardebil.jpeg"
         },
         {
@@ -55,12 +34,6 @@
             "path": "iran_20250430_ardebil.jpeg"
         },
         {
-            "path": "iran_20250501_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250524_ardebil.jpeg"
-        },
-        {
             "path": "iran_20250525_ardebil.jpeg"
         },
         {
@@ -68,12 +41,6 @@
         },
         {
             "path": "iran_20250528_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250530_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250629_ardebil.jpeg"
         },
         {
             "path": "iran_20250822_ardebil.jpeg"
@@ -92,12 +59,6 @@
         },
         {
             "path": "iran_20251023_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20251025_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20251026_ardebil.jpeg"
         }
     ],
     "codec": "libx264",

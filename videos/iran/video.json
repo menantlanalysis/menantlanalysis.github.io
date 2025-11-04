@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241127.jpeg"
-        },
-        {
             "path": "iran_20241128.jpeg"
         },
         {
@@ -25,12 +22,6 @@
             "path": "iran_20241204.jpeg"
         },
         {
-            "path": "iran_20241205.jpeg"
-        },
-        {
-            "path": "iran_20241227.jpeg"
-        },
-        {
             "path": "iran_20241228.jpeg"
         },
         {
@@ -47,15 +38,6 @@
         },
         {
             "path": "iran_20250102.jpeg"
-        },
-        {
-            "path": "iran_20250103.jpeg"
-        },
-        {
-            "path": "iran_20250104.jpeg"
-        },
-        {
-            "path": "iran_20250126.jpeg"
         },
         {
             "path": "iran_20250127.jpeg"
@@ -76,15 +58,6 @@
             "path": "iran_20250201.jpeg"
         },
         {
-            "path": "iran_20250202.jpeg"
-        },
-        {
-            "path": "iran_20250224.jpeg"
-        },
-        {
-            "path": "iran_20250225.jpeg"
-        },
-        {
             "path": "iran_20250226.jpeg"
         },
         {
@@ -98,12 +71,6 @@
         },
         {
             "path": "iran_20250302.jpeg"
-        },
-        {
-            "path": "iran_20250303.jpeg"
-        },
-        {
-            "path": "iran_20250326.jpeg"
         },
         {
             "path": "iran_20250327.jpeg"
@@ -124,12 +91,6 @@
             "path": "iran_20250401.jpeg"
         },
         {
-            "path": "iran_20250402.jpeg"
-        },
-        {
-            "path": "iran_20250425.jpeg"
-        },
-        {
             "path": "iran_20250426.jpeg"
         },
         {
@@ -143,12 +104,6 @@
         },
         {
             "path": "iran_20250430.jpeg"
-        },
-        {
-            "path": "iran_20250501.jpeg"
-        },
-        {
-            "path": "iran_20250524.jpeg"
         },
         {
             "path": "iran_20250525.jpeg"
@@ -166,22 +121,10 @@
             "path": "iran_20250529.jpeg"
         },
         {
-            "path": "iran_20250530.jpeg"
-        },
-        {
             "path": "iran_20250623.jpeg"
         },
         {
             "path": "iran_20250624.jpeg"
-        },
-        {
-            "path": "iran_20250629.jpeg"
-        },
-        {
-            "path": "iran_20250722.jpeg"
-        },
-        {
-            "path": "iran_20250728.jpeg"
         },
         {
             "path": "iran_20250822.jpeg"
@@ -191,9 +134,6 @@
         },
         {
             "path": "iran_20250824.jpeg"
-        },
-        {
-            "path": "iran_20250827.jpeg"
         },
         {
             "path": "iran_20250919.jpeg"
@@ -209,12 +149,6 @@
         },
         {
             "path": "iran_20251023.jpeg"
-        },
-        {
-            "path": "iran_20251025.jpeg"
-        },
-        {
-            "path": "iran_20251026.jpeg"
         }
     ],
     "codec": "libx264",

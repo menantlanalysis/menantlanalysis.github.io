@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241127_al_maharah.jpeg"
-        },
-        {
             "path": "yemen_20241128_al_maharah.jpeg"
         },
         {
@@ -25,12 +22,6 @@
             "path": "yemen_20241204_al_maharah.jpeg"
         },
         {
-            "path": "yemen_20241205_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20241227_al_maharah.jpeg"
-        },
-        {
             "path": "yemen_20241228_al_maharah.jpeg"
         },
         {
@@ -47,15 +38,6 @@
         },
         {
             "path": "yemen_20250102_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250103_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250104_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250126_al_maharah.jpeg"
         },
         {
             "path": "yemen_20250127_al_maharah.jpeg"
@@ -76,15 +58,6 @@
             "path": "yemen_20250201_al_maharah.jpeg"
         },
         {
-            "path": "yemen_20250202_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250224_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250225_al_maharah.jpeg"
-        },
-        {
             "path": "yemen_20250226_al_maharah.jpeg"
         },
         {
@@ -98,12 +71,6 @@
         },
         {
             "path": "yemen_20250302_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250303_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250326_al_maharah.jpeg"
         },
         {
             "path": "yemen_20250327_al_maharah.jpeg"
@@ -124,12 +91,6 @@
             "path": "yemen_20250401_al_maharah.jpeg"
         },
         {
-            "path": "yemen_20250402_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250425_al_maharah.jpeg"
-        },
-        {
             "path": "yemen_20250426_al_maharah.jpeg"
         },
         {
@@ -143,12 +104,6 @@
         },
         {
             "path": "yemen_20250430_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250501_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250524_al_maharah.jpeg"
         },
         {
             "path": "yemen_20250525_al_maharah.jpeg"
@@ -172,22 +127,10 @@
             "path": "yemen_20250624_al_maharah.jpeg"
         },
         {
-            "path": "yemen_20250722_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250728_al_maharah.jpeg"
-        },
-        {
             "path": "yemen_20250822_al_maharah.jpeg"
         },
         {
             "path": "yemen_20250823_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250827_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20250918_al_maharah.jpeg"
         },
         {
             "path": "yemen_20250919_al_maharah.jpeg"
@@ -199,16 +142,10 @@
             "path": "yemen_20250924_al_maharah.jpeg"
         },
         {
-            "path": "yemen_20251017_al_maharah.jpeg"
-        },
-        {
             "path": "yemen_20251020_al_maharah.jpeg"
         },
         {
             "path": "yemen_20251021_al_maharah.jpeg"
-        },
-        {
-            "path": "yemen_20251025_al_maharah.jpeg"
         }
     ],
     "codec": "libx264",

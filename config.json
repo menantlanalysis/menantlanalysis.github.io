@@ -5,11 +5,11 @@
             "video": "videos/syria/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-10-04",
+                    "date": "2024-10-03",
                     "path": "images/syria/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-25",
+                    "date": "2025-10-23",
                     "path": "images/syria/latest.jpeg"
                 }
             },
@@ -79,7 +79,7 @@
             "video": "videos/lebanon/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-10-03",
+                    "date": "2024-10-02",
                     "path": "images/lebanon/earliest.jpeg"
                 },
                 "latest": {
@@ -129,11 +129,11 @@
             "video": "videos/yemen/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-10-04",
+                    "date": "2024-10-03",
                     "path": "images/yemen/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-25",
+                    "date": "2025-10-21",
                     "path": "images/yemen/latest.jpeg"
                 }
             },
@@ -235,11 +235,11 @@
             "video": "videos/libya/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-10-04",
+                    "date": "2024-10-03",
                     "path": "images/libya/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-26",
+                    "date": "2025-10-23",
                     "path": "images/libya/latest.jpeg"
                 }
             },
@@ -341,11 +341,11 @@
             "video": "videos/iran/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-10-04",
+                    "date": "2024-10-03",
                     "path": "images/iran/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-26",
+                    "date": "2025-10-23",
                     "path": "images/iran/latest.jpeg"
                 }
             },
@@ -483,11 +483,11 @@
             "video": "videos/egypt/video.mp4",
             "lightbox": {
                 "earliest": {
-                    "date": "2024-10-04",
+                    "date": "2024-10-03",
                     "path": "images/egypt/earliest.jpeg"
                 },
                 "latest": {
-                    "date": "2025-10-26",
+                    "date": "2025-10-23",
                     "path": "images/egypt/latest.jpeg"
                 }
             },

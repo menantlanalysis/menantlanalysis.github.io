@@ -19,9 +19,6 @@
             "path": "iran_20241204_khuzestan.jpeg"
         },
         {
-            "path": "iran_20241205_khuzestan.jpeg"
-        },
-        {
             "path": "iran_20241229_khuzestan.jpeg"
         },
         {
@@ -35,9 +32,6 @@
         },
         {
             "path": "iran_20250102_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250103_khuzestan.jpeg"
         },
         {
             "path": "iran_20250127_khuzestan.jpeg"
@@ -58,9 +52,6 @@
             "path": "iran_20250201_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250202_khuzestan.jpeg"
-        },
-        {
             "path": "iran_20250226_khuzestan.jpeg"
         },
         {
@@ -71,9 +62,6 @@
         },
         {
             "path": "iran_20250328_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250425_khuzestan.jpeg"
         },
         {
             "path": "iran_20250426_khuzestan.jpeg"
@@ -91,12 +79,6 @@
             "path": "iran_20250430_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250501_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250524_khuzestan.jpeg"
-        },
-        {
             "path": "iran_20250525_khuzestan.jpeg"
         },
         {
@@ -109,19 +91,10 @@
             "path": "iran_20250529_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250530_khuzestan.jpeg"
-        },
-        {
             "path": "iran_20250623_khuzestan.jpeg"
         },
         {
             "path": "iran_20250624_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250629_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250722_khuzestan.jpeg"
         },
         {
             "path": "iran_20250822_khuzestan.jpeg"
@@ -131,9 +104,6 @@
         },
         {
             "path": "iran_20250824_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250827_khuzestan.jpeg"
         },
         {
             "path": "iran_20250919_khuzestan.jpeg"
@@ -146,12 +116,6 @@
         },
         {
             "path": "iran_20251023_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20251025_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20251026_khuzestan.jpeg"
         }
     ],
     "codec": "libx264",

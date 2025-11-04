@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241127_al_mahwit.jpeg"
-        },
-        {
             "path": "yemen_20241128_al_mahwit.jpeg"
         },
         {
@@ -25,12 +22,6 @@
             "path": "yemen_20241204_al_mahwit.jpeg"
         },
         {
-            "path": "yemen_20241205_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20241227_al_mahwit.jpeg"
-        },
-        {
             "path": "yemen_20241228_al_mahwit.jpeg"
         },
         {
@@ -47,12 +38,6 @@
         },
         {
             "path": "yemen_20250102_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250103_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250104_al_mahwit.jpeg"
         },
         {
             "path": "yemen_20250127_al_mahwit.jpeg"
@@ -73,15 +58,6 @@
             "path": "yemen_20250201_al_mahwit.jpeg"
         },
         {
-            "path": "yemen_20250202_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250224_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250225_al_mahwit.jpeg"
-        },
-        {
             "path": "yemen_20250226_al_mahwit.jpeg"
         },
         {
@@ -95,9 +71,6 @@
         },
         {
             "path": "yemen_20250302_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250303_al_mahwit.jpeg"
         },
         {
             "path": "yemen_20250327_al_mahwit.jpeg"
@@ -118,12 +91,6 @@
             "path": "yemen_20250401_al_mahwit.jpeg"
         },
         {
-            "path": "yemen_20250402_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250425_al_mahwit.jpeg"
-        },
-        {
             "path": "yemen_20250426_al_mahwit.jpeg"
         },
         {
@@ -137,12 +104,6 @@
         },
         {
             "path": "yemen_20250430_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250501_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250524_al_mahwit.jpeg"
         },
         {
             "path": "yemen_20250525_al_mahwit.jpeg"
@@ -160,31 +121,16 @@
             "path": "yemen_20250529_al_mahwit.jpeg"
         },
         {
-            "path": "yemen_20250530_al_mahwit.jpeg"
-        },
-        {
             "path": "yemen_20250624_al_mahwit.jpeg"
         },
         {
-            "path": "yemen_20250629_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20250722_al_mahwit.jpeg"
-        },
-        {
             "path": "yemen_20250919_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20251017_al_mahwit.jpeg"
         },
         {
             "path": "yemen_20251020_al_mahwit.jpeg"
         },
         {
             "path": "yemen_20251021_al_mahwit.jpeg"
-        },
-        {
-            "path": "yemen_20251025_al_mahwit.jpeg"
         }
     ],
     "codec": "libx264",

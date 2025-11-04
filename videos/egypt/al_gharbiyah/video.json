@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241127_al_gharbiyah.jpeg"
-        },
-        {
             "path": "egypt_20241129_al_gharbiyah.jpeg"
         },
         {
@@ -14,9 +11,6 @@
         },
         {
             "path": "egypt_20241203_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241227_al_gharbiyah.jpeg"
         },
         {
             "path": "egypt_20241228_al_gharbiyah.jpeg"
@@ -34,9 +28,6 @@
             "path": "egypt_20250102_al_gharbiyah.jpeg"
         },
         {
-            "path": "egypt_20250126_al_gharbiyah.jpeg"
-        },
-        {
             "path": "egypt_20250127_al_gharbiyah.jpeg"
         },
         {
@@ -49,9 +40,6 @@
             "path": "egypt_20250131_al_gharbiyah.jpeg"
         },
         {
-            "path": "egypt_20250224_al_gharbiyah.jpeg"
-        },
-        {
             "path": "egypt_20250226_al_gharbiyah.jpeg"
         },
         {
@@ -62,9 +50,6 @@
         },
         {
             "path": "egypt_20250301_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250303_al_gharbiyah.jpeg"
         },
         {
             "path": "egypt_20250328_al_gharbiyah.jpeg"
@@ -82,12 +67,6 @@
             "path": "egypt_20250401_al_gharbiyah.jpeg"
         },
         {
-            "path": "egypt_20250402_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250425_al_gharbiyah.jpeg"
-        },
-        {
             "path": "egypt_20250426_al_gharbiyah.jpeg"
         },
         {
@@ -101,12 +80,6 @@
         },
         {
             "path": "egypt_20250430_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250501_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250524_al_gharbiyah.jpeg"
         },
         {
             "path": "egypt_20250525_al_gharbiyah.jpeg"
@@ -124,31 +97,16 @@
             "path": "egypt_20250529_al_gharbiyah.jpeg"
         },
         {
-            "path": "egypt_20250622_al_gharbiyah.jpeg"
-        },
-        {
             "path": "egypt_20250623_al_gharbiyah.jpeg"
         },
         {
             "path": "egypt_20250624_al_gharbiyah.jpeg"
         },
         {
-            "path": "egypt_20250629_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250722_al_gharbiyah.jpeg"
-        },
-        {
             "path": "egypt_20250822_al_gharbiyah.jpeg"
         },
         {
             "path": "egypt_20250823_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250827_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250918_al_gharbiyah.jpeg"
         },
         {
             "path": "egypt_20250923_al_gharbiyah.jpeg"
@@ -161,12 +119,6 @@
         },
         {
             "path": "egypt_20251023_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20251025_al_gharbiyah.jpeg"
-        },
-        {
-            "path": "egypt_20251026_al_gharbiyah.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241127_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20241128_dumyat.jpeg"
         },
         {
@@ -19,12 +16,6 @@
             "path": "egypt_20241204_dumyat.jpeg"
         },
         {
-            "path": "egypt_20241205_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250126_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20250127_dumyat.jpeg"
         },
         {
@@ -38,9 +29,6 @@
         },
         {
             "path": "egypt_20250201_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250202_dumyat.jpeg"
         },
         {
             "path": "egypt_20250226_dumyat.jpeg"
@@ -70,12 +58,6 @@
             "path": "egypt_20250401_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250402_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250425_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20250426_dumyat.jpeg"
         },
         {
@@ -89,12 +71,6 @@
         },
         {
             "path": "egypt_20250430_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250501_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250524_dumyat.jpeg"
         },
         {
             "path": "egypt_20250525_dumyat.jpeg"
@@ -112,31 +88,16 @@
             "path": "egypt_20250529_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250622_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20250623_dumyat.jpeg"
         },
         {
             "path": "egypt_20250624_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250629_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250722_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20250822_dumyat.jpeg"
         },
         {
             "path": "egypt_20250823_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250827_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250918_dumyat.jpeg"
         },
         {
             "path": "egypt_20250923_dumyat.jpeg"
@@ -149,9 +110,6 @@
         },
         {
             "path": "egypt_20251023_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20251025_dumyat.jpeg"
         }
     ],
     "codec": "libx264",

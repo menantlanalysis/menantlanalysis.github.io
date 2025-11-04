@@ -16,12 +16,6 @@
             "path": "iran_20241204_golestan.jpeg"
         },
         {
-            "path": "iran_20241205_golestan.jpeg"
-        },
-        {
-            "path": "iran_20241227_golestan.jpeg"
-        },
-        {
             "path": "iran_20241229_golestan.jpeg"
         },
         {
@@ -32,12 +26,6 @@
         },
         {
             "path": "iran_20250102_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250103_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250104_golestan.jpeg"
         },
         {
             "path": "iran_20250129_golestan.jpeg"
@@ -52,12 +40,6 @@
             "path": "iran_20250201_golestan.jpeg"
         },
         {
-            "path": "iran_20250202_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250225_golestan.jpeg"
-        },
-        {
             "path": "iran_20250226_golestan.jpeg"
         },
         {
@@ -65,9 +47,6 @@
         },
         {
             "path": "iran_20250228_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250326_golestan.jpeg"
         },
         {
             "path": "iran_20250328_golestan.jpeg"
@@ -82,12 +61,6 @@
             "path": "iran_20250401_golestan.jpeg"
         },
         {
-            "path": "iran_20250402_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250425_golestan.jpeg"
-        },
-        {
             "path": "iran_20250426_golestan.jpeg"
         },
         {
@@ -98,12 +71,6 @@
         },
         {
             "path": "iran_20250430_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250501_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250524_golestan.jpeg"
         },
         {
             "path": "iran_20250525_golestan.jpeg"
@@ -121,18 +88,6 @@
             "path": "iran_20250529_golestan.jpeg"
         },
         {
-            "path": "iran_20250530_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250629_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250722_golestan.jpeg"
-        },
-        {
-            "path": "iran_20250728_golestan.jpeg"
-        },
-        {
             "path": "iran_20250822_golestan.jpeg"
         },
         {
@@ -142,9 +97,6 @@
             "path": "iran_20250824_golestan.jpeg"
         },
         {
-            "path": "iran_20250827_golestan.jpeg"
-        },
-        {
             "path": "iran_20250919_golestan.jpeg"
         },
         {
@@ -152,9 +104,6 @@
         },
         {
             "path": "iran_20251023_golestan.jpeg"
-        },
-        {
-            "path": "iran_20251025_golestan.jpeg"
         }
     ],
     "codec": "libx264",

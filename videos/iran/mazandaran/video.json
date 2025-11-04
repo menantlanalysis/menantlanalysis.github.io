@@ -19,12 +19,6 @@
             "path": "iran_20250331_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250402_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250425_mazandaran.jpeg"
-        },
-        {
             "path": "iran_20250426_mazandaran.jpeg"
         },
         {
@@ -34,22 +28,10 @@
             "path": "iran_20250430_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250501_mazandaran.jpeg"
-        },
-        {
             "path": "iran_20250528_mazandaran.jpeg"
         },
         {
             "path": "iran_20250529_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250530_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250629_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250722_mazandaran.jpeg"
         },
         {
             "path": "iran_20250823_mazandaran.jpeg"
@@ -68,9 +50,6 @@
         },
         {
             "path": "iran_20251023_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20251025_mazandaran.jpeg"
         }
     ],
     "codec": "libx264",

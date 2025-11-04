@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241127_lorestan.jpeg"
-        },
-        {
             "path": "iran_20241128_lorestan.jpeg"
         },
         {
@@ -25,9 +22,6 @@
             "path": "iran_20241204_lorestan.jpeg"
         },
         {
-            "path": "iran_20241205_lorestan.jpeg"
-        },
-        {
             "path": "iran_20241228_lorestan.jpeg"
         },
         {
@@ -40,12 +34,6 @@
             "path": "iran_20250201_lorestan.jpeg"
         },
         {
-            "path": "iran_20250202_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250326_lorestan.jpeg"
-        },
-        {
             "path": "iran_20250327_lorestan.jpeg"
         },
         {
@@ -53,9 +41,6 @@
         },
         {
             "path": "iran_20250329_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250425_lorestan.jpeg"
         },
         {
             "path": "iran_20250426_lorestan.jpeg"
@@ -73,12 +58,6 @@
             "path": "iran_20250430_lorestan.jpeg"
         },
         {
-            "path": "iran_20250501_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250524_lorestan.jpeg"
-        },
-        {
             "path": "iran_20250525_lorestan.jpeg"
         },
         {
@@ -91,22 +70,10 @@
             "path": "iran_20250529_lorestan.jpeg"
         },
         {
-            "path": "iran_20250530_lorestan.jpeg"
-        },
-        {
             "path": "iran_20250623_lorestan.jpeg"
         },
         {
             "path": "iran_20250624_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250629_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250722_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250728_lorestan.jpeg"
         },
         {
             "path": "iran_20250822_lorestan.jpeg"
@@ -116,9 +83,6 @@
         },
         {
             "path": "iran_20250824_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20250827_lorestan.jpeg"
         },
         {
             "path": "iran_20250919_lorestan.jpeg"
@@ -134,12 +98,6 @@
         },
         {
             "path": "iran_20251023_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20251025_lorestan.jpeg"
-        },
-        {
-            "path": "iran_20251026_lorestan.jpeg"
         }
     ],
     "codec": "libx264",

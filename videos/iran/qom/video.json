@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241127_qom.jpeg"
-        },
-        {
             "path": "iran_20241128_qom.jpeg"
         },
         {
@@ -34,12 +31,6 @@
             "path": "iran_20250102_qom.jpeg"
         },
         {
-            "path": "iran_20250103_qom.jpeg"
-        },
-        {
-            "path": "iran_20250104_qom.jpeg"
-        },
-        {
             "path": "iran_20250128_qom.jpeg"
         },
         {
@@ -53,9 +44,6 @@
         },
         {
             "path": "iran_20250201_qom.jpeg"
-        },
-        {
-            "path": "iran_20250202_qom.jpeg"
         },
         {
             "path": "iran_20250226_qom.jpeg"
@@ -76,9 +64,6 @@
             "path": "iran_20250329_qom.jpeg"
         },
         {
-            "path": "iran_20250425_qom.jpeg"
-        },
-        {
             "path": "iran_20250426_qom.jpeg"
         },
         {
@@ -94,9 +79,6 @@
             "path": "iran_20250430_qom.jpeg"
         },
         {
-            "path": "iran_20250501_qom.jpeg"
-        },
-        {
             "path": "iran_20250525_qom.jpeg"
         },
         {
@@ -109,19 +91,10 @@
             "path": "iran_20250529_qom.jpeg"
         },
         {
-            "path": "iran_20250530_qom.jpeg"
-        },
-        {
             "path": "iran_20250623_qom.jpeg"
         },
         {
             "path": "iran_20250624_qom.jpeg"
-        },
-        {
-            "path": "iran_20250629_qom.jpeg"
-        },
-        {
-            "path": "iran_20250722_qom.jpeg"
         },
         {
             "path": "iran_20250822_qom.jpeg"
@@ -131,9 +104,6 @@
         },
         {
             "path": "iran_20250824_qom.jpeg"
-        },
-        {
-            "path": "iran_20250827_qom.jpeg"
         },
         {
             "path": "iran_20250919_qom.jpeg"
@@ -149,12 +119,6 @@
         },
         {
             "path": "iran_20251023_qom.jpeg"
-        },
-        {
-            "path": "iran_20251025_qom.jpeg"
-        },
-        {
-            "path": "iran_20251026_qom.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241127_al_fayyum.jpeg"
-        },
-        {
             "path": "egypt_20241128_al_fayyum.jpeg"
         },
         {
@@ -22,9 +19,6 @@
             "path": "egypt_20241204_al_fayyum.jpeg"
         },
         {
-            "path": "egypt_20241227_al_fayyum.jpeg"
-        },
-        {
             "path": "egypt_20241228_al_fayyum.jpeg"
         },
         {
@@ -38,9 +32,6 @@
         },
         {
             "path": "egypt_20250102_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250126_al_fayyum.jpeg"
         },
         {
             "path": "egypt_20250127_al_fayyum.jpeg"
@@ -61,9 +52,6 @@
             "path": "egypt_20250201_al_fayyum.jpeg"
         },
         {
-            "path": "egypt_20250224_al_fayyum.jpeg"
-        },
-        {
             "path": "egypt_20250226_al_fayyum.jpeg"
         },
         {
@@ -77,9 +65,6 @@
         },
         {
             "path": "egypt_20250302_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250303_al_fayyum.jpeg"
         },
         {
             "path": "egypt_20250328_al_fayyum.jpeg"
@@ -97,12 +82,6 @@
             "path": "egypt_20250401_al_fayyum.jpeg"
         },
         {
-            "path": "egypt_20250402_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250425_al_fayyum.jpeg"
-        },
-        {
             "path": "egypt_20250426_al_fayyum.jpeg"
         },
         {
@@ -116,12 +95,6 @@
         },
         {
             "path": "egypt_20250430_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250501_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250524_al_fayyum.jpeg"
         },
         {
             "path": "egypt_20250525_al_fayyum.jpeg"
@@ -139,34 +112,16 @@
             "path": "egypt_20250529_al_fayyum.jpeg"
         },
         {
-            "path": "egypt_20250530_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250622_al_fayyum.jpeg"
-        },
-        {
             "path": "egypt_20250623_al_fayyum.jpeg"
         },
         {
             "path": "egypt_20250624_al_fayyum.jpeg"
         },
         {
-            "path": "egypt_20250629_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250722_al_fayyum.jpeg"
-        },
-        {
             "path": "egypt_20250822_al_fayyum.jpeg"
         },
         {
             "path": "egypt_20250823_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250827_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20250918_al_fayyum.jpeg"
         },
         {
             "path": "egypt_20250923_al_fayyum.jpeg"
@@ -179,12 +134,6 @@
         },
         {
             "path": "egypt_20251023_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20251025_al_fayyum.jpeg"
-        },
-        {
-            "path": "egypt_20251026_al_fayyum.jpeg"
         }
     ],
     "codec": "libx264",

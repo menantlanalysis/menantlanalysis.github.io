@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241127_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20241128_an_nuqat_al_khams.jpeg"
         },
         {
@@ -25,12 +22,6 @@
             "path": "libya_20250130_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250202_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250225_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250226_an_nuqat_al_khams.jpeg"
         },
         {
@@ -43,13 +34,7 @@
             "path": "libya_20250302_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250303_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250328_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250425_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250426_an_nuqat_al_khams.jpeg"
@@ -67,9 +52,6 @@
             "path": "libya_20250430_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250501_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250526_an_nuqat_al_khams.jpeg"
         },
         {
@@ -82,22 +64,10 @@
             "path": "libya_20250529_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250622_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250623_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250624_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250629_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250721_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250722_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250725_an_nuqat_al_khams.jpeg"
@@ -115,19 +85,10 @@
             "path": "libya_20250826_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250827_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250924_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20251023_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20251025_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20251026_an_nuqat_al_khams.jpeg"
         }
     ],
     "codec": "libx264",

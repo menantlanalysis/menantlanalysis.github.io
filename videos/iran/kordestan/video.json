@@ -10,28 +10,13 @@
             "path": "iran_20241204_kordestan.jpeg"
         },
         {
-            "path": "iran_20250103_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250104_kordestan.jpeg"
-        },
-        {
             "path": "iran_20250130_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250225_kordestan.jpeg"
         },
         {
             "path": "iran_20250227_kordestan.jpeg"
         },
         {
             "path": "iran_20250302_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250402_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250425_kordestan.jpeg"
         },
         {
             "path": "iran_20250426_kordestan.jpeg"
@@ -46,9 +31,6 @@
             "path": "iran_20250430_kordestan.jpeg"
         },
         {
-            "path": "iran_20250501_kordestan.jpeg"
-        },
-        {
             "path": "iran_20250525_kordestan.jpeg"
         },
         {
@@ -58,19 +40,10 @@
             "path": "iran_20250529_kordestan.jpeg"
         },
         {
-            "path": "iran_20250530_kordestan.jpeg"
-        },
-        {
             "path": "iran_20250623_kordestan.jpeg"
         },
         {
             "path": "iran_20250624_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250629_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250722_kordestan.jpeg"
         },
         {
             "path": "iran_20250822_kordestan.jpeg"
@@ -80,9 +53,6 @@
         },
         {
             "path": "iran_20250824_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20250827_kordestan.jpeg"
         },
         {
             "path": "iran_20250919_kordestan.jpeg"
@@ -95,12 +65,6 @@
         },
         {
             "path": "iran_20251023_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20251025_kordestan.jpeg"
-        },
-        {
-            "path": "iran_20251026_kordestan.jpeg"
         }
     ],
     "codec": "libx264",

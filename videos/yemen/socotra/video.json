@@ -25,9 +25,6 @@
             "path": "yemen_20250201_socotra.jpeg"
         },
         {
-            "path": "yemen_20250225_socotra.jpeg"
-        },
-        {
             "path": "yemen_20250226_socotra.jpeg"
         },
         {
@@ -41,9 +38,6 @@
         },
         {
             "path": "yemen_20250302_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250326_socotra.jpeg"
         },
         {
             "path": "yemen_20250327_socotra.jpeg"
@@ -61,12 +55,6 @@
             "path": "yemen_20250401_socotra.jpeg"
         },
         {
-            "path": "yemen_20250402_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250425_socotra.jpeg"
-        },
-        {
             "path": "yemen_20250426_socotra.jpeg"
         },
         {
@@ -80,12 +68,6 @@
         },
         {
             "path": "yemen_20250430_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250501_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250524_socotra.jpeg"
         },
         {
             "path": "yemen_20250525_socotra.jpeg"
@@ -103,25 +85,10 @@
             "path": "yemen_20250623_socotra.jpeg"
         },
         {
-            "path": "yemen_20250629_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250722_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250728_socotra.jpeg"
-        },
-        {
             "path": "yemen_20250822_socotra.jpeg"
         },
         {
             "path": "yemen_20250823_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250827_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20250918_socotra.jpeg"
         },
         {
             "path": "yemen_20250919_socotra.jpeg"
@@ -133,16 +100,10 @@
             "path": "yemen_20250924_socotra.jpeg"
         },
         {
-            "path": "yemen_20251017_socotra.jpeg"
-        },
-        {
             "path": "yemen_20251020_socotra.jpeg"
         },
         {
             "path": "yemen_20251021_socotra.jpeg"
-        },
-        {
-            "path": "yemen_20251025_socotra.jpeg"
         }
     ],
     "codec": "libx264",

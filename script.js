@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.statsContainer.style.display = 'block';
         },
         updateFooter: (lastRunDate) => {
-            elements.mainFooter.innerHTML = `&copy; ${new Date().getFullYear()} All rights reserved. Last run: ${lastRunDate}. Contact: <a href="mailto:menantlanalysis@gmail.com">menantlanalysis@gmail.com</a>. Source: <a href="https://eogdata.mines.edu/products/vnl">EOG/VIIRS</a>`;
+            elements.mainFooter.innerHTML = `&copy; ${new Date().getFullYear()} All rights reserved | Last run: ${lastRunDate} | Contact: <a href="mailto:menantlanalysis@gmail.com">menantlanalysis@gmail.com</a> | Source: <a href="https://eogdata.mines.edu/products/vnl">EOG/VIIRS</a> | <a href="methodology.pdf">Methodology</a>`;
         },
         hideMapLibreControls: () => {
             const controlContainer = document.querySelector('.maplibregl-control-container');

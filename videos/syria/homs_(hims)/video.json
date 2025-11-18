@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20241130_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20241201_homs_(hims).jpeg"
-        },
-        {
             "path": "syria_20241202_homs_(hims).jpeg"
         },
         {
@@ -112,10 +103,13 @@
             "path": "syria_20250924_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20251020_homs_(hims).jpeg"
+            "path": "syria_20251023_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20251023_homs_(hims).jpeg"
+            "path": "syria_20251120_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251121_homs_(hims).jpeg"
         }
     ],
     "codec": "libx264",

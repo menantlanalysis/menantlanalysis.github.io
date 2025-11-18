@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241129_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241130_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241201_aswan.jpeg"
-        },
-        {
             "path": "egypt_20241202_aswan.jpeg"
         },
         {
@@ -121,10 +109,10 @@
             "path": "egypt_20250924_aswan.jpeg"
         },
         {
-            "path": "egypt_20251020_aswan.jpeg"
+            "path": "egypt_20251023_aswan.jpeg"
         },
         {
-            "path": "egypt_20251023_aswan.jpeg"
+            "path": "egypt_20251121_aswan.jpeg"
         }
     ],
     "codec": "libx264",

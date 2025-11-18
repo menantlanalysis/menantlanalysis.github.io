@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20241129_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20241130_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20241201_ar_raqqah.jpeg"
-        },
-        {
             "path": "syria_20241202_ar_raqqah.jpeg"
         },
         {
@@ -119,6 +107,12 @@
         },
         {
             "path": "syria_20251023_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251120_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251121_ar_raqqah.jpeg"
         }
     ],
     "codec": "libx264",

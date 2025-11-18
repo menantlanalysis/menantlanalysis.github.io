@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_idlib.jpeg"
-        },
-        {
-            "path": "syria_20241129_idlib.jpeg"
-        },
-        {
-            "path": "syria_20241130_idlib.jpeg"
-        },
-        {
-            "path": "syria_20241201_idlib.jpeg"
-        },
-        {
             "path": "syria_20241202_idlib.jpeg"
         },
         {
@@ -119,6 +107,12 @@
         },
         {
             "path": "syria_20251023_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251120_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251121_idlib.jpeg"
         }
     ],
     "codec": "libx264",

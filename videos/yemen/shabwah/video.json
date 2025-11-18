@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241128_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241129_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241130_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241201_shabwah.jpeg"
-        },
-        {
             "path": "yemen_20241202_shabwah.jpeg"
         },
         {
@@ -121,10 +109,19 @@
             "path": "yemen_20250924_shabwah.jpeg"
         },
         {
-            "path": "yemen_20251020_shabwah.jpeg"
+            "path": "yemen_20251021_shabwah.jpeg"
         },
         {
-            "path": "yemen_20251021_shabwah.jpeg"
+            "path": "yemen_20251117_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251120_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251121_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251122_shabwah.jpeg"
         }
     ],
     "codec": "libx264",

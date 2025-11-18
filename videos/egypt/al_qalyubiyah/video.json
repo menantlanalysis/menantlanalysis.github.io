@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241129_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241130_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241201_al_qalyubiyah.jpeg"
-        },
-        {
             "path": "egypt_20241202_al_qalyubiyah.jpeg"
         },
         {
@@ -130,10 +118,10 @@
             "path": "egypt_20250924_al_qalyubiyah.jpeg"
         },
         {
-            "path": "egypt_20251020_al_qalyubiyah.jpeg"
+            "path": "egypt_20251023_al_qalyubiyah.jpeg"
         },
         {
-            "path": "egypt_20251023_al_qalyubiyah.jpeg"
+            "path": "egypt_20251121_al_qalyubiyah.jpeg"
         }
     ],
     "codec": "libx264",

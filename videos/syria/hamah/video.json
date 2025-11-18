@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_hamah.jpeg"
-        },
-        {
-            "path": "syria_20241129_hamah.jpeg"
-        },
-        {
-            "path": "syria_20241130_hamah.jpeg"
-        },
-        {
-            "path": "syria_20241201_hamah.jpeg"
-        },
-        {
             "path": "syria_20241202_hamah.jpeg"
         },
         {
@@ -116,6 +104,12 @@
         },
         {
             "path": "syria_20251023_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251120_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251121_hamah.jpeg"
         }
     ],
     "codec": "libx264",

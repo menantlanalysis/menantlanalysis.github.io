@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241129_derna.jpeg"
-        },
-        {
             "path": "libya_20241202_derna.jpeg"
         },
         {
@@ -116,6 +113,9 @@
         },
         {
             "path": "libya_20251019_derna.jpeg"
+        },
+        {
+            "path": "libya_20251120_derna.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241128_raymah.jpeg"
-        },
-        {
-            "path": "yemen_20241129_raymah.jpeg"
-        },
-        {
-            "path": "yemen_20241201_raymah.jpeg"
-        },
-        {
             "path": "yemen_20241202_raymah.jpeg"
         },
         {
@@ -121,10 +112,19 @@
             "path": "yemen_20250923_raymah.jpeg"
         },
         {
-            "path": "yemen_20251020_raymah.jpeg"
+            "path": "yemen_20251021_raymah.jpeg"
         },
         {
-            "path": "yemen_20251021_raymah.jpeg"
+            "path": "yemen_20251117_raymah.jpeg"
+        },
+        {
+            "path": "yemen_20251120_raymah.jpeg"
+        },
+        {
+            "path": "yemen_20251121_raymah.jpeg"
+        },
+        {
+            "path": "yemen_20251122_raymah.jpeg"
         }
     ],
     "codec": "libx264",

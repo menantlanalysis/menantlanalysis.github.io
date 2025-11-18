@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128_nalut.jpeg"
-        },
-        {
-            "path": "libya_20241129_nalut.jpeg"
-        },
-        {
-            "path": "libya_20241130_nalut.jpeg"
-        },
-        {
             "path": "libya_20241202_nalut.jpeg"
         },
         {
@@ -127,10 +118,13 @@
             "path": "libya_20250924_nalut.jpeg"
         },
         {
-            "path": "libya_20251020_nalut.jpeg"
+            "path": "libya_20251023_nalut.jpeg"
         },
         {
-            "path": "libya_20251023_nalut.jpeg"
+            "path": "libya_20251120_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251121_nalut.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241128.jpeg"
-        },
-        {
-            "path": "yemen_20241129.jpeg"
-        },
-        {
-            "path": "yemen_20241130.jpeg"
-        },
-        {
-            "path": "yemen_20241201.jpeg"
-        },
-        {
             "path": "yemen_20241202.jpeg"
         },
         {
@@ -142,10 +130,19 @@
             "path": "yemen_20250924.jpeg"
         },
         {
-            "path": "yemen_20251020.jpeg"
+            "path": "yemen_20251021.jpeg"
         },
         {
-            "path": "yemen_20251021.jpeg"
+            "path": "yemen_20251117.jpeg"
+        },
+        {
+            "path": "yemen_20251120.jpeg"
+        },
+        {
+            "path": "yemen_20251121.jpeg"
+        },
+        {
+            "path": "yemen_20251122.jpeg"
         }
     ],
     "codec": "libx264",

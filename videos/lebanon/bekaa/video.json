@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "lebanon_20241129_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20241130_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20241201_bekaa.jpeg"
-        },
-        {
             "path": "lebanon_20241202_bekaa.jpeg"
         },
         {
@@ -61,10 +52,10 @@
             "path": "lebanon_20250924_bekaa.jpeg"
         },
         {
-            "path": "lebanon_20251020_bekaa.jpeg"
+            "path": "lebanon_20251023_bekaa.jpeg"
         },
         {
-            "path": "lebanon_20251023_bekaa.jpeg"
+            "path": "lebanon_20251121_bekaa.jpeg"
         }
     ],
     "codec": "libx264",

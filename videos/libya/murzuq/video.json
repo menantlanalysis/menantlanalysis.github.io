@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128_murzuq.jpeg"
-        },
-        {
-            "path": "libya_20241129_murzuq.jpeg"
-        },
-        {
-            "path": "libya_20241130_murzuq.jpeg"
-        },
-        {
-            "path": "libya_20241201_murzuq.jpeg"
-        },
-        {
             "path": "libya_20241202_murzuq.jpeg"
         },
         {
@@ -142,10 +130,16 @@
             "path": "libya_20251019_murzuq.jpeg"
         },
         {
-            "path": "libya_20251020_murzuq.jpeg"
+            "path": "libya_20251023_murzuq.jpeg"
         },
         {
-            "path": "libya_20251023_murzuq.jpeg"
+            "path": "libya_20251119_murzuq.jpeg"
+        },
+        {
+            "path": "libya_20251120_murzuq.jpeg"
+        },
+        {
+            "path": "libya_20251121_murzuq.jpeg"
         }
     ],
     "codec": "libx264",

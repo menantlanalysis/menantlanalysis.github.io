@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241130_oases.jpeg"
-        },
-        {
             "path": "libya_20241204_oases.jpeg"
         },
         {
@@ -94,10 +91,16 @@
             "path": "libya_20251019_oases.jpeg"
         },
         {
-            "path": "libya_20251020_oases.jpeg"
+            "path": "libya_20251023_oases.jpeg"
         },
         {
-            "path": "libya_20251023_oases.jpeg"
+            "path": "libya_20251119_oases.jpeg"
+        },
+        {
+            "path": "libya_20251120_oases.jpeg"
+        },
+        {
+            "path": "libya_20251121_oases.jpeg"
         }
     ],
     "codec": "libx264",

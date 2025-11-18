@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Soccer Reaction Trainer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #00d4ff;
+    }
+
+    .settings {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    .setting-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .setting-row:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    input[type="number"] {
+      width: 60px;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #0f3460;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .unit {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .status-area {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .status-indicator {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+
+    .status-indicator.idle {
+      background: #333;
+      color: #888;
+    }
+
+    .status-indicator.waiting {
+      background: #1e3a5f;
+      color: #4da6ff;
+      animation: pulse 2s infinite;
+    }
+
+    .status-indicator.beep {
+      background: #ff4757;
+      color: #fff;
+      box-shadow: 0 0 40px #ff4757;
+    }
+
+    .status-indicator.reacted {
+      background: #2ed573;
+      color: #fff;
+    }
+
+    .status-indicator.too-early {
+      background: #ffa502;
+      color: #fff;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+    }
+
+    .reaction-time {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00d4ff;
+      margin-bottom: 10px;
+    }
+
+    .reaction-label {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .btn {
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.2s;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+
+    .btn-start {
+      background: linear-gradient(135deg, #00d4ff, #0099cc);
+      color: #000;
+    }
+
+    .btn-start:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-stop {
+      background: #ff4757;
+      color: #fff;
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .stats {
+      background: #16213e;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 10px;
+    }
+
+    .stats h3 {
+      font-size: 1rem;
+      color: #00d4ff;
+      margin-bottom: 15px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #0f3460;
+    }
+
+    .stat-row:last-child {
+      border-bottom: none;
+    }
+
+    .stat-label {
+      color: #888;
+    }
+
+    .stat-value {
+      font-weight: bold;
+    }
+
+    .history {
+      margin-top: 15px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    .history-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .accel-info {
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .permission-btn {
+      background: #ffa502;
+      color: #000;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Soccer Reaction Trainer</h1>
+
+  <div class="settings">
+    <div class="setting-row">
+      <label>Base interval (n)</label>
+      <div class="input-group">
+        <input type="number" id="baseInterval" value="8" min="1" max="30">
+        <span class="unit">sec</span>
+      </div>
+    </div>
+    <div class="setting-row">
+      <label>Random range (+m)</label>
+      <div class="input-group">
+        <input type="number" id="randomRange" value="2" min="0" max="10">
+        <span class="unit">sec</span>
+      </div>
+    </div>
+    <div class="setting-row">
+      <label>Accel threshold</label>
+      <div class="input-group">
+        <input type="number" id="accelThreshold" value="20" min="5" max="100">
+        <span class="unit">m/s²</span>
+      </div>
+    </div>
+  </div>
+
+  <button id="permissionBtn" class="btn permission-btn" style="display: none;">
+    Enable Motion Sensors
+  </button>
+
+  <div class="status-area">
+    <div id="statusIndicator" class="status-indicator idle">
+      READY
+    </div>
+    <div id="reactionTime" class="reaction-time">---</div>
+    <div class="reaction-label">Reaction Time</div>
+    <div id="accelInfo" class="accel-info"></div>
+  </div>
+
+  <button id="startBtn" class="btn btn-start">START TRAINING</button>
+  <button id="stopBtn" class="btn btn-stop" style="display: none;">STOP</button>
+
+  <div class="stats">
+    <h3>Session Stats</h3>
+    <div class="stat-row">
+      <span class="stat-label">Reactions</span>
+      <span id="totalReactions" class="stat-value">0</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-label">Average</span>
+      <span id="avgTime" class="stat-value">---</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-label">Best</span>
+      <span id="bestTime" class="stat-value">---</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-label">False Starts</span>
+      <span id="falseStarts" class="stat-value">0</span>
+    </div>
+    <div class="history" id="history"></div>
+  </div>
+
+  <script>
+    // Audio - using pre-generated base64 WAV for maximum iOS compatibility
+    let beepAudio = null;
+    let beepLowAudio = null;
+    let audioUnlocked = false;
+
+    // Generate a WAV file as base64 data URI
+    function generateBeepDataUri(frequency, duration, volume) {
+      const sampleRate = 44100;
+      const numSamples = Math.floor(sampleRate * duration);
+      const numChannels = 1;
+      const bitsPerSample = 16;
+      const byteRate = sampleRate * numChannels * bitsPerSample / 8;
+      const blockAlign = numChannels * bitsPerSample / 8;
+      const dataSize = numSamples * blockAlign;
+      const fileSize = 36 + dataSize;
+
+      const buffer = new ArrayBuffer(44 + dataSize);
+      const view = new DataView(buffer);
+
+      // WAV header
+      const writeString = (offset, str) => {
+        for (let i = 0; i < str.length; i++) {
+          view.setUint8(offset + i, str.charCodeAt(i));
+        }
+      };
+
+      writeString(0, 'RIFF');
+      view.setUint32(4, fileSize, true);
+      writeString(8, 'WAVE');
+      writeString(12, 'fmt ');
+      view.setUint32(16, 16, true); // chunk size
+      view.setUint16(20, 1, true); // audio format (PCM)
+      view.setUint16(22, numChannels, true);
+      view.setUint32(24, sampleRate, true);
+      view.setUint32(28, byteRate, true);
+      view.setUint16(32, blockAlign, true);
+      view.setUint16(34, bitsPerSample, true);
+      writeString(36, 'data');
+      view.setUint32(40, dataSize, true);
+
+      // Generate square wave with harmonics (louder, more piercing)
+      for (let i = 0; i < numSamples; i++) {
+        const t = i / sampleRate;
+        const envelope = Math.min(1, Math.max(0, 1 - (t / duration) * 0.5)); // Fade out
+
+        // Square wave approximation (sum of odd harmonics)
+        let sample = 0;
+        sample += Math.sin(2 * Math.PI * frequency * t); // fundamental
+        sample += Math.sin(2 * Math.PI * frequency * 3 * t) / 3; // 3rd harmonic
+        sample += Math.sin(2 * Math.PI * frequency * 5 * t) / 5; // 5th harmonic
+
+        sample = sample * envelope * volume;
+        sample = Math.max(-1, Math.min(1, sample)); // Clamp
+
+        const intSample = Math.floor(sample * 32767);
+        view.setInt16(44 + i * 2, intSample, true);
+      }
+
+      // Convert to base64
+      const bytes = new Uint8Array(buffer);
+      let binary = '';
+      for (let i = 0; i < bytes.length; i++) {
+        binary += String.fromCharCode(bytes[i]);
+      }
+      return 'data:audio/wav;base64,' + btoa(binary);
+    }
+
+    // Create audio elements on page load
+    function initAudio() {
+      // High beep for GO
+      beepAudio = new Audio(generateBeepDataUri(880, 0.3, 0.9));
+      beepAudio.volume = 1.0;
+      beepAudio.load(); // Preload for iOS
+
+      // Low beep for false start
+      beepLowAudio = new Audio(generateBeepDataUri(300, 0.4, 0.9));
+      beepLowAudio.volume = 1.0;
+      beepLowAudio.load(); // Preload for iOS
+    }
+
+    // Unlock audio on iOS by playing each Audio element (must be in user gesture handler)
+    function unlockAudio() {
+      if (audioUnlocked) return;
+
+      // On iOS, we must play EACH Audio element in a user gesture to unlock it
+      // Play them very briefly at low volume
+      if (beepAudio) {
+        beepAudio.volume = 0.1;
+        beepAudio.play().then(() => {
+          beepAudio.pause();
+          beepAudio.currentTime = 0;
+          beepAudio.volume = 1.0;
+          console.log('High beep unlocked');
+        }).catch(e => console.log('High beep unlock failed:', e));
+      }
+
+      if (beepLowAudio) {
+        beepLowAudio.volume = 0.1;
+        beepLowAudio.play().then(() => {
+          beepLowAudio.pause();
+          beepLowAudio.currentTime = 0;
+          beepLowAudio.volume = 1.0;
+          console.log('Low beep unlocked');
+        }).catch(e => console.log('Low beep unlock failed:', e));
+      }
+
+      audioUnlocked = true;
+    }
+
+    function playBeep(type = 'high') {
+      const audio = type === 'high' ? beepAudio : beepLowAudio;
+      if (!audio) {
+        console.log('Audio not initialized');
+        return;
+      }
+
+      try {
+        // Reset and play
+        audio.currentTime = 0;
+        audio.play().catch(e => {
+          console.error('Beep play error:', e);
+        });
+      } catch (e) {
+        console.error('Beep error:', e);
+      }
+    }
+
+    // Initialize audio on page load
+    initAudio();
+
+    // State
+    let isRunning = false;
+    let isWaitingForReaction = false;
+    let canDetectMotion = false; // Flag to prevent early detection
+    let beepTime = null;
+    let timeoutId = null;
+    let reactionTimes = [];
+    let falseStartCount = 0;
+    let hasMotionPermission = false;
+
+    // Baseline acceleration (gravity)
+    let baselineAccel = 9.8;
+    let accelSamples = [];
+
+    // DOM elements
+    const startBtn = document.getElementById('startBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const permissionBtn = document.getElementById('permissionBtn');
+    const statusIndicator = document.getElementById('statusIndicator');
+    const reactionTimeDisplay = document.getElementById('reactionTime');
+    const accelInfo = document.getElementById('accelInfo');
+    const totalReactionsEl = document.getElementById('totalReactions');
+    const avgTimeEl = document.getElementById('avgTime');
+    const bestTimeEl = document.getElementById('bestTime');
+    const falseStartsEl = document.getElementById('falseStarts');
+    const historyEl = document.getElementById('history');
+
+    // Settings
+    const baseIntervalInput = document.getElementById('baseInterval');
+    const randomRangeInput = document.getElementById('randomRange');
+    const accelThresholdInput = document.getElementById('accelThreshold');
+
+    // Check if motion permission is needed (iOS 13+)
+    function checkMotionPermission() {
+      if (typeof DeviceMotionEvent !== 'undefined' &&
+          typeof DeviceMotionEvent.requestPermission === 'function') {
+        permissionBtn.style.display = 'block';
+      } else if ('DeviceMotionEvent' in window) {
+        hasMotionPermission = true;
+        setupMotionListener();
+      }
+    }
+
+    async function requestMotionPermission() {
+      // Also unlock audio when requesting motion permission
+      unlockAudio();
+
+      try {
+        const permission = await DeviceMotionEvent.requestPermission();
+        if (permission === 'granted') {
+          hasMotionPermission = true;
+          permissionBtn.style.display = 'none';
+          setupMotionListener();
+        }
+      } catch (e) {
+        console.error('Motion permission error:', e);
+        alert('Could not get motion permission. Reaction will be detected by tap instead.');
+      }
+    }
+
+    function setupMotionListener() {
+      window.addEventListener('devicemotion', handleMotion, true);
+    }
+
+    function handleMotion(event) {
+      const acc = event.accelerationIncludingGravity || event.acceleration;
+      if (!acc) return;
+
+      const x = acc.x || 0;
+      const y = acc.y || 0;
+      const z = acc.z || 0;
+
+      // Calculate total acceleration magnitude
+      const magnitude = Math.sqrt(x * x + y * y + z * z);
+
+      // Collect baseline samples when not in active detection
+      if (isRunning && !canDetectMotion) {
+        accelSamples.push(magnitude);
+        if (accelSamples.length > 20) {
+          accelSamples.shift();
+        }
+        // Calculate baseline as average of recent samples
+        if (accelSamples.length >= 5) {
+          baselineAccel = accelSamples.reduce((a, b) => a + b, 0) / accelSamples.length;
+        }
+      }
+
+      // Show live accel data (deviation from baseline)
+      const deviation = Math.abs(magnitude - baselineAccel);
+      accelInfo.textContent = `Accel: ${deviation.toFixed(1)} m/s² (base: ${baselineAccel.toFixed(1)})`;
+
+      // Only detect motion when explicitly allowed
+      if (!isRunning || !canDetectMotion) return;
+
+      const threshold = parseFloat(accelThresholdInput.value);
+
+      // Check if movement detected (deviation from baseline exceeds threshold)
+      if (deviation > threshold) {
+        handleReaction();
+      }
+    }
+
+    function handleReaction() {
+      if (!isRunning || !canDetectMotion) return;
+
+      // Disable further detection immediately
+      canDetectMotion = false;
+
+      if (!isWaitingForReaction) {
+        // False start!
+        falseStartCount++;
+        falseStartsEl.textContent = falseStartCount;
+        statusIndicator.className = 'status-indicator too-early';
+        statusIndicator.textContent = 'TOO EARLY!';
+        playBeep('low');
+
+        // Reset and schedule next beep
+        clearTimeout(timeoutId);
+        setTimeout(() => {
+          if (isRunning) {
+            scheduleNextBeep();
+          }
+        }, 2000);
+        return;
+      }
+
+      // Valid reaction
+      const reactionTime = performance.now() - beepTime;
+      isWaitingForReaction = false;
+
+      reactionTimes.push(reactionTime);
+      updateStats();
+
+      reactionTimeDisplay.textContent = `${Math.round(reactionTime)} ms`;
+      statusIndicator.className = 'status-indicator reacted';
+      statusIndicator.textContent = 'NICE!';
+
+      // Add to history
+      const historyItem = document.createElement('div');
+      historyItem.className = 'history-item';
+      historyItem.innerHTML = `<span>#${reactionTimes.length}</span><span>${Math.round(reactionTime)} ms</span>`;
+      historyEl.insertBefore(historyItem, historyEl.firstChild);
+
+      // Schedule next beep after delay
+      setTimeout(() => {
+        if (isRunning) {
+          scheduleNextBeep();
+        }
+      }, 2000);
+    }
+
+    function getRandomInterval() {
+      const base = parseFloat(baseIntervalInput.value);
+      const range = parseFloat(randomRangeInput.value);
+      const randomOffset = Math.random() * range;
+      return (base + randomOffset) * 1000;
+    }
+
+    function scheduleNextBeep() {
+      // Reset state
+      isWaitingForReaction = false;
+      canDetectMotion = false;
+      accelSamples = [];
+
+      statusIndicator.className = 'status-indicator waiting';
+      statusIndicator.textContent = 'WAIT...';
+
+      const interval = getRandomInterval();
+
+      // Enable motion detection 1 second before beep (to catch false starts)
+      const earlyDetectionTime = Math.max(1000, interval - 1000);
+
+      setTimeout(() => {
+        if (isRunning) {
+          canDetectMotion = true;
+        }
+      }, earlyDetectionTime);
+
+      timeoutId = setTimeout(() => {
+        if (!isRunning) return;
+
+        // BEEP!
+        beepTime = performance.now();
+        isWaitingForReaction = true;
+        canDetectMotion = true; // Ensure detection is on
+        playBeep('high');
+
+        statusIndicator.className = 'status-indicator beep';
+        statusIndicator.textContent = 'GO!';
+
+        // Auto-timeout after 3 seconds
+        setTimeout(() => {
+          if (isWaitingForReaction && isRunning) {
+            isWaitingForReaction = false;
+            canDetectMotion = false;
+            statusIndicator.className = 'status-indicator idle';
+            statusIndicator.textContent = 'MISSED';
+            setTimeout(() => {
+              if (isRunning) {
+                scheduleNextBeep();
+              }
+            }, 1500);
+          }
+        }, 3000);
+      }, interval);
+    }
+
+    function updateStats() {
+      totalReactionsEl.textContent = reactionTimes.length;
+
+      if (reactionTimes.length > 0) {
+        const avg = reactionTimes.reduce((a, b) => a + b, 0) / reactionTimes.length;
+        const best = Math.min(...reactionTimes);
+
+        avgTimeEl.textContent = `${Math.round(avg)} ms`;
+        bestTimeEl.textContent = `${Math.round(best)} ms`;
+      }
+    }
+
+    function startTraining() {
+      // Unlock audio first (critical for iOS)
+
+      // Unlock and play a test beep so user knows audio is working
+      unlockAudio();
+
+      isRunning = true;
+      canDetectMotion = false;
+      accelSamples = [];
+
+      startBtn.style.display = 'none';
+      stopBtn.style.display = 'block';
+
+      // Disable settings while running
+      baseIntervalInput.disabled = true;
+      randomRangeInput.disabled = true;
+      accelThresholdInput.disabled = true;
+
+      // Small delay before starting to let user get ready
+      statusIndicator.className = 'status-indicator idle';
+      statusIndicator.textContent = 'GET READY';
+
+      setTimeout(() => {
+        if (isRunning) {
+          scheduleNextBeep();
+        }
+      }, 1500);
+    }
+
+    function stopTraining() {
+      isRunning = false;
+      isWaitingForReaction = false;
+      canDetectMotion = false;
+      clearTimeout(timeoutId);
+
+      startBtn.style.display = 'block';
+      stopBtn.style.display = 'none';
+
+      // Re-enable settings
+      baseIntervalInput.disabled = false;
+      randomRangeInput.disabled = false;
+      accelThresholdInput.disabled = false;
+
+      statusIndicator.className = 'status-indicator idle';
+      statusIndicator.textContent = 'READY';
+    }
+
+    // Event listeners
+    // Use touchstart for iOS to unlock audio as early as possible
+    startBtn.addEventListener('touchstart', unlockAudio, { once: true });
+    permissionBtn.addEventListener('touchstart', unlockAudio, { once: true });
+
+    startBtn.addEventListener('click', startTraining);
+    stopBtn.addEventListener('click', stopTraining);
+    permissionBtn.addEventListener('click', requestMotionPermission);
+
+    // Fallback: tap/click to react (for testing or no accelerometer)
+    statusIndicator.addEventListener('click', () => {
+      if (isRunning && canDetectMotion) {
+        handleReaction();
+      }
+    });
+
+    // Prevent zoom on double-tap
+    document.addEventListener('touchstart', (e) => {
+      if (e.touches.length > 1) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', (e) => {
+      const now = Date.now();
+      if (now - lastTouchEnd <= 300) {
+        e.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+
+    // Initialize
+    checkMotionPermission();
+  </script>
+</body>
+</html>

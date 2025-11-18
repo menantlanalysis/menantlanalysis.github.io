@@ -1,12 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241129_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20241130_tr\u00edpoli.jpeg"
-        },
-        {
             "path": "libya_20250101_tr\u00edpoli.jpeg"
         },
         {
@@ -97,10 +91,16 @@
             "path": "libya_20250924_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20251020_tr\u00edpoli.jpeg"
+            "path": "libya_20251023_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20251023_tr\u00edpoli.jpeg"
+            "path": "libya_20251119_tr\u00edpoli.jpeg"
+        },
+        {
+            "path": "libya_20251120_tr\u00edpoli.jpeg"
+        },
+        {
+            "path": "libya_20251121_tr\u00edpoli.jpeg"
         }
     ],
     "codec": "libx264",

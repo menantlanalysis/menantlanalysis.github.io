@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241128_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241129_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241130_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241201_ma'rib.jpeg"
-        },
-        {
             "path": "yemen_20241202_ma'rib.jpeg"
         },
         {
@@ -133,10 +121,19 @@
             "path": "yemen_20250919_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20251020_ma'rib.jpeg"
+            "path": "yemen_20251021_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20251021_ma'rib.jpeg"
+            "path": "yemen_20251117_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251120_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251121_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251122_ma'rib.jpeg"
         }
     ],
     "codec": "libx264",

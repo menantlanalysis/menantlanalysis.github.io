@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241129_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241130_bani_suwayf.jpeg"
-        },
-        {
             "path": "egypt_20241202_bani_suwayf.jpeg"
         },
         {
@@ -127,10 +118,10 @@
             "path": "egypt_20250924_bani_suwayf.jpeg"
         },
         {
-            "path": "egypt_20251020_bani_suwayf.jpeg"
+            "path": "egypt_20251023_bani_suwayf.jpeg"
         },
         {
-            "path": "egypt_20251023_bani_suwayf.jpeg"
+            "path": "egypt_20251121_bani_suwayf.jpeg"
         }
     ],
     "codec": "libx264",

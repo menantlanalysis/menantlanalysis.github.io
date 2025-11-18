@@ -77,6 +77,12 @@
         },
         {
             "path": "iran_20251023_razavi_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251121_razavi_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251122_razavi_khorasan.jpeg"
         }
     ],
     "codec": "libx264",

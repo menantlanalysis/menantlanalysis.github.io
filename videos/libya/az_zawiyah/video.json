@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20241129_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20241130_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20241201_az_zawiyah.jpeg"
-        },
-        {
             "path": "libya_20241202_az_zawiyah.jpeg"
         },
         {
@@ -112,10 +100,16 @@
             "path": "libya_20250924_az_zawiyah.jpeg"
         },
         {
-            "path": "libya_20251020_az_zawiyah.jpeg"
+            "path": "libya_20251023_az_zawiyah.jpeg"
         },
         {
-            "path": "libya_20251023_az_zawiyah.jpeg"
+            "path": "libya_20251119_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251120_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251121_az_zawiyah.jpeg"
         }
     ],
     "codec": "libx264",

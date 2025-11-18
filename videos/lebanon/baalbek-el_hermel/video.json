@@ -1,12 +1,6 @@
 {
     "images": [
         {
-            "path": "lebanon_20241129_baalbek-el_hermel.jpeg"
-        },
-        {
-            "path": "lebanon_20241130_baalbek-el_hermel.jpeg"
-        },
-        {
             "path": "lebanon_20241202_baalbek-el_hermel.jpeg"
         },
         {
@@ -88,10 +82,10 @@
             "path": "lebanon_20250924_baalbek-el_hermel.jpeg"
         },
         {
-            "path": "lebanon_20251020_baalbek-el_hermel.jpeg"
+            "path": "lebanon_20251023_baalbek-el_hermel.jpeg"
         },
         {
-            "path": "lebanon_20251023_baalbek-el_hermel.jpeg"
+            "path": "lebanon_20251121_baalbek-el_hermel.jpeg"
         }
     ],
     "codec": "libx264",

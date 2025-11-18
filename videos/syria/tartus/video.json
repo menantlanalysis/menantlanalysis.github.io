@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241130_tartus.jpeg"
-        },
-        {
             "path": "syria_20250331_tartus.jpeg"
         },
         {
@@ -52,10 +49,10 @@
             "path": "syria_20250924_tartus.jpeg"
         },
         {
-            "path": "syria_20251020_tartus.jpeg"
+            "path": "syria_20251023_tartus.jpeg"
         },
         {
-            "path": "syria_20251023_tartus.jpeg"
+            "path": "syria_20251120_tartus.jpeg"
         }
     ],
     "codec": "libx264",

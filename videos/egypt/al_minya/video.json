@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241129_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241130_al_minya.jpeg"
-        },
-        {
             "path": "egypt_20241202_al_minya.jpeg"
         },
         {
@@ -127,10 +118,10 @@
             "path": "egypt_20250924_al_minya.jpeg"
         },
         {
-            "path": "egypt_20251020_al_minya.jpeg"
+            "path": "egypt_20251023_al_minya.jpeg"
         },
         {
-            "path": "egypt_20251023_al_minya.jpeg"
+            "path": "egypt_20251121_al_minya.jpeg"
         }
     ],
     "codec": "libx264",

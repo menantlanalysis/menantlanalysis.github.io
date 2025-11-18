@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "lebanon_20241129_beirut.jpeg"
-        },
-        {
-            "path": "lebanon_20241130_beirut.jpeg"
-        },
-        {
-            "path": "lebanon_20241201_beirut.jpeg"
-        },
-        {
             "path": "lebanon_20241202_beirut.jpeg"
         },
         {
@@ -97,10 +88,10 @@
             "path": "lebanon_20250924_beirut.jpeg"
         },
         {
-            "path": "lebanon_20251020_beirut.jpeg"
+            "path": "lebanon_20251023_beirut.jpeg"
         },
         {
-            "path": "lebanon_20251023_beirut.jpeg"
+            "path": "lebanon_20251121_beirut.jpeg"
         }
     ],
     "codec": "libx264",

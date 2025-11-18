@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_rif_dimashq.jpeg"
-        },
-        {
-            "path": "syria_20241129_rif_dimashq.jpeg"
-        },
-        {
-            "path": "syria_20241130_rif_dimashq.jpeg"
-        },
-        {
-            "path": "syria_20241201_rif_dimashq.jpeg"
-        },
-        {
             "path": "syria_20241202_rif_dimashq.jpeg"
         },
         {
@@ -115,10 +103,13 @@
             "path": "syria_20250924_rif_dimashq.jpeg"
         },
         {
-            "path": "syria_20251020_rif_dimashq.jpeg"
+            "path": "syria_20251023_rif_dimashq.jpeg"
         },
         {
-            "path": "syria_20251023_rif_dimashq.jpeg"
+            "path": "syria_20251120_rif_dimashq.jpeg"
+        },
+        {
+            "path": "syria_20251121_rif_dimashq.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,12 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20241130_bur_sa`id.jpeg"
-        },
-        {
             "path": "egypt_20241202_bur_sa`id.jpeg"
         },
         {
@@ -106,10 +100,10 @@
             "path": "egypt_20250924_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20251020_bur_sa`id.jpeg"
+            "path": "egypt_20251023_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20251023_bur_sa`id.jpeg"
+            "path": "egypt_20251121_bur_sa`id.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241128_fars.jpeg"
-        },
-        {
-            "path": "iran_20241129_fars.jpeg"
-        },
-        {
-            "path": "iran_20241130_fars.jpeg"
-        },
-        {
-            "path": "iran_20241201_fars.jpeg"
-        },
-        {
             "path": "iran_20241203_fars.jpeg"
         },
         {
@@ -119,6 +107,15 @@
         },
         {
             "path": "iran_20251023_fars.jpeg"
+        },
+        {
+            "path": "iran_20251117_fars.jpeg"
+        },
+        {
+            "path": "iran_20251121_fars.jpeg"
+        },
+        {
+            "path": "iran_20251122_fars.jpeg"
         }
     ],
     "codec": "libx264",

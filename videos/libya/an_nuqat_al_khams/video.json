@@ -1,12 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20241130_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20241202_an_nuqat_al_khams.jpeg"
         },
         {
@@ -89,6 +83,12 @@
         },
         {
             "path": "libya_20251023_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251120_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251121_an_nuqat_al_khams.jpeg"
         }
     ],
     "codec": "libx264",

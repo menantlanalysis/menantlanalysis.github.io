@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241128_qazvin.jpeg"
-        },
-        {
             "path": "iran_20241202_qazvin.jpeg"
         },
         {
@@ -74,6 +71,15 @@
         },
         {
             "path": "iran_20251023_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20251117_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20251121_qazvin.jpeg"
+        },
+        {
+            "path": "iran_20251122_qazvin.jpeg"
         }
     ],
     "codec": "libx264",

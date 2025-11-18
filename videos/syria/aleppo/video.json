@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_aleppo.jpeg"
-        },
-        {
-            "path": "syria_20241129_aleppo.jpeg"
-        },
-        {
-            "path": "syria_20241130_aleppo.jpeg"
-        },
-        {
-            "path": "syria_20241201_aleppo.jpeg"
-        },
-        {
             "path": "syria_20241202_aleppo.jpeg"
         },
         {
@@ -113,6 +101,12 @@
         },
         {
             "path": "syria_20251023_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20251120_aleppo.jpeg"
+        },
+        {
+            "path": "syria_20251121_aleppo.jpeg"
         }
     ],
     "codec": "libx264",

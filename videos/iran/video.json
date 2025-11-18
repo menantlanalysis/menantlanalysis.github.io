@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241128.jpeg"
-        },
-        {
-            "path": "iran_20241129.jpeg"
-        },
-        {
-            "path": "iran_20241130.jpeg"
-        },
-        {
-            "path": "iran_20241201.jpeg"
-        },
-        {
             "path": "iran_20241202.jpeg"
         },
         {
@@ -149,6 +137,15 @@
         },
         {
             "path": "iran_20251023.jpeg"
+        },
+        {
+            "path": "iran_20251117.jpeg"
+        },
+        {
+            "path": "iran_20251121.jpeg"
+        },
+        {
+            "path": "iran_20251122.jpeg"
         }
     ],
     "codec": "libx264",

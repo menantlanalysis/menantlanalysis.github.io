@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241129_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241130_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241201_suhaj.jpeg"
-        },
-        {
             "path": "egypt_20241202_suhaj.jpeg"
         },
         {
@@ -124,10 +112,10 @@
             "path": "egypt_20250924_suhaj.jpeg"
         },
         {
-            "path": "egypt_20251020_suhaj.jpeg"
+            "path": "egypt_20251023_suhaj.jpeg"
         },
         {
-            "path": "egypt_20251023_suhaj.jpeg"
+            "path": "egypt_20251121_suhaj.jpeg"
         }
     ],
     "codec": "libx264",

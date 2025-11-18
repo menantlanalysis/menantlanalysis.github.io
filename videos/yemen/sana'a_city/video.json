@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241128_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241129_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241130_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241201_sana'a_city.jpeg"
-        },
-        {
             "path": "yemen_20241202_sana'a_city.jpeg"
         },
         {
@@ -127,10 +115,19 @@
             "path": "yemen_20250919_sana'a_city.jpeg"
         },
         {
-            "path": "yemen_20251020_sana'a_city.jpeg"
+            "path": "yemen_20251021_sana'a_city.jpeg"
         },
         {
-            "path": "yemen_20251021_sana'a_city.jpeg"
+            "path": "yemen_20251117_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251120_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251121_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251122_sana'a_city.jpeg"
         }
     ],
     "codec": "libx264",

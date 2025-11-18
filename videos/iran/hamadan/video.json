@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241129_hamadan.jpeg"
-        },
-        {
             "path": "iran_20241203_hamadan.jpeg"
         },
         {
@@ -65,6 +62,12 @@
         },
         {
             "path": "iran_20251023_hamadan.jpeg"
+        },
+        {
+            "path": "iran_20251121_hamadan.jpeg"
+        },
+        {
+            "path": "iran_20251122_hamadan.jpeg"
         }
     ],
     "codec": "libx264",

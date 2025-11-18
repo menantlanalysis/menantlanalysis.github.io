@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241129_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241130_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241201_qina.jpeg"
-        },
-        {
             "path": "egypt_20241202_qina.jpeg"
         },
         {
@@ -133,10 +121,10 @@
             "path": "egypt_20250924_qina.jpeg"
         },
         {
-            "path": "egypt_20251020_qina.jpeg"
+            "path": "egypt_20251023_qina.jpeg"
         },
         {
-            "path": "egypt_20251023_qina.jpeg"
+            "path": "egypt_20251121_qina.jpeg"
         }
     ],
     "codec": "libx264",

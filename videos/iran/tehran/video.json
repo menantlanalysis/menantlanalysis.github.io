@@ -92,6 +92,15 @@
         },
         {
             "path": "iran_20251023_tehran.jpeg"
+        },
+        {
+            "path": "iran_20251117_tehran.jpeg"
+        },
+        {
+            "path": "iran_20251121_tehran.jpeg"
+        },
+        {
+            "path": "iran_20251122_tehran.jpeg"
         }
     ],
     "codec": "libx264",

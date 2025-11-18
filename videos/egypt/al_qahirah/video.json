@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_al_qahirah.jpeg"
-        },
-        {
-            "path": "egypt_20241129_al_qahirah.jpeg"
-        },
-        {
-            "path": "egypt_20241130_al_qahirah.jpeg"
-        },
-        {
-            "path": "egypt_20241201_al_qahirah.jpeg"
-        },
-        {
             "path": "egypt_20241202_al_qahirah.jpeg"
         },
         {
@@ -133,10 +121,10 @@
             "path": "egypt_20250924_al_qahirah.jpeg"
         },
         {
-            "path": "egypt_20251020_al_qahirah.jpeg"
+            "path": "egypt_20251023_al_qahirah.jpeg"
         },
         {
-            "path": "egypt_20251023_al_qahirah.jpeg"
+            "path": "egypt_20251121_al_qahirah.jpeg"
         }
     ],
     "codec": "libx264",

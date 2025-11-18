@@ -1,12 +1,6 @@
 {
     "images": [
         {
-            "path": "lebanon_20241129_akkar.jpeg"
-        },
-        {
-            "path": "lebanon_20241130_akkar.jpeg"
-        },
-        {
             "path": "lebanon_20241202_akkar.jpeg"
         },
         {
@@ -85,10 +79,10 @@
             "path": "lebanon_20250924_akkar.jpeg"
         },
         {
-            "path": "lebanon_20251020_akkar.jpeg"
+            "path": "lebanon_20251023_akkar.jpeg"
         },
         {
-            "path": "lebanon_20251023_akkar.jpeg"
+            "path": "lebanon_20251121_akkar.jpeg"
         }
     ],
     "codec": "libx264",

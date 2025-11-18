@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241201_ad_daqahliyah.jpeg"
-        },
-        {
             "path": "egypt_20241202_ad_daqahliyah.jpeg"
         },
         {
@@ -91,10 +88,10 @@
             "path": "egypt_20250924_ad_daqahliyah.jpeg"
         },
         {
-            "path": "egypt_20251020_ad_daqahliyah.jpeg"
+            "path": "egypt_20251023_ad_daqahliyah.jpeg"
         },
         {
-            "path": "egypt_20251023_ad_daqahliyah.jpeg"
+            "path": "egypt_20251121_ad_daqahliyah.jpeg"
         }
     ],
     "codec": "libx264",

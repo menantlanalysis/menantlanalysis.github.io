@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_janub_sina'.jpeg"
-        },
-        {
-            "path": "egypt_20241129_janub_sina'.jpeg"
-        },
-        {
-            "path": "egypt_20241130_janub_sina'.jpeg"
-        },
-        {
             "path": "egypt_20241202_janub_sina'.jpeg"
         },
         {
@@ -130,10 +121,10 @@
             "path": "egypt_20250924_janub_sina'.jpeg"
         },
         {
-            "path": "egypt_20251020_janub_sina'.jpeg"
+            "path": "egypt_20251023_janub_sina'.jpeg"
         },
         {
-            "path": "egypt_20251023_janub_sina'.jpeg"
+            "path": "egypt_20251121_janub_sina'.jpeg"
         }
     ],
     "codec": "libx264",

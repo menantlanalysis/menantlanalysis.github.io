@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241128_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20241129_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20241130_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20241201_bushehr.jpeg"
-        },
-        {
             "path": "iran_20241202_bushehr.jpeg"
         },
         {
@@ -131,6 +119,15 @@
         },
         {
             "path": "iran_20251023_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251117_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251121_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251122_bushehr.jpeg"
         }
     ],
     "codec": "libx264",

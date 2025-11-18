@@ -1,12 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241128_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20241129_east_azarbaijan.jpeg"
-        },
-        {
             "path": "iran_20241203_east_azarbaijan.jpeg"
         },
         {
@@ -89,6 +83,15 @@
         },
         {
             "path": "iran_20251023_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20251117_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20251121_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20251122_east_azarbaijan.jpeg"
         }
     ],
     "codec": "libx264",

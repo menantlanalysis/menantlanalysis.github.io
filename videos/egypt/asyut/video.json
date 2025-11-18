@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241129_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241130_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241201_asyut.jpeg"
-        },
-        {
             "path": "egypt_20241202_asyut.jpeg"
         },
         {
@@ -130,10 +118,10 @@
             "path": "egypt_20250924_asyut.jpeg"
         },
         {
-            "path": "egypt_20251020_asyut.jpeg"
+            "path": "egypt_20251023_asyut.jpeg"
         },
         {
-            "path": "egypt_20251023_asyut.jpeg"
+            "path": "egypt_20251121_asyut.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241129_al_jabal_al_akhdar.jpeg"
-        },
-        {
             "path": "libya_20241231_al_jabal_al_akhdar.jpeg"
         },
         {
@@ -97,7 +94,7 @@
             "path": "libya_20251019_al_jabal_al_akhdar.jpeg"
         },
         {
-            "path": "libya_20251020_al_jabal_al_akhdar.jpeg"
+            "path": "libya_20251120_al_jabal_al_akhdar.jpeg"
         }
     ],
     "codec": "libx264",

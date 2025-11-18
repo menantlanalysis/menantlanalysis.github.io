@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128_ghat.jpeg"
-        },
-        {
-            "path": "libya_20241129_ghat.jpeg"
-        },
-        {
-            "path": "libya_20241130_ghat.jpeg"
-        },
-        {
-            "path": "libya_20241201_ghat.jpeg"
-        },
-        {
             "path": "libya_20241202_ghat.jpeg"
         },
         {
@@ -151,10 +139,16 @@
             "path": "libya_20251019_ghat.jpeg"
         },
         {
-            "path": "libya_20251020_ghat.jpeg"
+            "path": "libya_20251023_ghat.jpeg"
         },
         {
-            "path": "libya_20251023_ghat.jpeg"
+            "path": "libya_20251119_ghat.jpeg"
+        },
+        {
+            "path": "libya_20251120_ghat.jpeg"
+        },
+        {
+            "path": "libya_20251121_ghat.jpeg"
         }
     ],
     "codec": "libx264",

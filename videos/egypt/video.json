@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128.jpeg"
-        },
-        {
-            "path": "egypt_20241129.jpeg"
-        },
-        {
-            "path": "egypt_20241130.jpeg"
-        },
-        {
-            "path": "egypt_20241201.jpeg"
-        },
-        {
             "path": "egypt_20241202.jpeg"
         },
         {
@@ -139,10 +127,10 @@
             "path": "egypt_20250924.jpeg"
         },
         {
-            "path": "egypt_20251020.jpeg"
+            "path": "egypt_20251023.jpeg"
         },
         {
-            "path": "egypt_20251023.jpeg"
+            "path": "egypt_20251121.jpeg"
         }
     ],
     "codec": "libx264",

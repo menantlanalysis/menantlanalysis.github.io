@@ -72,12 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         getMonthlyAverage: (data) => {
             if (data.length === 0) return [];
-            const allDatesMs = data.map(d => new Date(d.date).getTime());
-            const latestDataDateMs = Math.max(...allDatesMs);
-            const latestDataDate = new Date(latestDataDateMs);
-            const latestYear = latestDataDate.getFullYear();
-            const latestMonth = latestDataDate.getMonth();
-
             const monthlyAggregates = new Map();
             for (const d of data) {
                 const date = new Date(d.date);
@@ -91,29 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     monthlyAggregates.set(key, {
                         sum: 0,
                         count: 0,
-                        lastDateMsInMonth: date.getTime()
+                        lastDateMsInMonth: new Date(date.getFullYear(), date.getMonth(), 15)
                     });
                 }
 
                 const current = monthlyAggregates.get(key);
                 current.sum += value;
                 current.count += 1;
-
-                if (date.getTime() > current.lastDateMsInMonth) {
-                    current.lastDateMsInMonth = date.getTime();
-                }
             }
 
             const result = [];
             for (const [key, { sum, count, lastDateMsInMonth }] of monthlyAggregates.entries()) {
-                const [yearStr, monthStr] = key.split('-');
-                const year = parseInt(yearStr, 10);
-                const month = parseInt(monthStr, 10);
-
                 const average = sum / count;
-                let plotDate = new Date(year, month + 1, 0);
-
-                result.push({ date: plotDate, value: average });
+                result.push({ date: lastDateMsInMonth, value: average });
             }
             result.sort((a, b) => a.date - b.date);
 
@@ -187,6 +171,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const sum = pointsInWindow.reduce((acc, curr) => acc + curr.luminosity, 0);
             const average = sum / pointsInWindow.length;
             return { date: new Date(endDate), value: average };
+        },
+        findLastIndexBefore: (sortedArray, targetDate) => {
+            const targetTime = new Date(targetDate).getTime();
+            let low = 0;
+            let high = sortedArray.length - 1;
+            let result = -1;
+
+            while (low <= high) {
+                const mid = Math.floor((low + high) / 2);
+                const midTime = new Date(sortedArray[mid].date).getTime();
+
+                if (midTime <= targetTime) {
+                    result = mid;
+                    low = mid + 1;
+                } else {
+                    high = mid - 1;
+                }
+            }
+            return result;
         }
     };
 
@@ -238,41 +241,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const windowSizeDays = 30;
-            // Convert window size to milliseconds (minus 1ms to make the window start correct)
-            // E.g., for a 30-day window ending today, we want 29 days *ago* + today.
             const windowMs = (windowSizeDays - 1) * 24 * 60 * 60 * 1000;
 
-            // Find the most recent date from the raw data
             const allDates = data.map(d => new Date(d.date).getTime());
             const lastDateMs = Math.max(...allDates);
             const lastDate = new Date(lastDateMs);
 
-            // --- Define Window Start/End Dates ---
-
-            // 1. Last 30-day window (Trailing)
             const lastWindowStartDate = new Date(lastDateMs - windowMs);
             const lastWindowEndDate = lastDate;
 
-            // 2. YoY window (Trailing)
             const yoyEndDate = new Date(lastDate);
             yoyEndDate.setFullYear(lastDate.getFullYear() - 1);
             const yoyStartDate = new Date(yoyEndDate.getTime() - windowMs);
 
-            // 3. YTD window (Starting)
             const ytdStartDate = new Date(lastDate.getFullYear(), 0, 1); // Jan 1st
             const ytdEndDate = new Date(ytdStartDate.getTime() + windowMs);
 
-            // 4. QTD window (Starting)
             const qtdStartDate = new Date(lastDate.getFullYear(), Math.floor(lastDate.getMonth() / 3) * 3, 1);
             const qtdEndDate = new Date(qtdStartDate.getTime() + windowMs);
 
-            // --- Calculate Averages using the *single* new helper ---
             const lastWindowAvg = statsUtil.getAverageForWindow(data, lastWindowStartDate, lastWindowEndDate);
             const yoyWindowAvg = statsUtil.getAverageForWindow(data, yoyStartDate, yoyEndDate);
             const ytdWindowAvg = statsUtil.getAverageForWindow(data, ytdStartDate, ytdEndDate);
             const qtdWindowAvg = statsUtil.getAverageForWindow(data, qtdStartDate, qtdEndDate);
 
-            // --- Update UI ---
             elements.yoyCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(yoyWindowAvg, lastWindowAvg));
             elements.ytdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(ytdWindowAvg, lastWindowAvg));
             elements.qtdCell.innerHTML = statsUtil.formatChange(statsUtil.calculateChange(qtdWindowAvg, lastWindowAvg));
@@ -641,10 +633,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
             Object.values(allMuniData).forEach(muniData => {
                 if (muniData.length === 0) return;
-                const dataMap = new Map(muniData.map(d => [d.date, d.luminosity]));
                 aggregated.forEach((agg, i) => {
-                    agg.luminosity += dataMap.get(agg.date) ?? (dataMap.get(aggregated[i - 1]?.date) ?? 0);
-                });
+                    const nearestIndex = statsUtil.findLastIndexBefore(muniData, agg.date);
+                    if (nearestIndex === -1) {
+                        agg.luminosity += 0;
+                        return;
+                    }
+
+                    const currentMuniPoint = muniData[nearestIndex];
+                    if (currentMuniPoint.date === agg.date) {
+                        agg.luminosity += currentMuniPoint.luminosity;
+                    } 
+                    else {
+                        const startIndex = Math.max(0, nearestIndex - 3); 
+                        const pointWindow = muniData.slice(startIndex, nearestIndex + 1);
+                        const sum = pointWindow.reduce((sum, p) => sum + p.luminosity, 0);
+                        const avg = pointWindow.length ? sum / pointWindow.length : 0;
+                        agg.luminosity += avg;
+                    }
+                });           
             });
 
             const allEvents = (country.events || []).map(e => ({ ...e, color: 'country' }));

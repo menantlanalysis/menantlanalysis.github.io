@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128.jpeg"
-        },
-        {
-            "path": "libya_20241129.jpeg"
-        },
-        {
-            "path": "libya_20241130.jpeg"
-        },
-        {
-            "path": "libya_20241201.jpeg"
-        },
-        {
             "path": "libya_20241202.jpeg"
         },
         {
@@ -154,10 +142,16 @@
             "path": "libya_20251019.jpeg"
         },
         {
-            "path": "libya_20251020.jpeg"
+            "path": "libya_20251023.jpeg"
         },
         {
-            "path": "libya_20251023.jpeg"
+            "path": "libya_20251119.jpeg"
+        },
+        {
+            "path": "libya_20251120.jpeg"
+        },
+        {
+            "path": "libya_20251121.jpeg"
         }
     ],
     "codec": "libx264",

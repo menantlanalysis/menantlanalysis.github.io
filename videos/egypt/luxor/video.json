@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241128_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20241129_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20241130_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20241201_luxor.jpeg"
-        },
-        {
             "path": "egypt_20241202_luxor.jpeg"
         },
         {
@@ -124,10 +112,10 @@
             "path": "egypt_20250924_luxor.jpeg"
         },
         {
-            "path": "egypt_20251020_luxor.jpeg"
+            "path": "egypt_20251023_luxor.jpeg"
         },
         {
-            "path": "egypt_20251023_luxor.jpeg"
+            "path": "egypt_20251121_luxor.jpeg"
         }
     ],
     "codec": "libx264",

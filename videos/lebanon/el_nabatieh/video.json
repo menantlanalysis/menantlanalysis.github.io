@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "lebanon_20241129_el_nabatieh.jpeg"
-        },
-        {
-            "path": "lebanon_20241130_el_nabatieh.jpeg"
-        },
-        {
-            "path": "lebanon_20241201_el_nabatieh.jpeg"
-        },
-        {
             "path": "lebanon_20241202_el_nabatieh.jpeg"
         },
         {
@@ -94,10 +85,10 @@
             "path": "lebanon_20250924_el_nabatieh.jpeg"
         },
         {
-            "path": "lebanon_20251020_el_nabatieh.jpeg"
+            "path": "lebanon_20251023_el_nabatieh.jpeg"
         },
         {
-            "path": "lebanon_20251023_el_nabatieh.jpeg"
+            "path": "lebanon_20251121_el_nabatieh.jpeg"
         }
     ],
     "codec": "libx264",

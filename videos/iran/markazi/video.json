@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241128_markazi.jpeg"
-        },
-        {
-            "path": "iran_20241129_markazi.jpeg"
-        },
-        {
-            "path": "iran_20241130_markazi.jpeg"
-        },
-        {
-            "path": "iran_20241201_markazi.jpeg"
-        },
-        {
             "path": "iran_20241202_markazi.jpeg"
         },
         {
@@ -92,6 +80,15 @@
         },
         {
             "path": "iran_20251023_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251117_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251121_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251122_markazi.jpeg"
         }
     ],
     "codec": "libx264",

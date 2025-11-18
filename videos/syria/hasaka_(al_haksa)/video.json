@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241128_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20241129_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20241130_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20241201_hasaka_(al_haksa).jpeg"
-        },
-        {
             "path": "syria_20241202_hasaka_(al_haksa).jpeg"
         },
         {
@@ -116,6 +104,12 @@
         },
         {
             "path": "syria_20251023_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20251120_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20251121_hasaka_(al_haksa).jpeg"
         }
     ],
     "codec": "libx264",

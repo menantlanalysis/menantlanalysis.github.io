@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241128_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20241129_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20241130_al_jifarah.jpeg"
-        },
-        {
             "path": "libya_20241203_al_jifarah.jpeg"
         },
         {
@@ -115,10 +106,13 @@
             "path": "libya_20250924_al_jifarah.jpeg"
         },
         {
-            "path": "libya_20251020_al_jifarah.jpeg"
+            "path": "libya_20251023_al_jifarah.jpeg"
         },
         {
-            "path": "libya_20251023_al_jifarah.jpeg"
+            "path": "libya_20251120_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251121_al_jifarah.jpeg"
         }
     ],
     "codec": "libx264",

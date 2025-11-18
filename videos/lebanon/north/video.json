@@ -1,15 +1,6 @@
 {
     "images": [
         {
-            "path": "lebanon_20241129_north.jpeg"
-        },
-        {
-            "path": "lebanon_20241130_north.jpeg"
-        },
-        {
-            "path": "lebanon_20241201_north.jpeg"
-        },
-        {
             "path": "lebanon_20241231_north.jpeg"
         },
         {
@@ -82,10 +73,10 @@
             "path": "lebanon_20250924_north.jpeg"
         },
         {
-            "path": "lebanon_20251020_north.jpeg"
+            "path": "lebanon_20251023_north.jpeg"
         },
         {
-            "path": "lebanon_20251023_north.jpeg"
+            "path": "lebanon_20251121_north.jpeg"
         }
     ],
     "codec": "libx264",

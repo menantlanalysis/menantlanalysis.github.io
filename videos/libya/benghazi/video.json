@@ -1,9 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241129_benghazi.jpeg"
-        },
-        {
             "path": "libya_20241204_benghazi.jpeg"
         },
         {
@@ -95,6 +92,9 @@
         },
         {
             "path": "libya_20251023_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251120_benghazi.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,18 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241128_abyan.jpeg"
-        },
-        {
-            "path": "yemen_20241129_abyan.jpeg"
-        },
-        {
-            "path": "yemen_20241130_abyan.jpeg"
-        },
-        {
-            "path": "yemen_20241201_abyan.jpeg"
-        },
-        {
             "path": "yemen_20241202_abyan.jpeg"
         },
         {
@@ -127,10 +115,19 @@
             "path": "yemen_20250923_abyan.jpeg"
         },
         {
-            "path": "yemen_20251020_abyan.jpeg"
+            "path": "yemen_20251021_abyan.jpeg"
         },
         {
-            "path": "yemen_20251021_abyan.jpeg"
+            "path": "yemen_20251117_abyan.jpeg"
+        },
+        {
+            "path": "yemen_20251120_abyan.jpeg"
+        },
+        {
+            "path": "yemen_20251121_abyan.jpeg"
+        },
+        {
+            "path": "yemen_20251122_abyan.jpeg"
         }
     ],
     "codec": "libx264",

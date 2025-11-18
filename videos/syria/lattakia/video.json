@@ -53,6 +53,12 @@
         },
         {
             "path": "syria_20251023_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251120_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251121_lattakia.jpeg"
         }
     ],
     "codec": "libx264",

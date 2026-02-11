@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         card.innerHTML = `
             <summary>
                 <span class="muni-card__sparkline" id="muni-spark-${muniKey}"></span>
-                <span>${formatName(muniKey)}</span>
+                <span class="muni-card__name">${formatName(muniKey)}</span>
                 <span class="muni-card__stat ${cls}">${f.text}</span>
             </summary>
             <div class="muni-card__detail">

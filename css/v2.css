@@ -209,6 +209,8 @@ h3 { font-size: var(--text-xl); }
     align-items: center;
     gap: 4px;
 }
+.masthead__back-short { display: none; }
+
 .masthead__hamburger {
     display: none;
     background: none;
@@ -414,11 +416,19 @@ h3 { font-size: var(--text-xl); }
 .muni-card[open] summary::before {
     transform: rotate(90deg);
 }
+.muni-card__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
 .muni-card__stat {
     margin-left: auto;
     font-family: var(--font-mono);
     font-size: var(--text-sm);
     font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 .muni-card__sparkline {
     width: 80px;
@@ -778,7 +788,29 @@ h3 { font-size: var(--text-xl); }
         padding: var(--space-md) var(--space-lg);
         box-shadow: var(--shadow-md);
     }
+    .masthead__back-full { display: none; }
+    .masthead__back-short { display: inline; }
+    .masthead__back ~ .masthead__logo { display: none; }
     .masthead__hamburger { display: block; }
+
+    .muni-card summary {
+        flex-wrap: wrap;
+    }
+    .muni-card__name {
+        flex: 1;
+        min-width: 0;
+        white-space: normal;
+        overflow: visible;
+    }
+    .muni-card__stat {
+        margin-left: auto;
+    }
+    .muni-card__sparkline {
+        order: 99;
+        width: 100%;
+        height: 32px;
+        margin-top: var(--space-xs);
+    }
 
     .footer__inner {
         flex-direction: column;

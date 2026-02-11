@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://menantlanalysis.github.io/">
+    <title>Nighttime Lights</title>
+    <link rel="stylesheet" href="css/v2.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead" id="masthead">
+    <div class="masthead__inner">
+        <a href="index.html" class="masthead__back">&larr; Back to Overview</a>
+        <a href="index.html" class="masthead__logo">Nighttime Lights</a>
+        <button class="masthead__hamburger" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="masthead__nav" id="main-nav">
+            <li><a href="methodology.pdf">Methodology</a></li>
+            <li><a href="mailto:menantlanalysis@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hero (populated by JS) -->
+<section class="hero hero--short" id="country-hero">
+    <div class="hero__bg" id="hero-bg"></div>
+    <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">Loading...</h1>
+        <p class="hero__subtitle" id="hero-subtitle"></p>
+    </div>
+</section>
+
+<!-- Satellite Comparison -->
+<section class="section" id="comparison-section">
+    <div class="container--wide">
+        <div class="section-header reveal">
+            <hr class="section-header__rule">
+            <h2>Then and Now</h2>
+            <p id="comparison-dates">Drag the slider to compare satellite imagery.</p>
+        </div>
+        <div class="comparison-container reveal" id="juxtapose-container"></div>
+        <figure class="reveal" style="margin-top: var(--space-lg);">
+            <img class="diff-image" id="diff-image" alt="Satellite difference map">
+            <figcaption class="diff-image__caption">Difference map: green indicates increased luminosity, red indicates decrease.</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- Time Series Chart -->
+<section class="section section--warm" id="chart-section">
+    <div class="container--wide">
+        <div class="section-header reveal">
+            <hr class="section-header__rule">
+            <h2>The Trend</h2>
+            <p>Aggregated nighttime luminosity across all governorates.</p>
+        </div>
+        <div class="chart-container reveal" id="country-chart">
+            <div class="skeleton skeleton--chart"></div>
+        </div>
+        <div class="stat-row reveal" id="stat-boxes">
+            <div class="stat-box"><div class="stat-box__label">Year over Year</div><div id="stat-yoy" class="stat-box__value stat-box__value--neutral">...</div></div>
+            <div class="stat-box"><div class="stat-box__label">Year to Date</div><div id="stat-ytd" class="stat-box__value stat-box__value--neutral">...</div></div>
+            <div class="stat-box"><div class="stat-box__label">Quarter to Date</div><div id="stat-qtd" class="stat-box__value stat-box__value--neutral">...</div></div>
+            <div class="stat-box"><div class="stat-box__label">Peak to Peak</div><div id="stat-peak" class="stat-box__value stat-box__value--neutral">...</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Timelapse Video -->
+<section class="section" id="video-section">
+    <div class="container--wide">
+        <div class="section-header reveal">
+            <hr class="section-header__rule">
+            <h2>Nightly Timelapse</h2>
+        </div>
+        <div class="video-section reveal">
+            <video id="country-video" controls muted playsinline></video>
+            <p class="video-section__caption">Timelapse of nightly satellite imagery showing luminosity changes over time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Regional Choropleth -->
+<section class="section section--warm" id="choropleth-section">
+    <div class="container--wide">
+        <div class="section-header reveal">
+            <hr class="section-header__rule">
+            <h2>Governorate by Governorate</h2>
+            <p>Year-over-year peak luminosity change by region.</p>
+        </div>
+        <div class="map-container reveal" id="country-map">
+            <div class="skeleton skeleton--chart"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Municipality Cards -->
+<section class="section" id="muni-section">
+    <div class="container--full">
+        <div class="section-header reveal">
+            <hr class="section-header__rule">
+            <h2>Regional Details</h2>
+            <p>Expand a region to see its luminosity trend and timelapse.</p>
+        </div>
+        <div class="muni-grid" id="muni-cards">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- Events Timeline -->
+<section class="section section--warm" id="events-section" style="display: none;">
+    <div class="container">
+        <div class="section-header reveal">
+            <hr class="section-header__rule">
+            <h2>Key Events</h2>
+        </div>
+        <div class="timeline reveal" id="events-timeline"></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer__inner">
+        <span>&copy; 2025 Nighttime Lights Analysis</span>
+        <span id="footer-last-run"></span>
+        <span>
+            <a href="mailto:menantlanalysis@gmail.com">Contact</a> &middot;
+            Source: <a href="https://eogdata.mines.edu/products/vnl" target="_blank" rel="noopener">EOG/VIIRS</a>
+        </span>
+    </div>
+</footer>
+
+<!-- Libraries -->
+<script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/science@1.9.3/science.v1.min.js"></script>
+<script src="https://s3.amazonaws.com/cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.js"></script>
+
+<!-- App modules -->
+<script src="js/v2-data.js"></script>
+<script src="js/v2-stats.js"></script>
+<script src="js/v2-charts.js"></script>
+<script src="js/v2-map.js"></script>
+<script src="js/v2-video.js"></script>
+<script src="js/v2-country.js"></script>
+
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20740W8TXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-20740W8TXW');
+</script>
+
+</body>
+</html>

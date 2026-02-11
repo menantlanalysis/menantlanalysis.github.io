@@ -136,7 +136,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // --- Country choropleth map ---
     stae.map.renderCountryMap("country-map", muniYoY, geojsonData,
-        "Year-over-Year Peak Regional Luminosity Shift");
+        "Year-over-Year Peak Regional Luminosity Shift", (muniKey) => {
+            const card = document.getElementById(`muni-card-${muniKey}`);
+            if (!card) return;
+            card.setAttribute("open", "");
+            card.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
 
     // --- Municipality cards ---
     const muniCardsEl = document.getElementById("muni-cards");
@@ -151,6 +156,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             return bYoY - aYoY;
         });
 
+    // Collect all events relevant to each muni (country-wide + muni-specific)
+    const countryEvents = (country.events || []).map(e => ({ ...e, scope: "Country-wide" }));
+
     for (const [muniKey, muni] of muniEntries) {
         const yoy = muniYoY[muniKey];
         const f = stae.stats.formatChange(yoy);
@@ -158,8 +166,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             : f.cls === "negative" ? "stat-box__value--negative"
             : "stat-box__value--neutral";
 
+        const cardEvents = [
+            ...countryEvents,
+            ...(muni.events || []).map(e => ({ ...e, scope: formatName(muniKey) }))
+        ].sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+
         const card = document.createElement("details");
         card.className = "muni-card reveal";
+        card.id = `muni-card-${muniKey}`;
 
         card.innerHTML = `
             <summary>
@@ -170,6 +184,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <div class="muni-card__detail">
                 <div class="muni-card__chart" id="muni-chart-${muniKey}"></div>
                 ${muni.video ? `<div class="muni-card__video-wrap"><video class="muni-card__video" muted playsinline src="${API}${muni.video}"></video></div>` : ""}
+                ${cardEvents.length ? `<div class="muni-card__events"><h4 class="muni-card__events-title">Key Events</h4><div class="timeline" id="muni-timeline-${muniKey}"></div></div>` : ""}
                 ${muni.csv ? `<a class="muni-card__download" href="${API}${muni.csv}" download="${muniKey}.csv">Download CSV &darr;</a>` : ""}
             </div>
         `;
@@ -185,22 +200,59 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Lazy render full chart + video player on expand
         let detailRendered = false;
         card.addEventListener("toggle", () => {
+            // Close other open cards (accordion behavior)
+            if (card.open) {
+                muniCardsEl.querySelectorAll("details[open]").forEach(other => {
+                    if (other !== card) other.removeAttribute("open");
+                });
+            }
             if (card.open && !detailRendered) {
                 detailRendered = true;
                 const data = allMuniData[muniKey] || [];
                 if (data.length >= 2) {
-                    const muniEvents = [
+                    const chartEvents = [
                         ...(country.events || []).map(e => ({ ...e, color: "country" })),
                         ...(muni.events || []).map(e => ({ ...e, color: "muni" }))
                     ];
                     stae.charts.renderTimeSeries(
-                        `muni-chart-${muniKey}`, data, muniEvents,
+                        `muni-chart-${muniKey}`, data, chartEvents,
                         `${formatName(muniKey)}, ${country.displayName}`
                     );
                 }
                 // Init custom video player for this card
                 const vid = card.querySelector(".muni-card__video");
                 if (vid) stae.video.create(vid);
+
+                // Render event timeline (country-wide + muni-specific)
+                const muniTimeline = document.getElementById(`muni-timeline-${muniKey}`);
+                if (muniTimeline && cardEvents.length) {
+                    const MS_DAY = 86400000;
+                    cardEvents.forEach((evt, j) => {
+                        const cId = `muni-evt-${muniKey}-${j}`;
+                        const item = document.createElement("div");
+                        item.className = "timeline__item";
+                        item.innerHTML = `
+                            <div class="timeline__dot"></div>
+                            <div class="timeline__info">
+                                <div class="timeline__date">${evt.start_date} &mdash; ${evt.end_date}</div>
+                                <div class="timeline__title">${evt.name}</div>
+                                <div class="timeline__scope">${evt.scope}</div>
+                            </div>
+                            <div class="timeline__chart" id="${cId}"></div>
+                        `;
+                        muniTimeline.appendChild(item);
+
+                        const eStart = new Date(evt.start_date).getTime();
+                        const eEnd = new Date(evt.end_date).getTime();
+                        const slice = (data.length >= 2 ? data : []).filter(d => {
+                            const t = new Date(d.date).getTime();
+                            return t >= eStart - 90 * MS_DAY && t <= eEnd + 90 * MS_DAY;
+                        });
+                        if (slice.length >= 2) {
+                            stae.charts.renderSparkline(cId, slice, { eventRange: { start: evt.start_date, end: evt.end_date } });
+                        }
+                    });
+                }
             }
         });
     }
@@ -209,37 +261,43 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelectorAll(".muni-card.reveal").forEach(el => revealObserver.observe(el));
 
     // --- Events Timeline ---
-    const events = country.events || [];
-    if (events.length > 0) {
+    const rawEvents = country.events || [];
+    if (rawEvents.length > 0) {
         document.getElementById("events-section").style.display = "";
         const timeline = document.getElementById("events-timeline");
 
-        // Collect all events (country + municipality level)
-        const allTimelineEvents = [
-            ...events.map(e => ({ ...e, scope: "Country-wide" }))
-        ];
-        // Add municipality events
-        for (const [mKey, muni] of Object.entries(country.municipalities)) {
-            if (muni.events) {
-                for (const e of muni.events) {
-                    allTimelineEvents.push({ ...e, scope: formatName(mKey) });
-                }
-            }
-        }
+        const allTimelineEvents = rawEvents
+            .map(e => ({ ...e, scope: "Country-wide" }))
+            .sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
 
-        // Sort by start_date
-        allTimelineEvents.sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+        const MS_PER_DAY = 86400000;
 
-        for (const evt of allTimelineEvents) {
+        allTimelineEvents.forEach((evt, i) => {
+            const chartId = `event-chart-${i}`;
             const item = document.createElement("div");
             item.className = "timeline__item";
             item.innerHTML = `
                 <div class="timeline__dot"></div>
-                <div class="timeline__date">${evt.start_date} &mdash; ${evt.end_date}</div>
-                <div class="timeline__title">${evt.name}</div>
-                <div class="timeline__scope">${evt.scope}</div>
+                <div class="timeline__info">
+                    <div class="timeline__date">${evt.start_date} &mdash; ${evt.end_date}</div>
+                    <div class="timeline__title">${evt.name}</div>
+                    <div class="timeline__scope">${evt.scope}</div>
+                </div>
+                <div class="timeline__chart" id="${chartId}"></div>
             `;
             timeline.appendChild(item);
-        }
+
+            // Slice: 3 months before → 3 months after
+            const evtStart = new Date(evt.start_date).getTime();
+            const evtEnd = new Date(evt.end_date).getTime();
+            const slice = aggregated.filter(d => {
+                const t = new Date(d.date).getTime();
+                return t >= evtStart - 90 * MS_PER_DAY && t <= evtEnd + 90 * MS_PER_DAY;
+            });
+
+            if (slice.length >= 2) {
+                stae.charts.renderSparkline(chartId, slice, { eventRange: { start: evt.start_date, end: evt.end_date } });
+            }
+        });
     }
 });

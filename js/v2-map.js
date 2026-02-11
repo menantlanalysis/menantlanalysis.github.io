@@ -129,8 +129,9 @@ stae.map = (() => {
      * @param {Object} muniYoY - { muniKey: number }
      * @param {Object} geojson - GeoJSON FeatureCollection
      * @param {string} title
+     * @param {Function} [onMuniClick] - callback(muniKey) when a municipality is clicked
      */
-    function renderCountryMap(containerId, muniYoY, geojson, title) {
+    function renderCountryMap(containerId, muniYoY, geojson, title, onMuniClick) {
         const el = document.getElementById(containerId);
         if (!el) return;
         clearSkeleton(el);
@@ -237,6 +238,18 @@ stae.map = (() => {
         // Hide maplibre controls
         const ctrl = el.querySelector(".maplibregl-control-container");
         if (ctrl) ctrl.style.display = "none";
+
+        // Pointer cursor + click handler
+        if (onMuniClick) {
+            const mapCanvas = el.querySelector(".maplibregl-canvas");
+            if (mapCanvas) mapCanvas.style.cursor = "pointer";
+
+            el.on("plotly_click", (eventData) => {
+                if (!eventData.points || !eventData.points.length) return;
+                const name = eventData.points[0].location;
+                if (name) onMuniClick(sanitize(name));
+            });
+        }
     }
 
     return { renderRegionMap, renderCountryMap };

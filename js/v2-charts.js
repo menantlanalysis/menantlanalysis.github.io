@@ -96,11 +96,16 @@ stae.charts = (() => {
         if (!el || data.length < 2) return;
         clearSkeleton(el);
 
-        // Last 12 months of data
-        const cutoff = new Date();
-        cutoff.setFullYear(cutoff.getFullYear() - 1);
-        const recent = data.filter(d => new Date(d.date) >= cutoff);
-        const src = recent.length >= 2 ? recent : data;
+        // Skip 12-month cutoff when data is pre-sliced (e.g. event sparklines)
+        let src;
+        if (opts && opts.eventRange) {
+            src = data;
+        } else {
+            const cutoff = new Date();
+            cutoff.setFullYear(cutoff.getFullYear() - 1);
+            const recent = data.filter(d => new Date(d.date) >= cutoff);
+            src = recent.length >= 2 ? recent : data;
+        }
 
         const dates = src.map(d => d.date);
         const values = src.map(d => d.luminosity);
@@ -114,6 +119,40 @@ stae.charts = (() => {
 
         const color = opts && opts.color ? opts.color : "#326891";
 
+        // Optional shaded range (e.g. event period)
+        const shapes = [];
+        if (opts && opts.eventRange) {
+            shapes.push({
+                type: "rect", xref: "x", yref: "paper",
+                x0: opts.eventRange.start, x1: opts.eventRange.end,
+                y0: 0, y1: 1,
+                fillcolor: "rgba(211, 47, 47, 0.45)",
+                line: { width: 0 }
+            });
+        }
+
+        // X-axis: show first/last date labels when eventRange is set
+        const xaxis = { visible: false };
+        if (opts && opts.eventRange && dates.length >= 2) {
+            const first = dates[0];
+            const last = dates[dates.length - 1];
+            const fmtDate = d => {
+                const dt = new Date(d);
+                const mon = dt.toLocaleString("en", { month: "short" });
+                return `${mon} ${dt.getFullYear()}`;
+            };
+            xaxis.visible = true;
+            xaxis.showgrid = false;
+            xaxis.showline = false;
+            xaxis.zeroline = false;
+            xaxis.tickmode = "array";
+            xaxis.tickvals = [first, last];
+            xaxis.ticktext = [fmtDate(first), fmtDate(last)];
+            xaxis.tickfont = { size: 9, family: "Helvetica Neue, Arial, sans-serif", color: "#999" };
+        }
+
+        const h = el.clientHeight || 80;
+
         Plotly.newPlot(el, [{
             x: dates,
             y: yVals,
@@ -123,9 +162,11 @@ stae.charts = (() => {
             fillcolor: color.replace(")", ", 0.1)").replace("rgb", "rgba"),
             hoverinfo: "skip"
         }], {
-            margin: { l: 0, r: 0, t: 0, b: 0 },
-            xaxis: { visible: false },
+            height: h,
+            margin: { l: 0, r: 0, t: 0, b: opts && opts.eventRange ? 18 : 0 },
+            xaxis: xaxis,
             yaxis: { visible: false },
+            shapes: shapes,
             paper_bgcolor: "rgba(0,0,0,0)",
             plot_bgcolor: "rgba(0,0,0,0)",
             showlegend: false

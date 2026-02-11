@@ -1,135 +1,145 @@
 {
     "syria": {
         "events": [
-            {
-                "name": "Ramadan",
-                "start_date": "2025-2-28",
-                "end_date": "2025-3-29"
-            },
-            {
-                "name": "Ramadan",
-                "start_date": "2024-3-10",
-                "end_date": "2024-4-9"
-            },
-            {
-                "name": "Sanction Waiver",
-                "start_date": "2025-5-23",
-                "end_date": "2025-5-24"
-            },
-            {
-                "name": "Deterrence of Aggression",
-                "start_date": "2024-11-27",
-                "end_date": "2024-12-8"
-            },
-            {
-                "name": "200% Salary Increase",
-                "start_date": "2025-7-30",
-                "end_date": "2025-7-31"
-            },
-            {
-                "name": "Azerbaijani Gas",
-                "start_date": "2025-8-11",
-                "end_date": "2025-8-12"
-            },
-            {
-                "name": "SWIFT Return",
-                "start_date": "2025-8-25",
-                "end_date": "2025-8-26"
-            }
+            { "name": "Idlib Offensive", "start_date": "2020-1-1", "end_date": "2020-3-5" },
+            { "name": "COVID-19 Lockdown", "start_date": "2020-3-22", "end_date": "2020-5-26" },
+            { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
+            { "name": "Caesar Act Enacted", "start_date": "2020-6-17", "end_date": "2020-6-18" },
+            { "name": "Ramadan", "start_date": "2021-4-13", "end_date": "2021-5-12" },
+            { "name": "Fuel Shortage Crisis", "start_date": "2021-10-1", "end_date": "2021-12-31" },
+            { "name": "Ramadan", "start_date": "2022-4-2", "end_date": "2022-5-1" },
+            { "name": "Turkey-Syria Earthquake", "start_date": "2023-2-6", "end_date": "2023-3-6" },
+            { "name": "Ramadan", "start_date": "2023-3-23", "end_date": "2023-4-21" },
+            { "name": "Ramadan", "start_date": "2024-3-10", "end_date": "2024-4-9" },
+            { "name": "Deterrence of Aggression", "start_date": "2024-11-27", "end_date": "2024-12-8" },
+            { "name": "Assad Regime Falls", "start_date": "2024-12-8", "end_date": "2024-12-9" },
+            { "name": "Israeli Post-Fall Strikes", "start_date": "2024-12-8", "end_date": "2024-12-12" },
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" },
+            { "name": "Sanction Waiver", "start_date": "2025-5-23", "end_date": "2025-5-24" },
+            { "name": "EU Sanctions Lifted", "start_date": "2025-5-29", "end_date": "2025-5-30" },
+            { "name": "US Sanctions Revoked", "start_date": "2025-7-1", "end_date": "2025-7-2" },
+            { "name": "200% Salary Increase", "start_date": "2025-7-30", "end_date": "2025-7-31" },
+            { "name": "Azerbaijani Gas", "start_date": "2025-8-11", "end_date": "2025-8-12" },
+            { "name": "SWIFT Return", "start_date": "2025-8-25", "end_date": "2025-8-26" }
         ],
         "municipalities": {
             "tartus": {
                 "events": [
-                    {
-                        "name": "Coastal Insurgency",
-                        "start_date": "2025-3-5",
-                        "end_date": "2025-3-8"
-                    }
+                    { "name": "Coastal Insurgency", "start_date": "2025-3-5", "end_date": "2025-3-8" }
                 ]
             },
             "lattakia": {
                 "events": [
-                    {
-                        "name": "Coastal Insurgency",
-                        "start_date": "2025-3-5",
-                        "end_date": "2025-3-8"
-                    }
+                    { "name": "Coastal Insurgency", "start_date": "2025-3-5", "end_date": "2025-3-8" }
                 ]
             }
         }
     },
     "egypt": {
         "events": [
-            {
-                "name": "Ramadan",
-                "start_date": "2024-3-10",
-                "end_date": "2024-4-9"
-            },
-            {
-                "name": "Ramadan",
-                "start_date": "2025-2-28",
-                "end_date": "2025-3-29"
-            }
+            { "name": "COVID-19 Curfew", "start_date": "2020-3-25", "end_date": "2020-6-27" },
+            { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
+            { "name": "Suez Canal Blockage", "start_date": "2021-3-23", "end_date": "2021-3-29" },
+            { "name": "Ramadan", "start_date": "2021-4-13", "end_date": "2021-5-12" },
+            { "name": "First Pound Devaluation", "start_date": "2022-3-21", "end_date": "2022-3-22" },
+            { "name": "Ramadan", "start_date": "2022-4-2", "end_date": "2022-5-1" },
+            { "name": "IMF $3B Deal", "start_date": "2022-12-16", "end_date": "2022-12-17" },
+            { "name": "Ramadan", "start_date": "2023-3-23", "end_date": "2023-4-21" },
+            { "name": "Summer Power Cuts", "start_date": "2023-7-22", "end_date": "2023-9-30" },
+            { "name": "Gaza War Begins", "start_date": "2023-10-7", "end_date": "2023-10-8" },
+            { "name": "Houthi Red Sea Attacks", "start_date": "2023-11-19", "end_date": "2024-12-31" },
+            { "name": "Ras El-Hikma UAE Deal", "start_date": "2024-2-23", "end_date": "2024-2-24" },
+            { "name": "Fourth Pound Devaluation", "start_date": "2024-3-6", "end_date": "2024-3-7" },
+            { "name": "Ramadan", "start_date": "2024-3-10", "end_date": "2024-4-9" },
+            { "name": "Summer Power Cuts 2024", "start_date": "2024-4-30", "end_date": "2024-7-21" },
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" }
         ],
         "municipalities": {}
     },
     "iran": {
         "events": [
-            {
-                "name": "Ramadan",
-                "start_date": "2024-3-10",
-                "end_date": "2024-4-9"
-            },
-            {
-                "name": "Ramadan",
-                "start_date": "2025-2-28",
-                "end_date": "2025-3-29"
-            }
+            { "name": "COVID-19 Lockdown", "start_date": "2020-2-20", "end_date": "2020-4-11" },
+            { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
+            { "name": "Ramadan", "start_date": "2021-4-13", "end_date": "2021-5-12" },
+            { "name": "Crypto Mining Ban", "start_date": "2021-5-26", "end_date": "2021-9-22" },
+            { "name": "Ramadan", "start_date": "2022-4-2", "end_date": "2022-5-1" },
+            { "name": "Mahsa Amini Protests", "start_date": "2022-9-16", "end_date": "2022-12-31" },
+            { "name": "Internet Shutdowns", "start_date": "2022-9-21", "end_date": "2022-10-3" },
+            { "name": "Ramadan", "start_date": "2023-3-23", "end_date": "2023-4-21" },
+            { "name": "Summer Heatwave Blackouts", "start_date": "2023-7-15", "end_date": "2023-8-3" },
+            { "name": "Iran Strikes Israel", "start_date": "2024-4-13", "end_date": "2024-4-14" },
+            { "name": "Ramadan", "start_date": "2024-3-10", "end_date": "2024-4-9" },
+            { "name": "Iran Missiles at Israel", "start_date": "2024-10-1", "end_date": "2024-10-2" },
+            { "name": "Israeli Strikes on Iran", "start_date": "2024-10-26", "end_date": "2024-10-27" },
+            { "name": "Winter Energy Crisis", "start_date": "2024-11-10", "end_date": "2024-12-31" },
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" }
         ],
         "municipalities": {}
     },
     "lebanon": {
         "events": [
-            {
-                "name": "Ramadan",
-                "start_date": "2024-3-10",
-                "end_date": "2024-4-9"
-            },
-            {
-                "name": "Ramadan",
-                "start_date": "2025-2-28",
-                "end_date": "2025-3-29"
-            }
+            { "name": "COVID-19 Lockdown", "start_date": "2020-3-15", "end_date": "2020-5-4" },
+            { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
+            { "name": "Beirut Port Explosion", "start_date": "2020-8-4", "end_date": "2020-8-5" },
+            { "name": "Ramadan", "start_date": "2021-4-13", "end_date": "2021-5-12" },
+            { "name": "Fuel Subsidy Lifted", "start_date": "2021-8-11", "end_date": "2021-8-12" },
+            { "name": "Total Grid Blackout", "start_date": "2021-10-9", "end_date": "2021-10-10" },
+            { "name": "EDL Collapse 1-2hr/day", "start_date": "2021-11-1", "end_date": "2022-1-31" },
+            { "name": "Ramadan", "start_date": "2022-4-2", "end_date": "2022-5-1" },
+            { "name": "Official Lira Devaluation", "start_date": "2023-2-1", "end_date": "2023-2-2" },
+            { "name": "Ramadan", "start_date": "2023-3-23", "end_date": "2023-4-21" },
+            { "name": "Ramadan", "start_date": "2024-3-10", "end_date": "2024-4-9" },
+            { "name": "Massive Israeli Airstrikes", "start_date": "2024-9-23", "end_date": "2024-9-30" },
+            { "name": "Israeli Ground Invasion", "start_date": "2024-10-1", "end_date": "2024-11-26" },
+            { "name": "Ceasefire Agreement", "start_date": "2024-11-27", "end_date": "2024-11-28" },
+            { "name": "President Aoun Elected", "start_date": "2025-1-9", "end_date": "2025-1-10" },
+            { "name": "New Govt Formed", "start_date": "2025-2-8", "end_date": "2025-2-9" },
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" }
         ],
         "municipalities": {}
     },
     "libya": {
         "events": [
-            {
-                "name": "Ramadan",
-                "start_date": "2024-3-10",
-                "end_date": "2024-4-9"
-            },
-            {
-                "name": "Ramadan",
-                "start_date": "2025-2-28",
-                "end_date": "2025-3-29"
-            }
+            { "name": "Oil Blockade", "start_date": "2020-1-17", "end_date": "2020-9-18" },
+            { "name": "COVID-19 Curfew", "start_date": "2020-3-22", "end_date": "2020-6-30" },
+            { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
+            { "name": "GNA Liberates Tripoli", "start_date": "2020-6-4", "end_date": "2020-6-6" },
+            { "name": "Permanent Ceasefire", "start_date": "2020-10-23", "end_date": "2020-10-24" },
+            { "name": "GNU Takes Power", "start_date": "2021-3-10", "end_date": "2021-3-16" },
+            { "name": "Ramadan", "start_date": "2021-4-13", "end_date": "2021-5-12" },
+            { "name": "Summer Blackout Crisis", "start_date": "2021-6-1", "end_date": "2021-9-15" },
+            { "name": "Ramadan", "start_date": "2022-4-2", "end_date": "2022-5-1" },
+            { "name": "Oil Blockade Resumes", "start_date": "2022-4-17", "end_date": "2022-7-12" },
+            { "name": "Tripoli Militia Clashes", "start_date": "2022-8-26", "end_date": "2022-8-28" },
+            { "name": "Ramadan", "start_date": "2023-3-23", "end_date": "2023-4-21" },
+            { "name": "Storm Daniel / Derna Flood", "start_date": "2023-9-10", "end_date": "2023-9-15" },
+            { "name": "Ramadan", "start_date": "2024-3-10", "end_date": "2024-4-9" },
+            { "name": "Central Bank Oil Crisis", "start_date": "2024-8-26", "end_date": "2024-10-3" },
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" }
         ],
         "municipalities": {}
     },
     "yemen": {
         "events": [
-            {
-                "name": "Ramadan",
-                "start_date": "2024-3-10",
-                "end_date": "2024-4-9"
-            },
-            {
-                "name": "Ramadan",
-                "start_date": "2025-2-28",
-                "end_date": "2025-3-29"
-            }
+            { "name": "Houthi Al-Jawf Offensive", "start_date": "2020-2-1", "end_date": "2020-3-10" },
+            { "name": "Saudi Unilateral Ceasefire", "start_date": "2020-4-9", "end_date": "2020-7-1" },
+            { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
+            { "name": "Severe Flooding", "start_date": "2020-7-25", "end_date": "2020-9-15" },
+            { "name": "Houthi Marib Offensive", "start_date": "2021-2-6", "end_date": "2021-6-30" },
+            { "name": "Ramadan", "start_date": "2021-4-13", "end_date": "2021-5-12" },
+            { "name": "Coalition Internet Strike", "start_date": "2022-1-20", "end_date": "2022-1-25" },
+            { "name": "UN-Brokered Truce", "start_date": "2022-4-2", "end_date": "2022-10-2" },
+            { "name": "Ramadan", "start_date": "2022-4-2", "end_date": "2022-5-1" },
+            { "name": "Ramadan", "start_date": "2023-3-23", "end_date": "2023-4-21" },
+            { "name": "Red Sea Shipping Crisis", "start_date": "2023-12-3", "end_date": "2024-1-11" },
+            { "name": "US-UK Strikes Begin", "start_date": "2024-1-12", "end_date": "2024-1-13" },
+            { "name": "Ramadan", "start_date": "2024-3-10", "end_date": "2024-4-9" },
+            { "name": "Israel Strikes Hodeidah", "start_date": "2024-7-20", "end_date": "2024-7-21" },
+            { "name": "Severe Flooding", "start_date": "2024-8-1", "end_date": "2024-9-15" },
+            { "name": "Israel Strikes Sanaa", "start_date": "2024-12-19", "end_date": "2024-12-20" },
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" },
+            { "name": "US Strikes on Houthis", "start_date": "2025-3-15", "end_date": "2025-5-6" },
+            { "name": "Israel Strikes Sanaa Airport", "start_date": "2025-5-5", "end_date": "2025-5-6" }
         ],
         "municipalities": {}
     }

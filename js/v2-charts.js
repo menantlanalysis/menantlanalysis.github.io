@@ -79,8 +79,8 @@ stae.charts = (() => {
                 range: [priorDate.toISOString().slice(0, 10), latestDate.toISOString().slice(0, 10)]
             },
             yaxis: { title: "Luminosity (nW/sr/cm\u00B2)" },
-            shapes: eventShapes,
-            annotations: eventAnnotations,
+            shapes: [],
+            annotations: [],
             showlegend: true,
             legend: { x: 1, xanchor: "right", y: 1 },
             margin: { l: 60, r: 20, t: 60, b: 50 },
@@ -89,6 +89,26 @@ stae.charts = (() => {
             plot_bgcolor: "rgba(0,0,0,0)",
             font: { family: "Georgia, serif" }
         }, { responsive: true });
+
+        // Toggle button for event overlays
+        if (events && events.length > 0) {
+            const btn = document.createElement("button");
+            btn.className = "chart-events-toggle";
+            btn.textContent = "Show Events";
+            let visible = false;
+
+            btn.addEventListener("click", () => {
+                visible = !visible;
+                Plotly.relayout(el, {
+                    shapes: visible ? eventShapes : [],
+                    annotations: visible ? eventAnnotations : []
+                });
+                btn.textContent = visible ? "Hide Events" : "Show Events";
+                btn.classList.toggle("chart-events-toggle--active", visible);
+            });
+
+            el.insertAdjacentElement("beforebegin", btn);
+        }
     }
 
     function renderSparkline(containerId, data, opts) {

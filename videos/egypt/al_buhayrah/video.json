@@ -1,25 +1,7 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20241203_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20241230_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20250127_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20250129_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20250130_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20250131_al_buhayrah.jpeg"
+            "path": "egypt_20250227_al_buhayrah.jpeg"
         },
         {
             "path": "egypt_20250228_al_buhayrah.jpeg"
@@ -43,25 +25,16 @@
             "path": "egypt_20250401_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20250426_al_buhayrah.jpeg"
-        },
-        {
             "path": "egypt_20250427_al_buhayrah.jpeg"
         },
         {
             "path": "egypt_20250428_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20250429_al_buhayrah.jpeg"
-        },
-        {
             "path": "egypt_20250430_al_buhayrah.jpeg"
         },
         {
             "path": "egypt_20250525_al_buhayrah.jpeg"
-        },
-        {
-            "path": "egypt_20250526_al_buhayrah.jpeg"
         },
         {
             "path": "egypt_20250527_al_buhayrah.jpeg"
@@ -76,25 +49,37 @@
             "path": "egypt_20250623_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20250624_al_buhayrah.jpeg"
+            "path": "egypt_20250625_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20250822_al_buhayrah.jpeg"
+            "path": "egypt_20250626_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20250823_al_buhayrah.jpeg"
+            "path": "egypt_20250727_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20250923_al_buhayrah.jpeg"
+            "path": "egypt_20250919_al_buhayrah.jpeg"
+        },
+        {
+            "path": "egypt_20250921_al_buhayrah.jpeg"
         },
         {
             "path": "egypt_20250924_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20251023_al_buhayrah.jpeg"
+            "path": "egypt_20251121_al_buhayrah.jpeg"
         },
         {
-            "path": "egypt_20251121_al_buhayrah.jpeg"
+            "path": "egypt_20251218_al_buhayrah.jpeg"
+        },
+        {
+            "path": "egypt_20251222_al_buhayrah.jpeg"
+        },
+        {
+            "path": "egypt_20260118_al_buhayrah.jpeg"
+        },
+        {
+            "path": "egypt_20260119_al_buhayrah.jpeg"
         }
     ],
     "codec": "libx264",

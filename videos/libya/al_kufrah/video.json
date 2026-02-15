@@ -1,48 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20241203_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20241204_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20241228_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20241229_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20241231_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250101_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250102_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250127_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250128_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250129_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250130_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250131_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250201_al_kufrah.jpeg"
-        },
-        {
             "path": "libya_20250227_al_kufrah.jpeg"
         },
         {
@@ -52,13 +10,13 @@
             "path": "libya_20250301_al_kufrah.jpeg"
         },
         {
+            "path": "libya_20250302_al_kufrah.jpeg"
+        },
+        {
             "path": "libya_20250328_al_kufrah.jpeg"
         },
         {
             "path": "libya_20250329_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250330_al_kufrah.jpeg"
         },
         {
             "path": "libya_20250401_al_kufrah.jpeg"
@@ -70,13 +28,7 @@
             "path": "libya_20250427_al_kufrah.jpeg"
         },
         {
-            "path": "libya_20250428_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250429_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250430_al_kufrah.jpeg"
+            "path": "libya_20250525_al_kufrah.jpeg"
         },
         {
             "path": "libya_20250526_al_kufrah.jpeg"
@@ -97,22 +49,43 @@
             "path": "libya_20250624_al_kufrah.jpeg"
         },
         {
+            "path": "libya_20250625_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250626_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250627_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250628_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250723_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250724_al_kufrah.jpeg"
+        },
+        {
             "path": "libya_20250725_al_kufrah.jpeg"
         },
         {
             "path": "libya_20250726_al_kufrah.jpeg"
         },
         {
+            "path": "libya_20250727_al_kufrah.jpeg"
+        },
+        {
             "path": "libya_20250821_al_kufrah.jpeg"
         },
         {
-            "path": "libya_20250822_al_kufrah.jpeg"
-        },
-        {
-            "path": "libya_20250823_al_kufrah.jpeg"
-        },
-        {
             "path": "libya_20250826_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250919_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20250921_al_kufrah.jpeg"
         },
         {
             "path": "libya_20250922_al_kufrah.jpeg"
@@ -124,10 +97,25 @@
             "path": "libya_20250924_al_kufrah.jpeg"
         },
         {
+            "path": "libya_20250925_al_kufrah.jpeg"
+        },
+        {
             "path": "libya_20251019_al_kufrah.jpeg"
         },
         {
+            "path": "libya_20251020_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251022_al_kufrah.jpeg"
+        },
+        {
             "path": "libya_20251023_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251117_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251118_al_kufrah.jpeg"
         },
         {
             "path": "libya_20251119_al_kufrah.jpeg"
@@ -137,6 +125,27 @@
         },
         {
             "path": "libya_20251121_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251122_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251123_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251219_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20251220_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20260117_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20260118_al_kufrah.jpeg"
+        },
+        {
+            "path": "libya_20260119_al_kufrah.jpeg"
         }
     ],
     "codec": "libx264",

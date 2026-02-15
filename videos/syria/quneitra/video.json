@@ -1,49 +1,16 @@
 {
     "images": [
         {
-            "path": "syria_20241202_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20241203_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250101_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250102_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250127_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250128_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250129_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250130_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250201_quneitra.jpeg"
-        },
-        {
             "path": "syria_20250226_quneitra.jpeg"
         },
         {
             "path": "syria_20250227_quneitra.jpeg"
         },
         {
+            "path": "syria_20250228_quneitra.jpeg"
+        },
+        {
             "path": "syria_20250301_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250327_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250328_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250329_quneitra.jpeg"
         },
         {
             "path": "syria_20250330_quneitra.jpeg"
@@ -58,40 +25,40 @@
             "path": "syria_20250427_quneitra.jpeg"
         },
         {
-            "path": "syria_20250428_quneitra.jpeg"
-        },
-        {
             "path": "syria_20250429_quneitra.jpeg"
         },
         {
-            "path": "syria_20250430_quneitra.jpeg"
+            "path": "syria_20250525_quneitra.jpeg"
         },
         {
             "path": "syria_20250526_quneitra.jpeg"
         },
         {
-            "path": "syria_20250527_quneitra.jpeg"
+            "path": "syria_20250723_quneitra.jpeg"
         },
         {
-            "path": "syria_20250528_quneitra.jpeg"
+            "path": "syria_20250724_quneitra.jpeg"
         },
         {
-            "path": "syria_20250623_quneitra.jpeg"
-        },
-        {
-            "path": "syria_20250624_quneitra.jpeg"
+            "path": "syria_20250725_quneitra.jpeg"
         },
         {
             "path": "syria_20250726_quneitra.jpeg"
         },
         {
+            "path": "syria_20250727_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20250821_quneitra.jpeg"
+        },
+        {
             "path": "syria_20250822_quneitra.jpeg"
         },
         {
-            "path": "syria_20250823_quneitra.jpeg"
+            "path": "syria_20250824_quneitra.jpeg"
         },
         {
-            "path": "syria_20250824_quneitra.jpeg"
+            "path": "syria_20250826_quneitra.jpeg"
         },
         {
             "path": "syria_20250919_quneitra.jpeg"
@@ -100,19 +67,61 @@
             "path": "syria_20250921_quneitra.jpeg"
         },
         {
+            "path": "syria_20250922_quneitra.jpeg"
+        },
+        {
             "path": "syria_20250923_quneitra.jpeg"
         },
         {
             "path": "syria_20250924_quneitra.jpeg"
         },
         {
+            "path": "syria_20250925_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251019_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251020_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251022_quneitra.jpeg"
+        },
+        {
             "path": "syria_20251023_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251117_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251118_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251119_quneitra.jpeg"
         },
         {
             "path": "syria_20251120_quneitra.jpeg"
         },
         {
             "path": "syria_20251121_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251122_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251123_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251217_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251218_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20251219_quneitra.jpeg"
+        },
+        {
+            "path": "syria_20260119_quneitra.jpeg"
         }
     ],
     "codec": "libx264",

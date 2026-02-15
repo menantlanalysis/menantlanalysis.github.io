@@ -1,43 +1,7 @@
 {
     "images": [
         {
-            "path": "syria_20241202_idlib.jpeg"
-        },
-        {
-            "path": "syria_20241203_idlib.jpeg"
-        },
-        {
-            "path": "syria_20241230_idlib.jpeg"
-        },
-        {
-            "path": "syria_20241231_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250101_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250102_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250127_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250128_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250129_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250130_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250131_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250201_idlib.jpeg"
-        },
-        {
-            "path": "syria_20250227_idlib.jpeg"
+            "path": "syria_20250228_idlib.jpeg"
         },
         {
             "path": "syria_20250301_idlib.jpeg"
@@ -52,19 +16,19 @@
             "path": "syria_20250331_idlib.jpeg"
         },
         {
+            "path": "syria_20250401_idlib.jpeg"
+        },
+        {
             "path": "syria_20250426_idlib.jpeg"
         },
         {
             "path": "syria_20250427_idlib.jpeg"
         },
         {
-            "path": "syria_20250428_idlib.jpeg"
-        },
-        {
             "path": "syria_20250429_idlib.jpeg"
         },
         {
-            "path": "syria_20250430_idlib.jpeg"
+            "path": "syria_20250525_idlib.jpeg"
         },
         {
             "path": "syria_20250526_idlib.jpeg"
@@ -76,22 +40,34 @@
             "path": "syria_20250528_idlib.jpeg"
         },
         {
-            "path": "syria_20250623_idlib.jpeg"
+            "path": "syria_20250723_idlib.jpeg"
         },
         {
-            "path": "syria_20250624_idlib.jpeg"
+            "path": "syria_20250724_idlib.jpeg"
+        },
+        {
+            "path": "syria_20250725_idlib.jpeg"
         },
         {
             "path": "syria_20250726_idlib.jpeg"
         },
         {
+            "path": "syria_20250727_idlib.jpeg"
+        },
+        {
+            "path": "syria_20250821_idlib.jpeg"
+        },
+        {
             "path": "syria_20250822_idlib.jpeg"
         },
         {
-            "path": "syria_20250823_idlib.jpeg"
+            "path": "syria_20250824_idlib.jpeg"
         },
         {
-            "path": "syria_20250824_idlib.jpeg"
+            "path": "syria_20250825_idlib.jpeg"
+        },
+        {
+            "path": "syria_20250826_idlib.jpeg"
         },
         {
             "path": "syria_20250919_idlib.jpeg"
@@ -100,19 +76,58 @@
             "path": "syria_20250921_idlib.jpeg"
         },
         {
+            "path": "syria_20250922_idlib.jpeg"
+        },
+        {
             "path": "syria_20250923_idlib.jpeg"
         },
         {
             "path": "syria_20250924_idlib.jpeg"
         },
         {
-            "path": "syria_20251023_idlib.jpeg"
+            "path": "syria_20250925_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251019_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251020_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251022_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251117_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251118_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251119_idlib.jpeg"
         },
         {
             "path": "syria_20251120_idlib.jpeg"
         },
         {
             "path": "syria_20251121_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251122_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251217_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251218_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251219_idlib.jpeg"
+        },
+        {
+            "path": "syria_20251222_idlib.jpeg"
+        },
+        {
+            "path": "syria_20260119_idlib.jpeg"
         }
     ],
     "codec": "libx264",

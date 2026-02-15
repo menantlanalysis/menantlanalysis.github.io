@@ -1,31 +1,25 @@
 {
     "images": [
         {
-            "path": "libya_20241204_oases.jpeg"
-        },
-        {
-            "path": "libya_20250128_oases.jpeg"
-        },
-        {
-            "path": "libya_20250129_oases.jpeg"
-        },
-        {
-            "path": "libya_20250130_oases.jpeg"
-        },
-        {
-            "path": "libya_20250131_oases.jpeg"
+            "path": "libya_20250227_oases.jpeg"
         },
         {
             "path": "libya_20250228_oases.jpeg"
+        },
+        {
+            "path": "libya_20250301_oases.jpeg"
+        },
+        {
+            "path": "libya_20250302_oases.jpeg"
+        },
+        {
+            "path": "libya_20250327_oases.jpeg"
         },
         {
             "path": "libya_20250328_oases.jpeg"
         },
         {
             "path": "libya_20250329_oases.jpeg"
-        },
-        {
-            "path": "libya_20250331_oases.jpeg"
         },
         {
             "path": "libya_20250401_oases.jpeg"
@@ -37,13 +31,13 @@
             "path": "libya_20250427_oases.jpeg"
         },
         {
-            "path": "libya_20250428_oases.jpeg"
-        },
-        {
             "path": "libya_20250429_oases.jpeg"
         },
         {
             "path": "libya_20250430_oases.jpeg"
+        },
+        {
+            "path": "libya_20250525_oases.jpeg"
         },
         {
             "path": "libya_20250526_oases.jpeg"
@@ -55,10 +49,31 @@
             "path": "libya_20250528_oases.jpeg"
         },
         {
+            "path": "libya_20250529_oases.jpeg"
+        },
+        {
             "path": "libya_20250623_oases.jpeg"
         },
         {
             "path": "libya_20250624_oases.jpeg"
+        },
+        {
+            "path": "libya_20250625_oases.jpeg"
+        },
+        {
+            "path": "libya_20250626_oases.jpeg"
+        },
+        {
+            "path": "libya_20250627_oases.jpeg"
+        },
+        {
+            "path": "libya_20250628_oases.jpeg"
+        },
+        {
+            "path": "libya_20250723_oases.jpeg"
+        },
+        {
+            "path": "libya_20250724_oases.jpeg"
         },
         {
             "path": "libya_20250725_oases.jpeg"
@@ -67,16 +82,25 @@
             "path": "libya_20250726_oases.jpeg"
         },
         {
+            "path": "libya_20250727_oases.jpeg"
+        },
+        {
             "path": "libya_20250821_oases.jpeg"
         },
         {
-            "path": "libya_20250822_oases.jpeg"
+            "path": "libya_20250824_oases.jpeg"
         },
         {
-            "path": "libya_20250823_oases.jpeg"
+            "path": "libya_20250825_oases.jpeg"
         },
         {
             "path": "libya_20250826_oases.jpeg"
+        },
+        {
+            "path": "libya_20250919_oases.jpeg"
+        },
+        {
+            "path": "libya_20250921_oases.jpeg"
         },
         {
             "path": "libya_20250922_oases.jpeg"
@@ -88,10 +112,22 @@
             "path": "libya_20250924_oases.jpeg"
         },
         {
+            "path": "libya_20250925_oases.jpeg"
+        },
+        {
             "path": "libya_20251019_oases.jpeg"
         },
         {
+            "path": "libya_20251020_oases.jpeg"
+        },
+        {
+            "path": "libya_20251022_oases.jpeg"
+        },
+        {
             "path": "libya_20251023_oases.jpeg"
+        },
+        {
+            "path": "libya_20251117_oases.jpeg"
         },
         {
             "path": "libya_20251119_oases.jpeg"
@@ -101,6 +137,24 @@
         },
         {
             "path": "libya_20251121_oases.jpeg"
+        },
+        {
+            "path": "libya_20251122_oases.jpeg"
+        },
+        {
+            "path": "libya_20251123_oases.jpeg"
+        },
+        {
+            "path": "libya_20251222_oases.jpeg"
+        },
+        {
+            "path": "libya_20251223_oases.jpeg"
+        },
+        {
+            "path": "libya_20260117_oases.jpeg"
+        },
+        {
+            "path": "libya_20260118_oases.jpeg"
         }
     ],
     "codec": "libx264",

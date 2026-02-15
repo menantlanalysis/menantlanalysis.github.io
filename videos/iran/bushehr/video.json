@@ -1,46 +1,10 @@
 {
     "images": [
         {
-            "path": "iran_20241202_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20241203_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20241204_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20241231_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250101_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250102_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250127_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250128_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250130_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250131_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250201_bushehr.jpeg"
-        },
-        {
             "path": "iran_20250227_bushehr.jpeg"
         },
         {
             "path": "iran_20250228_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250301_bushehr.jpeg"
         },
         {
             "path": "iran_20250302_bushehr.jpeg"
@@ -58,19 +22,10 @@
             "path": "iran_20250330_bushehr.jpeg"
         },
         {
-            "path": "iran_20250331_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250426_bushehr.jpeg"
-        },
-        {
             "path": "iran_20250427_bushehr.jpeg"
         },
         {
             "path": "iran_20250428_bushehr.jpeg"
-        },
-        {
-            "path": "iran_20250429_bushehr.jpeg"
         },
         {
             "path": "iran_20250430_bushehr.jpeg"
@@ -85,37 +40,55 @@
             "path": "iran_20250527_bushehr.jpeg"
         },
         {
-            "path": "iran_20250528_bushehr.jpeg"
-        },
-        {
             "path": "iran_20250529_bushehr.jpeg"
         },
         {
-            "path": "iran_20250623_bushehr.jpeg"
+            "path": "iran_20250625_bushehr.jpeg"
         },
         {
-            "path": "iran_20250624_bushehr.jpeg"
+            "path": "iran_20250626_bushehr.jpeg"
         },
         {
-            "path": "iran_20250822_bushehr.jpeg"
+            "path": "iran_20250723_bushehr.jpeg"
         },
         {
-            "path": "iran_20250823_bushehr.jpeg"
+            "path": "iran_20250724_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20250725_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20250726_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20250821_bushehr.jpeg"
         },
         {
             "path": "iran_20250824_bushehr.jpeg"
         },
         {
+            "path": "iran_20250826_bushehr.jpeg"
+        },
+        {
             "path": "iran_20250919_bushehr.jpeg"
         },
         {
-            "path": "iran_20250923_bushehr.jpeg"
+            "path": "iran_20250921_bushehr.jpeg"
         },
         {
-            "path": "iran_20250924_bushehr.jpeg"
+            "path": "iran_20250922_bushehr.jpeg"
         },
         {
-            "path": "iran_20251021_bushehr.jpeg"
+            "path": "iran_20250925_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251019_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251020_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251022_bushehr.jpeg"
         },
         {
             "path": "iran_20251023_bushehr.jpeg"
@@ -124,10 +97,37 @@
             "path": "iran_20251117_bushehr.jpeg"
         },
         {
+            "path": "iran_20251118_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251119_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251120_bushehr.jpeg"
+        },
+        {
             "path": "iran_20251121_bushehr.jpeg"
         },
         {
             "path": "iran_20251122_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251123_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251220_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20251222_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20260117_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20260119_bushehr.jpeg"
+        },
+        {
+            "path": "iran_20260121_bushehr.jpeg"
         }
     ],
     "codec": "libx264",

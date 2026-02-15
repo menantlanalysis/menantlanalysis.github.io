@@ -1,46 +1,7 @@
 {
     "images": [
         {
-            "path": "iran_20241202_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20241203_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20241204_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250101_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250102_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250127_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250128_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250129_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250131_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250201_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250227_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250228_hormozgan.jpeg"
-        },
-        {
             "path": "iran_20250302_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250327_hormozgan.jpeg"
         },
         {
             "path": "iran_20250328_hormozgan.jpeg"
@@ -53,15 +14,6 @@
         },
         {
             "path": "iran_20250401_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250426_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250427_hormozgan.jpeg"
-        },
-        {
-            "path": "iran_20250428_hormozgan.jpeg"
         },
         {
             "path": "iran_20250429_hormozgan.jpeg"
@@ -79,28 +31,34 @@
             "path": "iran_20250527_hormozgan.jpeg"
         },
         {
-            "path": "iran_20250528_hormozgan.jpeg"
-        },
-        {
             "path": "iran_20250529_hormozgan.jpeg"
         },
         {
-            "path": "iran_20250623_hormozgan.jpeg"
+            "path": "iran_20250626_hormozgan.jpeg"
         },
         {
-            "path": "iran_20250624_hormozgan.jpeg"
+            "path": "iran_20250723_hormozgan.jpeg"
         },
         {
-            "path": "iran_20250822_hormozgan.jpeg"
+            "path": "iran_20250724_hormozgan.jpeg"
         },
         {
-            "path": "iran_20250823_hormozgan.jpeg"
+            "path": "iran_20250725_hormozgan.jpeg"
         },
         {
-            "path": "iran_20250824_hormozgan.jpeg"
+            "path": "iran_20250726_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20250821_hormozgan.jpeg"
         },
         {
             "path": "iran_20250919_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20250921_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20250922_hormozgan.jpeg"
         },
         {
             "path": "iran_20250923_hormozgan.jpeg"
@@ -109,19 +67,49 @@
             "path": "iran_20250924_hormozgan.jpeg"
         },
         {
-            "path": "iran_20251021_hormozgan.jpeg"
+            "path": "iran_20250925_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251019_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251020_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251022_hormozgan.jpeg"
         },
         {
             "path": "iran_20251023_hormozgan.jpeg"
         },
         {
-            "path": "iran_20251117_hormozgan.jpeg"
+            "path": "iran_20251118_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251119_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251120_hormozgan.jpeg"
         },
         {
             "path": "iran_20251121_hormozgan.jpeg"
         },
         {
             "path": "iran_20251122_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251123_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20251222_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20260117_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20260118_hormozgan.jpeg"
+        },
+        {
+            "path": "iran_20260121_hormozgan.jpeg"
         }
     ],
     "codec": "libx264",

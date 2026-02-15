@@ -1,45 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20241203_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20241204_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20241228_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20241229_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20241230_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20241231_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20250102_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20250127_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20250128_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20250129_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20250130_ash_shati'.jpeg"
-        },
-        {
-            "path": "libya_20250131_ash_shati'.jpeg"
-        },
-        {
             "path": "libya_20250226_ash_shati'.jpeg"
         },
         {
@@ -73,9 +34,6 @@
             "path": "libya_20250427_ash_shati'.jpeg"
         },
         {
-            "path": "libya_20250428_ash_shati'.jpeg"
-        },
-        {
             "path": "libya_20250429_ash_shati'.jpeg"
         },
         {
@@ -100,22 +58,49 @@
             "path": "libya_20250624_ash_shati'.jpeg"
         },
         {
+            "path": "libya_20250625_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250626_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250627_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250628_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250723_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250724_ash_shati'.jpeg"
+        },
+        {
             "path": "libya_20250725_ash_shati'.jpeg"
         },
         {
             "path": "libya_20250726_ash_shati'.jpeg"
         },
         {
+            "path": "libya_20250727_ash_shati'.jpeg"
+        },
+        {
             "path": "libya_20250821_ash_shati'.jpeg"
         },
         {
-            "path": "libya_20250822_ash_shati'.jpeg"
+            "path": "libya_20250824_ash_shati'.jpeg"
         },
         {
-            "path": "libya_20250823_ash_shati'.jpeg"
+            "path": "libya_20250825_ash_shati'.jpeg"
         },
         {
             "path": "libya_20250826_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250919_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20250921_ash_shati'.jpeg"
         },
         {
             "path": "libya_20250922_ash_shati'.jpeg"
@@ -127,10 +112,19 @@
             "path": "libya_20250924_ash_shati'.jpeg"
         },
         {
+            "path": "libya_20250925_ash_shati'.jpeg"
+        },
+        {
             "path": "libya_20251019_ash_shati'.jpeg"
         },
         {
+            "path": "libya_20251022_ash_shati'.jpeg"
+        },
+        {
             "path": "libya_20251023_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20251117_ash_shati'.jpeg"
         },
         {
             "path": "libya_20251119_ash_shati'.jpeg"
@@ -140,6 +134,27 @@
         },
         {
             "path": "libya_20251121_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20251122_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20251123_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20251220_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20251222_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20251223_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20260117_ash_shati'.jpeg"
+        },
+        {
+            "path": "libya_20260119_ash_shati'.jpeg"
         }
     ],
     "codec": "libx264",

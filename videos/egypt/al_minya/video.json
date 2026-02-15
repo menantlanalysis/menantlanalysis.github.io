@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241203_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241204_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241228_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241229_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241230_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20241231_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250101_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250102_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250128_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250129_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250130_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250131_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250201_al_minya.jpeg"
-        },
-        {
-            "path": "egypt_20250226_al_minya.jpeg"
-        },
-        {
             "path": "egypt_20250227_al_minya.jpeg"
         },
         {
@@ -64,7 +19,7 @@
             "path": "egypt_20250329_al_minya.jpeg"
         },
         {
-            "path": "egypt_20250331_al_minya.jpeg"
+            "path": "egypt_20250330_al_minya.jpeg"
         },
         {
             "path": "egypt_20250401_al_minya.jpeg"
@@ -106,10 +61,52 @@
             "path": "egypt_20250624_al_minya.jpeg"
         },
         {
-            "path": "egypt_20250822_al_minya.jpeg"
+            "path": "egypt_20250625_al_minya.jpeg"
         },
         {
-            "path": "egypt_20250823_al_minya.jpeg"
+            "path": "egypt_20250626_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250627_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250628_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250723_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250724_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250725_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250726_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250727_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250821_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250824_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250825_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250826_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250919_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250921_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20250922_al_minya.jpeg"
         },
         {
             "path": "egypt_20250923_al_minya.jpeg"
@@ -118,10 +115,52 @@
             "path": "egypt_20250924_al_minya.jpeg"
         },
         {
+            "path": "egypt_20250925_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251019_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251020_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251022_al_minya.jpeg"
+        },
+        {
             "path": "egypt_20251023_al_minya.jpeg"
         },
         {
+            "path": "egypt_20251117_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251118_al_minya.jpeg"
+        },
+        {
             "path": "egypt_20251121_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251122_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251218_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251219_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251222_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20251223_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20260117_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20260118_al_minya.jpeg"
+        },
+        {
+            "path": "egypt_20260119_al_minya.jpeg"
         }
     ],
     "codec": "libx264",

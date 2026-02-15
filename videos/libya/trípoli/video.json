@@ -1,67 +1,19 @@
 {
     "images": [
         {
-            "path": "libya_20250101_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250102_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250129_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250130_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250131_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250226_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250301_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250328_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250329_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250401_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250426_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250427_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250428_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250429_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250430_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250526_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250527_tr\u00edpoli.jpeg"
-        },
-        {
-            "path": "libya_20250528_tr\u00edpoli.jpeg"
+            "path": "libya_20250228_tr\u00edpoli.jpeg"
         },
         {
             "path": "libya_20250529_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20250623_tr\u00edpoli.jpeg"
+            "path": "libya_20250625_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20250624_tr\u00edpoli.jpeg"
+            "path": "libya_20250723_tr\u00edpoli.jpeg"
+        },
+        {
+            "path": "libya_20250724_tr\u00edpoli.jpeg"
         },
         {
             "path": "libya_20250725_tr\u00edpoli.jpeg"
@@ -70,16 +22,22 @@
             "path": "libya_20250726_tr\u00edpoli.jpeg"
         },
         {
+            "path": "libya_20250727_tr\u00edpoli.jpeg"
+        },
+        {
             "path": "libya_20250821_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20250822_tr\u00edpoli.jpeg"
+            "path": "libya_20250824_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20250823_tr\u00edpoli.jpeg"
+            "path": "libya_20250825_tr\u00edpoli.jpeg"
         },
         {
             "path": "libya_20250826_tr\u00edpoli.jpeg"
+        },
+        {
+            "path": "libya_20250919_tr\u00edpoli.jpeg"
         },
         {
             "path": "libya_20250922_tr\u00edpoli.jpeg"
@@ -91,16 +49,16 @@
             "path": "libya_20250924_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20251023_tr\u00edpoli.jpeg"
+            "path": "libya_20251020_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20251119_tr\u00edpoli.jpeg"
+            "path": "libya_20251217_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20251120_tr\u00edpoli.jpeg"
+            "path": "libya_20251222_tr\u00edpoli.jpeg"
         },
         {
-            "path": "libya_20251121_tr\u00edpoli.jpeg"
+            "path": "libya_20251223_tr\u00edpoli.jpeg"
         }
     ],
     "codec": "libx264",

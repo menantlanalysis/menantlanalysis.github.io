@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20241203_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20241204_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20241228_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20241229_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20241230_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20241231_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250101_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250102_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250127_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250128_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250129_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250130_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250131_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250201_al_jawf.jpeg"
-        },
-        {
             "path": "yemen_20250226_al_jawf.jpeg"
         },
         {
@@ -74,9 +29,6 @@
         },
         {
             "path": "yemen_20250401_al_jawf.jpeg"
-        },
-        {
-            "path": "yemen_20250426_al_jawf.jpeg"
         },
         {
             "path": "yemen_20250427_al_jawf.jpeg"
@@ -112,19 +64,40 @@
             "path": "yemen_20250624_al_jawf.jpeg"
         },
         {
-            "path": "yemen_20250919_al_jawf.jpeg"
+            "path": "yemen_20250625_al_jawf.jpeg"
         },
         {
-            "path": "yemen_20250923_al_jawf.jpeg"
+            "path": "yemen_20250626_al_jawf.jpeg"
         },
         {
-            "path": "yemen_20250924_al_jawf.jpeg"
+            "path": "yemen_20250723_al_jawf.jpeg"
         },
         {
-            "path": "yemen_20251021_al_jawf.jpeg"
+            "path": "yemen_20250921_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20250925_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251019_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251020_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251022_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251023_al_jawf.jpeg"
         },
         {
             "path": "yemen_20251117_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251118_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251119_al_jawf.jpeg"
         },
         {
             "path": "yemen_20251120_al_jawf.jpeg"
@@ -134,6 +107,39 @@
         },
         {
             "path": "yemen_20251122_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251123_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251217_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251218_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251219_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251220_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251222_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20251223_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20260117_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20260118_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20260119_al_jawf.jpeg"
+        },
+        {
+            "path": "yemen_20260121_al_jawf.jpeg"
         }
     ],
     "codec": "libx264",

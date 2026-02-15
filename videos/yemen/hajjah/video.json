@@ -1,58 +1,13 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20241203_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20241204_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20241228_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20241229_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20241230_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20241231_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250101_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250102_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250127_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250128_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250129_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250130_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250131_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250201_hajjah.jpeg"
-        },
-        {
             "path": "yemen_20250226_hajjah.jpeg"
         },
         {
-            "path": "yemen_20250228_hajjah.jpeg"
+            "path": "yemen_20250227_hajjah.jpeg"
         },
         {
-            "path": "yemen_20250301_hajjah.jpeg"
+            "path": "yemen_20250228_hajjah.jpeg"
         },
         {
             "path": "yemen_20250302_hajjah.jpeg"
@@ -85,9 +40,6 @@
             "path": "yemen_20250428_hajjah.jpeg"
         },
         {
-            "path": "yemen_20250429_hajjah.jpeg"
-        },
-        {
             "path": "yemen_20250430_hajjah.jpeg"
         },
         {
@@ -103,25 +55,37 @@
             "path": "yemen_20250528_hajjah.jpeg"
         },
         {
-            "path": "yemen_20250529_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250623_hajjah.jpeg"
-        },
-        {
-            "path": "yemen_20250624_hajjah.jpeg"
+            "path": "yemen_20250723_hajjah.jpeg"
         },
         {
             "path": "yemen_20250919_hajjah.jpeg"
         },
         {
-            "path": "yemen_20250924_hajjah.jpeg"
+            "path": "yemen_20250921_hajjah.jpeg"
         },
         {
-            "path": "yemen_20251021_hajjah.jpeg"
+            "path": "yemen_20250922_hajjah.jpeg"
         },
         {
-            "path": "yemen_20251117_hajjah.jpeg"
+            "path": "yemen_20250925_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251019_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251020_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251022_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251023_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251118_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251119_hajjah.jpeg"
         },
         {
             "path": "yemen_20251120_hajjah.jpeg"
@@ -131,6 +95,12 @@
         },
         {
             "path": "yemen_20251122_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20251219_hajjah.jpeg"
+        },
+        {
+            "path": "yemen_20260121_hajjah.jpeg"
         }
     ],
     "codec": "libx264",

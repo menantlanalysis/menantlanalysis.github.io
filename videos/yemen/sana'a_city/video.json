@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241203_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241204_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241228_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241229_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241230_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20241231_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250101_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250102_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250127_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250128_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250129_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250130_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250131_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250201_sana'a_city.jpeg"
-        },
-        {
             "path": "yemen_20250226_sana'a_city.jpeg"
         },
         {
@@ -79,9 +34,6 @@
             "path": "yemen_20250401_sana'a_city.jpeg"
         },
         {
-            "path": "yemen_20250426_sana'a_city.jpeg"
-        },
-        {
             "path": "yemen_20250427_sana'a_city.jpeg"
         },
         {
@@ -89,9 +41,6 @@
         },
         {
             "path": "yemen_20250429_sana'a_city.jpeg"
-        },
-        {
-            "path": "yemen_20250430_sana'a_city.jpeg"
         },
         {
             "path": "yemen_20250525_sana'a_city.jpeg"
@@ -112,13 +61,37 @@
             "path": "yemen_20250624_sana'a_city.jpeg"
         },
         {
-            "path": "yemen_20250919_sana'a_city.jpeg"
+            "path": "yemen_20250627_sana'a_city.jpeg"
         },
         {
-            "path": "yemen_20251021_sana'a_city.jpeg"
+            "path": "yemen_20250723_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20250921_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20250925_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251019_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251020_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251022_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251023_sana'a_city.jpeg"
         },
         {
             "path": "yemen_20251117_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251118_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251119_sana'a_city.jpeg"
         },
         {
             "path": "yemen_20251120_sana'a_city.jpeg"
@@ -128,6 +101,39 @@
         },
         {
             "path": "yemen_20251122_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251123_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251217_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251218_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251219_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251220_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251222_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20251223_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20260117_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20260118_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20260119_sana'a_city.jpeg"
+        },
+        {
+            "path": "yemen_20260121_sana'a_city.jpeg"
         }
     ],
     "codec": "libx264",

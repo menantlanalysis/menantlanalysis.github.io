@@ -1,42 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_aden.jpeg"
-        },
-        {
-            "path": "yemen_20241203_aden.jpeg"
-        },
-        {
-            "path": "yemen_20241229_aden.jpeg"
-        },
-        {
-            "path": "yemen_20241231_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250101_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250102_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250127_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250128_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250129_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250130_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250131_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250201_aden.jpeg"
-        },
-        {
             "path": "yemen_20250226_aden.jpeg"
         },
         {
@@ -50,9 +14,6 @@
         },
         {
             "path": "yemen_20250302_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250327_aden.jpeg"
         },
         {
             "path": "yemen_20250328_aden.jpeg"
@@ -70,12 +31,6 @@
             "path": "yemen_20250401_aden.jpeg"
         },
         {
-            "path": "yemen_20250426_aden.jpeg"
-        },
-        {
-            "path": "yemen_20250427_aden.jpeg"
-        },
-        {
             "path": "yemen_20250428_aden.jpeg"
         },
         {
@@ -88,19 +43,46 @@
             "path": "yemen_20250525_aden.jpeg"
         },
         {
-            "path": "yemen_20250527_aden.jpeg"
+            "path": "yemen_20250526_aden.jpeg"
         },
         {
             "path": "yemen_20250528_aden.jpeg"
         },
         {
-            "path": "yemen_20250623_aden.jpeg"
+            "path": "yemen_20250625_aden.jpeg"
         },
         {
-            "path": "yemen_20251021_aden.jpeg"
+            "path": "yemen_20250626_aden.jpeg"
+        },
+        {
+            "path": "yemen_20250723_aden.jpeg"
+        },
+        {
+            "path": "yemen_20250724_aden.jpeg"
+        },
+        {
+            "path": "yemen_20250824_aden.jpeg"
+        },
+        {
+            "path": "yemen_20250921_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251019_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251020_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251022_aden.jpeg"
         },
         {
             "path": "yemen_20251117_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251118_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251119_aden.jpeg"
         },
         {
             "path": "yemen_20251120_aden.jpeg"
@@ -110,6 +92,30 @@
         },
         {
             "path": "yemen_20251122_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251123_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251217_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251218_aden.jpeg"
+        },
+        {
+            "path": "yemen_20251223_aden.jpeg"
+        },
+        {
+            "path": "yemen_20260117_aden.jpeg"
+        },
+        {
+            "path": "yemen_20260118_aden.jpeg"
+        },
+        {
+            "path": "yemen_20260119_aden.jpeg"
+        },
+        {
+            "path": "yemen_20260121_aden.jpeg"
         }
     ],
     "codec": "libx264",

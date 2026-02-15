@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20241203_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20241204_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20241228_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20241229_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20241230_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20241231_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250101_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250102_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250127_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250128_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250129_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250130_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250131_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250226_al_jizah.jpeg"
-        },
-        {
             "path": "egypt_20250227_al_jizah.jpeg"
         },
         {
@@ -62,12 +17,6 @@
         },
         {
             "path": "egypt_20250329_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250330_al_jizah.jpeg"
-        },
-        {
-            "path": "egypt_20250331_al_jizah.jpeg"
         },
         {
             "path": "egypt_20250401_al_jizah.jpeg"
@@ -109,10 +58,52 @@
             "path": "egypt_20250624_al_jizah.jpeg"
         },
         {
-            "path": "egypt_20250822_al_jizah.jpeg"
+            "path": "egypt_20250625_al_jizah.jpeg"
         },
         {
-            "path": "egypt_20250823_al_jizah.jpeg"
+            "path": "egypt_20250626_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250627_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250628_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250723_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250724_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250725_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250726_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250727_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250821_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250824_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250825_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250826_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250919_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250921_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20250922_al_jizah.jpeg"
         },
         {
             "path": "egypt_20250923_al_jizah.jpeg"
@@ -121,10 +112,55 @@
             "path": "egypt_20250924_al_jizah.jpeg"
         },
         {
+            "path": "egypt_20250925_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251019_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251020_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251022_al_jizah.jpeg"
+        },
+        {
             "path": "egypt_20251023_al_jizah.jpeg"
         },
         {
+            "path": "egypt_20251117_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251118_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251119_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251120_al_jizah.jpeg"
+        },
+        {
             "path": "egypt_20251121_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251122_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251218_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251222_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20251223_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20260117_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20260118_al_jizah.jpeg"
+        },
+        {
+            "path": "egypt_20260119_al_jizah.jpeg"
         }
     ],
     "codec": "libx264",

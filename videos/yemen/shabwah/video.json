@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241203_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241204_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241228_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241229_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241230_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20241231_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250101_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250102_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250127_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250128_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250129_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250130_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250131_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250201_shabwah.jpeg"
-        },
-        {
             "path": "yemen_20250226_shabwah.jpeg"
         },
         {
@@ -59,9 +14,6 @@
         },
         {
             "path": "yemen_20250302_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250327_shabwah.jpeg"
         },
         {
             "path": "yemen_20250328_shabwah.jpeg"
@@ -79,9 +31,6 @@
             "path": "yemen_20250401_shabwah.jpeg"
         },
         {
-            "path": "yemen_20250426_shabwah.jpeg"
-        },
-        {
             "path": "yemen_20250427_shabwah.jpeg"
         },
         {
@@ -91,28 +40,37 @@
             "path": "yemen_20250429_shabwah.jpeg"
         },
         {
-            "path": "yemen_20250430_shabwah.jpeg"
-        },
-        {
             "path": "yemen_20250525_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250527_shabwah.jpeg"
-        },
-        {
-            "path": "yemen_20250528_shabwah.jpeg"
         },
         {
             "path": "yemen_20250624_shabwah.jpeg"
         },
         {
-            "path": "yemen_20250924_shabwah.jpeg"
+            "path": "yemen_20250626_shabwah.jpeg"
         },
         {
-            "path": "yemen_20251021_shabwah.jpeg"
+            "path": "yemen_20250921_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20250925_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251019_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251020_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251022_shabwah.jpeg"
         },
         {
             "path": "yemen_20251117_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251118_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251119_shabwah.jpeg"
         },
         {
             "path": "yemen_20251120_shabwah.jpeg"
@@ -122,6 +80,36 @@
         },
         {
             "path": "yemen_20251122_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251123_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251217_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251219_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251220_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251222_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20251223_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20260117_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20260118_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20260119_shabwah.jpeg"
+        },
+        {
+            "path": "yemen_20260121_shabwah.jpeg"
         }
     ],
     "codec": "libx264",

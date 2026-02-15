@@ -1,49 +1,16 @@
 {
     "images": [
         {
-            "path": "syria_20241202_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20241203_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20241231_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250101_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250102_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250127_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250128_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250129_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250130_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250131_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250201_hasaka_(al_haksa).jpeg"
-        },
-        {
             "path": "syria_20250226_hasaka_(al_haksa).jpeg"
         },
         {
             "path": "syria_20250227_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20250301_hasaka_(al_haksa).jpeg"
+            "path": "syria_20250228_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20250328_hasaka_(al_haksa).jpeg"
+            "path": "syria_20250301_hasaka_(al_haksa).jpeg"
         },
         {
             "path": "syria_20250331_hasaka_(al_haksa).jpeg"
@@ -55,40 +22,22 @@
             "path": "syria_20250427_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20250428_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250429_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250430_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250526_hasaka_(al_haksa).jpeg"
-        },
-        {
             "path": "syria_20250527_hasaka_(al_haksa).jpeg"
         },
         {
             "path": "syria_20250528_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20250623_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250624_hasaka_(al_haksa).jpeg"
-        },
-        {
-            "path": "syria_20250726_hasaka_(al_haksa).jpeg"
-        },
-        {
             "path": "syria_20250822_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20250823_hasaka_(al_haksa).jpeg"
+            "path": "syria_20250824_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20250824_hasaka_(al_haksa).jpeg"
+            "path": "syria_20250825_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20250826_hasaka_(al_haksa).jpeg"
         },
         {
             "path": "syria_20250919_hasaka_(al_haksa).jpeg"
@@ -97,19 +46,37 @@
             "path": "syria_20250921_hasaka_(al_haksa).jpeg"
         },
         {
+            "path": "syria_20250922_hasaka_(al_haksa).jpeg"
+        },
+        {
             "path": "syria_20250923_hasaka_(al_haksa).jpeg"
         },
         {
             "path": "syria_20250924_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20251023_hasaka_(al_haksa).jpeg"
+            "path": "syria_20251019_hasaka_(al_haksa).jpeg"
         },
         {
-            "path": "syria_20251120_hasaka_(al_haksa).jpeg"
+            "path": "syria_20251020_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20251117_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20251118_hasaka_(al_haksa).jpeg"
         },
         {
             "path": "syria_20251121_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20251217_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20251218_hasaka_(al_haksa).jpeg"
+        },
+        {
+            "path": "syria_20260119_hasaka_(al_haksa).jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,94 +1,10 @@
 {
     "images": [
         {
-            "path": "lebanon_20241202_south.jpeg"
+            "path": "lebanon_20250723_south.jpeg"
         },
         {
-            "path": "lebanon_20241203_south.jpeg"
-        },
-        {
-            "path": "lebanon_20241231_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250101_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250102_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250127_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250128_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250129_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250130_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250201_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250226_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250301_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250327_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250330_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250401_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250427_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250428_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250429_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250430_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250526_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250527_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250623_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250823_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250824_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250826_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250919_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250921_south.jpeg"
-        },
-        {
-            "path": "lebanon_20250924_south.jpeg"
-        },
-        {
-            "path": "lebanon_20251023_south.jpeg"
-        },
-        {
-            "path": "lebanon_20251121_south.jpeg"
+            "path": "lebanon_20251219_south.jpeg"
         }
     ],
     "codec": "libx264",

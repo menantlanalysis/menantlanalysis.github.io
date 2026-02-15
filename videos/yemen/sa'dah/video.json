@@ -1,49 +1,7 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20241203_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20241204_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20241228_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20241230_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20241231_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250101_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250102_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250127_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250128_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250129_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250130_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250131_sa'dah.jpeg"
-        },
-        {
             "path": "yemen_20250226_sa'dah.jpeg"
-        },
-        {
-            "path": "yemen_20250227_sa'dah.jpeg"
         },
         {
             "path": "yemen_20250228_sa'dah.jpeg"
@@ -97,22 +55,49 @@
             "path": "yemen_20250527_sa'dah.jpeg"
         },
         {
+            "path": "yemen_20250528_sa'dah.jpeg"
+        },
+        {
             "path": "yemen_20250529_sa'dah.jpeg"
         },
         {
             "path": "yemen_20250624_sa'dah.jpeg"
         },
         {
+            "path": "yemen_20250723_sa'dah.jpeg"
+        },
+        {
             "path": "yemen_20250919_sa'dah.jpeg"
         },
         {
-            "path": "yemen_20250923_sa'dah.jpeg"
+            "path": "yemen_20250921_sa'dah.jpeg"
         },
         {
-            "path": "yemen_20251021_sa'dah.jpeg"
+            "path": "yemen_20250922_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20250925_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251019_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251020_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251022_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251023_sa'dah.jpeg"
         },
         {
             "path": "yemen_20251117_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251118_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251119_sa'dah.jpeg"
         },
         {
             "path": "yemen_20251120_sa'dah.jpeg"
@@ -122,6 +107,33 @@
         },
         {
             "path": "yemen_20251122_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251123_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251217_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251219_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251222_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20251223_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20260117_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20260118_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20260119_sa'dah.jpeg"
+        },
+        {
+            "path": "yemen_20260121_sa'dah.jpeg"
         }
     ],
     "codec": "libx264",

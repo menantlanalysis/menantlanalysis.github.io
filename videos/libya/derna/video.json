@@ -1,36 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_derna.jpeg"
-        },
-        {
-            "path": "libya_20241204_derna.jpeg"
-        },
-        {
-            "path": "libya_20241230_derna.jpeg"
-        },
-        {
-            "path": "libya_20241231_derna.jpeg"
-        },
-        {
-            "path": "libya_20250101_derna.jpeg"
-        },
-        {
-            "path": "libya_20250102_derna.jpeg"
-        },
-        {
-            "path": "libya_20250128_derna.jpeg"
-        },
-        {
-            "path": "libya_20250129_derna.jpeg"
-        },
-        {
-            "path": "libya_20250130_derna.jpeg"
-        },
-        {
-            "path": "libya_20250131_derna.jpeg"
-        },
-        {
             "path": "libya_20250228_derna.jpeg"
         },
         {
@@ -46,9 +16,6 @@
             "path": "libya_20250330_derna.jpeg"
         },
         {
-            "path": "libya_20250331_derna.jpeg"
-        },
-        {
             "path": "libya_20250401_derna.jpeg"
         },
         {
@@ -58,13 +25,13 @@
             "path": "libya_20250427_derna.jpeg"
         },
         {
-            "path": "libya_20250428_derna.jpeg"
-        },
-        {
             "path": "libya_20250429_derna.jpeg"
         },
         {
             "path": "libya_20250430_derna.jpeg"
+        },
+        {
+            "path": "libya_20250525_derna.jpeg"
         },
         {
             "path": "libya_20250526_derna.jpeg"
@@ -85,22 +52,49 @@
             "path": "libya_20250624_derna.jpeg"
         },
         {
+            "path": "libya_20250625_derna.jpeg"
+        },
+        {
+            "path": "libya_20250626_derna.jpeg"
+        },
+        {
+            "path": "libya_20250627_derna.jpeg"
+        },
+        {
+            "path": "libya_20250628_derna.jpeg"
+        },
+        {
+            "path": "libya_20250723_derna.jpeg"
+        },
+        {
+            "path": "libya_20250724_derna.jpeg"
+        },
+        {
             "path": "libya_20250725_derna.jpeg"
         },
         {
             "path": "libya_20250726_derna.jpeg"
         },
         {
+            "path": "libya_20250727_derna.jpeg"
+        },
+        {
             "path": "libya_20250821_derna.jpeg"
         },
         {
-            "path": "libya_20250822_derna.jpeg"
+            "path": "libya_20250824_derna.jpeg"
         },
         {
-            "path": "libya_20250823_derna.jpeg"
+            "path": "libya_20250825_derna.jpeg"
         },
         {
             "path": "libya_20250826_derna.jpeg"
+        },
+        {
+            "path": "libya_20250919_derna.jpeg"
+        },
+        {
+            "path": "libya_20250921_derna.jpeg"
         },
         {
             "path": "libya_20250922_derna.jpeg"
@@ -112,10 +106,55 @@
             "path": "libya_20250924_derna.jpeg"
         },
         {
+            "path": "libya_20250925_derna.jpeg"
+        },
+        {
             "path": "libya_20251019_derna.jpeg"
         },
         {
+            "path": "libya_20251020_derna.jpeg"
+        },
+        {
+            "path": "libya_20251022_derna.jpeg"
+        },
+        {
+            "path": "libya_20251117_derna.jpeg"
+        },
+        {
+            "path": "libya_20251118_derna.jpeg"
+        },
+        {
+            "path": "libya_20251119_derna.jpeg"
+        },
+        {
             "path": "libya_20251120_derna.jpeg"
+        },
+        {
+            "path": "libya_20251121_derna.jpeg"
+        },
+        {
+            "path": "libya_20251122_derna.jpeg"
+        },
+        {
+            "path": "libya_20251123_derna.jpeg"
+        },
+        {
+            "path": "libya_20251218_derna.jpeg"
+        },
+        {
+            "path": "libya_20251222_derna.jpeg"
+        },
+        {
+            "path": "libya_20251223_derna.jpeg"
+        },
+        {
+            "path": "libya_20260117_derna.jpeg"
+        },
+        {
+            "path": "libya_20260118_derna.jpeg"
+        },
+        {
+            "path": "libya_20260119_derna.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,37 +1,7 @@
 {
     "images": [
         {
-            "path": "iran_20241203_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20241229_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250101_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250102_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250128_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250129_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250130_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250131_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250201_east_azarbaijan.jpeg"
-        },
-        {
             "path": "iran_20250227_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250228_east_azarbaijan.jpeg"
         },
         {
             "path": "iran_20250302_east_azarbaijan.jpeg"
@@ -40,37 +10,34 @@
             "path": "iran_20250328_east_azarbaijan.jpeg"
         },
         {
-            "path": "iran_20250329_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250331_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250426_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250427_east_azarbaijan.jpeg"
-        },
-        {
             "path": "iran_20250430_east_azarbaijan.jpeg"
-        },
-        {
-            "path": "iran_20250525_east_azarbaijan.jpeg"
         },
         {
             "path": "iran_20250529_east_azarbaijan.jpeg"
         },
         {
-            "path": "iran_20250623_east_azarbaijan.jpeg"
+            "path": "iran_20250625_east_azarbaijan.jpeg"
         },
         {
-            "path": "iran_20250822_east_azarbaijan.jpeg"
+            "path": "iran_20250626_east_azarbaijan.jpeg"
         },
         {
-            "path": "iran_20250823_east_azarbaijan.jpeg"
+            "path": "iran_20250627_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20250727_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20250821_east_azarbaijan.jpeg"
         },
         {
             "path": "iran_20250824_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20250825_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20250826_east_azarbaijan.jpeg"
         },
         {
             "path": "iran_20250919_east_azarbaijan.jpeg"
@@ -82,16 +49,25 @@
             "path": "iran_20250924_east_azarbaijan.jpeg"
         },
         {
-            "path": "iran_20251023_east_azarbaijan.jpeg"
+            "path": "iran_20250925_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20251020_east_azarbaijan.jpeg"
         },
         {
             "path": "iran_20251117_east_azarbaijan.jpeg"
         },
         {
+            "path": "iran_20251118_east_azarbaijan.jpeg"
+        },
+        {
             "path": "iran_20251121_east_azarbaijan.jpeg"
         },
         {
-            "path": "iran_20251122_east_azarbaijan.jpeg"
+            "path": "iran_20251218_east_azarbaijan.jpeg"
+        },
+        {
+            "path": "iran_20251219_east_azarbaijan.jpeg"
         }
     ],
     "codec": "libx264",

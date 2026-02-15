@@ -1,55 +1,22 @@
 {
     "images": [
         {
-            "path": "syria_20241202_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20241203_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20241204_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20241228_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20241231_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250101_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250102_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250127_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250129_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250130_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250131_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250201_as_suwayda'.jpeg"
-        },
-        {
             "path": "syria_20250226_as_suwayda'.jpeg"
         },
         {
             "path": "syria_20250227_as_suwayda'.jpeg"
         },
         {
+            "path": "syria_20250228_as_suwayda'.jpeg"
+        },
+        {
             "path": "syria_20250301_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250328_as_suwayda'.jpeg"
+            "path": "syria_20250330_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250330_as_suwayda'.jpeg"
+            "path": "syria_20250331_as_suwayda'.jpeg"
         },
         {
             "path": "syria_20250401_as_suwayda'.jpeg"
@@ -64,34 +31,37 @@
             "path": "syria_20250428_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250429_as_suwayda'.jpeg"
+            "path": "syria_20250525_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250430_as_suwayda'.jpeg"
+            "path": "syria_20250723_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250527_as_suwayda'.jpeg"
+            "path": "syria_20250724_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250528_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250623_as_suwayda'.jpeg"
-        },
-        {
-            "path": "syria_20250624_as_suwayda'.jpeg"
+            "path": "syria_20250725_as_suwayda'.jpeg"
         },
         {
             "path": "syria_20250726_as_suwayda'.jpeg"
         },
         {
+            "path": "syria_20250727_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20250821_as_suwayda'.jpeg"
+        },
+        {
             "path": "syria_20250822_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250823_as_suwayda'.jpeg"
+            "path": "syria_20250824_as_suwayda'.jpeg"
         },
         {
-            "path": "syria_20250824_as_suwayda'.jpeg"
+            "path": "syria_20250825_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20250826_as_suwayda'.jpeg"
         },
         {
             "path": "syria_20250919_as_suwayda'.jpeg"
@@ -100,16 +70,64 @@
             "path": "syria_20250921_as_suwayda'.jpeg"
         },
         {
+            "path": "syria_20250922_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20250923_as_suwayda'.jpeg"
+        },
+        {
             "path": "syria_20250924_as_suwayda'.jpeg"
         },
         {
+            "path": "syria_20250925_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251019_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251020_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251022_as_suwayda'.jpeg"
+        },
+        {
             "path": "syria_20251023_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251117_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251118_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251119_as_suwayda'.jpeg"
         },
         {
             "path": "syria_20251120_as_suwayda'.jpeg"
         },
         {
             "path": "syria_20251121_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251122_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251123_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251217_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251218_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20251219_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20260118_as_suwayda'.jpeg"
+        },
+        {
+            "path": "syria_20260119_as_suwayda'.jpeg"
         }
     ],
     "codec": "libx264",

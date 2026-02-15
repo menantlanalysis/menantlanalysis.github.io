@@ -1,37 +1,13 @@
 {
     "images": [
         {
-            "path": "iran_20241203_fars.jpeg"
-        },
-        {
-            "path": "iran_20241228_fars.jpeg"
-        },
-        {
-            "path": "iran_20241229_fars.jpeg"
-        },
-        {
-            "path": "iran_20241231_fars.jpeg"
-        },
-        {
-            "path": "iran_20250129_fars.jpeg"
-        },
-        {
-            "path": "iran_20250130_fars.jpeg"
-        },
-        {
-            "path": "iran_20250131_fars.jpeg"
-        },
-        {
-            "path": "iran_20250226_fars.jpeg"
-        },
-        {
             "path": "iran_20250227_fars.jpeg"
         },
         {
             "path": "iran_20250228_fars.jpeg"
         },
         {
-            "path": "iran_20250301_fars.jpeg"
+            "path": "iran_20250302_fars.jpeg"
         },
         {
             "path": "iran_20250327_fars.jpeg"
@@ -49,19 +25,7 @@
             "path": "iran_20250401_fars.jpeg"
         },
         {
-            "path": "iran_20250426_fars.jpeg"
-        },
-        {
-            "path": "iran_20250427_fars.jpeg"
-        },
-        {
             "path": "iran_20250428_fars.jpeg"
-        },
-        {
-            "path": "iran_20250429_fars.jpeg"
-        },
-        {
-            "path": "iran_20250430_fars.jpeg"
         },
         {
             "path": "iran_20250525_fars.jpeg"
@@ -73,28 +37,49 @@
             "path": "iran_20250527_fars.jpeg"
         },
         {
-            "path": "iran_20250528_fars.jpeg"
-        },
-        {
             "path": "iran_20250529_fars.jpeg"
         },
         {
-            "path": "iran_20250623_fars.jpeg"
+            "path": "iran_20250625_fars.jpeg"
         },
         {
-            "path": "iran_20250624_fars.jpeg"
+            "path": "iran_20250626_fars.jpeg"
         },
         {
-            "path": "iran_20250822_fars.jpeg"
+            "path": "iran_20250723_fars.jpeg"
         },
         {
-            "path": "iran_20250823_fars.jpeg"
+            "path": "iran_20250724_fars.jpeg"
+        },
+        {
+            "path": "iran_20250725_fars.jpeg"
+        },
+        {
+            "path": "iran_20250726_fars.jpeg"
+        },
+        {
+            "path": "iran_20250727_fars.jpeg"
+        },
+        {
+            "path": "iran_20250821_fars.jpeg"
         },
         {
             "path": "iran_20250824_fars.jpeg"
         },
         {
+            "path": "iran_20250825_fars.jpeg"
+        },
+        {
+            "path": "iran_20250826_fars.jpeg"
+        },
+        {
             "path": "iran_20250919_fars.jpeg"
+        },
+        {
+            "path": "iran_20250921_fars.jpeg"
+        },
+        {
+            "path": "iran_20250922_fars.jpeg"
         },
         {
             "path": "iran_20250923_fars.jpeg"
@@ -103,19 +88,46 @@
             "path": "iran_20250924_fars.jpeg"
         },
         {
-            "path": "iran_20251021_fars.jpeg"
+            "path": "iran_20250925_fars.jpeg"
+        },
+        {
+            "path": "iran_20251019_fars.jpeg"
+        },
+        {
+            "path": "iran_20251020_fars.jpeg"
+        },
+        {
+            "path": "iran_20251022_fars.jpeg"
         },
         {
             "path": "iran_20251023_fars.jpeg"
         },
         {
-            "path": "iran_20251117_fars.jpeg"
+            "path": "iran_20251118_fars.jpeg"
+        },
+        {
+            "path": "iran_20251119_fars.jpeg"
+        },
+        {
+            "path": "iran_20251120_fars.jpeg"
         },
         {
             "path": "iran_20251121_fars.jpeg"
         },
         {
             "path": "iran_20251122_fars.jpeg"
+        },
+        {
+            "path": "iran_20251123_fars.jpeg"
+        },
+        {
+            "path": "iran_20251220_fars.jpeg"
+        },
+        {
+            "path": "iran_20260119_fars.jpeg"
+        },
+        {
+            "path": "iran_20260121_fars.jpeg"
         }
     ],
     "codec": "libx264",

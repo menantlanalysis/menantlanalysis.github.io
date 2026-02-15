@@ -1,61 +1,10 @@
 {
     "images": [
         {
-            "path": "lebanon_20241202_bekaa.jpeg"
+            "path": "lebanon_20250723_bekaa.jpeg"
         },
         {
-            "path": "lebanon_20241203_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250328_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250401_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250427_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250428_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250429_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250430_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250526_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250527_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250623_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250823_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250824_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250826_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250919_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250921_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20250924_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20251023_bekaa.jpeg"
-        },
-        {
-            "path": "lebanon_20251121_bekaa.jpeg"
+            "path": "lebanon_20251219_bekaa.jpeg"
         }
     ],
     "codec": "libx264",

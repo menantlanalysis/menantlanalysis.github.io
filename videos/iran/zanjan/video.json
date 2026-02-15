@@ -1,19 +1,10 @@
 {
     "images": [
         {
-            "path": "iran_20241203_zanjan.jpeg"
+            "path": "iran_20250227_zanjan.jpeg"
         },
         {
-            "path": "iran_20241204_zanjan.jpeg"
-        },
-        {
-            "path": "iran_20241230_zanjan.jpeg"
-        },
-        {
-            "path": "iran_20250101_zanjan.jpeg"
-        },
-        {
-            "path": "iran_20250131_zanjan.jpeg"
+            "path": "iran_20250302_zanjan.jpeg"
         },
         {
             "path": "iran_20250328_zanjan.jpeg"
@@ -22,40 +13,46 @@
             "path": "iran_20250329_zanjan.jpeg"
         },
         {
-            "path": "iran_20250331_zanjan.jpeg"
-        },
-        {
-            "path": "iran_20250426_zanjan.jpeg"
-        },
-        {
-            "path": "iran_20250427_zanjan.jpeg"
-        },
-        {
             "path": "iran_20250430_zanjan.jpeg"
-        },
-        {
-            "path": "iran_20250527_zanjan.jpeg"
         },
         {
             "path": "iran_20250529_zanjan.jpeg"
         },
         {
-            "path": "iran_20250623_zanjan.jpeg"
+            "path": "iran_20250625_zanjan.jpeg"
         },
         {
-            "path": "iran_20250624_zanjan.jpeg"
+            "path": "iran_20250626_zanjan.jpeg"
         },
         {
-            "path": "iran_20250822_zanjan.jpeg"
+            "path": "iran_20250627_zanjan.jpeg"
         },
         {
-            "path": "iran_20250823_zanjan.jpeg"
+            "path": "iran_20250723_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20250724_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20250821_zanjan.jpeg"
         },
         {
             "path": "iran_20250824_zanjan.jpeg"
         },
         {
+            "path": "iran_20250825_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20250826_zanjan.jpeg"
+        },
+        {
             "path": "iran_20250919_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20250921_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20250922_zanjan.jpeg"
         },
         {
             "path": "iran_20250923_zanjan.jpeg"
@@ -64,7 +61,16 @@
             "path": "iran_20250924_zanjan.jpeg"
         },
         {
-            "path": "iran_20251021_zanjan.jpeg"
+            "path": "iran_20250925_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251019_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251020_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251022_zanjan.jpeg"
         },
         {
             "path": "iran_20251023_zanjan.jpeg"
@@ -73,10 +79,25 @@
             "path": "iran_20251117_zanjan.jpeg"
         },
         {
-            "path": "iran_20251121_zanjan.jpeg"
+            "path": "iran_20251118_zanjan.jpeg"
         },
         {
             "path": "iran_20251122_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251123_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251218_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251219_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20251220_zanjan.jpeg"
+        },
+        {
+            "path": "iran_20260121_zanjan.jpeg"
         }
     ],
     "codec": "libx264",

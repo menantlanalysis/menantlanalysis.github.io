@@ -1,49 +1,16 @@
 {
     "images": [
         {
-            "path": "syria_20241202_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20241203_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20241231_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250101_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250102_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250127_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250128_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250129_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250130_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250131_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250201_homs_(hims).jpeg"
+            "path": "syria_20250226_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250227_homs_(hims).jpeg"
         },
         {
+            "path": "syria_20250228_homs_(hims).jpeg"
+        },
+        {
             "path": "syria_20250301_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250327_homs_(hims).jpeg"
-        },
-        {
-            "path": "syria_20250328_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250330_homs_(hims).jpeg"
@@ -52,19 +19,19 @@
             "path": "syria_20250331_homs_(hims).jpeg"
         },
         {
+            "path": "syria_20250401_homs_(hims).jpeg"
+        },
+        {
             "path": "syria_20250426_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250427_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20250428_homs_(hims).jpeg"
-        },
-        {
             "path": "syria_20250429_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20250430_homs_(hims).jpeg"
+            "path": "syria_20250525_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250527_homs_(hims).jpeg"
@@ -73,22 +40,34 @@
             "path": "syria_20250528_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20250623_homs_(hims).jpeg"
+            "path": "syria_20250723_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20250624_homs_(hims).jpeg"
+            "path": "syria_20250724_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20250725_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250726_homs_(hims).jpeg"
         },
         {
+            "path": "syria_20250727_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20250821_homs_(hims).jpeg"
+        },
+        {
             "path": "syria_20250822_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20250823_homs_(hims).jpeg"
+            "path": "syria_20250824_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20250824_homs_(hims).jpeg"
+            "path": "syria_20250825_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20250826_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250919_homs_(hims).jpeg"
@@ -97,19 +76,52 @@
             "path": "syria_20250921_homs_(hims).jpeg"
         },
         {
+            "path": "syria_20250922_homs_(hims).jpeg"
+        },
+        {
             "path": "syria_20250923_homs_(hims).jpeg"
         },
         {
             "path": "syria_20250924_homs_(hims).jpeg"
         },
         {
-            "path": "syria_20251023_homs_(hims).jpeg"
+            "path": "syria_20251019_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251020_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251022_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251117_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251118_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251119_homs_(hims).jpeg"
         },
         {
             "path": "syria_20251120_homs_(hims).jpeg"
         },
         {
             "path": "syria_20251121_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251122_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251217_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251218_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20251219_homs_(hims).jpeg"
+        },
+        {
+            "path": "syria_20260119_homs_(hims).jpeg"
         }
     ],
     "codec": "libx264",

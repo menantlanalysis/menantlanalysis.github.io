@@ -1,46 +1,16 @@
 {
     "images": [
         {
-            "path": "iran_20241202_kermanshah.jpeg"
+            "path": "iran_20250226_kermanshah.jpeg"
         },
         {
-            "path": "iran_20241203_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20241204_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20241230_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20241231_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250101_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250102_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250127_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250128_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250129_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250130_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250131_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250201_kermanshah.jpeg"
+            "path": "iran_20250227_kermanshah.jpeg"
         },
         {
             "path": "iran_20250228_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250301_kermanshah.jpeg"
         },
         {
             "path": "iran_20250302_kermanshah.jpeg"
@@ -49,58 +19,52 @@
             "path": "iran_20250328_kermanshah.jpeg"
         },
         {
-            "path": "iran_20250329_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250401_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250426_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250427_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250428_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250429_kermanshah.jpeg"
-        },
-        {
             "path": "iran_20250430_kermanshah.jpeg"
         },
         {
             "path": "iran_20250525_kermanshah.jpeg"
         },
         {
-            "path": "iran_20250526_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250527_kermanshah.jpeg"
-        },
-        {
-            "path": "iran_20250528_kermanshah.jpeg"
-        },
-        {
             "path": "iran_20250529_kermanshah.jpeg"
         },
         {
-            "path": "iran_20250623_kermanshah.jpeg"
+            "path": "iran_20250625_kermanshah.jpeg"
         },
         {
-            "path": "iran_20250624_kermanshah.jpeg"
+            "path": "iran_20250626_kermanshah.jpeg"
         },
         {
-            "path": "iran_20250822_kermanshah.jpeg"
+            "path": "iran_20250627_kermanshah.jpeg"
         },
         {
-            "path": "iran_20250823_kermanshah.jpeg"
+            "path": "iran_20250723_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250724_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250727_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250821_kermanshah.jpeg"
         },
         {
             "path": "iran_20250824_kermanshah.jpeg"
         },
         {
+            "path": "iran_20250825_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250826_kermanshah.jpeg"
+        },
+        {
             "path": "iran_20250919_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250921_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20250922_kermanshah.jpeg"
         },
         {
             "path": "iran_20250923_kermanshah.jpeg"
@@ -109,7 +73,13 @@
             "path": "iran_20250924_kermanshah.jpeg"
         },
         {
-            "path": "iran_20251021_kermanshah.jpeg"
+            "path": "iran_20251019_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251020_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251022_kermanshah.jpeg"
         },
         {
             "path": "iran_20251023_kermanshah.jpeg"
@@ -118,10 +88,28 @@
             "path": "iran_20251117_kermanshah.jpeg"
         },
         {
-            "path": "iran_20251121_kermanshah.jpeg"
+            "path": "iran_20251118_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251119_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251120_kermanshah.jpeg"
         },
         {
             "path": "iran_20251122_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251123_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251218_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251219_kermanshah.jpeg"
+        },
+        {
+            "path": "iran_20251220_kermanshah.jpeg"
         }
     ],
     "codec": "libx264",

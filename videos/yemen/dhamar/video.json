@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20241203_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20241204_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20241228_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20241229_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20241230_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20241231_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250101_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250102_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250127_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250128_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250129_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250130_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250131_dhamar.jpeg"
-        },
-        {
-            "path": "yemen_20250201_dhamar.jpeg"
-        },
-        {
             "path": "yemen_20250226_dhamar.jpeg"
         },
         {
@@ -91,34 +46,40 @@
             "path": "yemen_20250429_dhamar.jpeg"
         },
         {
-            "path": "yemen_20250430_dhamar.jpeg"
-        },
-        {
             "path": "yemen_20250525_dhamar.jpeg"
         },
         {
             "path": "yemen_20250526_dhamar.jpeg"
         },
         {
-            "path": "yemen_20250527_dhamar.jpeg"
+            "path": "yemen_20250723_dhamar.jpeg"
         },
         {
-            "path": "yemen_20250528_dhamar.jpeg"
+            "path": "yemen_20250921_dhamar.jpeg"
         },
         {
-            "path": "yemen_20250529_dhamar.jpeg"
+            "path": "yemen_20250922_dhamar.jpeg"
         },
         {
-            "path": "yemen_20250623_dhamar.jpeg"
+            "path": "yemen_20251019_dhamar.jpeg"
         },
         {
-            "path": "yemen_20250624_dhamar.jpeg"
+            "path": "yemen_20251020_dhamar.jpeg"
         },
         {
-            "path": "yemen_20251021_dhamar.jpeg"
+            "path": "yemen_20251022_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20251023_dhamar.jpeg"
         },
         {
             "path": "yemen_20251117_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20251118_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20251119_dhamar.jpeg"
         },
         {
             "path": "yemen_20251120_dhamar.jpeg"
@@ -128,6 +89,18 @@
         },
         {
             "path": "yemen_20251122_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20251223_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20260117_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20260118_dhamar.jpeg"
+        },
+        {
+            "path": "yemen_20260119_dhamar.jpeg"
         }
     ],
     "codec": "libx264",

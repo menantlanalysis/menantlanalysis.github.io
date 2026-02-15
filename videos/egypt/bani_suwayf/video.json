@@ -1,48 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241203_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241204_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241228_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241229_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241230_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20241231_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250101_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250102_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250128_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250129_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250130_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250131_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250226_bani_suwayf.jpeg"
-        },
-        {
             "path": "egypt_20250227_bani_suwayf.jpeg"
         },
         {
@@ -62,9 +20,6 @@
         },
         {
             "path": "egypt_20250330_bani_suwayf.jpeg"
-        },
-        {
-            "path": "egypt_20250331_bani_suwayf.jpeg"
         },
         {
             "path": "egypt_20250401_bani_suwayf.jpeg"
@@ -106,10 +61,46 @@
             "path": "egypt_20250624_bani_suwayf.jpeg"
         },
         {
-            "path": "egypt_20250822_bani_suwayf.jpeg"
+            "path": "egypt_20250625_bani_suwayf.jpeg"
         },
         {
-            "path": "egypt_20250823_bani_suwayf.jpeg"
+            "path": "egypt_20250626_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250627_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250628_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250723_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250724_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250727_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250821_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250824_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250825_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250826_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250919_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250921_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20250922_bani_suwayf.jpeg"
         },
         {
             "path": "egypt_20250923_bani_suwayf.jpeg"
@@ -118,10 +109,43 @@
             "path": "egypt_20250924_bani_suwayf.jpeg"
         },
         {
-            "path": "egypt_20251023_bani_suwayf.jpeg"
+            "path": "egypt_20250925_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251019_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251020_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251022_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251117_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251118_bani_suwayf.jpeg"
         },
         {
             "path": "egypt_20251121_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251218_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251222_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20251223_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20260117_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20260118_bani_suwayf.jpeg"
+        },
+        {
+            "path": "egypt_20260119_bani_suwayf.jpeg"
         }
     ],
     "codec": "libx264",

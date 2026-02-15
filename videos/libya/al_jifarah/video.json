@@ -1,64 +1,7 @@
 {
     "images": [
         {
-            "path": "libya_20241203_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20241231_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250101_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250102_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250128_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250129_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250130_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250131_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250201_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250226_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250227_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250301_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250327_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250328_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250329_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250426_al_jifarah.jpeg"
-        },
-        {
             "path": "libya_20250427_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250428_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250429_al_jifarah.jpeg"
-        },
-        {
-            "path": "libya_20250430_al_jifarah.jpeg"
         },
         {
             "path": "libya_20250526_al_jifarah.jpeg"
@@ -79,22 +22,49 @@
             "path": "libya_20250624_al_jifarah.jpeg"
         },
         {
+            "path": "libya_20250625_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250626_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250627_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250628_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250723_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250724_al_jifarah.jpeg"
+        },
+        {
             "path": "libya_20250725_al_jifarah.jpeg"
         },
         {
             "path": "libya_20250726_al_jifarah.jpeg"
         },
         {
+            "path": "libya_20250727_al_jifarah.jpeg"
+        },
+        {
             "path": "libya_20250821_al_jifarah.jpeg"
         },
         {
-            "path": "libya_20250822_al_jifarah.jpeg"
+            "path": "libya_20250824_al_jifarah.jpeg"
         },
         {
-            "path": "libya_20250823_al_jifarah.jpeg"
+            "path": "libya_20250825_al_jifarah.jpeg"
         },
         {
             "path": "libya_20250826_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250919_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20250921_al_jifarah.jpeg"
         },
         {
             "path": "libya_20250922_al_jifarah.jpeg"
@@ -106,13 +76,40 @@
             "path": "libya_20250924_al_jifarah.jpeg"
         },
         {
+            "path": "libya_20251020_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251022_al_jifarah.jpeg"
+        },
+        {
             "path": "libya_20251023_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251118_al_jifarah.jpeg"
         },
         {
             "path": "libya_20251120_al_jifarah.jpeg"
         },
         {
             "path": "libya_20251121_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251122_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251123_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251217_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251218_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251222_al_jifarah.jpeg"
+        },
+        {
+            "path": "libya_20251223_al_jifarah.jpeg"
         }
     ],
     "codec": "libx264",

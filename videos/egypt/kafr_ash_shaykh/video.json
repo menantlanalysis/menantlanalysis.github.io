@@ -1,28 +1,16 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20250226_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20241203_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250102_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250128_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250129_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250130_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250131_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20250227_kafr_ash_shaykh.jpeg"
         },
         {
             "path": "egypt_20250228_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250301_kafr_ash_shaykh.jpeg"
         },
         {
             "path": "egypt_20250328_kafr_ash_shaykh.jpeg"
@@ -40,22 +28,10 @@
             "path": "egypt_20250401_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20250426_kafr_ash_shaykh.jpeg"
-        },
-        {
             "path": "egypt_20250427_kafr_ash_shaykh.jpeg"
         },
         {
             "path": "egypt_20250428_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250429_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250430_kafr_ash_shaykh.jpeg"
-        },
-        {
-            "path": "egypt_20250525_kafr_ash_shaykh.jpeg"
         },
         {
             "path": "egypt_20250526_kafr_ash_shaykh.jpeg"
@@ -67,28 +43,64 @@
             "path": "egypt_20250528_kafr_ash_shaykh.jpeg"
         },
         {
+            "path": "egypt_20250529_kafr_ash_shaykh.jpeg"
+        },
+        {
             "path": "egypt_20250623_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20250624_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20250625_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20250822_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20250723_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20250823_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20250724_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20250923_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20250725_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250727_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250824_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250825_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250826_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250919_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20250921_kafr_ash_shaykh.jpeg"
         },
         {
             "path": "egypt_20250924_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20251023_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20251020_kafr_ash_shaykh.jpeg"
         },
         {
-            "path": "egypt_20251121_kafr_ash_shaykh.jpeg"
+            "path": "egypt_20251117_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20251218_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20251222_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20260117_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20260118_kafr_ash_shaykh.jpeg"
+        },
+        {
+            "path": "egypt_20260119_kafr_ash_shaykh.jpeg"
         }
     ],
     "codec": "libx264",

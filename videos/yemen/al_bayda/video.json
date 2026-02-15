@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20241203_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20241204_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20241228_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20241229_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20241230_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20241231_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250101_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250102_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250127_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250128_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250129_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250130_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250131_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250201_al_bayda.jpeg"
-        },
-        {
             "path": "yemen_20250226_al_bayda.jpeg"
         },
         {
@@ -59,9 +14,6 @@
         },
         {
             "path": "yemen_20250302_al_bayda.jpeg"
-        },
-        {
-            "path": "yemen_20250327_al_bayda.jpeg"
         },
         {
             "path": "yemen_20250328_al_bayda.jpeg"
@@ -91,9 +43,6 @@
             "path": "yemen_20250429_al_bayda.jpeg"
         },
         {
-            "path": "yemen_20250430_al_bayda.jpeg"
-        },
-        {
             "path": "yemen_20250525_al_bayda.jpeg"
         },
         {
@@ -103,22 +52,43 @@
             "path": "yemen_20250528_al_bayda.jpeg"
         },
         {
-            "path": "yemen_20250529_al_bayda.jpeg"
-        },
-        {
             "path": "yemen_20250623_al_bayda.jpeg"
         },
         {
             "path": "yemen_20250624_al_bayda.jpeg"
         },
         {
-            "path": "yemen_20250822_al_bayda.jpeg"
+            "path": "yemen_20250625_al_bayda.jpeg"
         },
         {
-            "path": "yemen_20251021_al_bayda.jpeg"
+            "path": "yemen_20250627_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20250723_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20250921_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20250925_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251019_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251020_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251022_al_bayda.jpeg"
         },
         {
             "path": "yemen_20251117_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251118_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251119_al_bayda.jpeg"
         },
         {
             "path": "yemen_20251120_al_bayda.jpeg"
@@ -128,6 +98,36 @@
         },
         {
             "path": "yemen_20251122_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251123_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251217_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251219_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251220_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251222_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20251223_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20260117_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20260118_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20260119_al_bayda.jpeg"
+        },
+        {
+            "path": "yemen_20260121_al_bayda.jpeg"
         }
     ],
     "codec": "libx264",

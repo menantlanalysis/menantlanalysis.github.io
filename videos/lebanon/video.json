@@ -1,112 +1,22 @@
 {
     "images": [
         {
-            "path": "lebanon_20241202.jpeg"
-        },
-        {
-            "path": "lebanon_20241203.jpeg"
-        },
-        {
-            "path": "lebanon_20241204.jpeg"
-        },
-        {
-            "path": "lebanon_20241228.jpeg"
-        },
-        {
-            "path": "lebanon_20241229.jpeg"
-        },
-        {
-            "path": "lebanon_20241231.jpeg"
-        },
-        {
-            "path": "lebanon_20250101.jpeg"
-        },
-        {
-            "path": "lebanon_20250102.jpeg"
-        },
-        {
-            "path": "lebanon_20250127.jpeg"
-        },
-        {
-            "path": "lebanon_20250128.jpeg"
-        },
-        {
-            "path": "lebanon_20250129.jpeg"
-        },
-        {
-            "path": "lebanon_20250130.jpeg"
-        },
-        {
-            "path": "lebanon_20250201.jpeg"
-        },
-        {
-            "path": "lebanon_20250226.jpeg"
-        },
-        {
-            "path": "lebanon_20250228.jpeg"
-        },
-        {
-            "path": "lebanon_20250301.jpeg"
-        },
-        {
-            "path": "lebanon_20250327.jpeg"
-        },
-        {
-            "path": "lebanon_20250328.jpeg"
-        },
-        {
-            "path": "lebanon_20250329.jpeg"
-        },
-        {
-            "path": "lebanon_20250330.jpeg"
-        },
-        {
-            "path": "lebanon_20250401.jpeg"
-        },
-        {
-            "path": "lebanon_20250427.jpeg"
-        },
-        {
             "path": "lebanon_20250428.jpeg"
-        },
-        {
-            "path": "lebanon_20250429.jpeg"
         },
         {
             "path": "lebanon_20250430.jpeg"
         },
         {
-            "path": "lebanon_20250526.jpeg"
+            "path": "lebanon_20250723.jpeg"
         },
         {
-            "path": "lebanon_20250527.jpeg"
+            "path": "lebanon_20251219.jpeg"
         },
         {
-            "path": "lebanon_20250623.jpeg"
+            "path": "lebanon_20260117.jpeg"
         },
         {
-            "path": "lebanon_20250823.jpeg"
-        },
-        {
-            "path": "lebanon_20250824.jpeg"
-        },
-        {
-            "path": "lebanon_20250826.jpeg"
-        },
-        {
-            "path": "lebanon_20250919.jpeg"
-        },
-        {
-            "path": "lebanon_20250921.jpeg"
-        },
-        {
-            "path": "lebanon_20250924.jpeg"
-        },
-        {
-            "path": "lebanon_20251023.jpeg"
-        },
-        {
-            "path": "lebanon_20251121.jpeg"
+            "path": "lebanon_20260118.jpeg"
         }
     ],
     "codec": "libx264",

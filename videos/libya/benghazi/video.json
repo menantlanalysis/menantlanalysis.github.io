@@ -1,28 +1,7 @@
 {
     "images": [
         {
-            "path": "libya_20241204_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20241230_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20241231_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20250127_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20250128_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20250129_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20250131_benghazi.jpeg"
-        },
-        {
-            "path": "libya_20250226_benghazi.jpeg"
+            "path": "libya_20250228_benghazi.jpeg"
         },
         {
             "path": "libya_20250327_benghazi.jpeg"
@@ -32,6 +11,15 @@
         },
         {
             "path": "libya_20250329_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250330_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250331_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250401_benghazi.jpeg"
         },
         {
             "path": "libya_20250426_benghazi.jpeg"
@@ -49,6 +37,9 @@
             "path": "libya_20250430_benghazi.jpeg"
         },
         {
+            "path": "libya_20250525_benghazi.jpeg"
+        },
+        {
             "path": "libya_20250526_benghazi.jpeg"
         },
         {
@@ -58,10 +49,31 @@
             "path": "libya_20250528_benghazi.jpeg"
         },
         {
+            "path": "libya_20250529_benghazi.jpeg"
+        },
+        {
             "path": "libya_20250623_benghazi.jpeg"
         },
         {
             "path": "libya_20250624_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250625_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250626_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250627_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250628_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250723_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250724_benghazi.jpeg"
         },
         {
             "path": "libya_20250725_benghazi.jpeg"
@@ -70,13 +82,25 @@
             "path": "libya_20250726_benghazi.jpeg"
         },
         {
+            "path": "libya_20250727_benghazi.jpeg"
+        },
+        {
             "path": "libya_20250821_benghazi.jpeg"
         },
         {
-            "path": "libya_20250822_benghazi.jpeg"
+            "path": "libya_20250824_benghazi.jpeg"
         },
         {
-            "path": "libya_20250823_benghazi.jpeg"
+            "path": "libya_20250825_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250826_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250919_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20250921_benghazi.jpeg"
         },
         {
             "path": "libya_20250922_benghazi.jpeg"
@@ -88,13 +112,49 @@
             "path": "libya_20250924_benghazi.jpeg"
         },
         {
+            "path": "libya_20250925_benghazi.jpeg"
+        },
+        {
             "path": "libya_20251019_benghazi.jpeg"
         },
         {
-            "path": "libya_20251023_benghazi.jpeg"
+            "path": "libya_20251020_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251022_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251117_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251119_benghazi.jpeg"
         },
         {
             "path": "libya_20251120_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251121_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251122_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251217_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251222_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20251223_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20260117_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20260118_benghazi.jpeg"
+        },
+        {
+            "path": "libya_20260119_benghazi.jpeg"
         }
     ],
     "codec": "libx264",

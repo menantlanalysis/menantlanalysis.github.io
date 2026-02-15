@@ -1,7 +1,7 @@
 {
     "images": [
         {
-            "path": "iran_20250131_north_khorasan.jpeg"
+            "path": "iran_20250226_north_khorasan.jpeg"
         },
         {
             "path": "iran_20250329_north_khorasan.jpeg"
@@ -10,67 +10,79 @@
             "path": "iran_20250330_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20250401_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250426_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250427_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250428_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250430_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250525_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250526_north_khorasan.jpeg"
-        },
-        {
             "path": "iran_20250527_north_khorasan.jpeg"
-        },
-        {
-            "path": "iran_20250528_north_khorasan.jpeg"
         },
         {
             "path": "iran_20250529_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20250623_north_khorasan.jpeg"
+            "path": "iran_20250626_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20250822_north_khorasan.jpeg"
+            "path": "iran_20250627_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20250823_north_khorasan.jpeg"
+            "path": "iran_20250723_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250724_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250725_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250727_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250821_north_khorasan.jpeg"
         },
         {
             "path": "iran_20250824_north_khorasan.jpeg"
         },
         {
+            "path": "iran_20250825_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250826_north_khorasan.jpeg"
+        },
+        {
             "path": "iran_20250919_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250921_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20250922_north_khorasan.jpeg"
         },
         {
             "path": "iran_20250923_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20250924_north_khorasan.jpeg"
+            "path": "iran_20250925_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20251021_north_khorasan.jpeg"
+            "path": "iran_20251022_north_khorasan.jpeg"
         },
         {
             "path": "iran_20251023_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20251121_north_khorasan.jpeg"
+            "path": "iran_20251118_north_khorasan.jpeg"
         },
         {
-            "path": "iran_20251122_north_khorasan.jpeg"
+            "path": "iran_20251119_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251120_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251123_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251218_north_khorasan.jpeg"
+        },
+        {
+            "path": "iran_20251222_north_khorasan.jpeg"
         }
     ],
     "codec": "libx264",

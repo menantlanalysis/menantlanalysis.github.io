@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241203_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241204_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241228_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241229_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241230_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20241231_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250101_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250102_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250127_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250128_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250129_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250130_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250131_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250201_ma'rib.jpeg"
-        },
-        {
             "path": "yemen_20250226_ma'rib.jpeg"
         },
         {
@@ -59,9 +14,6 @@
         },
         {
             "path": "yemen_20250302_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250327_ma'rib.jpeg"
         },
         {
             "path": "yemen_20250328_ma'rib.jpeg"
@@ -79,9 +31,6 @@
             "path": "yemen_20250401_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20250426_ma'rib.jpeg"
-        },
-        {
             "path": "yemen_20250427_ma'rib.jpeg"
         },
         {
@@ -91,16 +40,10 @@
             "path": "yemen_20250429_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20250430_ma'rib.jpeg"
-        },
-        {
             "path": "yemen_20250525_ma'rib.jpeg"
         },
         {
             "path": "yemen_20250526_ma'rib.jpeg"
-        },
-        {
-            "path": "yemen_20250527_ma'rib.jpeg"
         },
         {
             "path": "yemen_20250528_ma'rib.jpeg"
@@ -109,22 +52,34 @@
             "path": "yemen_20250529_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20250623_ma'rib.jpeg"
+            "path": "yemen_20250625_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20250624_ma'rib.jpeg"
+            "path": "yemen_20250627_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20250823_ma'rib.jpeg"
+            "path": "yemen_20250723_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20250919_ma'rib.jpeg"
+            "path": "yemen_20250921_ma'rib.jpeg"
         },
         {
-            "path": "yemen_20251021_ma'rib.jpeg"
+            "path": "yemen_20251019_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251020_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251023_ma'rib.jpeg"
         },
         {
             "path": "yemen_20251117_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251118_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251119_ma'rib.jpeg"
         },
         {
             "path": "yemen_20251120_ma'rib.jpeg"
@@ -134,6 +89,36 @@
         },
         {
             "path": "yemen_20251122_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251123_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251217_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251219_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251220_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251222_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20251223_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20260117_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20260118_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20260119_ma'rib.jpeg"
+        },
+        {
+            "path": "yemen_20260121_ma'rib.jpeg"
         }
     ],
     "codec": "libx264",

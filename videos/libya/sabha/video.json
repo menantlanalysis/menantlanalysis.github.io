@@ -1,39 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_sabha.jpeg"
-        },
-        {
-            "path": "libya_20241203_sabha.jpeg"
-        },
-        {
-            "path": "libya_20241204_sabha.jpeg"
-        },
-        {
-            "path": "libya_20241228_sabha.jpeg"
-        },
-        {
-            "path": "libya_20241229_sabha.jpeg"
-        },
-        {
-            "path": "libya_20241230_sabha.jpeg"
-        },
-        {
-            "path": "libya_20250127_sabha.jpeg"
-        },
-        {
-            "path": "libya_20250128_sabha.jpeg"
-        },
-        {
-            "path": "libya_20250129_sabha.jpeg"
-        },
-        {
-            "path": "libya_20250130_sabha.jpeg"
-        },
-        {
-            "path": "libya_20250131_sabha.jpeg"
-        },
-        {
             "path": "libya_20250226_sabha.jpeg"
         },
         {
@@ -52,9 +19,6 @@
             "path": "libya_20250328_sabha.jpeg"
         },
         {
-            "path": "libya_20250329_sabha.jpeg"
-        },
-        {
             "path": "libya_20250330_sabha.jpeg"
         },
         {
@@ -68,9 +32,6 @@
         },
         {
             "path": "libya_20250427_sabha.jpeg"
-        },
-        {
-            "path": "libya_20250428_sabha.jpeg"
         },
         {
             "path": "libya_20250429_sabha.jpeg"
@@ -97,22 +58,49 @@
             "path": "libya_20250624_sabha.jpeg"
         },
         {
+            "path": "libya_20250625_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250626_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250627_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250628_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250723_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250724_sabha.jpeg"
+        },
+        {
             "path": "libya_20250725_sabha.jpeg"
         },
         {
             "path": "libya_20250726_sabha.jpeg"
         },
         {
+            "path": "libya_20250727_sabha.jpeg"
+        },
+        {
             "path": "libya_20250821_sabha.jpeg"
         },
         {
-            "path": "libya_20250822_sabha.jpeg"
+            "path": "libya_20250824_sabha.jpeg"
         },
         {
-            "path": "libya_20250823_sabha.jpeg"
+            "path": "libya_20250825_sabha.jpeg"
         },
         {
             "path": "libya_20250826_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250919_sabha.jpeg"
+        },
+        {
+            "path": "libya_20250921_sabha.jpeg"
         },
         {
             "path": "libya_20250922_sabha.jpeg"
@@ -124,10 +112,22 @@
             "path": "libya_20250924_sabha.jpeg"
         },
         {
+            "path": "libya_20250925_sabha.jpeg"
+        },
+        {
             "path": "libya_20251019_sabha.jpeg"
         },
         {
+            "path": "libya_20251020_sabha.jpeg"
+        },
+        {
+            "path": "libya_20251022_sabha.jpeg"
+        },
+        {
             "path": "libya_20251023_sabha.jpeg"
+        },
+        {
+            "path": "libya_20251117_sabha.jpeg"
         },
         {
             "path": "libya_20251119_sabha.jpeg"
@@ -136,7 +136,25 @@
             "path": "libya_20251120_sabha.jpeg"
         },
         {
-            "path": "libya_20251121_sabha.jpeg"
+            "path": "libya_20251122_sabha.jpeg"
+        },
+        {
+            "path": "libya_20251123_sabha.jpeg"
+        },
+        {
+            "path": "libya_20251220_sabha.jpeg"
+        },
+        {
+            "path": "libya_20251222_sabha.jpeg"
+        },
+        {
+            "path": "libya_20251223_sabha.jpeg"
+        },
+        {
+            "path": "libya_20260117_sabha.jpeg"
+        },
+        {
+            "path": "libya_20260118_sabha.jpeg"
         }
     ],
     "codec": "libx264",

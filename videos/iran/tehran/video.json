@@ -1,34 +1,10 @@
 {
     "images": [
         {
-            "path": "iran_20241228_tehran.jpeg"
-        },
-        {
-            "path": "iran_20241229_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250102_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250128_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250129_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250130_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250131_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250201_tehran.jpeg"
+            "path": "iran_20250226_tehran.jpeg"
         },
         {
             "path": "iran_20250227_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250301_tehran.jpeg"
         },
         {
             "path": "iran_20250302_tehran.jpeg"
@@ -40,55 +16,37 @@
             "path": "iran_20250329_tehran.jpeg"
         },
         {
-            "path": "iran_20250330_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250331_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250426_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250427_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250429_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250430_tehran.jpeg"
-        },
-        {
             "path": "iran_20250526_tehran.jpeg"
         },
         {
-            "path": "iran_20250529_tehran.jpeg"
+            "path": "iran_20250625_tehran.jpeg"
         },
         {
-            "path": "iran_20250623_tehran.jpeg"
+            "path": "iran_20250626_tehran.jpeg"
         },
         {
-            "path": "iran_20250624_tehran.jpeg"
+            "path": "iran_20250627_tehran.jpeg"
         },
         {
-            "path": "iran_20250822_tehran.jpeg"
-        },
-        {
-            "path": "iran_20250823_tehran.jpeg"
+            "path": "iran_20250723_tehran.jpeg"
         },
         {
             "path": "iran_20250824_tehran.jpeg"
         },
         {
+            "path": "iran_20250825_tehran.jpeg"
+        },
+        {
             "path": "iran_20250919_tehran.jpeg"
         },
         {
-            "path": "iran_20250923_tehran.jpeg"
+            "path": "iran_20250921_tehran.jpeg"
         },
         {
-            "path": "iran_20250924_tehran.jpeg"
+            "path": "iran_20250925_tehran.jpeg"
         },
         {
-            "path": "iran_20251021_tehran.jpeg"
+            "path": "iran_20251022_tehran.jpeg"
         },
         {
             "path": "iran_20251023_tehran.jpeg"
@@ -97,10 +55,13 @@
             "path": "iran_20251117_tehran.jpeg"
         },
         {
-            "path": "iran_20251121_tehran.jpeg"
+            "path": "iran_20251118_tehran.jpeg"
         },
         {
-            "path": "iran_20251122_tehran.jpeg"
+            "path": "iran_20251220_tehran.jpeg"
+        },
+        {
+            "path": "iran_20260121_tehran.jpeg"
         }
     ],
     "codec": "libx264",

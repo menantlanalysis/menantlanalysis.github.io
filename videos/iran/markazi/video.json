@@ -1,73 +1,55 @@
 {
     "images": [
         {
-            "path": "iran_20241202_markazi.jpeg"
+            "path": "iran_20250226_markazi.jpeg"
         },
         {
-            "path": "iran_20241203_markazi.jpeg"
-        },
-        {
-            "path": "iran_20241204_markazi.jpeg"
-        },
-        {
-            "path": "iran_20241228_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250101_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250102_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250128_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250129_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250201_markazi.jpeg"
+            "path": "iran_20250227_markazi.jpeg"
         },
         {
             "path": "iran_20250302_markazi.jpeg"
         },
         {
-            "path": "iran_20250328_markazi.jpeg"
+            "path": "iran_20250526_markazi.jpeg"
         },
         {
-            "path": "iran_20250329_markazi.jpeg"
+            "path": "iran_20250529_markazi.jpeg"
         },
         {
-            "path": "iran_20250426_markazi.jpeg"
+            "path": "iran_20250625_markazi.jpeg"
         },
         {
-            "path": "iran_20250427_markazi.jpeg"
+            "path": "iran_20250626_markazi.jpeg"
         },
         {
-            "path": "iran_20250429_markazi.jpeg"
+            "path": "iran_20250627_markazi.jpeg"
         },
         {
-            "path": "iran_20250430_markazi.jpeg"
+            "path": "iran_20250723_markazi.jpeg"
         },
         {
-            "path": "iran_20250525_markazi.jpeg"
+            "path": "iran_20250724_markazi.jpeg"
         },
         {
-            "path": "iran_20250623_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250624_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250822_markazi.jpeg"
-        },
-        {
-            "path": "iran_20250823_markazi.jpeg"
+            "path": "iran_20250821_markazi.jpeg"
         },
         {
             "path": "iran_20250824_markazi.jpeg"
         },
         {
+            "path": "iran_20250825_markazi.jpeg"
+        },
+        {
+            "path": "iran_20250826_markazi.jpeg"
+        },
+        {
             "path": "iran_20250919_markazi.jpeg"
+        },
+        {
+            "path": "iran_20250921_markazi.jpeg"
+        },
+        {
+            "path": "iran_20250922_markazi.jpeg"
         },
         {
             "path": "iran_20250923_markazi.jpeg"
@@ -76,7 +58,16 @@
             "path": "iran_20250924_markazi.jpeg"
         },
         {
-            "path": "iran_20251021_markazi.jpeg"
+            "path": "iran_20250925_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251019_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251020_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251022_markazi.jpeg"
         },
         {
             "path": "iran_20251023_markazi.jpeg"
@@ -85,10 +76,25 @@
             "path": "iran_20251117_markazi.jpeg"
         },
         {
-            "path": "iran_20251121_markazi.jpeg"
+            "path": "iran_20251118_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251119_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251120_markazi.jpeg"
         },
         {
             "path": "iran_20251122_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251123_markazi.jpeg"
+        },
+        {
+            "path": "iran_20251220_markazi.jpeg"
+        },
+        {
+            "path": "iran_20260121_markazi.jpeg"
         }
     ],
     "codec": "libx264",

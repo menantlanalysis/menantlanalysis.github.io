@@ -1,55 +1,10 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20241228_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20241231_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250102_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250127_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250128_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250129_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250130_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250131_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250201_bur_sa`id.jpeg"
-        },
-        {
             "path": "egypt_20250228_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20250301_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250328_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250329_bur_sa`id.jpeg"
-        },
-        {
             "path": "egypt_20250330_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250331_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250401_bur_sa`id.jpeg"
         },
         {
             "path": "egypt_20250426_bur_sa`id.jpeg"
@@ -58,22 +13,10 @@
             "path": "egypt_20250427_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20250428_bur_sa`id.jpeg"
-        },
-        {
             "path": "egypt_20250429_bur_sa`id.jpeg"
         },
         {
             "path": "egypt_20250430_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250525_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250526_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250527_bur_sa`id.jpeg"
         },
         {
             "path": "egypt_20250528_bur_sa`id.jpeg"
@@ -82,28 +25,43 @@
             "path": "egypt_20250529_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20250623_bur_sa`id.jpeg"
+            "path": "egypt_20250625_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20250624_bur_sa`id.jpeg"
+            "path": "egypt_20250628_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20250822_bur_sa`id.jpeg"
+            "path": "egypt_20250727_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20250823_bur_sa`id.jpeg"
-        },
-        {
-            "path": "egypt_20250923_bur_sa`id.jpeg"
+            "path": "egypt_20250922_bur_sa`id.jpeg"
         },
         {
             "path": "egypt_20250924_bur_sa`id.jpeg"
         },
         {
-            "path": "egypt_20251023_bur_sa`id.jpeg"
+            "path": "egypt_20250925_bur_sa`id.jpeg"
+        },
+        {
+            "path": "egypt_20251019_bur_sa`id.jpeg"
+        },
+        {
+            "path": "egypt_20251020_bur_sa`id.jpeg"
+        },
+        {
+            "path": "egypt_20251022_bur_sa`id.jpeg"
+        },
+        {
+            "path": "egypt_20251119_bur_sa`id.jpeg"
+        },
+        {
+            "path": "egypt_20251120_bur_sa`id.jpeg"
         },
         {
             "path": "egypt_20251121_bur_sa`id.jpeg"
+        },
+        {
+            "path": "egypt_20260119_bur_sa`id.jpeg"
         }
     ],
     "codec": "libx264",

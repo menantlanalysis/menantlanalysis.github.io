@@ -1,73 +1,22 @@
 {
     "images": [
         {
-            "path": "iran_20241202_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20241203_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20241204_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20241229_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20241230_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20241231_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250101_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250102_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250127_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250128_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250129_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250130_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250131_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250201_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250226_khuzestan.jpeg"
-        },
-        {
             "path": "iran_20250227_khuzestan.jpeg"
         },
         {
             "path": "iran_20250228_khuzestan.jpeg"
         },
         {
+            "path": "iran_20250301_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20250302_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20250327_khuzestan.jpeg"
+        },
+        {
             "path": "iran_20250328_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250426_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250427_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250428_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250429_khuzestan.jpeg"
-        },
-        {
-            "path": "iran_20250430_khuzestan.jpeg"
         },
         {
             "path": "iran_20250525_khuzestan.jpeg"
@@ -76,46 +25,76 @@
             "path": "iran_20250526_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250527_khuzestan.jpeg"
-        },
-        {
             "path": "iran_20250529_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250623_khuzestan.jpeg"
+            "path": "iran_20250625_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250624_khuzestan.jpeg"
+            "path": "iran_20250626_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250822_khuzestan.jpeg"
+            "path": "iran_20250627_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250823_khuzestan.jpeg"
+            "path": "iran_20250723_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20250725_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20250821_khuzestan.jpeg"
         },
         {
             "path": "iran_20250824_khuzestan.jpeg"
         },
         {
+            "path": "iran_20250826_khuzestan.jpeg"
+        },
+        {
             "path": "iran_20250919_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250923_khuzestan.jpeg"
+            "path": "iran_20250921_khuzestan.jpeg"
         },
         {
-            "path": "iran_20250924_khuzestan.jpeg"
+            "path": "iran_20250922_khuzestan.jpeg"
         },
         {
-            "path": "iran_20251023_khuzestan.jpeg"
+            "path": "iran_20251022_khuzestan.jpeg"
         },
         {
             "path": "iran_20251117_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251118_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251119_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251120_khuzestan.jpeg"
         },
         {
             "path": "iran_20251121_khuzestan.jpeg"
         },
         {
             "path": "iran_20251122_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251123_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251219_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251220_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20251223_khuzestan.jpeg"
+        },
+        {
+            "path": "iran_20260121_khuzestan.jpeg"
         }
     ],
     "codec": "libx264",

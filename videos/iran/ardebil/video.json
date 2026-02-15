@@ -1,55 +1,46 @@
 {
     "images": [
         {
-            "path": "iran_20241231_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250101_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250102_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250127_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250131_ardebil.jpeg"
-        },
-        {
             "path": "iran_20250227_ardebil.jpeg"
-        },
-        {
-            "path": "iran_20250301_ardebil.jpeg"
         },
         {
             "path": "iran_20250302_ardebil.jpeg"
         },
         {
-            "path": "iran_20250426_ardebil.jpeg"
+            "path": "iran_20250328_ardebil.jpeg"
         },
         {
-            "path": "iran_20250427_ardebil.jpeg"
+            "path": "iran_20250331_ardebil.jpeg"
         },
         {
             "path": "iran_20250430_ardebil.jpeg"
         },
         {
-            "path": "iran_20250525_ardebil.jpeg"
+            "path": "iran_20250529_ardebil.jpeg"
         },
         {
-            "path": "iran_20250526_ardebil.jpeg"
+            "path": "iran_20250625_ardebil.jpeg"
         },
         {
-            "path": "iran_20250528_ardebil.jpeg"
+            "path": "iran_20250626_ardebil.jpeg"
         },
         {
-            "path": "iran_20250822_ardebil.jpeg"
+            "path": "iran_20250627_ardebil.jpeg"
         },
         {
-            "path": "iran_20250823_ardebil.jpeg"
+            "path": "iran_20250726_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20250727_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20250821_ardebil.jpeg"
         },
         {
             "path": "iran_20250824_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20250825_ardebil.jpeg"
         },
         {
             "path": "iran_20250919_ardebil.jpeg"
@@ -58,13 +49,40 @@
             "path": "iran_20250924_ardebil.jpeg"
         },
         {
+            "path": "iran_20250925_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251020_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251022_ardebil.jpeg"
+        },
+        {
             "path": "iran_20251023_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251117_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251118_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251119_ardebil.jpeg"
         },
         {
             "path": "iran_20251121_ardebil.jpeg"
         },
         {
             "path": "iran_20251122_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251123_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251218_ardebil.jpeg"
+        },
+        {
+            "path": "iran_20251219_ardebil.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20241203_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20241204_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20241228_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20241229_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20241230_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20241231_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250101_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250102_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250127_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250128_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250129_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250130_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250131_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250201_ad_dali'.jpeg"
-        },
-        {
             "path": "yemen_20250226_ad_dali'.jpeg"
         },
         {
@@ -79,9 +34,6 @@
             "path": "yemen_20250401_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20250426_ad_dali'.jpeg"
-        },
-        {
             "path": "yemen_20250427_ad_dali'.jpeg"
         },
         {
@@ -89,9 +41,6 @@
         },
         {
             "path": "yemen_20250429_ad_dali'.jpeg"
-        },
-        {
-            "path": "yemen_20250430_ad_dali'.jpeg"
         },
         {
             "path": "yemen_20250525_ad_dali'.jpeg"
@@ -103,25 +52,34 @@
             "path": "yemen_20250528_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20250529_ad_dali'.jpeg"
+            "path": "yemen_20250625_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20250623_ad_dali'.jpeg"
+            "path": "yemen_20250723_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20250624_ad_dali'.jpeg"
+            "path": "yemen_20250921_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20250822_ad_dali'.jpeg"
+            "path": "yemen_20251019_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20250823_ad_dali'.jpeg"
+            "path": "yemen_20251020_ad_dali'.jpeg"
         },
         {
-            "path": "yemen_20251021_ad_dali'.jpeg"
+            "path": "yemen_20251022_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20251023_ad_dali'.jpeg"
         },
         {
             "path": "yemen_20251117_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20251118_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20251119_ad_dali'.jpeg"
         },
         {
             "path": "yemen_20251120_ad_dali'.jpeg"
@@ -131,6 +89,18 @@
         },
         {
             "path": "yemen_20251122_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20251222_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20251223_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20260117_ad_dali'.jpeg"
+        },
+        {
+            "path": "yemen_20260119_ad_dali'.jpeg"
         }
     ],
     "codec": "libx264",

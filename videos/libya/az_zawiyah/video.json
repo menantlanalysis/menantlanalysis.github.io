@@ -1,58 +1,7 @@
 {
     "images": [
         {
-            "path": "libya_20241202_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250101_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250102_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250128_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250129_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250130_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250131_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250226_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250301_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250328_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250329_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250330_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250401_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250426_az_zawiyah.jpeg"
-        },
-        {
             "path": "libya_20250427_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250428_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250429_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250430_az_zawiyah.jpeg"
         },
         {
             "path": "libya_20250526_az_zawiyah.jpeg"
@@ -73,22 +22,46 @@
             "path": "libya_20250624_az_zawiyah.jpeg"
         },
         {
+            "path": "libya_20250625_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250626_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250627_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250628_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250723_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250724_az_zawiyah.jpeg"
+        },
+        {
             "path": "libya_20250725_az_zawiyah.jpeg"
         },
         {
             "path": "libya_20250726_az_zawiyah.jpeg"
         },
         {
+            "path": "libya_20250727_az_zawiyah.jpeg"
+        },
+        {
             "path": "libya_20250821_az_zawiyah.jpeg"
         },
         {
-            "path": "libya_20250822_az_zawiyah.jpeg"
-        },
-        {
-            "path": "libya_20250823_az_zawiyah.jpeg"
+            "path": "libya_20250825_az_zawiyah.jpeg"
         },
         {
             "path": "libya_20250826_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250919_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20250921_az_zawiyah.jpeg"
         },
         {
             "path": "libya_20250922_az_zawiyah.jpeg"
@@ -100,16 +73,40 @@
             "path": "libya_20250924_az_zawiyah.jpeg"
         },
         {
+            "path": "libya_20251020_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251022_az_zawiyah.jpeg"
+        },
+        {
             "path": "libya_20251023_az_zawiyah.jpeg"
         },
         {
-            "path": "libya_20251119_az_zawiyah.jpeg"
+            "path": "libya_20251117_az_zawiyah.jpeg"
         },
         {
-            "path": "libya_20251120_az_zawiyah.jpeg"
+            "path": "libya_20251118_az_zawiyah.jpeg"
         },
         {
             "path": "libya_20251121_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251122_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251123_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251217_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251218_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251222_az_zawiyah.jpeg"
+        },
+        {
+            "path": "libya_20251223_az_zawiyah.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,22 +1,10 @@
 {
     "images": [
         {
-            "path": "libya_20241202_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250102_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250127_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250129_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250130_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250226_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250227_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250228_an_nuqat_al_khams.jpeg"
@@ -25,16 +13,10 @@
             "path": "libya_20250301_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250302_an_nuqat_al_khams.jpeg"
-        },
-        {
             "path": "libya_20250328_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250426_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250427_an_nuqat_al_khams.jpeg"
+            "path": "libya_20250330_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250428_an_nuqat_al_khams.jpeg"
@@ -64,31 +46,97 @@
             "path": "libya_20250624_an_nuqat_al_khams.jpeg"
         },
         {
+            "path": "libya_20250625_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250626_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250627_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250628_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250723_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250724_an_nuqat_al_khams.jpeg"
+        },
+        {
             "path": "libya_20250725_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250726_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250727_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250821_an_nuqat_al_khams.jpeg"
         },
         {
-            "path": "libya_20250822_an_nuqat_al_khams.jpeg"
-        },
-        {
-            "path": "libya_20250823_an_nuqat_al_khams.jpeg"
+            "path": "libya_20250825_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20250826_an_nuqat_al_khams.jpeg"
         },
         {
+            "path": "libya_20250919_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250921_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250922_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20250923_an_nuqat_al_khams.jpeg"
+        },
+        {
             "path": "libya_20250924_an_nuqat_al_khams.jpeg"
         },
         {
+            "path": "libya_20250925_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251020_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251022_an_nuqat_al_khams.jpeg"
+        },
+        {
             "path": "libya_20251023_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251117_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20251120_an_nuqat_al_khams.jpeg"
         },
         {
             "path": "libya_20251121_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251122_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251123_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251217_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251220_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251222_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20251223_an_nuqat_al_khams.jpeg"
+        },
+        {
+            "path": "libya_20260117_an_nuqat_al_khams.jpeg"
         }
     ],
     "codec": "libx264",

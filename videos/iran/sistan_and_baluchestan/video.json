@@ -1,46 +1,10 @@
 {
     "images": [
         {
-            "path": "iran_20241202_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20241203_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20241204_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20241228_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250102_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250128_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250129_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250130_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250131_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250201_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250228_sistan_and_baluchestan.jpeg"
-        },
-        {
             "path": "iran_20250301_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20250327_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250328_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20250329_sistan_and_baluchestan.jpeg"
@@ -50,18 +14,6 @@
         },
         {
             "path": "iran_20250331_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250401_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250426_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250427_sistan_and_baluchestan.jpeg"
-        },
-        {
-            "path": "iran_20250428_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20250429_sistan_and_baluchestan.jpeg"
@@ -79,46 +31,76 @@
             "path": "iran_20250527_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250528_sistan_and_baluchestan.jpeg"
-        },
-        {
             "path": "iran_20250529_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250623_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250723_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250624_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250724_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250822_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250726_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250823_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250826_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250824_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250921_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20250919_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250922_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20250923_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20250924_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20251021_sistan_and_baluchestan.jpeg"
+            "path": "iran_20250925_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251019_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251020_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251022_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20251023_sistan_and_baluchestan.jpeg"
         },
         {
-            "path": "iran_20251117_sistan_and_baluchestan.jpeg"
+            "path": "iran_20251118_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251119_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251120_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20251121_sistan_and_baluchestan.jpeg"
         },
         {
             "path": "iran_20251122_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251123_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251222_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20251223_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20260117_sistan_and_baluchestan.jpeg"
+        },
+        {
+            "path": "iran_20260118_sistan_and_baluchestan.jpeg"
         }
     ],
     "codec": "libx264",

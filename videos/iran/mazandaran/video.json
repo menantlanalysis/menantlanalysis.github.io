@@ -1,64 +1,67 @@
 {
     "images": [
         {
-            "path": "iran_20241203_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250129_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250131_mazandaran.jpeg"
+            "path": "iran_20250226_mazandaran.jpeg"
         },
         {
             "path": "iran_20250302_mazandaran.jpeg"
         },
         {
+            "path": "iran_20250328_mazandaran.jpeg"
+        },
+        {
             "path": "iran_20250329_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250331_mazandaran.jpeg"
+            "path": "iran_20250526_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250426_mazandaran.jpeg"
+            "path": "iran_20250626_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250427_mazandaran.jpeg"
+            "path": "iran_20250723_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250430_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250528_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250529_mazandaran.jpeg"
-        },
-        {
-            "path": "iran_20250823_mazandaran.jpeg"
+            "path": "iran_20250725_mazandaran.jpeg"
         },
         {
             "path": "iran_20250824_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250923_mazandaran.jpeg"
+            "path": "iran_20250825_mazandaran.jpeg"
         },
         {
-            "path": "iran_20250924_mazandaran.jpeg"
+            "path": "iran_20250925_mazandaran.jpeg"
         },
         {
-            "path": "iran_20251021_mazandaran.jpeg"
+            "path": "iran_20251022_mazandaran.jpeg"
         },
         {
             "path": "iran_20251023_mazandaran.jpeg"
         },
         {
-            "path": "iran_20251117_mazandaran.jpeg"
+            "path": "iran_20251118_mazandaran.jpeg"
+        },
+        {
+            "path": "iran_20251119_mazandaran.jpeg"
+        },
+        {
+            "path": "iran_20251120_mazandaran.jpeg"
         },
         {
             "path": "iran_20251121_mazandaran.jpeg"
         },
         {
             "path": "iran_20251122_mazandaran.jpeg"
+        },
+        {
+            "path": "iran_20251123_mazandaran.jpeg"
+        },
+        {
+            "path": "iran_20251220_mazandaran.jpeg"
+        },
+        {
+            "path": "iran_20251222_mazandaran.jpeg"
         }
     ],
     "codec": "libx264",

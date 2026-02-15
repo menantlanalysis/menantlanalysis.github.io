@@ -1,7 +1,13 @@
 {
     "images": [
         {
-            "path": "syria_20250129_lattakia.jpeg"
+            "path": "syria_20250227_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20250228_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20250327_lattakia.jpeg"
         },
         {
             "path": "syria_20250331_lattakia.jpeg"
@@ -13,31 +19,22 @@
             "path": "syria_20250427_lattakia.jpeg"
         },
         {
-            "path": "syria_20250428_lattakia.jpeg"
-        },
-        {
             "path": "syria_20250429_lattakia.jpeg"
         },
         {
-            "path": "syria_20250430_lattakia.jpeg"
-        },
-        {
-            "path": "syria_20250623_lattakia.jpeg"
-        },
-        {
-            "path": "syria_20250624_lattakia.jpeg"
+            "path": "syria_20250723_lattakia.jpeg"
         },
         {
             "path": "syria_20250726_lattakia.jpeg"
         },
         {
+            "path": "syria_20250727_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20250821_lattakia.jpeg"
+        },
+        {
             "path": "syria_20250822_lattakia.jpeg"
-        },
-        {
-            "path": "syria_20250823_lattakia.jpeg"
-        },
-        {
-            "path": "syria_20250824_lattakia.jpeg"
         },
         {
             "path": "syria_20250919_lattakia.jpeg"
@@ -46,19 +43,58 @@
             "path": "syria_20250921_lattakia.jpeg"
         },
         {
+            "path": "syria_20250922_lattakia.jpeg"
+        },
+        {
             "path": "syria_20250923_lattakia.jpeg"
         },
         {
             "path": "syria_20250924_lattakia.jpeg"
         },
         {
+            "path": "syria_20250925_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251022_lattakia.jpeg"
+        },
+        {
             "path": "syria_20251023_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251117_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251118_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251119_lattakia.jpeg"
         },
         {
             "path": "syria_20251120_lattakia.jpeg"
         },
         {
             "path": "syria_20251121_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251122_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251123_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251217_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251218_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20251222_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20260118_lattakia.jpeg"
+        },
+        {
+            "path": "syria_20260119_lattakia.jpeg"
         }
     ],
     "codec": "libx264",

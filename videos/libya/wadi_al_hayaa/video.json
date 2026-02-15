@@ -1,36 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20241203_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20241204_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20241228_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20241229_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20241230_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20250128_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20250129_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20250130_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20250131_wadi_al_hayaa.jpeg"
-        },
-        {
             "path": "libya_20250226_wadi_al_hayaa.jpeg"
         },
         {
@@ -52,9 +22,6 @@
             "path": "libya_20250329_wadi_al_hayaa.jpeg"
         },
         {
-            "path": "libya_20250330_wadi_al_hayaa.jpeg"
-        },
-        {
             "path": "libya_20250331_wadi_al_hayaa.jpeg"
         },
         {
@@ -65,9 +32,6 @@
         },
         {
             "path": "libya_20250427_wadi_al_hayaa.jpeg"
-        },
-        {
-            "path": "libya_20250428_wadi_al_hayaa.jpeg"
         },
         {
             "path": "libya_20250429_wadi_al_hayaa.jpeg"
@@ -94,22 +58,49 @@
             "path": "libya_20250624_wadi_al_hayaa.jpeg"
         },
         {
+            "path": "libya_20250625_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250626_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250627_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250628_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250723_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250724_wadi_al_hayaa.jpeg"
+        },
+        {
             "path": "libya_20250725_wadi_al_hayaa.jpeg"
         },
         {
             "path": "libya_20250726_wadi_al_hayaa.jpeg"
         },
         {
+            "path": "libya_20250727_wadi_al_hayaa.jpeg"
+        },
+        {
             "path": "libya_20250821_wadi_al_hayaa.jpeg"
         },
         {
-            "path": "libya_20250822_wadi_al_hayaa.jpeg"
+            "path": "libya_20250824_wadi_al_hayaa.jpeg"
         },
         {
-            "path": "libya_20250823_wadi_al_hayaa.jpeg"
+            "path": "libya_20250825_wadi_al_hayaa.jpeg"
         },
         {
             "path": "libya_20250826_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250919_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20250921_wadi_al_hayaa.jpeg"
         },
         {
             "path": "libya_20250922_wadi_al_hayaa.jpeg"
@@ -121,19 +112,52 @@
             "path": "libya_20250924_wadi_al_hayaa.jpeg"
         },
         {
+            "path": "libya_20250925_wadi_al_hayaa.jpeg"
+        },
+        {
             "path": "libya_20251019_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20251022_wadi_al_hayaa.jpeg"
         },
         {
             "path": "libya_20251023_wadi_al_hayaa.jpeg"
         },
         {
+            "path": "libya_20251117_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20251118_wadi_al_hayaa.jpeg"
+        },
+        {
             "path": "libya_20251119_wadi_al_hayaa.jpeg"
         },
         {
-            "path": "libya_20251120_wadi_al_hayaa.jpeg"
+            "path": "libya_20251121_wadi_al_hayaa.jpeg"
         },
         {
-            "path": "libya_20251121_wadi_al_hayaa.jpeg"
+            "path": "libya_20251122_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20251123_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20251220_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20251222_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20251223_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20260117_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20260118_wadi_al_hayaa.jpeg"
+        },
+        {
+            "path": "libya_20260119_wadi_al_hayaa.jpeg"
         }
     ],
     "codec": "libx264",

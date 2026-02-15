@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241203_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241204_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241228_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241229_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20241231_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250101_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250102_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250127_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250128_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250129_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250130_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250131_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250201_suhaj.jpeg"
-        },
-        {
-            "path": "egypt_20250226_suhaj.jpeg"
-        },
-        {
             "path": "egypt_20250227_suhaj.jpeg"
         },
         {
@@ -100,10 +55,46 @@
             "path": "egypt_20250624_suhaj.jpeg"
         },
         {
-            "path": "egypt_20250822_suhaj.jpeg"
+            "path": "egypt_20250625_suhaj.jpeg"
         },
         {
-            "path": "egypt_20250823_suhaj.jpeg"
+            "path": "egypt_20250626_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250627_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250628_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250723_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250724_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250725_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250726_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250727_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250825_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250826_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250919_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250921_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20250922_suhaj.jpeg"
         },
         {
             "path": "egypt_20250923_suhaj.jpeg"
@@ -112,10 +103,64 @@
             "path": "egypt_20250924_suhaj.jpeg"
         },
         {
+            "path": "egypt_20250925_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251019_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251020_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251022_suhaj.jpeg"
+        },
+        {
             "path": "egypt_20251023_suhaj.jpeg"
         },
         {
+            "path": "egypt_20251117_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251118_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251119_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251120_suhaj.jpeg"
+        },
+        {
             "path": "egypt_20251121_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251122_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251123_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251217_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251218_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251219_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251220_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20251222_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20260117_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20260118_suhaj.jpeg"
+        },
+        {
+            "path": "egypt_20260119_suhaj.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,42 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_nalut.jpeg"
-        },
-        {
-            "path": "libya_20241204_nalut.jpeg"
-        },
-        {
-            "path": "libya_20241228_nalut.jpeg"
-        },
-        {
-            "path": "libya_20241230_nalut.jpeg"
-        },
-        {
-            "path": "libya_20241231_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250102_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250127_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250128_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250129_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250130_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250131_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250201_nalut.jpeg"
-        },
-        {
             "path": "libya_20250226_nalut.jpeg"
         },
         {
@@ -49,16 +13,19 @@
             "path": "libya_20250301_nalut.jpeg"
         },
         {
+            "path": "libya_20250327_nalut.jpeg"
+        },
+        {
             "path": "libya_20250328_nalut.jpeg"
         },
         {
-            "path": "libya_20250330_nalut.jpeg"
+            "path": "libya_20250329_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250331_nalut.jpeg"
         },
         {
             "path": "libya_20250401_nalut.jpeg"
-        },
-        {
-            "path": "libya_20250426_nalut.jpeg"
         },
         {
             "path": "libya_20250427_nalut.jpeg"
@@ -71,6 +38,9 @@
         },
         {
             "path": "libya_20250430_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250525_nalut.jpeg"
         },
         {
             "path": "libya_20250526_nalut.jpeg"
@@ -91,22 +61,46 @@
             "path": "libya_20250624_nalut.jpeg"
         },
         {
+            "path": "libya_20250625_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250626_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250627_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250628_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250723_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250724_nalut.jpeg"
+        },
+        {
             "path": "libya_20250725_nalut.jpeg"
         },
         {
             "path": "libya_20250726_nalut.jpeg"
         },
         {
+            "path": "libya_20250727_nalut.jpeg"
+        },
+        {
             "path": "libya_20250821_nalut.jpeg"
         },
         {
-            "path": "libya_20250822_nalut.jpeg"
+            "path": "libya_20250824_nalut.jpeg"
         },
         {
-            "path": "libya_20250823_nalut.jpeg"
+            "path": "libya_20250825_nalut.jpeg"
         },
         {
-            "path": "libya_20250826_nalut.jpeg"
+            "path": "libya_20250919_nalut.jpeg"
+        },
+        {
+            "path": "libya_20250921_nalut.jpeg"
         },
         {
             "path": "libya_20250922_nalut.jpeg"
@@ -118,13 +112,49 @@
             "path": "libya_20250924_nalut.jpeg"
         },
         {
+            "path": "libya_20250925_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251020_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251022_nalut.jpeg"
+        },
+        {
             "path": "libya_20251023_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251117_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251118_nalut.jpeg"
         },
         {
             "path": "libya_20251120_nalut.jpeg"
         },
         {
             "path": "libya_20251121_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251122_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251123_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251217_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251220_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251222_nalut.jpeg"
+        },
+        {
+            "path": "libya_20251223_nalut.jpeg"
+        },
+        {
+            "path": "libya_20260117_nalut.jpeg"
         }
     ],
     "codec": "libx264",

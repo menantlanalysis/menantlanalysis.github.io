@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202.jpeg"
-        },
-        {
-            "path": "egypt_20241203.jpeg"
-        },
-        {
-            "path": "egypt_20241204.jpeg"
-        },
-        {
-            "path": "egypt_20241228.jpeg"
-        },
-        {
-            "path": "egypt_20241229.jpeg"
-        },
-        {
-            "path": "egypt_20241230.jpeg"
-        },
-        {
-            "path": "egypt_20241231.jpeg"
-        },
-        {
-            "path": "egypt_20250101.jpeg"
-        },
-        {
-            "path": "egypt_20250102.jpeg"
-        },
-        {
-            "path": "egypt_20250127.jpeg"
-        },
-        {
-            "path": "egypt_20250128.jpeg"
-        },
-        {
-            "path": "egypt_20250129.jpeg"
-        },
-        {
-            "path": "egypt_20250130.jpeg"
-        },
-        {
-            "path": "egypt_20250131.jpeg"
-        },
-        {
-            "path": "egypt_20250201.jpeg"
-        },
-        {
             "path": "egypt_20250226.jpeg"
         },
         {
@@ -115,10 +70,52 @@
             "path": "egypt_20250624.jpeg"
         },
         {
-            "path": "egypt_20250822.jpeg"
+            "path": "egypt_20250625.jpeg"
         },
         {
-            "path": "egypt_20250823.jpeg"
+            "path": "egypt_20250626.jpeg"
+        },
+        {
+            "path": "egypt_20250627.jpeg"
+        },
+        {
+            "path": "egypt_20250628.jpeg"
+        },
+        {
+            "path": "egypt_20250723.jpeg"
+        },
+        {
+            "path": "egypt_20250724.jpeg"
+        },
+        {
+            "path": "egypt_20250725.jpeg"
+        },
+        {
+            "path": "egypt_20250726.jpeg"
+        },
+        {
+            "path": "egypt_20250727.jpeg"
+        },
+        {
+            "path": "egypt_20250821.jpeg"
+        },
+        {
+            "path": "egypt_20250824.jpeg"
+        },
+        {
+            "path": "egypt_20250825.jpeg"
+        },
+        {
+            "path": "egypt_20250826.jpeg"
+        },
+        {
+            "path": "egypt_20250919.jpeg"
+        },
+        {
+            "path": "egypt_20250921.jpeg"
+        },
+        {
+            "path": "egypt_20250922.jpeg"
         },
         {
             "path": "egypt_20250923.jpeg"
@@ -127,10 +124,70 @@
             "path": "egypt_20250924.jpeg"
         },
         {
+            "path": "egypt_20250925.jpeg"
+        },
+        {
+            "path": "egypt_20251019.jpeg"
+        },
+        {
+            "path": "egypt_20251020.jpeg"
+        },
+        {
+            "path": "egypt_20251022.jpeg"
+        },
+        {
             "path": "egypt_20251023.jpeg"
         },
         {
+            "path": "egypt_20251117.jpeg"
+        },
+        {
+            "path": "egypt_20251118.jpeg"
+        },
+        {
+            "path": "egypt_20251119.jpeg"
+        },
+        {
+            "path": "egypt_20251120.jpeg"
+        },
+        {
             "path": "egypt_20251121.jpeg"
+        },
+        {
+            "path": "egypt_20251122.jpeg"
+        },
+        {
+            "path": "egypt_20251123.jpeg"
+        },
+        {
+            "path": "egypt_20251217.jpeg"
+        },
+        {
+            "path": "egypt_20251218.jpeg"
+        },
+        {
+            "path": "egypt_20251219.jpeg"
+        },
+        {
+            "path": "egypt_20251220.jpeg"
+        },
+        {
+            "path": "egypt_20251222.jpeg"
+        },
+        {
+            "path": "egypt_20251223.jpeg"
+        },
+        {
+            "path": "egypt_20260117.jpeg"
+        },
+        {
+            "path": "egypt_20260118.jpeg"
+        },
+        {
+            "path": "egypt_20260119.jpeg"
+        },
+        {
+            "path": "egypt_20260121.jpeg"
         }
     ],
     "codec": "libx264",

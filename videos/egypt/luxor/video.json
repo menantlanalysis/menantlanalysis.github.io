@@ -1,39 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20241204_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20241228_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20241231_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250101_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250102_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250127_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250128_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250129_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250130_luxor.jpeg"
-        },
-        {
-            "path": "egypt_20250131_luxor.jpeg"
-        },
-        {
             "path": "egypt_20250226_luxor.jpeg"
         },
         {
@@ -79,9 +46,6 @@
             "path": "egypt_20250429_luxor.jpeg"
         },
         {
-            "path": "egypt_20250430_luxor.jpeg"
-        },
-        {
             "path": "egypt_20250525_luxor.jpeg"
         },
         {
@@ -103,7 +67,52 @@
             "path": "egypt_20250624_luxor.jpeg"
         },
         {
-            "path": "egypt_20250823_luxor.jpeg"
+            "path": "egypt_20250625_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250626_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250627_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250628_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250723_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250724_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250725_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250726_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250727_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250821_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250824_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250825_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250826_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250919_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250921_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20250922_luxor.jpeg"
         },
         {
             "path": "egypt_20250923_luxor.jpeg"
@@ -112,10 +121,58 @@
             "path": "egypt_20250924_luxor.jpeg"
         },
         {
+            "path": "egypt_20250925_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251019_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251020_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251022_luxor.jpeg"
+        },
+        {
             "path": "egypt_20251023_luxor.jpeg"
         },
         {
-            "path": "egypt_20251121_luxor.jpeg"
+            "path": "egypt_20251117_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251118_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251119_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251122_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251123_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251217_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251218_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251219_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251220_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20251222_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20260117_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20260118_luxor.jpeg"
+        },
+        {
+            "path": "egypt_20260119_luxor.jpeg"
         }
     ],
     "codec": "libx264",

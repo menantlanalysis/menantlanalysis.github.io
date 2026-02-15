@@ -1,43 +1,10 @@
 {
     "images": [
         {
-            "path": "libya_20241202_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20241203_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20241228_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20241231_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250101_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250102_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250127_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250128_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250129_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250130_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250131_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250201_al_jabal_al_gharbi.jpeg"
-        },
-        {
             "path": "libya_20250226_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250227_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20250228_al_jabal_al_gharbi.jpeg"
@@ -55,13 +22,7 @@
             "path": "libya_20250329_al_jabal_al_gharbi.jpeg"
         },
         {
-            "path": "libya_20250330_al_jabal_al_gharbi.jpeg"
-        },
-        {
             "path": "libya_20250331_al_jabal_al_gharbi.jpeg"
-        },
-        {
-            "path": "libya_20250426_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20250427_al_jabal_al_gharbi.jpeg"
@@ -74,6 +35,9 @@
         },
         {
             "path": "libya_20250430_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250525_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20250526_al_jabal_al_gharbi.jpeg"
@@ -94,22 +58,49 @@
             "path": "libya_20250624_al_jabal_al_gharbi.jpeg"
         },
         {
+            "path": "libya_20250625_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250626_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250627_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250628_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250723_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250724_al_jabal_al_gharbi.jpeg"
+        },
+        {
             "path": "libya_20250725_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20250726_al_jabal_al_gharbi.jpeg"
         },
         {
+            "path": "libya_20250727_al_jabal_al_gharbi.jpeg"
+        },
+        {
             "path": "libya_20250821_al_jabal_al_gharbi.jpeg"
         },
         {
-            "path": "libya_20250822_al_jabal_al_gharbi.jpeg"
+            "path": "libya_20250824_al_jabal_al_gharbi.jpeg"
         },
         {
-            "path": "libya_20250823_al_jabal_al_gharbi.jpeg"
+            "path": "libya_20250825_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20250826_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250919_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20250921_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20250922_al_jabal_al_gharbi.jpeg"
@@ -121,13 +112,49 @@
             "path": "libya_20250924_al_jabal_al_gharbi.jpeg"
         },
         {
+            "path": "libya_20250925_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251022_al_jabal_al_gharbi.jpeg"
+        },
+        {
             "path": "libya_20251023_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251117_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251118_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20251120_al_jabal_al_gharbi.jpeg"
         },
         {
             "path": "libya_20251121_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251122_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251123_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251217_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251220_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251222_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20251223_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20260117_al_jabal_al_gharbi.jpeg"
+        },
+        {
+            "path": "libya_20260119_al_jabal_al_gharbi.jpeg"
         }
     ],
     "codec": "libx264",

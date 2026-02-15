@@ -1,46 +1,16 @@
 {
     "images": [
         {
-            "path": "syria_20241202_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20241203_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20241231_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250101_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250102_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250127_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250128_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250129_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250131_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250201_dayr_az_zawr.jpeg"
-        },
-        {
             "path": "syria_20250226_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20250227_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20250228_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20250301_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250327_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20250330_dayr_az_zawr.jpeg"
@@ -55,12 +25,6 @@
             "path": "syria_20250427_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20250428_dayr_az_zawr.jpeg"
-        },
-        {
-            "path": "syria_20250429_dayr_az_zawr.jpeg"
-        },
-        {
             "path": "syria_20250430_dayr_az_zawr.jpeg"
         },
         {
@@ -70,22 +34,31 @@
             "path": "syria_20250528_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20250623_dayr_az_zawr.jpeg"
+            "path": "syria_20250723_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20250624_dayr_az_zawr.jpeg"
+            "path": "syria_20250724_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20250726_dayr_az_zawr.jpeg"
+            "path": "syria_20250725_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20250727_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20250821_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20250822_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20250823_dayr_az_zawr.jpeg"
+            "path": "syria_20250824_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20250824_dayr_az_zawr.jpeg"
+            "path": "syria_20250825_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20250826_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20250919_dayr_az_zawr.jpeg"
@@ -94,19 +67,52 @@
             "path": "syria_20250921_dayr_az_zawr.jpeg"
         },
         {
+            "path": "syria_20250922_dayr_az_zawr.jpeg"
+        },
+        {
             "path": "syria_20250923_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20250924_dayr_az_zawr.jpeg"
         },
         {
-            "path": "syria_20251023_dayr_az_zawr.jpeg"
+            "path": "syria_20251019_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251020_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251117_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251118_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251119_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20251120_dayr_az_zawr.jpeg"
         },
         {
             "path": "syria_20251121_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251122_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251123_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251217_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251218_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20251219_dayr_az_zawr.jpeg"
+        },
+        {
+            "path": "syria_20260119_dayr_az_zawr.jpeg"
         }
     ],
     "codec": "libx264",

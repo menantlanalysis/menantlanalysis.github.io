@@ -1,58 +1,19 @@
 {
     "images": [
         {
-            "path": "syria_20241202_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20241203_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20241204_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20241228_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20241231_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250101_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250102_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250127_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250128_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250129_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250130_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250131_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250201_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250226_dar`a.jpeg"
-        },
-        {
             "path": "syria_20250227_dar`a.jpeg"
         },
         {
-            "path": "syria_20250327_dar`a.jpeg"
+            "path": "syria_20250228_dar`a.jpeg"
         },
         {
-            "path": "syria_20250328_dar`a.jpeg"
+            "path": "syria_20250301_dar`a.jpeg"
         },
         {
             "path": "syria_20250330_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20250331_dar`a.jpeg"
         },
         {
             "path": "syria_20250401_dar`a.jpeg"
@@ -64,37 +25,43 @@
             "path": "syria_20250427_dar`a.jpeg"
         },
         {
-            "path": "syria_20250428_dar`a.jpeg"
-        },
-        {
             "path": "syria_20250429_dar`a.jpeg"
         },
         {
-            "path": "syria_20250430_dar`a.jpeg"
-        },
-        {
-            "path": "syria_20250527_dar`a.jpeg"
+            "path": "syria_20250525_dar`a.jpeg"
         },
         {
             "path": "syria_20250528_dar`a.jpeg"
         },
         {
-            "path": "syria_20250623_dar`a.jpeg"
+            "path": "syria_20250723_dar`a.jpeg"
         },
         {
-            "path": "syria_20250624_dar`a.jpeg"
+            "path": "syria_20250724_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20250725_dar`a.jpeg"
         },
         {
             "path": "syria_20250726_dar`a.jpeg"
         },
         {
+            "path": "syria_20250727_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20250821_dar`a.jpeg"
+        },
+        {
             "path": "syria_20250822_dar`a.jpeg"
         },
         {
-            "path": "syria_20250823_dar`a.jpeg"
+            "path": "syria_20250824_dar`a.jpeg"
         },
         {
-            "path": "syria_20250824_dar`a.jpeg"
+            "path": "syria_20250825_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20250826_dar`a.jpeg"
         },
         {
             "path": "syria_20250919_dar`a.jpeg"
@@ -103,16 +70,61 @@
             "path": "syria_20250921_dar`a.jpeg"
         },
         {
+            "path": "syria_20250922_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20250923_dar`a.jpeg"
+        },
+        {
             "path": "syria_20250924_dar`a.jpeg"
         },
         {
+            "path": "syria_20250925_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251019_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251020_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251022_dar`a.jpeg"
+        },
+        {
             "path": "syria_20251023_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251117_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251118_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251119_dar`a.jpeg"
         },
         {
             "path": "syria_20251120_dar`a.jpeg"
         },
         {
             "path": "syria_20251121_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251122_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251123_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251217_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20251218_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20260117_dar`a.jpeg"
+        },
+        {
+            "path": "syria_20260119_dar`a.jpeg"
         }
     ],
     "codec": "libx264",

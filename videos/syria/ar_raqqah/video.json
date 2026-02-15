@@ -1,45 +1,6 @@
 {
     "images": [
         {
-            "path": "syria_20241202_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20241203_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20241228_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20241231_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250101_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250102_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250127_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250128_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250129_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250131_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250201_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250226_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250227_ar_raqqah.jpeg"
-        },
-        {
             "path": "syria_20250228_ar_raqqah.jpeg"
         },
         {
@@ -55,19 +16,7 @@
             "path": "syria_20250331_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20250426_ar_raqqah.jpeg"
-        },
-        {
             "path": "syria_20250427_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250428_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250429_ar_raqqah.jpeg"
-        },
-        {
-            "path": "syria_20250430_ar_raqqah.jpeg"
         },
         {
             "path": "syria_20250527_ar_raqqah.jpeg"
@@ -76,22 +25,34 @@
             "path": "syria_20250528_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20250623_ar_raqqah.jpeg"
+            "path": "syria_20250723_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20250624_ar_raqqah.jpeg"
+            "path": "syria_20250724_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20250725_ar_raqqah.jpeg"
         },
         {
             "path": "syria_20250726_ar_raqqah.jpeg"
         },
         {
+            "path": "syria_20250727_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20250821_ar_raqqah.jpeg"
+        },
+        {
             "path": "syria_20250822_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20250823_ar_raqqah.jpeg"
+            "path": "syria_20250824_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20250824_ar_raqqah.jpeg"
+            "path": "syria_20250825_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20250826_ar_raqqah.jpeg"
         },
         {
             "path": "syria_20250919_ar_raqqah.jpeg"
@@ -103,16 +64,34 @@
             "path": "syria_20250923_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20250924_ar_raqqah.jpeg"
+            "path": "syria_20250925_ar_raqqah.jpeg"
         },
         {
-            "path": "syria_20251023_ar_raqqah.jpeg"
+            "path": "syria_20251019_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251020_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251117_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251119_ar_raqqah.jpeg"
         },
         {
             "path": "syria_20251120_ar_raqqah.jpeg"
         },
         {
             "path": "syria_20251121_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251217_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20251218_ar_raqqah.jpeg"
+        },
+        {
+            "path": "syria_20260119_ar_raqqah.jpeg"
         }
     ],
     "codec": "libx264",

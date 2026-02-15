@@ -1,30 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20241203_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20241204_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250127_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250129_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250130_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250131_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250201_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20250226_dumyat.jpeg"
         },
         {
@@ -61,13 +37,7 @@
             "path": "egypt_20250428_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250429_dumyat.jpeg"
-        },
-        {
             "path": "egypt_20250430_dumyat.jpeg"
-        },
-        {
-            "path": "egypt_20250525_dumyat.jpeg"
         },
         {
             "path": "egypt_20250526_dumyat.jpeg"
@@ -85,13 +55,46 @@
             "path": "egypt_20250623_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250624_dumyat.jpeg"
+            "path": "egypt_20250625_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250822_dumyat.jpeg"
+            "path": "egypt_20250626_dumyat.jpeg"
         },
         {
-            "path": "egypt_20250823_dumyat.jpeg"
+            "path": "egypt_20250628_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250723_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250724_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250725_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250726_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250727_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250821_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250824_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250825_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250826_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250919_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20250922_dumyat.jpeg"
         },
         {
             "path": "egypt_20250923_dumyat.jpeg"
@@ -100,10 +103,34 @@
             "path": "egypt_20250924_dumyat.jpeg"
         },
         {
-            "path": "egypt_20251023_dumyat.jpeg"
+            "path": "egypt_20250925_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20251020_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20251022_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20251117_dumyat.jpeg"
         },
         {
             "path": "egypt_20251121_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20251218_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20251222_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20260117_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20260118_dumyat.jpeg"
+        },
+        {
+            "path": "egypt_20260119_dumyat.jpeg"
         }
     ],
     "codec": "libx264",

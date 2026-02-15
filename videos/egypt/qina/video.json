@@ -1,48 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241203_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241204_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241228_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241230_qina.jpeg"
-        },
-        {
-            "path": "egypt_20241231_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250101_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250102_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250127_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250128_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250129_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250130_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250131_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250201_qina.jpeg"
-        },
-        {
             "path": "egypt_20250227_qina.jpeg"
         },
         {
@@ -61,15 +19,6 @@
             "path": "egypt_20250328_qina.jpeg"
         },
         {
-            "path": "egypt_20250329_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250330_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250331_qina.jpeg"
-        },
-        {
             "path": "egypt_20250401_qina.jpeg"
         },
         {
@@ -83,9 +32,6 @@
         },
         {
             "path": "egypt_20250429_qina.jpeg"
-        },
-        {
-            "path": "egypt_20250430_qina.jpeg"
         },
         {
             "path": "egypt_20250525_qina.jpeg"
@@ -109,10 +55,46 @@
             "path": "egypt_20250624_qina.jpeg"
         },
         {
-            "path": "egypt_20250822_qina.jpeg"
+            "path": "egypt_20250625_qina.jpeg"
         },
         {
-            "path": "egypt_20250823_qina.jpeg"
+            "path": "egypt_20250626_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250627_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250723_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250724_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250725_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250726_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250727_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250821_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250825_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250826_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250919_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250921_qina.jpeg"
+        },
+        {
+            "path": "egypt_20250922_qina.jpeg"
         },
         {
             "path": "egypt_20250923_qina.jpeg"
@@ -121,10 +103,55 @@
             "path": "egypt_20250924_qina.jpeg"
         },
         {
+            "path": "egypt_20250925_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251019_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251020_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251022_qina.jpeg"
+        },
+        {
             "path": "egypt_20251023_qina.jpeg"
         },
         {
-            "path": "egypt_20251121_qina.jpeg"
+            "path": "egypt_20251117_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251118_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251119_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251122_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251123_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251217_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251218_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251219_qina.jpeg"
+        },
+        {
+            "path": "egypt_20251220_qina.jpeg"
+        },
+        {
+            "path": "egypt_20260117_qina.jpeg"
+        },
+        {
+            "path": "egypt_20260118_qina.jpeg"
+        },
+        {
+            "path": "egypt_20260119_qina.jpeg"
         }
     ],
     "codec": "libx264",

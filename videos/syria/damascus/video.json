@@ -1,49 +1,25 @@
 {
     "images": [
         {
-            "path": "syria_20241202_damascus.jpeg"
-        },
-        {
-            "path": "syria_20241203_damascus.jpeg"
-        },
-        {
-            "path": "syria_20241228_damascus.jpeg"
-        },
-        {
-            "path": "syria_20241231_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250101_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250102_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250127_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250128_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250129_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250130_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250201_damascus.jpeg"
-        },
-        {
             "path": "syria_20250226_damascus.jpeg"
         },
         {
             "path": "syria_20250227_damascus.jpeg"
         },
         {
+            "path": "syria_20250228_damascus.jpeg"
+        },
+        {
             "path": "syria_20250301_damascus.jpeg"
         },
         {
             "path": "syria_20250330_damascus.jpeg"
+        },
+        {
+            "path": "syria_20250331_damascus.jpeg"
+        },
+        {
+            "path": "syria_20250401_damascus.jpeg"
         },
         {
             "path": "syria_20250426_damascus.jpeg"
@@ -58,10 +34,7 @@
             "path": "syria_20250429_damascus.jpeg"
         },
         {
-            "path": "syria_20250430_damascus.jpeg"
-        },
-        {
-            "path": "syria_20250526_damascus.jpeg"
+            "path": "syria_20250525_damascus.jpeg"
         },
         {
             "path": "syria_20250527_damascus.jpeg"
@@ -70,22 +43,34 @@
             "path": "syria_20250528_damascus.jpeg"
         },
         {
-            "path": "syria_20250623_damascus.jpeg"
+            "path": "syria_20250723_damascus.jpeg"
         },
         {
-            "path": "syria_20250624_damascus.jpeg"
+            "path": "syria_20250724_damascus.jpeg"
+        },
+        {
+            "path": "syria_20250725_damascus.jpeg"
         },
         {
             "path": "syria_20250726_damascus.jpeg"
         },
         {
+            "path": "syria_20250727_damascus.jpeg"
+        },
+        {
+            "path": "syria_20250821_damascus.jpeg"
+        },
+        {
             "path": "syria_20250822_damascus.jpeg"
         },
         {
-            "path": "syria_20250823_damascus.jpeg"
+            "path": "syria_20250824_damascus.jpeg"
         },
         {
-            "path": "syria_20250824_damascus.jpeg"
+            "path": "syria_20250825_damascus.jpeg"
+        },
+        {
+            "path": "syria_20250826_damascus.jpeg"
         },
         {
             "path": "syria_20250919_damascus.jpeg"
@@ -94,19 +79,61 @@
             "path": "syria_20250921_damascus.jpeg"
         },
         {
+            "path": "syria_20250922_damascus.jpeg"
+        },
+        {
             "path": "syria_20250923_damascus.jpeg"
         },
         {
             "path": "syria_20250924_damascus.jpeg"
         },
         {
+            "path": "syria_20250925_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251019_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251020_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251022_damascus.jpeg"
+        },
+        {
             "path": "syria_20251023_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251117_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251118_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251119_damascus.jpeg"
         },
         {
             "path": "syria_20251120_damascus.jpeg"
         },
         {
             "path": "syria_20251121_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251122_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251123_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251217_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251218_damascus.jpeg"
+        },
+        {
+            "path": "syria_20251219_damascus.jpeg"
+        },
+        {
+            "path": "syria_20260119_damascus.jpeg"
         }
     ],
     "codec": "libx264",

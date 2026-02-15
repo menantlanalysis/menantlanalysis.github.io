@@ -1,48 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241204_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241228_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241229_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20241231_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250101_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250102_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250127_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250128_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250129_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250130_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250131_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250226_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250227_aswan.jpeg"
-        },
-        {
             "path": "egypt_20250228_aswan.jpeg"
         },
         {
@@ -52,16 +10,13 @@
             "path": "egypt_20250302_aswan.jpeg"
         },
         {
-            "path": "egypt_20250327_aswan.jpeg"
-        },
-        {
-            "path": "egypt_20250328_aswan.jpeg"
-        },
-        {
             "path": "egypt_20250329_aswan.jpeg"
         },
         {
-            "path": "egypt_20250401_aswan.jpeg"
+            "path": "egypt_20250330_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250331_aswan.jpeg"
         },
         {
             "path": "egypt_20250426_aswan.jpeg"
@@ -100,7 +55,37 @@
             "path": "egypt_20250624_aswan.jpeg"
         },
         {
-            "path": "egypt_20250823_aswan.jpeg"
+            "path": "egypt_20250625_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250626_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250627_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250723_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250724_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250725_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250726_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250727_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250919_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250921_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20250922_aswan.jpeg"
         },
         {
             "path": "egypt_20250923_aswan.jpeg"
@@ -109,10 +94,61 @@
             "path": "egypt_20250924_aswan.jpeg"
         },
         {
+            "path": "egypt_20250925_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251019_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251020_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251022_aswan.jpeg"
+        },
+        {
             "path": "egypt_20251023_aswan.jpeg"
         },
         {
+            "path": "egypt_20251117_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251118_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251119_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251120_aswan.jpeg"
+        },
+        {
             "path": "egypt_20251121_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251122_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251123_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251217_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251218_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251219_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20251220_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20260117_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20260118_aswan.jpeg"
+        },
+        {
+            "path": "egypt_20260119_aswan.jpeg"
         }
     ],
     "codec": "libx264",

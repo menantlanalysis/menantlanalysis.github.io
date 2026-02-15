@@ -1,51 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_amran.jpeg"
-        },
-        {
-            "path": "yemen_20241203_amran.jpeg"
-        },
-        {
-            "path": "yemen_20241204_amran.jpeg"
-        },
-        {
-            "path": "yemen_20241228_amran.jpeg"
-        },
-        {
-            "path": "yemen_20241229_amran.jpeg"
-        },
-        {
-            "path": "yemen_20241230_amran.jpeg"
-        },
-        {
-            "path": "yemen_20241231_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250101_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250102_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250127_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250128_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250129_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250130_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250131_amran.jpeg"
-        },
-        {
-            "path": "yemen_20250201_amran.jpeg"
-        },
-        {
             "path": "yemen_20250226_amran.jpeg"
         },
         {
@@ -109,25 +64,40 @@
             "path": "yemen_20250529_amran.jpeg"
         },
         {
-            "path": "yemen_20250623_amran.jpeg"
-        },
-        {
             "path": "yemen_20250624_amran.jpeg"
         },
         {
-            "path": "yemen_20250822_amran.jpeg"
+            "path": "yemen_20250723_amran.jpeg"
         },
         {
             "path": "yemen_20250919_amran.jpeg"
         },
         {
-            "path": "yemen_20250924_amran.jpeg"
+            "path": "yemen_20250921_amran.jpeg"
         },
         {
-            "path": "yemen_20251021_amran.jpeg"
+            "path": "yemen_20250925_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251019_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251020_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251022_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251023_amran.jpeg"
         },
         {
             "path": "yemen_20251117_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251118_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251119_amran.jpeg"
         },
         {
             "path": "yemen_20251120_amran.jpeg"
@@ -137,6 +107,36 @@
         },
         {
             "path": "yemen_20251122_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251123_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251217_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251219_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251220_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251222_amran.jpeg"
+        },
+        {
+            "path": "yemen_20251223_amran.jpeg"
+        },
+        {
+            "path": "yemen_20260117_amran.jpeg"
+        },
+        {
+            "path": "yemen_20260118_amran.jpeg"
+        },
+        {
+            "path": "yemen_20260119_amran.jpeg"
+        },
+        {
+            "path": "yemen_20260121_amran.jpeg"
         }
     ],
     "codec": "libx264",

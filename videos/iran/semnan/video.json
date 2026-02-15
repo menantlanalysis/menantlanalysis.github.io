@@ -1,37 +1,13 @@
 {
     "images": [
         {
-            "path": "iran_20241202_semnan.jpeg"
-        },
-        {
-            "path": "iran_20241203_semnan.jpeg"
-        },
-        {
-            "path": "iran_20241204_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250101_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250102_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250128_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250129_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250130_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250131_semnan.jpeg"
-        },
-        {
             "path": "iran_20250226_semnan.jpeg"
         },
         {
             "path": "iran_20250227_semnan.jpeg"
+        },
+        {
+            "path": "iran_20250302_semnan.jpeg"
         },
         {
             "path": "iran_20250329_semnan.jpeg"
@@ -40,58 +16,76 @@
             "path": "iran_20250330_semnan.jpeg"
         },
         {
-            "path": "iran_20250426_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250427_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250428_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250430_semnan.jpeg"
-        },
-        {
-            "path": "iran_20250525_semnan.jpeg"
-        },
-        {
             "path": "iran_20250526_semnan.jpeg"
         },
         {
             "path": "iran_20250527_semnan.jpeg"
         },
         {
-            "path": "iran_20250528_semnan.jpeg"
+            "path": "iran_20250625_semnan.jpeg"
         },
         {
-            "path": "iran_20250529_semnan.jpeg"
+            "path": "iran_20250626_semnan.jpeg"
         },
         {
-            "path": "iran_20250822_semnan.jpeg"
+            "path": "iran_20250627_semnan.jpeg"
         },
         {
-            "path": "iran_20250823_semnan.jpeg"
+            "path": "iran_20250723_semnan.jpeg"
+        },
+        {
+            "path": "iran_20250725_semnan.jpeg"
+        },
+        {
+            "path": "iran_20250727_semnan.jpeg"
+        },
+        {
+            "path": "iran_20250821_semnan.jpeg"
         },
         {
             "path": "iran_20250824_semnan.jpeg"
         },
         {
+            "path": "iran_20250825_semnan.jpeg"
+        },
+        {
+            "path": "iran_20250826_semnan.jpeg"
+        },
+        {
             "path": "iran_20250919_semnan.jpeg"
+        },
+        {
+            "path": "iran_20250921_semnan.jpeg"
         },
         {
             "path": "iran_20250923_semnan.jpeg"
         },
         {
-            "path": "iran_20250924_semnan.jpeg"
+            "path": "iran_20250925_semnan.jpeg"
+        },
+        {
+            "path": "iran_20251019_semnan.jpeg"
+        },
+        {
+            "path": "iran_20251022_semnan.jpeg"
         },
         {
             "path": "iran_20251023_semnan.jpeg"
         },
         {
-            "path": "iran_20251121_semnan.jpeg"
+            "path": "iran_20251118_semnan.jpeg"
         },
         {
-            "path": "iran_20251122_semnan.jpeg"
+            "path": "iran_20251119_semnan.jpeg"
+        },
+        {
+            "path": "iran_20251120_semnan.jpeg"
+        },
+        {
+            "path": "iran_20251222_semnan.jpeg"
+        },
+        {
+            "path": "iran_20260121_semnan.jpeg"
         }
     ],
     "codec": "libx264",

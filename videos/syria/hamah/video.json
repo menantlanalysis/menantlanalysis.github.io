@@ -1,40 +1,10 @@
 {
     "images": [
         {
-            "path": "syria_20241202_hamah.jpeg"
-        },
-        {
-            "path": "syria_20241203_hamah.jpeg"
-        },
-        {
-            "path": "syria_20241231_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250101_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250102_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250127_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250128_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250129_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250130_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250131_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250201_hamah.jpeg"
-        },
-        {
             "path": "syria_20250227_hamah.jpeg"
+        },
+        {
+            "path": "syria_20250228_hamah.jpeg"
         },
         {
             "path": "syria_20250301_hamah.jpeg"
@@ -49,6 +19,9 @@
             "path": "syria_20250331_hamah.jpeg"
         },
         {
+            "path": "syria_20250401_hamah.jpeg"
+        },
+        {
             "path": "syria_20250426_hamah.jpeg"
         },
         {
@@ -61,10 +34,7 @@
             "path": "syria_20250429_hamah.jpeg"
         },
         {
-            "path": "syria_20250430_hamah.jpeg"
-        },
-        {
-            "path": "syria_20250526_hamah.jpeg"
+            "path": "syria_20250525_hamah.jpeg"
         },
         {
             "path": "syria_20250527_hamah.jpeg"
@@ -73,22 +43,34 @@
             "path": "syria_20250528_hamah.jpeg"
         },
         {
-            "path": "syria_20250623_hamah.jpeg"
+            "path": "syria_20250723_hamah.jpeg"
         },
         {
-            "path": "syria_20250624_hamah.jpeg"
+            "path": "syria_20250724_hamah.jpeg"
+        },
+        {
+            "path": "syria_20250725_hamah.jpeg"
         },
         {
             "path": "syria_20250726_hamah.jpeg"
         },
         {
+            "path": "syria_20250727_hamah.jpeg"
+        },
+        {
+            "path": "syria_20250821_hamah.jpeg"
+        },
+        {
             "path": "syria_20250822_hamah.jpeg"
         },
         {
-            "path": "syria_20250823_hamah.jpeg"
+            "path": "syria_20250824_hamah.jpeg"
         },
         {
-            "path": "syria_20250824_hamah.jpeg"
+            "path": "syria_20250825_hamah.jpeg"
+        },
+        {
+            "path": "syria_20250826_hamah.jpeg"
         },
         {
             "path": "syria_20250919_hamah.jpeg"
@@ -97,19 +79,55 @@
             "path": "syria_20250921_hamah.jpeg"
         },
         {
+            "path": "syria_20250922_hamah.jpeg"
+        },
+        {
             "path": "syria_20250923_hamah.jpeg"
         },
         {
             "path": "syria_20250924_hamah.jpeg"
         },
         {
-            "path": "syria_20251023_hamah.jpeg"
+            "path": "syria_20250925_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251019_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251020_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251117_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251118_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251119_hamah.jpeg"
         },
         {
             "path": "syria_20251120_hamah.jpeg"
         },
         {
             "path": "syria_20251121_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251122_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251217_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251218_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251219_hamah.jpeg"
+        },
+        {
+            "path": "syria_20251222_hamah.jpeg"
+        },
+        {
+            "path": "syria_20260119_hamah.jpeg"
         }
     ],
     "codec": "libx264",

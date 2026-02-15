@@ -1,48 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20241203_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20241204_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20241228_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20241229_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20241230_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20241231_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250101_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250102_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250127_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250128_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250129_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250130_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250201_ta'iz.jpeg"
-        },
-        {
             "path": "yemen_20250226_ta'iz.jpeg"
         },
         {
@@ -76,31 +34,28 @@
             "path": "yemen_20250401_ta'iz.jpeg"
         },
         {
-            "path": "yemen_20250426_ta'iz.jpeg"
-        },
-        {
             "path": "yemen_20250427_ta'iz.jpeg"
-        },
-        {
-            "path": "yemen_20250428_ta'iz.jpeg"
         },
         {
             "path": "yemen_20250429_ta'iz.jpeg"
         },
         {
-            "path": "yemen_20250430_ta'iz.jpeg"
+            "path": "yemen_20250525_ta'iz.jpeg"
         },
         {
             "path": "yemen_20250526_ta'iz.jpeg"
         },
         {
-            "path": "yemen_20250823_ta'iz.jpeg"
+            "path": "yemen_20250921_ta'iz.jpeg"
         },
         {
-            "path": "yemen_20251021_ta'iz.jpeg"
+            "path": "yemen_20251022_ta'iz.jpeg"
         },
         {
             "path": "yemen_20251117_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20251119_ta'iz.jpeg"
         },
         {
             "path": "yemen_20251120_ta'iz.jpeg"
@@ -110,6 +65,18 @@
         },
         {
             "path": "yemen_20251122_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20251223_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20260117_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20260119_ta'iz.jpeg"
+        },
+        {
+            "path": "yemen_20260121_ta'iz.jpeg"
         }
     ],
     "codec": "libx264",

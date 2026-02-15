@@ -1,28 +1,13 @@
 {
     "images": [
         {
-            "path": "libya_20241231_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250128_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250129_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250130_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250131_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250227_al_jabal_al_akhdar.jpeg"
-        },
-        {
             "path": "libya_20250228_al_jabal_al_akhdar.jpeg"
         },
         {
-            "path": "libya_20250327_al_jabal_al_akhdar.jpeg"
+            "path": "libya_20250301_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20250328_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250329_al_jabal_al_akhdar.jpeg"
@@ -34,13 +19,10 @@
             "path": "libya_20250331_al_jabal_al_akhdar.jpeg"
         },
         {
-            "path": "libya_20250426_al_jabal_al_akhdar.jpeg"
+            "path": "libya_20250401_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250427_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250428_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250429_al_jabal_al_akhdar.jpeg"
@@ -49,19 +31,19 @@
             "path": "libya_20250430_al_jabal_al_akhdar.jpeg"
         },
         {
-            "path": "libya_20250526_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250527_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250528_al_jabal_al_akhdar.jpeg"
-        },
-        {
             "path": "libya_20250623_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250624_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20250625_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20250723_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20250724_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250725_al_jabal_al_akhdar.jpeg"
@@ -70,16 +52,19 @@
             "path": "libya_20250726_al_jabal_al_akhdar.jpeg"
         },
         {
+            "path": "libya_20250727_al_jabal_al_akhdar.jpeg"
+        },
+        {
             "path": "libya_20250821_al_jabal_al_akhdar.jpeg"
         },
         {
-            "path": "libya_20250822_al_jabal_al_akhdar.jpeg"
-        },
-        {
-            "path": "libya_20250823_al_jabal_al_akhdar.jpeg"
+            "path": "libya_20250824_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250826_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20250921_al_jabal_al_akhdar.jpeg"
         },
         {
             "path": "libya_20250922_al_jabal_al_akhdar.jpeg"
@@ -91,10 +76,49 @@
             "path": "libya_20250924_al_jabal_al_akhdar.jpeg"
         },
         {
+            "path": "libya_20250925_al_jabal_al_akhdar.jpeg"
+        },
+        {
             "path": "libya_20251019_al_jabal_al_akhdar.jpeg"
         },
         {
+            "path": "libya_20251020_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251022_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251117_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251118_al_jabal_al_akhdar.jpeg"
+        },
+        {
             "path": "libya_20251120_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251121_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251123_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251217_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251218_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20251223_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20260117_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20260118_al_jabal_al_akhdar.jpeg"
+        },
+        {
+            "path": "libya_20260119_al_jabal_al_akhdar.jpeg"
         }
     ],
     "codec": "libx264",

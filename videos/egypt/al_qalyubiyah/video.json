@@ -1,45 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241203_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241204_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241228_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241229_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241230_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20241231_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250101_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250102_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250127_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250129_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250130_al_qalyubiyah.jpeg"
-        },
-        {
-            "path": "egypt_20250131_al_qalyubiyah.jpeg"
-        },
-        {
             "path": "egypt_20250226_al_qalyubiyah.jpeg"
         },
         {
@@ -88,9 +49,6 @@
             "path": "egypt_20250525_al_qalyubiyah.jpeg"
         },
         {
-            "path": "egypt_20250526_al_qalyubiyah.jpeg"
-        },
-        {
             "path": "egypt_20250527_al_qalyubiyah.jpeg"
         },
         {
@@ -106,10 +64,46 @@
             "path": "egypt_20250624_al_qalyubiyah.jpeg"
         },
         {
-            "path": "egypt_20250822_al_qalyubiyah.jpeg"
+            "path": "egypt_20250625_al_qalyubiyah.jpeg"
         },
         {
-            "path": "egypt_20250823_al_qalyubiyah.jpeg"
+            "path": "egypt_20250626_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250627_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250628_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250723_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250724_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250725_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250727_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250821_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250825_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250826_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250919_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250921_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20250922_al_qalyubiyah.jpeg"
         },
         {
             "path": "egypt_20250923_al_qalyubiyah.jpeg"
@@ -118,10 +112,40 @@
             "path": "egypt_20250924_al_qalyubiyah.jpeg"
         },
         {
-            "path": "egypt_20251023_al_qalyubiyah.jpeg"
+            "path": "egypt_20250925_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251020_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251022_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251117_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251118_al_qalyubiyah.jpeg"
         },
         {
             "path": "egypt_20251121_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251122_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251218_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20251222_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20260117_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20260118_al_qalyubiyah.jpeg"
+        },
+        {
+            "path": "egypt_20260119_al_qalyubiyah.jpeg"
         }
     ],
     "codec": "libx264",

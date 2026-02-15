@@ -1,36 +1,6 @@
 {
     "images": [
         {
-            "path": "iran_20241202_yazd.jpeg"
-        },
-        {
-            "path": "iran_20241203_yazd.jpeg"
-        },
-        {
-            "path": "iran_20241204_yazd.jpeg"
-        },
-        {
-            "path": "iran_20241229_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250102_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250128_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250129_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250130_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250131_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250201_yazd.jpeg"
-        },
-        {
             "path": "iran_20250226_yazd.jpeg"
         },
         {
@@ -46,37 +16,16 @@
             "path": "iran_20250327_yazd.jpeg"
         },
         {
-            "path": "iran_20250328_yazd.jpeg"
-        },
-        {
             "path": "iran_20250329_yazd.jpeg"
         },
         {
             "path": "iran_20250330_yazd.jpeg"
         },
         {
-            "path": "iran_20250331_yazd.jpeg"
-        },
-        {
             "path": "iran_20250401_yazd.jpeg"
         },
         {
-            "path": "iran_20250426_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250427_yazd.jpeg"
-        },
-        {
             "path": "iran_20250428_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250429_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250430_yazd.jpeg"
-        },
-        {
-            "path": "iran_20250525_yazd.jpeg"
         },
         {
             "path": "iran_20250526_yazd.jpeg"
@@ -85,28 +34,49 @@
             "path": "iran_20250527_yazd.jpeg"
         },
         {
-            "path": "iran_20250528_yazd.jpeg"
-        },
-        {
             "path": "iran_20250529_yazd.jpeg"
         },
         {
-            "path": "iran_20250623_yazd.jpeg"
+            "path": "iran_20250625_yazd.jpeg"
         },
         {
-            "path": "iran_20250624_yazd.jpeg"
+            "path": "iran_20250626_yazd.jpeg"
         },
         {
-            "path": "iran_20250822_yazd.jpeg"
+            "path": "iran_20250627_yazd.jpeg"
         },
         {
-            "path": "iran_20250823_yazd.jpeg"
+            "path": "iran_20250723_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250724_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250725_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250726_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250727_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250821_yazd.jpeg"
         },
         {
             "path": "iran_20250824_yazd.jpeg"
         },
         {
+            "path": "iran_20250825_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250826_yazd.jpeg"
+        },
+        {
             "path": "iran_20250919_yazd.jpeg"
+        },
+        {
+            "path": "iran_20250921_yazd.jpeg"
         },
         {
             "path": "iran_20250923_yazd.jpeg"
@@ -115,7 +85,13 @@
             "path": "iran_20250924_yazd.jpeg"
         },
         {
-            "path": "iran_20251021_yazd.jpeg"
+            "path": "iran_20250925_yazd.jpeg"
+        },
+        {
+            "path": "iran_20251020_yazd.jpeg"
+        },
+        {
+            "path": "iran_20251022_yazd.jpeg"
         },
         {
             "path": "iran_20251023_yazd.jpeg"
@@ -124,10 +100,28 @@
             "path": "iran_20251117_yazd.jpeg"
         },
         {
+            "path": "iran_20251118_yazd.jpeg"
+        },
+        {
+            "path": "iran_20251119_yazd.jpeg"
+        },
+        {
+            "path": "iran_20251120_yazd.jpeg"
+        },
+        {
             "path": "iran_20251121_yazd.jpeg"
         },
         {
             "path": "iran_20251122_yazd.jpeg"
+        },
+        {
+            "path": "iran_20251123_yazd.jpeg"
+        },
+        {
+            "path": "iran_20251222_yazd.jpeg"
+        },
+        {
+            "path": "iran_20260121_yazd.jpeg"
         }
     ],
     "codec": "libx264",

@@ -1,39 +1,6 @@
 {
     "images": [
         {
-            "path": "yemen_20241202_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20241203_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20241228_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20241229_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20241230_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20241231_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20250127_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20250128_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20250129_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20250130_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20250201_al_hodeidah.jpeg"
-        },
-        {
             "path": "yemen_20250226_al_hodeidah.jpeg"
         },
         {
@@ -41,6 +8,9 @@
         },
         {
             "path": "yemen_20250228_al_hodeidah.jpeg"
+        },
+        {
+            "path": "yemen_20250301_al_hodeidah.jpeg"
         },
         {
             "path": "yemen_20250302_al_hodeidah.jpeg"
@@ -76,37 +46,31 @@
             "path": "yemen_20250429_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20250430_al_hodeidah.jpeg"
-        },
-        {
             "path": "yemen_20250525_al_hodeidah.jpeg"
         },
         {
             "path": "yemen_20250526_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20250527_al_hodeidah.jpeg"
+            "path": "yemen_20250921_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20250623_al_hodeidah.jpeg"
+            "path": "yemen_20251020_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20250919_al_hodeidah.jpeg"
-        },
-        {
-            "path": "yemen_20251021_al_hodeidah.jpeg"
+            "path": "yemen_20251022_al_hodeidah.jpeg"
         },
         {
             "path": "yemen_20251117_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20251120_al_hodeidah.jpeg"
+            "path": "yemen_20251118_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20251121_al_hodeidah.jpeg"
+            "path": "yemen_20251222_al_hodeidah.jpeg"
         },
         {
-            "path": "yemen_20251122_al_hodeidah.jpeg"
+            "path": "yemen_20251223_al_hodeidah.jpeg"
         }
     ],
     "codec": "libx264",

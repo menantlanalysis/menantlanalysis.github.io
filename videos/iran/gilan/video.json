@@ -1,67 +1,43 @@
 {
     "images": [
         {
-            "path": "iran_20250131_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250201_gilan.jpeg"
+            "path": "iran_20250227_gilan.jpeg"
         },
         {
             "path": "iran_20250328_gilan.jpeg"
         },
         {
-            "path": "iran_20250329_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250426_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250427_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250430_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250525_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250526_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250528_gilan.jpeg"
-        },
-        {
             "path": "iran_20250529_gilan.jpeg"
         },
         {
-            "path": "iran_20250623_gilan.jpeg"
+            "path": "iran_20250626_gilan.jpeg"
         },
         {
-            "path": "iran_20250822_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250823_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250824_gilan.jpeg"
-        },
-        {
-            "path": "iran_20250919_gilan.jpeg"
+            "path": "iran_20250727_gilan.jpeg"
         },
         {
             "path": "iran_20250924_gilan.jpeg"
         },
         {
-            "path": "iran_20251023_gilan.jpeg"
+            "path": "iran_20250925_gilan.jpeg"
         },
         {
-            "path": "iran_20251117_gilan.jpeg"
+            "path": "iran_20251118_gilan.jpeg"
+        },
+        {
+            "path": "iran_20251119_gilan.jpeg"
+        },
+        {
+            "path": "iran_20251120_gilan.jpeg"
         },
         {
             "path": "iran_20251121_gilan.jpeg"
         },
         {
-            "path": "iran_20251122_gilan.jpeg"
+            "path": "iran_20251123_gilan.jpeg"
+        },
+        {
+            "path": "iran_20260121_gilan.jpeg"
         }
     ],
     "codec": "libx264",

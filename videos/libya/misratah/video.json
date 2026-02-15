@@ -1,31 +1,16 @@
 {
     "images": [
         {
-            "path": "libya_20250102_misratah.jpeg"
+            "path": "libya_20250226_misratah.jpeg"
         },
         {
-            "path": "libya_20250127_misratah.jpeg"
-        },
-        {
-            "path": "libya_20250129_misratah.jpeg"
-        },
-        {
-            "path": "libya_20250130_misratah.jpeg"
-        },
-        {
-            "path": "libya_20250131_misratah.jpeg"
-        },
-        {
-            "path": "libya_20250201_misratah.jpeg"
+            "path": "libya_20250227_misratah.jpeg"
         },
         {
             "path": "libya_20250228_misratah.jpeg"
         },
         {
             "path": "libya_20250301_misratah.jpeg"
-        },
-        {
-            "path": "libya_20250327_misratah.jpeg"
         },
         {
             "path": "libya_20250328_misratah.jpeg"
@@ -35,9 +20,6 @@
         },
         {
             "path": "libya_20250330_misratah.jpeg"
-        },
-        {
-            "path": "libya_20250426_misratah.jpeg"
         },
         {
             "path": "libya_20250427_misratah.jpeg"
@@ -70,28 +52,94 @@
             "path": "libya_20250624_misratah.jpeg"
         },
         {
+            "path": "libya_20250625_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250626_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250627_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250628_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250723_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250724_misratah.jpeg"
+        },
+        {
             "path": "libya_20250725_misratah.jpeg"
         },
         {
             "path": "libya_20250726_misratah.jpeg"
         },
         {
+            "path": "libya_20250727_misratah.jpeg"
+        },
+        {
             "path": "libya_20250821_misratah.jpeg"
         },
         {
-            "path": "libya_20250822_misratah.jpeg"
+            "path": "libya_20250824_misratah.jpeg"
         },
         {
-            "path": "libya_20250823_misratah.jpeg"
+            "path": "libya_20250825_misratah.jpeg"
         },
         {
             "path": "libya_20250826_misratah.jpeg"
         },
         {
+            "path": "libya_20250919_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250921_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250922_misratah.jpeg"
+        },
+        {
             "path": "libya_20250923_misratah.jpeg"
         },
         {
+            "path": "libya_20250924_misratah.jpeg"
+        },
+        {
+            "path": "libya_20250925_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251020_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251022_misratah.jpeg"
+        },
+        {
             "path": "libya_20251023_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251117_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251121_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251122_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251123_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251217_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251222_misratah.jpeg"
+        },
+        {
+            "path": "libya_20251223_misratah.jpeg"
+        },
+        {
+            "path": "libya_20260117_misratah.jpeg"
         }
     ],
     "codec": "libx264",

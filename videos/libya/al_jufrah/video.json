@@ -1,39 +1,6 @@
 {
     "images": [
         {
-            "path": "libya_20241202_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20241203_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20241204_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20241228_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20241229_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20241230_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20250127_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20250128_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20250129_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20250130_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20250131_al_jufrah.jpeg"
-        },
-        {
             "path": "libya_20250226_al_jufrah.jpeg"
         },
         {
@@ -55,16 +22,10 @@
             "path": "libya_20250329_al_jufrah.jpeg"
         },
         {
-            "path": "libya_20250330_al_jufrah.jpeg"
-        },
-        {
             "path": "libya_20250331_al_jufrah.jpeg"
         },
         {
             "path": "libya_20250401_al_jufrah.jpeg"
-        },
-        {
-            "path": "libya_20250426_al_jufrah.jpeg"
         },
         {
             "path": "libya_20250427_al_jufrah.jpeg"
@@ -97,22 +58,49 @@
             "path": "libya_20250624_al_jufrah.jpeg"
         },
         {
+            "path": "libya_20250625_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250626_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250627_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250628_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250723_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250724_al_jufrah.jpeg"
+        },
+        {
             "path": "libya_20250725_al_jufrah.jpeg"
         },
         {
             "path": "libya_20250726_al_jufrah.jpeg"
         },
         {
+            "path": "libya_20250727_al_jufrah.jpeg"
+        },
+        {
             "path": "libya_20250821_al_jufrah.jpeg"
         },
         {
-            "path": "libya_20250822_al_jufrah.jpeg"
+            "path": "libya_20250824_al_jufrah.jpeg"
         },
         {
-            "path": "libya_20250823_al_jufrah.jpeg"
+            "path": "libya_20250825_al_jufrah.jpeg"
         },
         {
             "path": "libya_20250826_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250919_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20250921_al_jufrah.jpeg"
         },
         {
             "path": "libya_20250922_al_jufrah.jpeg"
@@ -124,10 +112,22 @@
             "path": "libya_20250924_al_jufrah.jpeg"
         },
         {
+            "path": "libya_20250925_al_jufrah.jpeg"
+        },
+        {
             "path": "libya_20251019_al_jufrah.jpeg"
         },
         {
+            "path": "libya_20251020_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20251022_al_jufrah.jpeg"
+        },
+        {
             "path": "libya_20251023_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20251117_al_jufrah.jpeg"
         },
         {
             "path": "libya_20251119_al_jufrah.jpeg"
@@ -136,7 +136,19 @@
             "path": "libya_20251120_al_jufrah.jpeg"
         },
         {
-            "path": "libya_20251121_al_jufrah.jpeg"
+            "path": "libya_20251122_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20251123_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20251222_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20251223_al_jufrah.jpeg"
+        },
+        {
+            "path": "libya_20260117_al_jufrah.jpeg"
         }
     ],
     "codec": "libx264",

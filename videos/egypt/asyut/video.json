@@ -1,48 +1,6 @@
 {
     "images": [
         {
-            "path": "egypt_20241202_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241203_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241204_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241228_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241229_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241230_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20241231_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250101_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250102_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250128_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250129_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250130_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250131_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250201_asyut.jpeg"
-        },
-        {
             "path": "egypt_20250226_asyut.jpeg"
         },
         {
@@ -79,13 +37,7 @@
             "path": "egypt_20250428_asyut.jpeg"
         },
         {
-            "path": "egypt_20250429_asyut.jpeg"
-        },
-        {
             "path": "egypt_20250430_asyut.jpeg"
-        },
-        {
-            "path": "egypt_20250525_asyut.jpeg"
         },
         {
             "path": "egypt_20250526_asyut.jpeg"
@@ -106,10 +58,43 @@
             "path": "egypt_20250624_asyut.jpeg"
         },
         {
-            "path": "egypt_20250822_asyut.jpeg"
+            "path": "egypt_20250625_asyut.jpeg"
         },
         {
-            "path": "egypt_20250823_asyut.jpeg"
+            "path": "egypt_20250626_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250627_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250628_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250723_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250724_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250727_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250824_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250825_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250826_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250919_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250921_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20250922_asyut.jpeg"
         },
         {
             "path": "egypt_20250923_asyut.jpeg"
@@ -118,10 +103,58 @@
             "path": "egypt_20250924_asyut.jpeg"
         },
         {
-            "path": "egypt_20251023_asyut.jpeg"
+            "path": "egypt_20250925_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251019_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251020_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251022_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251117_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251118_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251119_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251120_asyut.jpeg"
         },
         {
             "path": "egypt_20251121_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251122_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251217_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251218_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251219_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251220_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20251222_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20260117_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20260118_asyut.jpeg"
+        },
+        {
+            "path": "egypt_20260119_asyut.jpeg"
         }
     ],
     "codec": "libx264",

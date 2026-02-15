@@ -1,7 +1,6 @@
 {
     "syria": {
         "events": [
-            { "name": "Idlib Offensive", "start_date": "2020-1-1", "end_date": "2020-3-5" },
             { "name": "COVID-19 Lockdown", "start_date": "2020-3-22", "end_date": "2020-5-26" },
             { "name": "Ramadan", "start_date": "2020-4-24", "end_date": "2020-5-23" },
             { "name": "Caesar Act Enacted", "start_date": "2020-6-17", "end_date": "2020-6-18" },
@@ -31,6 +30,11 @@
             "lattakia": {
                 "events": [
                     { "name": "Coastal Insurgency", "start_date": "2025-3-5", "end_date": "2025-3-8" }
+                ]
+            },
+            "idlib": {
+                "events": [
+                    { "name": "Idlib Offensive", "start_date": "2020-1-1", "end_date": "2020-3-5" },
                 ]
             }
         }
@@ -72,7 +76,9 @@
             { "name": "Iran Missiles at Israel", "start_date": "2024-10-1", "end_date": "2024-10-2" },
             { "name": "Israeli Strikes on Iran", "start_date": "2024-10-26", "end_date": "2024-10-27" },
             { "name": "Winter Energy Crisis", "start_date": "2024-11-10", "end_date": "2024-12-31" },
-            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" }
+            { "name": "Ramadan", "start_date": "2025-2-28", "end_date": "2025-3-29" },
+            { "name": "12 Day War", "start_date": "2025-6-13", "end_date": "2025-6-24" },
+            { "name": "Nationwide Protests", "start_date": "2025-12-28", "end_date": "2026-1-18" }
         ],
         "municipalities": {}
     },

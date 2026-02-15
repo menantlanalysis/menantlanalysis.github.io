@@ -83,10 +83,22 @@ document.addEventListener("DOMContentLoaded", async () => {
     // --- Diff image ---
     document.getElementById("diff-image").src = API + country.diff;
 
-    // --- Video ---
-    const countryVideo = document.getElementById("country-video");
-    countryVideo.src = API + country.video;
-    stae.video.create(countryVideo);
+    // --- Monthly Satellite Slider ---
+    if (country.monthly && country.monthly.length > 0) {
+        stae.monthlySlider.create({
+            images: country.monthly,
+            viewportId: "monthly-viewport",
+            rangeId: "monthly-range",
+            labelsId: "monthly-labels",
+            labelId: "monthly-current-label",
+            prevId: "monthly-prev",
+            nextId: "monthly-next",
+            baseUrl: API,
+        });
+    } else {
+        const monthlySection = document.getElementById("monthly-section");
+        if (monthlySection) monthlySection.style.display = "none";
+    }
 
     // --- Load municipality data + GeoJSON ---
     let geojsonData, allMuniData, aggregated, countryStats, muniYoY;
@@ -183,7 +195,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             </summary>
             <div class="muni-card__detail">
                 <div class="muni-card__chart" id="muni-chart-${muniKey}"></div>
-                ${muni.video ? `<div class="muni-card__video-wrap"><video class="muni-card__video" muted playsinline src="${API}${muni.video}"></video></div>` : ""}
                 ${cardEvents.length ? `<div class="muni-card__events"><h4 class="muni-card__events-title">Key Events</h4><div class="timeline" id="muni-timeline-${muniKey}"></div></div>` : ""}
                 ${muni.csv ? `<a class="muni-card__download" href="${API}${muni.csv}" download="${muniKey}.csv">Download CSV &darr;</a>` : ""}
             </div>
@@ -219,10 +230,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                         `${formatName(muniKey)}, ${country.displayName}`
                     );
                 }
-                // Init custom video player for this card
-                const vid = card.querySelector(".muni-card__video");
-                if (vid) stae.video.create(vid);
-
                 // Render event timeline (country-wide + muni-specific)
                 const muniTimeline = document.getElementById(`muni-timeline-${muniKey}`);
                 if (muniTimeline && cardEvents.length) {

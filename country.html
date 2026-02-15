@@ -71,16 +71,25 @@
     </div>
 </section>
 
-<!-- Timelapse Video -->
-<section class="section" id="video-section">
+<!-- Monthly Satellite Imagery -->
+<section class="section" id="monthly-section">
     <div class="container--wide">
         <div class="section-header reveal">
             <hr class="section-header__rule">
-            <h2>Nightly Timelapse</h2>
+            <h2>Monthly Satellite View</h2>
+            <p>Averaged nighttime radiance for each month over the last year.</p>
         </div>
-        <div class="video-section reveal">
-            <video id="country-video" controls muted playsinline></video>
-            <p class="video-section__caption">Timelapse of nightly satellite imagery showing luminosity changes over time.</p>
+        <div class="monthly-slider reveal" id="monthly-slider">
+            <div class="monthly-slider__viewport" id="monthly-viewport"></div>
+            <div class="monthly-slider__controls">
+                <button class="monthly-slider__btn" id="monthly-prev" aria-label="Previous month">&larr;</button>
+                <div class="monthly-slider__track-wrap">
+                    <input type="range" class="monthly-slider__range" id="monthly-range" min="0" max="12" value="12" step="any">
+                    <div class="monthly-slider__labels" id="monthly-labels"></div>
+                </div>
+                <button class="monthly-slider__btn" id="monthly-next" aria-label="Next month">&rarr;</button>
+            </div>
+            <div class="monthly-slider__current" id="monthly-current-label"></div>
         </div>
     </div>
 </section>
@@ -147,7 +156,7 @@
 <script src="js/v2-stats.js"></script>
 <script src="js/v2-charts.js"></script>
 <script src="js/v2-map.js"></script>
-<script src="js/v2-video.js"></script>
+<script src="js/v2-monthly-slider.js"></script>
 <script src="js/v2-country.js"></script>
 
 <!-- Analytics -->

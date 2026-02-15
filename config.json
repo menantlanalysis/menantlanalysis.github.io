@@ -3,6 +3,56 @@
         "syria": {
             "displayName": "Syria",
             "video": "videos/syria/video.mp4",
+            "monthly": [
+                {
+                    "month": "2025-01",
+                    "path": "images/syria/monthly/2025-01.jpeg"
+                },
+                {
+                    "month": "2025-02",
+                    "path": "images/syria/monthly/2025-02.jpeg"
+                },
+                {
+                    "month": "2025-03",
+                    "path": "images/syria/monthly/2025-03.jpeg"
+                },
+                {
+                    "month": "2025-04",
+                    "path": "images/syria/monthly/2025-04.jpeg"
+                },
+                {
+                    "month": "2025-05",
+                    "path": "images/syria/monthly/2025-05.jpeg"
+                },
+                {
+                    "month": "2025-07",
+                    "path": "images/syria/monthly/2025-07.jpeg"
+                },
+                {
+                    "month": "2025-08",
+                    "path": "images/syria/monthly/2025-08.jpeg"
+                },
+                {
+                    "month": "2025-09",
+                    "path": "images/syria/monthly/2025-09.jpeg"
+                },
+                {
+                    "month": "2025-10",
+                    "path": "images/syria/monthly/2025-10.jpeg"
+                },
+                {
+                    "month": "2025-11",
+                    "path": "images/syria/monthly/2025-11.jpeg"
+                },
+                {
+                    "month": "2025-12",
+                    "path": "images/syria/monthly/2025-12.jpeg"
+                },
+                {
+                    "month": "2026-01",
+                    "path": "images/syria/monthly/2026-01.jpeg"
+                }
+            ],
             "lightbox": {
                 "earliest": {
                     "date": "2024-12-30",
@@ -77,6 +127,28 @@
         "lebanon": {
             "displayName": "Lebanon",
             "video": "videos/lebanon/video.mp4",
+            "monthly": [
+                {
+                    "month": "2025-01",
+                    "path": "images/lebanon/monthly/2025-01.jpeg"
+                },
+                {
+                    "month": "2025-04",
+                    "path": "images/lebanon/monthly/2025-04.jpeg"
+                },
+                {
+                    "month": "2025-07",
+                    "path": "images/lebanon/monthly/2025-07.jpeg"
+                },
+                {
+                    "month": "2025-12",
+                    "path": "images/lebanon/monthly/2025-12.jpeg"
+                },
+                {
+                    "month": "2026-01",
+                    "path": "images/lebanon/monthly/2026-01.jpeg"
+                }
+            ],
             "lightbox": {
                 "earliest": {
                     "date": "2024-12-02",
@@ -127,6 +199,60 @@
         "yemen": {
             "displayName": "Yemen",
             "video": "videos/yemen/video.mp4",
+            "monthly": [
+                {
+                    "month": "2025-01",
+                    "path": "images/yemen/monthly/2025-01.jpeg"
+                },
+                {
+                    "month": "2025-02",
+                    "path": "images/yemen/monthly/2025-02.jpeg"
+                },
+                {
+                    "month": "2025-03",
+                    "path": "images/yemen/monthly/2025-03.jpeg"
+                },
+                {
+                    "month": "2025-04",
+                    "path": "images/yemen/monthly/2025-04.jpeg"
+                },
+                {
+                    "month": "2025-05",
+                    "path": "images/yemen/monthly/2025-05.jpeg"
+                },
+                {
+                    "month": "2025-06",
+                    "path": "images/yemen/monthly/2025-06.jpeg"
+                },
+                {
+                    "month": "2025-07",
+                    "path": "images/yemen/monthly/2025-07.jpeg"
+                },
+                {
+                    "month": "2025-08",
+                    "path": "images/yemen/monthly/2025-08.jpeg"
+                },
+                {
+                    "month": "2025-09",
+                    "path": "images/yemen/monthly/2025-09.jpeg"
+                },
+                {
+                    "month": "2025-10",
+                    "path": "images/yemen/monthly/2025-10.jpeg"
+                },
+                {
+                    "month": "2025-11",
+                    "path": "images/yemen/monthly/2025-11.jpeg"
+                },
+                {
+                    "month": "2025-12",
+                    "path": "images/yemen/monthly/2025-12.jpeg"
+                },
+                {
+                    "month": "2026-01",
+                    "path": "images/yemen/monthly/2026-01.jpeg"
+                }
+            ],
             "lightbox": {
                 "earliest": {
                     "date": "2024-12-30",
@@ -233,6 +359,60 @@
         "libya": {
             "displayName": "Libya",
             "video": "videos/libya/video.mp4",
+            "monthly": [
+                {
+                    "month": "2025-01",
+                    "path": "images/libya/monthly/2025-01.jpeg"
+                },
+                {
+                    "month": "2025-02",
+                    "path": "images/libya/monthly/2025-02.jpeg"
+                },
+                {
+                    "month": "2025-03",
+                    "path": "images/libya/monthly/2025-03.jpeg"
+                },
+                {
+                    "month": "2025-04",
+                    "path": "images/libya/monthly/2025-04.jpeg"
+                },
+                {
+                    "month": "2025-05",
+                    "path": "images/libya/monthly/2025-05.jpeg"
+                },
+                {
+                    "month": "2025-06",
+                    "path": "images/libya/monthly/2025-06.jpeg"
+                },
+                {
+                    "month": "2025-07",
+                    "path": "images/libya/monthly/2025-07.jpeg"
+                },
+                {
+                    "month": "2025-08",
+                    "path": "images/libya/monthly/2025-08.jpeg"
+                },
+                {
+                    "month": "2025-09",
+                    "path": "images/libya/monthly/2025-09.jpeg"
+                },
+                {
+                    "month": "2025-10",
+                    "path": "images/libya/monthly/2025-10.jpeg"
+                },
+                {
+                    "month": "2025-11",
+                    "path": "images/libya/monthly/2025-11.jpeg"
+                },
+                {
+                    "month": "2025-12",
+                    "path": "images/libya/monthly/2025-12.jpeg"
+                },
+                {
+                    "month": "2026-01",
+                    "path": "images/libya/monthly/2026-01.jpeg"
+                }
+            ],
             "lightbox": {
                 "earliest": {
                     "date": "2024-12-30",
@@ -339,6 +519,60 @@
         "iran": {
             "displayName": "Iran",
             "video": "videos/iran/video.mp4",
+            "monthly": [
+                {
+                    "month": "2025-01",
+                    "path": "images/iran/monthly/2025-01.jpeg"
+                },
+                {
+                    "month": "2025-02",
+                    "path": "images/iran/monthly/2025-02.jpeg"
+                },
+                {
+                    "month": "2025-03",
+                    "path": "images/iran/monthly/2025-03.jpeg"
+                },
+                {
+                    "month": "2025-04",
+                    "path": "images/iran/monthly/2025-04.jpeg"
+                },
+                {
+                    "month": "2025-05",
+                    "path": "images/iran/monthly/2025-05.jpeg"
+                },
+                {
+                    "month": "2025-06",
+                    "path": "images/iran/monthly/2025-06.jpeg"
+                },
+                {
+                    "month": "2025-07",
+                    "path": "images/iran/monthly/2025-07.jpeg"
+                },
+                {
+                    "month": "2025-08",
+                    "path": "images/iran/monthly/2025-08.jpeg"
+                },
+                {
+                    "month": "2025-09",
+                    "path": "images/iran/monthly/2025-09.jpeg"
+                },
+                {
+                    "month": "2025-10",
+                    "path": "images/iran/monthly/2025-10.jpeg"
+                },
+                {
+                    "month": "2025-11",
+                    "path": "images/iran/monthly/2025-11.jpeg"
+                },
+                {
+                    "month": "2025-12",
+                    "path": "images/iran/monthly/2025-12.jpeg"
+                },
+                {
+                    "month": "2026-01",
+                    "path": "images/iran/monthly/2026-01.jpeg"
+                }
+            ],
             "lightbox": {
                 "earliest": {
                     "date": "2024-12-30",
@@ -481,6 +715,60 @@
         "egypt": {
             "displayName": "Egypt",
             "video": "videos/egypt/video.mp4",
+            "monthly": [
+                {
+                    "month": "2025-01",
+                    "path": "images/egypt/monthly/2025-01.jpeg"
+                },
+                {
+                    "month": "2025-02",
+                    "path": "images/egypt/monthly/2025-02.jpeg"
+                },
+                {
+                    "month": "2025-03",
+                    "path": "images/egypt/monthly/2025-03.jpeg"
+                },
+                {
+                    "month": "2025-04",
+                    "path": "images/egypt/monthly/2025-04.jpeg"
+                },
+                {
+                    "month": "2025-05",
+                    "path": "images/egypt/monthly/2025-05.jpeg"
+                },
+                {
+                    "month": "2025-06",
+                    "path": "images/egypt/monthly/2025-06.jpeg"
+                },
+                {
+                    "month": "2025-07",
+                    "path": "images/egypt/monthly/2025-07.jpeg"
+                },
+                {
+                    "month": "2025-08",
+                    "path": "images/egypt/monthly/2025-08.jpeg"
+                },
+                {
+                    "month": "2025-09",
+                    "path": "images/egypt/monthly/2025-09.jpeg"
+                },
+                {
+                    "month": "2025-10",
+                    "path": "images/egypt/monthly/2025-10.jpeg"
+                },
+                {
+                    "month": "2025-11",
+                    "path": "images/egypt/monthly/2025-11.jpeg"
+                },
+                {
+                    "month": "2025-12",
+                    "path": "images/egypt/monthly/2025-12.jpeg"
+                },
+                {
+                    "month": "2026-01",
+                    "path": "images/egypt/monthly/2026-01.jpeg"
+                }
+            ],
             "lightbox": {
                 "earliest": {
                     "date": "2024-12-30",

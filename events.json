@@ -34,7 +34,7 @@
             },
             "idlib": {
                 "events": [
-                    { "name": "Idlib Offensive", "start_date": "2020-1-1", "end_date": "2020-3-5" },
+                    { "name": "Idlib Offensive", "start_date": "2020-1-1", "end_date": "2020-3-5" }
                 ]
             }
         }

@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("hero-subtitle").textContent =
         `${muniCount} governorates tracked`;
     document.getElementById("hero-bg").style.backgroundImage =
-        `url('${API}${country.diff}')`;
+        `url('${API}${country.lightbox.latest.path}')`;
 
     // --- Satellite comparison (Juxtapose) ---
     if (country.lightbox) {

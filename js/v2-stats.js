@@ -36,6 +36,28 @@ stae.stats = (() => {
             .sort((a, b) => a.date - b.date);
     }
 
+    function getQuarterlyAverage(data) {
+        if (data.length === 0) return [];
+        const buckets = new Map();
+        for (const d of data) {
+            const dt = new Date(d.date);
+            const q = Math.floor(dt.getMonth() / 3);
+            const key = `${dt.getFullYear()}-Q${q}`;
+            if (!buckets.has(key)) {
+                buckets.set(key, {
+                    sum: 0, count: 0,
+                    mid: new Date(dt.getFullYear(), q * 3 + 1, 15)
+                });
+            }
+            const b = buckets.get(key);
+            b.sum += d.luminosity;
+            b.count += 1;
+        }
+        return [...buckets.values()]
+            .map(b => ({ date: b.mid, value: b.sum / b.count }))
+            .sort((a, b) => a.date - b.date);
+    }
+
     function getMaxForWindow(data, endDate, windowDays) {
         const endMs = new Date(endDate).getTime();
         const startMs = endMs - windowDays * 86400000;
@@ -133,6 +155,7 @@ stae.stats = (() => {
         LOESS_BANDWIDTH,
         getSmoothedData,
         getMonthlyAverage,
+        getQuarterlyAverage,
         getMaxForWindow,
         calculateChange,
         findClosestPoint,

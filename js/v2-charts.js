@@ -17,6 +17,7 @@ stae.charts = (() => {
         const dates = data.map(d => d.date);
         const smoothed = stae.stats.getSmoothedData(data);
         const monthly = stae.stats.getMonthlyAverage(data);
+        const quarterly = stae.stats.getQuarterlyAverage(data);
 
         const eventShapes = (events || []).map(e => ({
             type: "rect", xref: "x", yref: "paper",
@@ -71,24 +72,69 @@ stae.charts = (() => {
                 marker: { color: "rgba(50, 104, 145, 0.2)" }
             }
         ], {
-            title: { text: title, font: { family: "Georgia, serif", size: 18 }, x: 0.5 },
+            title: { text: title, font: { family: "Georgia, serif", size: isMobile ? 14 : 18 }, x: 0.5 },
             xaxis: {
-                title: "Date",
+                title: isMobile ? undefined : "Date",
                 rangeslider: { visible: true },
                 type: "date",
                 range: [priorDate.toISOString().slice(0, 10), latestDate.toISOString().slice(0, 10)]
             },
-            yaxis: { title: "Luminosity (nW/sr/cm\u00B2)" },
+            yaxis: { title: isMobile ? undefined : "Luminosity (nW/sr/cm\u00B2)" },
             shapes: [],
             annotations: [],
-            showlegend: true,
+            showlegend: !isMobile,
             legend: { x: 1, xanchor: "right", y: 1 },
-            margin: { l: 60, r: 20, t: 60, b: 50 },
+            margin: isMobile ? { l: 35, r: 10, t: 40, b: 30 } : { l: 60, r: 20, t: 60, b: 50 },
             dragmode: "pan",
             paper_bgcolor: "rgba(0,0,0,0)",
             plot_bgcolor: "rgba(0,0,0,0)",
             font: { family: "Georgia, serif" }
         }, { responsive: true });
+
+        // Adaptive bar aggregation: monthly when zoomed in, quarterly when zoomed out
+        const barTraceIndex = 2;
+        const defaultBarColor = "rgba(50, 104, 145, 0.2)";
+        const activeBarColor = "rgba(50, 104, 145, 0.6)";
+        const QUARTERLY_THRESHOLD_MONTHS = 24;
+        let currentBarMode = "monthly";
+
+        function visibleMonths(range) {
+            const r0 = new Date(range[0]);
+            const r1 = new Date(range[1]);
+            return (r1.getFullYear() - r0.getFullYear()) * 12 + (r1.getMonth() - r0.getMonth());
+        }
+
+        function updateBars(range) {
+            const months = visibleMonths(range);
+            const mode = months > QUARTERLY_THRESHOLD_MONTHS ? "quarterly" : "monthly";
+            if (mode === currentBarMode) return;
+            currentBarMode = mode;
+            const src = mode === "quarterly" ? quarterly : monthly;
+            Plotly.restyle(el, {
+                x: [src.map(d => d.date)],
+                y: [src.map(d => d.value)],
+                name: mode === "quarterly" ? "Quarterly Avg" : "Monthly Avg",
+                "marker.color": defaultBarColor
+            }, [barTraceIndex]);
+        }
+
+        el.on("plotly_relayout", (update) => {
+            const range = update["xaxis.range"] ||
+                (update["xaxis.range[0]"] && [update["xaxis.range[0]"], update["xaxis.range[1]"]]);
+            if (range) updateBars(range);
+        });
+
+        // Highlight clicked bar
+        el.on("plotly_click", (eventData) => {
+            if (!eventData || !eventData.points || !eventData.points.length) return;
+            const pt = eventData.points[0];
+            if (pt.curveNumber !== barTraceIndex) return;
+            const src = currentBarMode === "quarterly" ? quarterly : monthly;
+            const colors = src.map((_, i) =>
+                i === pt.pointIndex ? activeBarColor : defaultBarColor
+            );
+            Plotly.restyle(el, { "marker.color": [colors] }, [barTraceIndex]);
+        });
 
         // Toggle button for event overlays
         if (events && events.length > 0) {

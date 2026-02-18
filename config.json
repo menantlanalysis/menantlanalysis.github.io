@@ -54,12 +54,12 @@
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-01-29",
-                    "path": "images/syria/earliest.jpeg"
+                    "date": "2025-01",
+                    "path": "images/syria/monthly/2025-01.jpeg"
                 },
                 "latest": {
-                    "date": "2026-02-15",
-                    "path": "images/syria/latest.jpeg"
+                    "date": "2026-01",
+                    "path": "images/syria/monthly/2026-01.jpeg"
                 }
             },
             "diff": "images/syria/diff.jpeg",
@@ -135,12 +135,12 @@
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2024-12-02",
-                    "path": "images/lebanon/earliest.jpeg"
+                    "date": "2025-01",
+                    "path": "images/lebanon/monthly/2025-01.jpeg"
                 },
                 "latest": {
-                    "date": "2026-01-18",
-                    "path": "images/lebanon/latest.jpeg"
+                    "date": "2026-01",
+                    "path": "images/lebanon/monthly/2026-01.jpeg"
                 }
             },
             "diff": "images/lebanon/diff.jpeg",
@@ -230,12 +230,12 @@
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-01-29",
-                    "path": "images/yemen/earliest.jpeg"
+                    "date": "2025-01",
+                    "path": "images/yemen/monthly/2025-01.jpeg"
                 },
                 "latest": {
-                    "date": "2026-02-15",
-                    "path": "images/yemen/latest.jpeg"
+                    "date": "2026-01",
+                    "path": "images/yemen/monthly/2026-01.jpeg"
                 }
             },
             "diff": "images/yemen/diff.jpeg",
@@ -367,12 +367,12 @@
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-01-29",
-                    "path": "images/libya/earliest.jpeg"
+                    "date": "2025-01",
+                    "path": "images/libya/monthly/2025-01.jpeg"
                 },
                 "latest": {
-                    "date": "2026-02-15",
-                    "path": "images/libya/latest.jpeg"
+                    "date": "2026-01",
+                    "path": "images/libya/monthly/2026-01.jpeg"
                 }
             },
             "diff": "images/libya/diff.jpeg",
@@ -504,12 +504,12 @@
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-01-29",
-                    "path": "images/iran/earliest.jpeg"
+                    "date": "2025-01",
+                    "path": "images/iran/monthly/2025-01.jpeg"
                 },
                 "latest": {
-                    "date": "2026-02-15",
-                    "path": "images/iran/latest.jpeg"
+                    "date": "2026-01",
+                    "path": "images/iran/monthly/2026-01.jpeg"
                 }
             },
             "diff": "images/iran/diff.jpeg",
@@ -668,12 +668,12 @@
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-01-29",
-                    "path": "images/egypt/earliest.jpeg"
+                    "date": "2025-01",
+                    "path": "images/egypt/monthly/2025-01.jpeg"
                 },
                 "latest": {
-                    "date": "2026-02-15",
-                    "path": "images/egypt/latest.jpeg"
+                    "date": "2026-01",
+                    "path": "images/egypt/monthly/2026-01.jpeg"
                 }
             },
             "diff": "images/egypt/diff.jpeg",
@@ -763,5 +763,5 @@
             }
         }
     },
-    "last_run_date": "2026-02-14"
+    "last_run_date": "2026-02-18"
 }

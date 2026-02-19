@@ -95,34 +95,41 @@ stae.charts = (() => {
         const barTraceIndex = 2;
         const defaultBarColor = "rgba(50, 104, 145, 0.2)";
         const activeBarColor = "rgba(50, 104, 145, 0.6)";
-        const QUARTERLY_THRESHOLD_MONTHS = 24;
         let currentBarMode = "monthly";
 
-        function visibleMonths(range) {
-            const r0 = new Date(range[0]);
-            const r1 = new Date(range[1]);
-            return (r1.getFullYear() - r0.getFullYear()) * 12 + (r1.getMonth() - r0.getMonth());
+        function quarterLabel(d) {
+            const dt = new Date(d);
+            return `${dt.getFullYear()} Q${Math.floor(dt.getMonth() / 3) + 1}`;
         }
 
-        function updateBars(range) {
-            const months = visibleMonths(range);
-            const mode = months > QUARTERLY_THRESHOLD_MONTHS ? "quarterly" : "monthly";
+        function updateBars() {
+            // Measure actual bar pixel width from the plot area
+            const plotWidth = el._fullLayout ? el._fullLayout.width - el._fullLayout.margin.l - el._fullLayout.margin.r : el.clientWidth;
+            const xRange = el._fullLayout && el._fullLayout.xaxis ? el._fullLayout.xaxis.range : null;
+            if (!xRange) return;
+
+            const r0 = new Date(xRange[0]).getTime();
+            const r1 = new Date(xRange[1]).getTime();
+            const visibleMs = r1 - r0;
+            const msPerMonth = 30.44 * 86400000;
+            const visibleMonths = visibleMs / msPerMonth;
+            const barPixelWidth = plotWidth / visibleMonths;
+
+            // Switch to quarterly only when monthly bars are narrower than 12px
+            const mode = barPixelWidth < 12 ? "quarterly" : "monthly";
             if (mode === currentBarMode) return;
             currentBarMode = mode;
             const src = mode === "quarterly" ? quarterly : monthly;
+            const xVals = mode === "quarterly" ? src.map(d => quarterLabel(d.date)) : src.map(d => d.date);
             Plotly.restyle(el, {
-                x: [src.map(d => d.date)],
+                x: [xVals],
                 y: [src.map(d => d.value)],
                 name: mode === "quarterly" ? "Quarterly Avg" : "Monthly Avg",
                 "marker.color": defaultBarColor
             }, [barTraceIndex]);
         }
 
-        el.on("plotly_relayout", (update) => {
-            const range = update["xaxis.range"] ||
-                (update["xaxis.range[0]"] && [update["xaxis.range[0]"], update["xaxis.range[1]"]]);
-            if (range) updateBars(range);
-        });
+        el.on("plotly_relayout", updateBars);
 
         // Highlight clicked bar
         el.on("plotly_click", (eventData) => {

@@ -153,7 +153,7 @@ stae.map = (() => {
                 const f = stae.stats.formatChange(yoy);
                 hoverTexts.push(`${name}<br>YoY: ${f.text}`);
             } else {
-                zValues.push(null);
+                zValues.push(0);
                 hoverTexts.push(`${name}<br>YoY: N/A`);
             }
         });

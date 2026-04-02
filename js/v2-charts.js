@@ -120,7 +120,7 @@ stae.charts = (() => {
             if (mode === currentBarMode) return;
             currentBarMode = mode;
             const src = mode === "quarterly" ? quarterly : monthly;
-            const xVals = mode === "quarterly" ? src.map(d => quarterLabel(d.date)) : src.map(d => d.date);
+            const xVals = src.map(d => d.date);
             Plotly.restyle(el, {
                 x: [xVals],
                 y: [src.map(d => d.value)],

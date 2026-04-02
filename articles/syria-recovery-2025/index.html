@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Syria's Lights Tell a Complicated Story">
+<meta property="og:description" content="Satellite data suggests parts of Syria are recovering faster than official estimates indicate. Other parts are barely moving.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://menantlanalysis.github.io/articles/syria-recovery-2025/images/syria_hero.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<title>Syria's Uneven Recovery, Seen From Space</title>
+<link rel="stylesheet" href="../../css/v2.css">
+<style>
+  /* ── Reset & Base ─────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: 'Helvetica Neue', Arial, sans-serif;
+    --bg: #fff;
+    --fg: #1a1a1a;
+    --gray: #666;
+    --light-gray: #f0f0f0;
+    --accent: #d4a843;
+    --red: #c0392b;
+    --green: #27ae60;
+    --col: min(680px, 90vw);
+    --wide: min(960px, 95vw);
+  }
+
+  body {
+    font-family: var(--serif);
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.72;
+    font-size: 19px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Typography ───────────────────────────────── */
+  .col    { max-width: var(--col); margin: 0 auto; padding: 0 20px; }
+  .wide   { max-width: var(--wide); margin: 0 auto; padding: 0 20px; }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--fg);
+    margin: 3em 0 1em;
+    border-top: 2px solid var(--fg);
+    padding-top: 1em;
+  }
+  h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2em 0 0.6em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  p     { margin-bottom: 1.15em; }
+  .lead { font-size: 1.25rem; line-height: 1.65; color: #333; }
+  .byline {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 2em;
+  }
+  .byline time { display: block; margin-top: 0.3em; color: #999; }
+  .drop-cap::first-letter {
+    float: left;
+    font-size: 4.2em;
+    line-height: 0.8;
+    padding-right: 0.08em;
+    margin-top: 0.05em;
+    font-weight: 700;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.2em 0 0.2em 1.4em;
+    margin: 1.8em 0;
+    font-style: italic;
+    color: #444;
+  }
+
+  figcaption {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-top: 0.6em;
+    line-height: 1.5;
+  }
+
+  /* ── Hero ──────────────────────────────────────── */
+  .hero {
+    position: relative;
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
+    background: #000;
+    display: block;
+    height: auto;
+    text-align: left;
+  }
+  .hero img {
+    width: 100%;
+    display: block;
+    opacity: 0.85;
+    object-fit: cover;
+    max-height: 70vh;
+  }
+  .hero-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    padding: 3rem 2rem 2rem;
+    color: #fff;
+  }
+  .hero-overlay h1 { color: #fff; }
+  .hero-overlay .subtitle {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 600px;
+  }
+
+  /* ── Image Comparison Slider ──────────────────── */
+  .comparison {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 2em 0;
+    cursor: ew-resize;
+    user-select: none;
+    -webkit-user-select: none;
+    background: #000;
+  }
+  .comparison img {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+  }
+  .comparison .img-top {
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%; height: 100%;
+    overflow: hidden;
+  }
+  .comparison .img-top img {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    max-width: none;
+    /* Must match the comparison container width, not the clip container */
+  }
+  .comparison .slider-line {
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 10;
+    pointer-events: none;
+  }
+  .comparison .slider-handle {
+    position: absolute;
+    top: 50%;
+    width: 40px; height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .comparison .slider-handle::before {
+    content: '\2039\2009\203A';
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 4px;
+  }
+  .comparison .label {
+    position: absolute;
+    top: 12px;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #fff;
+    background: rgba(0,0,0,0.55);
+    padding: 4px 10px;
+    border-radius: 3px;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .comparison .label-left  { left: 12px; }
+  .comparison .label-right { right: 12px; }
+
+  /* ── Data Table ────────────────────────────────── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.5em 0;
+  }
+  .data-table th {
+    text-align: left;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray);
+    border-bottom: 2px solid #1a1a1a;
+    padding: 0.5em 0.8em;
+  }
+  .data-table td {
+    padding: 0.55em 0.8em;
+    border-bottom: 1px solid #eee;
+  }
+  .data-table tr:hover td { background: #fafafa; }
+  .data-table .pos { color: var(--green); font-weight: 600; }
+  .data-table .neg { color: var(--red); font-weight: 600; }
+
+  /* ── Bar Chart ─────────────────────────────────── */
+  .bar-chart { margin: 2em 0; }
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+  }
+  .bar-label {
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+    padding-right: 12px;
+    color: #444;
+    font-size: 0.78rem;
+  }
+  .bar-track {
+    flex: 1;
+    height: 22px;
+    background: var(--light-gray);
+    position: relative;
+    border-radius: 2px;
+    overflow: visible;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    transition: width 0.6s ease;
+  }
+  .bar-fill.positive {
+    left: 50%;
+    background: var(--green);
+  }
+  .bar-fill.negative {
+    right: 50%;
+    background: var(--red);
+  }
+  .bar-center {
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    bottom: -2px;
+    width: 1px;
+    background: #999;
+  }
+  .bar-value {
+    width: 55px;
+    flex-shrink: 0;
+    text-align: left;
+    padding-left: 8px;
+    font-weight: 600;
+    font-size: 0.78rem;
+  }
+
+  /* ── Callout Box ───────────────────────────────── */
+  .callout {
+    background: #f7f5f0;
+    border-left: 4px solid var(--accent);
+    padding: 1.4em 1.6em;
+    margin: 2em 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .callout-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+  .callout p { font-size: 0.95rem; margin-bottom: 0.6em; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* ── 3-column comparison cards ─────────────────── */
+  .estimate-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2em;
+    margin: 2em 0;
+  }
+  .est-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.2em 1.4em;
+    text-align: center;
+  }
+  .est-card .source {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+    margin-bottom: 0.6em;
+  }
+  .est-card .number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .est-card .note {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-top: 0.5em;
+  }
+
+  /* ── Image figure ──────────────────────────────── */
+  figure {
+    margin: 2em 0;
+  }
+  figure img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* ── Footer ────────────────────────────────────── */
+  .methodology {
+    background: var(--light-gray);
+    padding: 2.5em 0;
+    margin-top: 3em;
+    font-size: 0.9rem;
+  }
+  .methodology h3 { font-size: 1.15rem; margin-top: 0; }
+  .methodology p { font-size: 0.88rem; color: #444; }
+
+  /* ── Industrial Zone Slideshow ───────────────────── */
+  .iz-slideshow {
+    position: relative;
+    margin: 2em 0;
+  }
+  .iz-slides {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #000;
+  }
+  .iz-slide {
+    display: none;
+  }
+  .iz-slide.active {
+    display: block;
+  }
+  .iz-slide .iz-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .iz-slide .iz-pair img {
+    width: 100%;
+    display: block;
+  }
+  .iz-slide .iz-info {
+    padding: 0.8em 0.5em 0.3em;
+  }
+  .iz-slide .iz-name {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .iz-slide .iz-change {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 0.6em;
+  }
+  .iz-slide .iz-caption {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: #aaa;
+    margin-top: 0.3em;
+    padding: 0 0.5em;
+    line-height: 1.5;
+  }
+  .iz-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.8em;
+  }
+  .iz-btn {
+    background: none;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    width: 36px; height: 36px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+  }
+  .iz-btn:hover { background: var(--light-gray); }
+  .iz-dots {
+    display: flex;
+    gap: 6px;
+  }
+  .iz-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .iz-dot.active { background: var(--fg); }
+  .iz-counter {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--gray);
+  }
+  @media (max-width: 500px) {
+    .iz-slide .iz-pair {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ── Table scroll wrapper ─────────────────────── */
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ── Responsive ────────────────────────────────── */
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    .bar-label { width: 80px; font-size: 0.7rem; }
+    .hero { max-height: none; }
+    .hero img { max-height: none; min-height: 55vh; }
+    .hero-overlay { padding: 2rem 1rem 1.2rem; }
+    .data-table { min-width: 520px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead" id="masthead">
+  <div class="masthead__inner">
+    <a href="../../index.html" class="masthead__logo">Nighttime Lights</a>
+    <button class="masthead__hamburger" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="masthead__nav" id="main-nav">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../index.html">Articles</a></li>
+      <li><a href="../../methodology.pdf">Methodology</a></li>
+      <li><a href="mailto:menantlanalysis@gmail.com">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ════════════════ HERO ════════════════ -->
+<div class="hero">
+  <img src="images/syria_hero.jpeg" alt="Syria and surrounding region nighttime lights, October 2025">
+  <div class="hero-overlay">
+    <h1>Syria's Lights Tell a<br>Complicated Story</h1>
+    <p class="subtitle">Satellite data suggests parts of Syria are recovering faster than official estimates indicate. Other parts are barely moving.</p>
+  </div>
+</div>
+
+<!-- ════════════════ BYLINE ════════════════ -->
+<div class="col" style="margin-top: 2em;">
+  <div class="byline">
+    MENA Nighttime Lights Analysis Project
+    <time>April 2026</time>
+  </div>
+</div>
+
+<!-- ════════════════ LEDE ════════════════ -->
+<div class="col">
+  <p class="lead">
+    How fast is Syria's economy recovering after the fall of Bashar al-Assad?
+    The answer depends on who you ask, and what you measure.
+  </p>
+
+  <p class="drop-cap">In March, the Syrian Center for Policy Research published a blunt verdict: real GDP growth in 2025 was "approximately three per thousand." Essentially zero. Agriculture had collapsed. Manufacturing had shrunk. The transitional government's optimistic projections, the SCPR argued, were "political propaganda, not scientific measurement."</p>
+
+  <p>The World Bank, in a macro-fiscal assessment released last June, was only slightly more hopeful. It forecast 1% real growth, hedged with what it called "extraordinarily high uncertainty."</p>
+
+  <p>But a different dataset tells a more complicated story.</p>
+
+  <p>NASA's VIIRS satellite photographs Earth every night, recording the light emitted by cities, towns and infrastructure. We analyzed 978 nightly images of Syria captured between January 2024 and December 2025, filtering for cloud cover, moonlight contamination and sensor artifacts.</p>
+
+  <p>A striking pattern emerges: parts of Syria are getting significantly brighter. Other parts are not.</p>
+</div>
+
+<!-- ════════════════ THREE ESTIMATES ════════════════ -->
+<div class="wide">
+  <div class="estimate-cards">
+    <div class="est-card">
+      <div class="source">SCPR Estimate</div>
+      <div class="number" style="color: var(--red);">+0.3%</div>
+      <div class="note">Real GDP growth, 2025<br>Sectoral indicators</div>
+    </div>
+    <div class="est-card">
+      <div class="source">World Bank Forecast</div>
+      <div class="number" style="color: var(--accent);">+1.0%</div>
+      <div class="note">Real GDP growth, 2025<br>Mixed methods incl. NTL</div>
+    </div>
+    <div class="est-card">
+      <div class="source">Satellite Analysis</div>
+      <div class="number" style="color: var(--green);">+5 to 14%</div>
+      <div class="note">NTL-implied range, 2025<br>Elasticity-dependent</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════ WHAT SATELLITES SEE ════════════════ -->
+<div class="col">
+  <h2>What the satellites see</h2>
+
+  <p>Every night, the VIIRS instrument aboard NASA's Suomi NPP satellite records the light emitted by cities, infrastructure and industry. For countries where economic statistics are unreliable, nighttime light has become a standard proxy for economic activity, pioneered by Henderson et al. (2012) and now used routinely by the World Bank for conflict-affected states.</p>
+
+  <p>We processed 618 nightly observations of Syria across 2024 and 2025, filtering for cloud cover, moonlight contamination and orbital gaps. After filtering, we retain roughly 60 to 85 clean observations per governorate per year.</p>
+
+  <p>We average clean observations within each quarter, then compare the second half of each year (Q3 and Q4). Syria's transition began in December 2024. The H2 comparison isolates the period where the recovery had settled into a pattern.</p>
+</div>
+
+<!-- ════════════════ COUNTRY SLIDER ════════════════ -->
+<div class="wide">
+  <figure>
+    <div class="comparison" id="comp-country">
+      <img src="images/syria_oct2025.jpeg" alt="Syria October 2025">
+      <div class="img-top">
+        <img src="images/syria_oct2024.jpeg" alt="Syria October 2024">
+      </div>
+      <div class="slider-line"></div>
+      <div class="slider-handle"></div>
+      <span class="label label-left">Oct 2024</span>
+      <span class="label label-right">Oct 2025</span>
+    </div>
+    <figcaption>Syria viewed from space, averaged across the clearest October nights: six nights in 2024 (left) and four in 2025 (right). Per-pixel cloud masking ensures only clear-sky radiance contributes to the composite. Drag the slider to compare. VIIRS VNP46A1.</figcaption>
+  </figure>
+</div>
+
+<!-- ════════════════ GEOGRAPHY OF RECOVERY ════════════════ -->
+<div class="col">
+  <h2>The geography of recovery</h2>
+
+  <p>The national average conceals a country splitting in two directions.</p>
+
+  <p>Comparing H2 2025 against H2 2024, population-weighted luminosity across all 14 governorates rose <strong>+17.9%</strong>. Standard NTL-to-GDP elasticities imply GDP growth of roughly 5 to 14 percent nationally, far above either the SCPR or World Bank estimate. The wide range reflects genuine uncertainty in the elasticity parameter.</p>
+
+  <p>But that aggregate masks enormous variation.</p>
+</div>
+
+<!-- ════════════════ BAR CHART ════════════════ -->
+<div class="wide">
+  <div class="bar-chart" id="govChart">
+    <div class="bar-row"><span class="bar-label">Dar'a</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="35.3"></div></div><span class="bar-value pos">+35.3%</span></div>
+    <div class="bar-row"><span class="bar-label">Damascus</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="28.9"></div></div><span class="bar-value pos">+28.9%</span></div>
+    <div class="bar-row"><span class="bar-label">Idlib</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="27.4"></div></div><span class="bar-value pos">+27.4%</span></div>
+    <div class="bar-row"><span class="bar-label">Aleppo</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="27.2"></div></div><span class="bar-value pos">+27.2%</span></div>
+    <div class="bar-row"><span class="bar-label">Quneitra</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="22.9"></div></div><span class="bar-value pos">+22.9%</span></div>
+    <div class="bar-row"><span class="bar-label">Hamah</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="22.5"></div></div><span class="bar-value pos">+22.5%</span></div>
+    <div class="bar-row"><span class="bar-label">Tartus</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="20.0"></div></div><span class="bar-value pos">+20.0%</span></div>
+    <div class="bar-row"><span class="bar-label">Lattakia</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="13.8"></div></div><span class="bar-value pos">+13.8%</span></div>
+    <div class="bar-row"><span class="bar-label">Rif Dimashq</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="13.1"></div></div><span class="bar-value pos">+13.1%</span></div>
+    <div class="bar-row"><span class="bar-label">Ar Raqqah</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="11.5"></div></div><span class="bar-value pos">+11.5%</span></div>
+    <div class="bar-row"><span class="bar-label">Hasaka</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="4.9"></div></div><span class="bar-value pos">+4.9%</span></div>
+    <div class="bar-row"><span class="bar-label">Homs</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill positive" style="width:0" data-pct="1.1"></div></div><span class="bar-value pos">+1.1%</span></div>
+    <div class="bar-row"><span class="bar-label">Deir ez-Zor</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill negative" style="width:0" data-pct="2.7"></div></div><span class="bar-value neg">&minus;2.7%</span></div>
+    <div class="bar-row"><span class="bar-label">As Suwayda'</span><div class="bar-track"><div class="bar-center"></div><div class="bar-fill negative" style="width:0" data-pct="13.9"></div></div><span class="bar-value neg">&minus;13.9%</span></div>
+  </div>
+  <figcaption class="col" style="padding-top:0; margin-top: -0.5em;">Change in nighttime luminosity by governorate, H2 2025 vs.&nbsp;H2 2024 (average of quarterly means, pipeline-filtered). Center line represents zero change.</figcaption>
+</div>
+
+<!-- ════════════════ WINNERS NARRATIVE ════════════════ -->
+<div class="col">
+  <p>The brightest gainers were formerly opposition-held, besieged or cut off under Assad. After the regime fell, trade routes reopened, diaspora money flowed back, and reconstruction began. <strong>Dar'a</strong> (+35%), birthplace of the uprising, leads as Jordan crossings reopened. <strong>Damascus</strong> (+29%) surged as the new seat of power. <strong>Idlib</strong> (+27%) and <strong>Aleppo</strong> (+27%) are nearly tied. Aleppo's industrial zones are lighting back up, and Idlib appears to be formalizing activity that was previously off the books.</p>
+</div>
+
+<!-- ════════════════ ALEPPO SLIDER ════════════════ -->
+<div class="wide">
+  <figure>
+    <div class="comparison" id="comp-aleppo">
+      <img src="images/aleppo_oct2025.jpeg" alt="Aleppo October 2025">
+      <div class="img-top">
+        <img src="images/aleppo_oct2024.jpeg" alt="Aleppo October 2024">
+      </div>
+      <div class="slider-line"></div>
+      <div class="slider-handle"></div>
+      <span class="label label-left">Oct 2024</span>
+      <span class="label label-right">Oct 2025</span>
+    </div>
+    <figcaption>Aleppo governorate. The bright cluster in the upper-left quadrant is Aleppo city. Note the increased radiance across the urban core and surrounding towns in 2025.</figcaption>
+  </figure>
+</div>
+
+<div class="col"></div>
+
+<!-- ════════════════ IDLIB SLIDER ════════════════ -->
+<div class="wide">
+  <figure>
+    <div class="comparison" id="comp-idlib">
+      <img src="images/idlib_oct2025.jpeg" alt="Idlib October 2025">
+      <div class="img-top">
+        <img src="images/idlib_oct2024.jpeg" alt="Idlib October 2024">
+      </div>
+      <div class="slider-line"></div>
+      <div class="slider-handle"></div>
+      <span class="label label-left">Oct 2024</span>
+      <span class="label label-right">Oct 2025</span>
+    </div>
+    <figcaption>Idlib governorate. Note the expanded area of illumination across the northwest, particularly along the road corridors connecting to Aleppo.</figcaption>
+  </figure>
+</div>
+
+<!-- ════════════════ DAR'A SLIDER ════════════════ -->
+<div class="wide">
+  <figure>
+    <div class="comparison" id="comp-dara">
+      <img src="images/dara_oct2025.jpeg" alt="Dar'a October 2025">
+      <div class="img-top">
+        <img src="images/dara_oct2024.jpeg" alt="Dar'a October 2024">
+      </div>
+      <div class="slider-line"></div>
+      <div class="slider-handle"></div>
+      <span class="label label-left">Oct 2024</span>
+      <span class="label label-right">Oct 2025</span>
+    </div>
+    <figcaption>Dar'a governorate. The bright area at the bottom is the Jordanian border. Dar'a city and surrounding towns show noticeably more lighting in 2025, consistent with reopened trade routes and returning residents. The bright glow at the bottom of the frame is northern Jordan.</figcaption>
+  </figure>
+</div>
+
+<!-- ════════════════ TERRITORIAL SPLIT ════════════════ -->
+<div class="col">
+  <h3>Two Syrias</h3>
+
+  <p>During the period covered by this analysis, Syria was effectively divided between the HTS-led transitional government (87 percent of the population, the western urban corridor) and the Kurdish-led SDF (the northeast, 89 percent of oil production). Both regions grew, but at vastly different rates. (The northeast has since mostly moved under government control in early 2026, though some areas are still integrating.)</p>
+
+  <div class="callout">
+    <div class="callout-title">Government-controlled areas (87% of population)</div>
+    <p>Population-weighted NTL change: <strong style="color: var(--green);">+20.0%</strong> &rarr; Estimated GDP growth: <strong>+5 to 15%</strong></p>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">Formerly SDF-administered areas (13% of population)</div>
+    <p>Population-weighted NTL change: <strong style="color: var(--accent);">+4.4%</strong> &rarr; Estimated GDP growth: <strong>+1 to 3%</strong></p>
+  </div>
+
+  <p>The northeast was barely growing in 2025, at roughly a quarter the rate of government-controlled areas. The gap was driven by political uncertainty between Damascus and the SDF, disrupted oil supply chains, and less access to returning diaspora capital. Deir ez-Zor actually contracted (-3%). Within government territory, Homs (+1%) lagged significantly. As Suwayda' (-14%), which has never been fully under central government control, was the worst-performing governorate in the country.</p>
+</div>
+
+<!-- ════════════════ DEIR EZ-ZOR SLIDER ════════════════ -->
+<div class="wide">
+  <figure>
+    <div class="comparison" id="comp-deir">
+      <img src="images/deirezz_oct2025.jpeg" alt="Deir ez-Zor October 2025">
+      <div class="img-top">
+        <img src="images/deirezz_oct2024.jpeg" alt="Deir ez-Zor October 2024">
+      </div>
+      <div class="slider-line"></div>
+      <div class="slider-handle"></div>
+      <span class="label label-left">Oct 2024</span>
+      <span class="label label-right">Oct 2025</span>
+    </div>
+    <figcaption>Deir ez-Zor governorate. The bright spots are oil and gas infrastructure. H2 comparison shows a slight contraction (-2.7%), the weakest of the three formerly SDF-administered governorates, reflecting disrupted oil supply chains.</figcaption>
+  </figure>
+</div>
+
+<!-- ════════════════ DIFF MAP ════════════════ -->
+<div class="col">
+  <h2>The difference map</h2>
+</div>
+
+<div class="wide">
+  <figure>
+    <img src="images/diff_oct.jpeg" alt="Syria luminosity difference map, Oct 2024 vs Oct 2025" style="max-width: 700px; margin: 0 auto;">
+    <figcaption class="col">Pixel-level difference in nighttime radiance: October 2025 average minus October 2024 average. Green = brighter, red = dimmer. Both composites use per-pixel cloud masking across multiple clear nights, eliminating cloud artifacts. The western corridor from Aleppo through Idlib and Damascus is predominantly green.</figcaption>
+  </figure>
+</div>
+
+<!-- ════════════════ GDP ESTIMATION ════════════════ -->
+<div class="col">
+  <h2>From light to GDP</h2>
+
+  <p>Converting light into GDP requires an "elasticity": how much does GDP change for a given change in light? Estimates range from 0.3 (Henderson et al., 2012) to 0.77 (Hu and Yao, 2022, correcting for measurement error). The choice swings the estimate from 5 to 14 percent:</p>
+</div>
+
+<div class="wide table-scroll">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Elasticity Source</th>
+        <th>&beta;</th>
+        <th>National (+17.9% NTL)</th>
+        <th>Gov. areas (+20.0% NTL)</th>
+        <th>Former SDF areas (+4.4% NTL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Chen & Nordhaus (2011)</td>
+        <td>0.28</td>
+        <td class="pos">+4.7%</td>
+        <td class="pos">+5.2%</td>
+        <td class="pos">+1.2%</td>
+      </tr>
+      <tr>
+        <td>Henderson et al. (2012), baseline</td>
+        <td>0.30</td>
+        <td class="pos">+5.1%</td>
+        <td class="pos">+5.6%</td>
+        <td class="pos">+1.3%</td>
+      </tr>
+      <tr>
+        <td>Henderson et al. (2012), IV preferred</td>
+        <td>0.35</td>
+        <td class="pos">+5.9%</td>
+        <td class="pos">+6.6%</td>
+        <td class="pos">+1.5%</td>
+      </tr>
+      <tr>
+        <td>World Bank, Syria-specific (backed out)</td>
+        <td>0.43</td>
+        <td class="pos">+7.3%</td>
+        <td class="pos">+8.2%</td>
+        <td class="pos">+1.9%</td>
+      </tr>
+      <tr>
+        <td>Beyer, Hu & Yao (2022), IMF quarterly</td>
+        <td>0.65</td>
+        <td class="pos">+11.3%</td>
+        <td class="pos">+12.6%</td>
+        <td class="pos">+2.8%</td>
+      </tr>
+      <tr>
+        <td>Hu & Yao (2022), measurement-error corrected</td>
+        <td>0.77</td>
+        <td class="pos">+13.5%</td>
+        <td class="pos">+15.1%</td>
+        <td class="pos">+3.3%</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption class="col">GDP estimates using log-log specification: %&Delta;GDP&nbsp;=&nbsp;(1&nbsp;+&nbsp;%&Delta;NTL)<sup>&beta;</sup>&nbsp;&minus;&nbsp;1. NTL change is H2 2025 vs. H2 2024 (average of Q3 and Q4 quarterly means). Base GDP of ~$12.4B from World Bank 2023 estimate. Government-controlled areas (11 governorates, 87% of population) vs. formerly SDF-administered northeast (3 governorates, 13% of population). The range reflects genuine uncertainty in the literature, not just conservative vs. optimistic assumptions.</figcaption>
+</div>
+
+<div class="col">
+  <p>But satellites cannot see agriculture, and lights tend to bounce back faster than GDP during recovery (in Afghanistan, lights recovered even as survey-based GDP remained 28 percent below pre-takeover levels). The true figure is likely toward the lower end, but even the most conservative elasticity (&beta;&nbsp;=&nbsp;0.28) implies nearly 5 percent growth.</p>
+</div>
+
+<!-- ════════════════ CRITIQUE SECTION ════════════════ -->
+<div class="col">
+  <h2>Where the estimates disagree, and why</h2>
+
+  <h3>The SCPR: real data, broken instruments</h3>
+
+  <p>The SCPR's near-zero growth estimate rests on sectoral physical indicators: wheat harvests, oil output, cement production, electricity generation. Their finding that agriculture contracted 28 percent is likely correct, corroborated by the World Bank and FAO. Nighttime light cannot see agriculture.</p>
+
+  <p>But the SCPR's data has a deeper problem: its sources. The paper argues the transitional government produces unreliable statistics, yet its own sectoral figures come from that same government's ministries. After 14 years of war, Syria's statistical capacity is likely severely degraded. The Central Bureau of Statistics has reportedly lost much of its pre-war staff and infrastructure. Idlib was largely outside the state's reach for nearly a decade. The formerly SDF-administered northeast operated its own parallel institutions.</p>
+
+  <p>This is precisely the scenario where nighttime light data is supposed to be used. Since Henderson et al. (2012), NTL has become a standard tool for estimating economic activity in countries with weak or missing statistics. The World Bank, IMF and academic researchers use it routinely for conflict-affected states. The SCPR does not reference satellite data at all. For a paper claiming to measure GDP in a country where the statistical infrastructure has collapsed, the omission is difficult to justify.</p>
+
+  <p>When the SCPR reports cement production fell 5.1 percent, that figure can only reflect what hollowed-out ministries are able to count. It misses workshops reopening in Aleppo and informal construction across Idlib. In a country where the informal sector may constitute 50 to 70 percent of output, government statistics are not capturing the bulk of economic activity.</p>
+
+  <h3>Testing the manufacturing claim from space</h3>
+
+  <p>We can test the manufacturing claim directly. We extracted averaged radiance at four of Syria's major industrial zones from the clearest October nights (six in 2024, four in 2025), with per-pixel cloud masking. A fifth zone, Layramoun in Aleppo, is too small to resolve at VIIRS's ~500m resolution.</p>
+
+</div>
+
+<div class="wide table-scroll">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Industrial Zone</th>
+        <th>Governorate</th>
+        <th>2024 Radiance</th>
+        <th>2025 Radiance</th>
+        <th>Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adra</td>
+        <td>Rif Dimashq</td>
+        <td>3.7</td>
+        <td>5.3</td>
+        <td class="pos">+45%</td>
+      </tr>
+      <tr>
+        <td>Sheikh Najjar</td>
+        <td>Aleppo</td>
+        <td>2.8</td>
+        <td>4.4</td>
+        <td class="pos">+61%</td>
+      </tr>
+      <tr>
+        <td>Hisya (Hassia)</td>
+        <td>Homs</td>
+        <td>3.0</td>
+        <td>4.1</td>
+        <td class="pos">+36%</td>
+      </tr>
+      <tr>
+        <td>Bab al-Hawa (Sarmada)</td>
+        <td>Idlib</td>
+        <td>15.6</td>
+        <td>16.0</td>
+        <td class="pos">+3%</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption class="col">Mean nighttime radiance (nW/cm&sup2;/sr) at four of Syria's major industrial zones, averaged across clear October nights with per-pixel cloud masking (6 nights in 2024, 4 in 2025). Zone-specific extraction windows scaled to each site's footprint. Layramoun (Aleppo) is too small to resolve reliably at VIIRS's ~500m pixel resolution. VIIRS VNP46A1.</figcaption>
+</div>
+
+<!-- ════════════════ INDUSTRIAL ZONE SLIDESHOW ════════════════ -->
+<div class="wide">
+  <div class="iz-slideshow" id="iz-slideshow">
+    <div class="iz-slides">
+
+      <div class="iz-slide active" data-index="0">
+        <div class="iz-pair">
+          <img src="images/adra_oct2024.jpeg" alt="Adra Oct 2024">
+          <img src="images/adra_oct2025.jpeg" alt="Adra Oct 2025">
+        </div>
+        <div class="iz-info">
+          <span class="iz-name">Adra, Damascus</span>
+          <span class="iz-change pos">+45%</span>
+        </div>
+        <div class="iz-caption">Syria's largest industrial zone (7,000 hectares, nearly 2,000 factories pre-war). A 45 percent increase across the full 8-mile zone contradicts the SCPR's claim of manufacturing decline.</div>
+      </div>
+
+      <div class="iz-slide" data-index="1">
+        <div class="iz-pair">
+          <img src="images/sheikh_najjar_oct2024.jpeg" alt="Sheikh Najjar Oct 2024">
+          <img src="images/sheikh_najjar_oct2025.jpeg" alt="Sheikh Najjar Oct 2025">
+        </div>
+        <div class="iz-info">
+          <span class="iz-name">Sheikh Najjar, Aleppo</span>
+          <span class="iz-change pos">+61%</span>
+        </div>
+        <div class="iz-caption">Aleppo's main planned industrial city, 10 km northeast of the city center. Was partially active throughout the conflict.</div>
+      </div>
+
+      <div class="iz-slide" data-index="2">
+        <div class="iz-pair">
+          <img src="images/hisya_oct2024.jpeg" alt="Hisya Oct 2024">
+          <img src="images/hisya_oct2025.jpeg" alt="Hisya Oct 2025">
+        </div>
+        <div class="iz-info">
+          <span class="iz-name">Hisya, Homs</span>
+          <span class="iz-change pos">+36%</span>
+        </div>
+        <div class="iz-caption">Located 47 km south of Homs. A 36 percent increase, somewhat surprising given the broader stagnation across Homs governorate.</div>
+      </div>
+
+    </div>
+    <div class="iz-controls">
+      <button class="iz-btn" id="iz-prev">&lsaquo;</button>
+      <div class="iz-dots" id="iz-dots"></div>
+      <button class="iz-btn" id="iz-next">&rsaquo;</button>
+      <span class="iz-counter" id="iz-counter"></span>
+    </div>
+    <figcaption style="margin-top: 0.4em;">Satellite radiance at three of Syria's major industrial zones, averaged across clear October nights: 2024 (left) vs. 2025 (right). Per-pixel cloud masking applied. Zone-specific extraction windows scaled to each site's physical footprint. Bab al-Hawa is excluded from the slideshow as its small extraction window saturates the color scale. VIIRS VNP46A1, magma color scale (0&ndash;4 nW/cm&sup2;/sr).</figcaption>
+  </div>
+</div>
+
+<div class="col">
+  <p>Three of the four zones grew substantially. Sheikh Najjar was up 61 percent. Adra, Syria's largest industrial zone, grew 45 percent across its full 8-mile footprint. Hisya rose 36 percent. Bab al-Hawa showed only 3 percent growth, though its compact footprint is near the limit of what VIIRS can resolve.</p>
+
+  <p>An important caveat: VIIRS can only detect manufacturing at large, concentrated industrial zones that are bright enough to register at ~500m pixel resolution. Smaller workshops, scattered manufacturing, and light industry distributed across residential areas are invisible at this scale. It is possible that large industrial zones are recovering while smaller, more distributed manufacturing (which the SCPR's data may better capture) is not. The satellite evidence contradicts the claim that <em>all</em> manufacturing shrank, but it cannot rule out a decline in the broader manufacturing base outside these major zones.</p>
+
+  <h3>The electricity numbers do not add up</h3>
+
+  <p>The SCPR reports that grid electricity grew from 17.5 to 18 billion kWh between 2024 and 2025, an increase of 2.9 percent. Their 2024 baseline appears to be wrong.</p>
+
+  <p>The most recent independently verifiable figure is <a href="https://karamshaar.com/syria-in-figures/obstacles-and-opportunities-for-syrias-electricity-sector/">12,900 GWh (12.9 TWh) for 2023</a>, from Ministry of Electricity data. If accurate, the SCPR's claim of 17.5 TWh for 2024 would imply a 36 percent increase in a single year. This is impossible to reconcile with reporting throughout 2024 describing Syria in severe electricity crisis, with supply averaging two to four hours daily.</p>
+
+  <p>Even if the 2025 figure of 18 TWh is roughly right, the denominator is almost certainly inflated, making the 2.9 percent growth rate meaningless. Meanwhile, after the Kilis-Aleppo natural gas pipeline <a href="https://www.euronews.com/2025/08/02/kilis-aleppo-natural-gas-pipeline-opened-gas-flow-from-turkey-to-syria-started">opened on August 2</a>, supply hours jumped from roughly two hours per day to six to eight. Damascus received 24 continuous hours as an experiment. Going from two hours of daily supply to eight is a fourfold increase, not a 3 percent one.</p>
+
+  <h3>Violence</h3>
+
+  <p>The SCPR cites recurring violence as a national economic headwind, specifically the coastal crisis and the Suwayda crisis of 2025. Our data confirms the Suwayda damage was severe: it is the only governorate with a double-digit decline (-14%), and the damage did not bounce back. Luminosity in Q3 and Q4 2025 remained well below the same quarters in 2024. As Suwayda' has never been fully under central government control, its distance from Damascus may have limited reconstruction resources.</p>
+
+  <p>But the effects were geographically contained. Neighboring Dar'a (+35%), Lattakia (+14%) and Tartus (+20%) all grew through the same period. The coastal crisis, while real, did not register as a sustained luminosity decline in either governorate.</p>
+
+  <h3>The World Bank: right method, wrong timing</h3>
+
+  <p>The Bank also uses VIIRS data and derives its own Syria-specific elasticity. We can back it out: their NTL shows an 83 percent decline (2010-2024) against a 53 percent GDP decline, implying &beta; &approx; 0.43. Applied to our data, that gives 7.3 percent growth.</p>
+
+  <p>But the Bank forecasts only 1 percent. Their data runs only through May 2025, before the recovery accelerated. They also discount the NTL signal for infrastructure effects (grid damage, solar substitution) and blend with agricultural and trade data. This is arguably more careful, but the discount is never quantified.</p>
+
+</div>
+
+<!-- ════════════════ SYNTHESIS ════════════════ -->
+<div class="col">
+  <h2>A tentative synthesis</h2>
+
+  <p>Our satellite-derived estimate places real GDP growth at <strong>5 to 14 percent</strong> nationally, depending on the elasticity used. For the 87 percent of Syrians under transitional government authority, 5 to 15 percent. For the formerly SDF-administered northeast, 1 to 3 percent, barely growing and a fraction of the government-controlled rate.</p>
+
+  <p>The SCPR is probably right about agriculture. On manufacturing, the picture is mixed: the three largest industrial zones we checked grew substantially, led by Sheikh Najjar (+61%) and Adra (+45%), but satellites cannot see smaller workshops or distributed light industry. Its electricity baseline does not hold up. And its data sources, drawn from decimated ministries that never controlled much of the territory they report on, cannot capture the informal recovery visible from space.</p>
+
+
+</div>
+
+<!-- ════════════════ METHODOLOGY ════════════════ -->
+<div class="methodology">
+  <div class="col">
+    <h3>How we did this</h3>
+    <p><strong>Data source:</strong> NASA VNP46A1 (VIIRS Day/Night Band) daily granules, downloaded via NASA Earthdata (EDL). Each granule covers a 10&deg;&times;10&deg; tile at ~500m resolution. Syria requires two tiles: h21v05 and h22v05.</p>
+    <p><strong>Processing:</strong> HDF5 files are converted to 2-band GeoTIFFs (radiance + cloud mask). Each governorate's luminosity is the sum of radiance values across all pixels within its administrative boundary, using GADM-level shapefiles.</p>
+    <p><strong>Quality filtering:</strong> We exclude observations where per-municipality cloud cover &ge; 0.2, lunar illumination &gt; 30%, the satellite swath edge overlaps the municipality, or luminosity is zero or negative. This matches the pipeline described in Henderson et al. (2012) and the World Bank's own NTL methodology.</p>
+    <p><strong>Aggregation:</strong> We average all clean daily observations within each quarter to produce four quarterly means per governorate per year. We then compare the second half of 2025 (average of Q3 and Q4 means) against the same period in 2024. This H2-vs-H2 comparison avoids seasonal bias and reduces the influence of the anomalous Q2 2025 spike visible across all governorates.</p>
+    <p><strong>GDP estimation:</strong> We use the log-log specification from Henderson et al. (2012): %&Delta;GDP&nbsp;=&nbsp;(1&nbsp;+&nbsp;%&Delta;NTL)<sup>&beta;</sup>&nbsp;&minus;&nbsp;1, with &beta; values ranging from 0.28 (Chen & Nordhaus 2011) to 0.77 (Hu & Yao 2022, measurement-error corrected). Country-level NTL change is computed as a population-weighted average of governorate-level changes.</p>
+    <p><strong>Date range:</strong> January 1, 2024 through December 2, 2025 (978 total daily observations, ~60&ndash;85 clean observations per governorate per year after filtering).</p>
+    <p><strong>Limitations:</strong> NTL does not capture agricultural output, subsistence economies, or underground economic activity. Elasticity estimates are borrowed from cross-country studies and may not apply to Syria's specific conflict-to-recovery transition. Results should be interpreted as indicative of trends, not precise measurements. Comparison images are averaged across multiple clear October nights with per-pixel cloud masking; the statistical analysis uses all clean observations year-round.</p>
+    <p style="margin-top: 1em; color: #999; font-size: 0.8rem;">MENA Nighttime Lights Analysis Project &middot; Data updated through December 2025 &middot; Analysis performed April 2026</p>
+  </div>
+</div>
+
+<!-- ════════════════ SLIDER JS ════════════════ -->
+<script>
+document.querySelectorAll('.comparison').forEach(comp => {
+  const imgTop    = comp.querySelector('.img-top');
+  const topImg    = imgTop.querySelector('img');
+  const line      = comp.querySelector('.slider-line');
+  const handle    = comp.querySelector('.slider-handle');
+  let dragging    = false;
+
+  function syncTopImgWidth() {
+    // The top image must span the full comparison width so it
+    // lines up pixel-for-pixel with the bottom image.
+    topImg.style.width = comp.offsetWidth + 'px';
+  }
+
+  function setPosition(x) {
+    const rect = comp.getBoundingClientRect();
+    let pct = ((x - rect.left) / rect.width) * 100;
+    pct = Math.max(2, Math.min(98, pct));
+    imgTop.style.width = pct + '%';
+    line.style.left    = pct + '%';
+    handle.style.left  = pct + '%';
+  }
+
+  // Initialise once the bottom image has loaded and set the height
+  const bottomImg = comp.querySelector(':scope > img');
+  function init() {
+    syncTopImgWidth();
+    setPosition(
+      comp.getBoundingClientRect().left + comp.getBoundingClientRect().width / 2
+    );
+  }
+  if (bottomImg.complete) requestAnimationFrame(init);
+  else bottomImg.addEventListener('load', init);
+
+  window.addEventListener('resize', syncTopImgWidth);
+
+  comp.addEventListener('mousedown',  e => { dragging = true; setPosition(e.clientX); });
+  comp.addEventListener('touchstart', e => { dragging = true; setPosition(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('mousemove', e => { if (dragging) setPosition(e.clientX); });
+  window.addEventListener('touchmove', e => { if (dragging) setPosition(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('mouseup',  () => dragging = false);
+  window.addEventListener('touchend', () => dragging = false);
+});
+
+/* ── Animate bar chart on scroll ── */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+        const pct = parseFloat(bar.dataset.pct);
+        const maxPct = 45; // 45% fill = ~40 data pct
+        const w = Math.min((pct / maxPct) * 50, 50);
+        bar.style.width = w + '%';
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+observer.observe(document.getElementById('govChart'));
+
+/* ── Industrial Zone Slideshow ── */
+(function() {
+  const slides = document.querySelectorAll('#iz-slideshow .iz-slide');
+  const dotsContainer = document.getElementById('iz-dots');
+  const counter = document.getElementById('iz-counter');
+  const prevBtn = document.getElementById('iz-prev');
+  const nextBtn = document.getElementById('iz-next');
+  if (!slides.length) return;
+
+  let current = 0;
+  const total = slides.length;
+
+  // Create dots
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'iz-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  }
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dotsContainer.children[current].classList.remove('active');
+    current = (idx + total) % total;
+    slides[current].classList.add('active');
+    dotsContainer.children[current].classList.add('active');
+    counter.textContent = (current + 1) + ' / ' + total;
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+  counter.textContent = '1 / ' + total;
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    const rect = document.getElementById('iz-slideshow').getBoundingClientRect();
+    if (rect.top > window.innerHeight || rect.bottom < 0) return;
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+})();
+</script>
+
+<script>
+// Hamburger toggle
+const toggle = document.getElementById('nav-toggle');
+const nav = document.getElementById('main-nav');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.classList.toggle('masthead__hamburger--open');
+  });
+}
+</script>
+
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20740W8TXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-20740W8TXW');
+</script>
+
+</body>
+</html>

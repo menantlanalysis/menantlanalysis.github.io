@@ -126,17 +126,18 @@ stae.stats = (() => {
             const dates = data.map(d => new Date(d.date).getTime());
             const values = data.map(d => d.luminosity);
 
-            let loessValues;
+            // Try LOESS first, fall back to monthly averages for sparse data
+            let smoothed;
             try {
-                loessValues = science.stats.loess().bandwidth(LOESS_BANDWIDTH)(dates, values);
+                const loessValues = science.stats.loess().bandwidth(LOESS_BANDWIDTH)(dates, values);
+                smoothed = data.map((d, i) => ({
+                    date: new Date(d.date),
+                    value: loessValues[i]
+                })).sort((a, b) => a.date - b.date);
             } catch {
-                continue;
+                // LOESS failed — fall back to monthly averages
+                smoothed = getMonthlyAverage(data);
             }
-
-            const smoothed = data.map((d, i) => ({
-                date: new Date(d.date),
-                value: loessValues[i]
-            })).sort((a, b) => a.date - b.date);
 
             if (smoothed.length < 2) continue;
 
@@ -144,8 +145,16 @@ stae.stats = (() => {
             const yoyDate = new Date(last.date);
             yoyDate.setFullYear(last.date.getFullYear() - 1);
 
-            const prevPeak = getMaxForWindow(smoothed, yoyDate, 60);
-            const currPeak = getMaxForWindow(smoothed, last.date, 60);
+            // Progressively widen window until we find data
+            let prevPeak = null;
+            for (const w of [60, 120, 180]) {
+                prevPeak = getMaxForWindow(smoothed, yoyDate, w);
+                if (prevPeak) break;
+            }
+            // Last resort: nearest point to yoyDate
+            if (!prevPeak) prevPeak = findClosestPoint(yoyDate, smoothed);
+
+            const currPeak = getMaxForWindow(smoothed, last.date, 60) || last;
             result[key] = calculateChange(prevPeak, currPeak);
         }
         return result;

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="مناطق سوريا الصناعية المتنامية">
+<meta property="og:description" content="تتبّع تعافي أبرز المناطق الصناعية في سوريا من الفضاء، ربعاً تلو الآخر، منذ سقوط نظام الأسد في كانون الأول 2024.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://menantlanalysis.github.io/articles/syria-industrial-zones-2026/images/iz_hero.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="ar" href="index.ar.html">
+<title>مناطق سوريا الصناعية المتنامية</title>
+<link rel="stylesheet" href="../../css/v2.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset & Base ─────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: 'Helvetica Neue', Arial, sans-serif;
+    --bg: #fff;
+    --fg: #1a1a1a;
+    --gray: #666;
+    --light-gray: #f0f0f0;
+    --accent: #d4a843;
+    --red: #c0392b;
+    --green: #27ae60;
+    --col: min(680px, 90vw);
+    --wide: min(960px, 95vw);
+  }
+
+  body {
+    font-family: var(--serif);
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.72;
+    font-size: 19px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Typography ───────────────────────────────── */
+  .col    { max-width: var(--col); margin: 0 auto; padding: 0 20px; }
+  .wide   { max-width: var(--wide); margin: 0 auto; padding: 0 20px; }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin: 3em 0 1em;
+    border-top: 2px solid var(--fg);
+    padding-top: 1em;
+  }
+  h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2em 0 0.6em;
+    line-height: 1.4;
+  }
+  p     { margin-bottom: 1.15em; }
+  .lead { font-size: 1.25rem; line-height: 1.8; color: #333; }
+  .byline {
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 2em;
+  }
+  .byline time { display: block; margin-top: 0.3em; color: #999; }
+
+  figcaption {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--gray);
+    margin-top: 0.6em;
+    line-height: 1.6;
+  }
+
+  /* ── Hero ──────────────────────────────────────── */
+  .hero {
+    position: relative;
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
+    background: #000;
+    display: block;
+    height: auto;
+    text-align: right;
+  }
+  .hero img {
+    width: 100%;
+    display: block;
+    opacity: 0.85;
+    object-fit: cover;
+    max-height: 70vh;
+  }
+  .hero-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    padding: 3rem 2rem 2rem;
+    color: #fff;
+  }
+  .hero-overlay h1 { color: #fff; }
+  .hero-overlay .subtitle {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 620px;
+  }
+
+  /* ── Data Table (RTL: zone column on the right, quarters run right→left) ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.5em 0;
+  }
+  .data-table th {
+    text-align: right;
+    font-size: 0.74rem;
+    color: var(--gray);
+    border-bottom: 2px solid #1a1a1a;
+    padding: 0.5em 0.8em;
+  }
+  .data-table td {
+    padding: 0.55em 0.8em;
+    border-bottom: 1px solid #eee;
+  }
+  .data-table tr:hover td { background: #fafafa; }
+  .data-table .pos { color: var(--green); font-weight: 600; }
+  .data-table .neg { color: var(--red); font-weight: 600; }
+
+  /* ── Callout Box ───────────────────────────────── */
+  .callout {
+    background: #f7f5f0;
+    border-right: 4px solid var(--accent);
+    padding: 1.4em 1.6em;
+    margin: 2em 0;
+    border-radius: 4px 0 0 4px;
+  }
+  .callout-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+  .callout p { font-size: 0.98rem; margin-bottom: 0.6em; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* ── Image figure ──────────────────────────────── */
+  figure { margin: 2em 0; }
+  figure img { width: 100%; display: block; border-radius: 4px; }
+
+  /* ── Quarterly Zone Slider (RTL: ticks + range run right→left) ─────── */
+  .qz {
+    margin: 2.4em 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .qz__head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    padding: 0.9em 1.1em 0.7em;
+  }
+  .qz__name {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--fg);
+  }
+  .qz__gov {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--gray);
+  }
+  .qz__delta {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .qz__mode {
+    margin-inline-start: auto;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .qz__modebtn {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.3em 0.8em;
+    border: none;
+    background: #fff;
+    color: var(--gray);
+    cursor: pointer;
+  }
+  .qz__modebtn.active { background: var(--fg); color: #fff; }
+  .qz__head .qz__delta { margin-inline-start: 1em; }
+  .qz__viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    overflow: hidden;
+  }
+  .qz__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.18s linear;
+  }
+  .qz__missing {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    background: repeating-linear-gradient(45deg, #111 0 12px, #1a1a1a 12px 24px);
+  }
+  .qz__readout {
+    position: absolute;
+    top: 10px; inset-inline-start: 10px;
+    font-family: var(--sans);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.4em 0.7em;
+    border-radius: 4px;
+    z-index: 4;
+    pointer-events: none;
+  }
+  .qz__quarter { font-size: 0.95rem; font-weight: 700; display: block; }
+  .qz__rad { font-size: 0.76rem; color: var(--accent); }
+  .qz__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding: 0.7em 1.1em 0.4em;
+  }
+  .qz__range {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: #ddd;
+    outline: none;
+  }
+  .qz__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--fg);
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+  }
+  .qz__range::-moz-range-thumb {
+    width: 20px; height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: var(--fg);
+    cursor: pointer;
+  }
+  .qz__btn {
+    background: none;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    width: 34px; height: 34px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--fg);
+    flex-shrink: 0;
+  }
+  .qz__btn:hover { background: var(--light-gray); }
+  .qz__ticks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.1em 0.9em;
+    font-family: var(--sans);
+    font-size: 0.66rem;
+    color: var(--gray);
+  }
+  .qz__tick { cursor: pointer; text-align: center; flex: 1; }
+  .qz__tick.active { color: var(--fg); font-weight: 700; }
+  .qz__caption {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--gray);
+    padding: 0 1.1em 1em;
+    line-height: 1.6;
+    direction: rtl;
+    text-align: right;
+  }
+
+  /* ── Footer ────────────────────────────────────── */
+  .methodology {
+    background: var(--light-gray);
+    padding: 2.5em 0;
+    margin-top: 3em;
+    font-size: 0.9rem;
+  }
+  .methodology h3 { font-size: 1.15rem; margin-top: 0; }
+  .methodology p { font-size: 0.9rem; color: #444; }
+
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* ── Language toggle ──────────────────────────── */
+  .lang-link { font-weight: 700; }
+
+  /* ── Arabic typography ────────────────────────── */
+  :root {
+    --serif: 'Amiri', 'Noto Naskh Arabic', 'Times New Roman', serif;
+    --sans: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+  }
+  body { line-height: 1.95; }
+  .lead { line-height: 1.9; }
+
+  /* ── Responsive ────────────────────────────────── */
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    .hero { max-height: none; }
+    .hero img { max-height: none; min-height: 55vh; }
+    .hero-overlay { padding: 2rem 1rem 1.2rem; }
+    .data-table { min-width: 560px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead" id="masthead">
+  <div class="masthead__inner">
+    <a href="../../index.html" class="masthead__logo">الأضواء الليلية</a>
+    <button class="masthead__hamburger" id="nav-toggle" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="masthead__nav" id="main-nav">
+      <li><a href="../../index.html">الرئيسية</a></li>
+      <li><a href="../index.html">المقالات</a></li>
+      <li><a href="../../methodology.pdf">المنهجية</a></li>
+      <li><a href="mailto:menantlanalysis@gmail.com">تواصل</a></li>
+      <li><a href="index.html" class="lang-link">English</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ════════════════ HERO ════════════════ -->
+<div class="hero">
+  <img src="images/iz_hero.jpeg" alt="حلب ومدينة الشيخ نجار الصناعية، صورة نهارية بالقمر الاصطناعي، 2025">
+  <div class="hero-overlay">
+    <h1>مناطق سوريا الصناعية<br>المتنامية</h1>
+    <p class="subtitle">لا أحد ينشر أرقاماً موثوقة عن الصناعة السورية. لذلك راقبنا أكبر المناطق الصناعية في البلاد من الفضاء، ربعاً تلو الآخر.</p>
+  </div>
+</div>
+
+<!-- ════════════════ BYLINE ════════════════ -->
+<div class="col" style="margin-top: 2em;">
+  <div class="byline">
+    مشروع تحليل الأضواء الليلية في الشرق الأوسط وشمال أفريقيا
+    <time>حزيران 2026</time>
+  </div>
+</div>
+
+<!-- ════════════════ LEDE ════════════════ -->
+<div class="col">
+  <p class="lead">بعد أربعة عشر عاماً من الحرب، باتت أجهزة الإحصاء السورية مجرّد هيكل فارغ. أرقام الحكومة الانتقالية محلّ خلاف، والمسوح المستقلّة شبه معدومة، وظلّ جزء كبير من البلاد طوال العقد الماضي خارج متناول أيّ وزارة. هذا تحديداً هو السياق الذي صُمّم له تحليل الأضواء الليلية: حين يتوقّف مكانٌ ما عن إحصاء نفسه، يبقى الضوء الذي يبعثه ليلاً مؤشّراً صالحاً على النشاط الاقتصادي، ويسجّله القمر الاصطناعي سواء قدّم أحدٌ تقريراً أم لا.</p>
+
+  <p>لذلك راقبنا المصانع مباشرة. باستخدام مستشعر النطاق النهاري/الليلي VIIRS التابع لناسا، بنينا تركيبةً مُنقّاة من الغيوم لكلٍّ من أكبر ثلاث مناطق صناعية في سوريا، لكلّ ربع سنة من بداية 2024 حتى الآن: عامُ الأسد الأخير بأكمله كخطّ أساس، ثم الأرباع الستّة التي تلت انتقال السلطة في كانون الأول 2024. عشرة أرباع إجمالاً. حرّك المؤشّر في كلّ لوحة لمتابعة التغيّر.</p>
+</div>
+
+<!-- ════════════════ WHY QUARTERLY ════════════════ -->
+<div class="col">
+  <h2>لماذا ربعاً تلو الآخر</h2>
+
+  <p>تقارن صورة «قبل وبعد» حالةً بأخرى، لكنها لا تكشف كيف وصلنا إلى هناك. منطقةٌ صناعية ازدادت سطوعاً بنسبة 50 بالمئة خلال عام ربما تكون قد ارتفعت بثبات، أو قفزت في الأسبوع الذي أُعيد فيه فتح خطّ الغاز ثم استوت. والفرق بين الأمرين كبير. السلسلة الربعية تفصل بينهما، وتتيح لنا مقارنة الأضواء بالأحداث التي كان يُفترض أن تحرّكها: <a href="https://www.euronews.com/2025/08/02/kilis-aleppo-natural-gas-pipeline-opened-gas-flow-from-turkey-to-syria-started">إعادة فتح خطّ أنابيب الغاز كِلِس–حلب</a> في آب 2025، وإعادة فتح طرق التجارة، واضطرابات السويداء، وإعادة دمج الجزيرة.</p>
+
+  <div class="callout">
+    <div class="callout-title">المناطق الثلاث التي يمكننا رصدها</div>
+    <p><strong>عدرا</strong> (ريف دمشق): أكبر منطقة صناعية في سوريا، نحو 7,000 هكتار وقرابة 2,000 مصنع قبل الحرب.</p>
+    <p><strong>الشيخ نجار</strong> (حلب): المدينة الصناعية المخطّطة الرئيسية في حلب، على بُعد 10 كم شمال شرق مركز المدينة.</p>
+    <p><strong>حسياء</strong> (حمص): على بُعد 47 كم جنوب حمص، على محور دمشق–حمص.</p>
+    <p>موقعان آخران أصغر من أن يُرصدا بدقّة عند دقّة VIIRS البالغة نحو 500 متر، وقد استُبعدا: الليرمون (حلب) وباب الهوى/سرمدا (إدلب)، التجمّع الحدودي عند الحدود التركية، الذي تقع مساحته البالغة نحو 2 كم عند حدّ الضوضاء.</p>
+  </div>
+</div>
+
+<!-- ════════════════ TRAJECTORY TABLE ════════════════ -->
+<div class="col">
+  <h2>المسارات</h2>
+  <p>متوسّط السطوع الليلي لكلّ منطقة، بحسب الربع، بوحدة nW/cm&sup2;/sr.</p>
+</div>
+
+<div class="wide table-scroll">
+  <table class="data-table" id="qz-table">
+    <thead>
+      <tr>
+        <th>المنطقة الصناعية</th>
+        <th>Q1 &rsquo;24</th>
+        <th>Q2 &rsquo;24</th>
+        <th>Q3 &rsquo;24</th>
+        <th>Q4 &rsquo;24</th>
+        <th>Q1 &rsquo;25</th>
+        <th>Q2 &rsquo;25</th>
+        <th>Q3 &rsquo;25</th>
+        <th>Q4 &rsquo;25</th>
+        <th>Q1 &rsquo;26</th>
+        <th>Q2 &rsquo;26</th>
+        <th>التغيّر الإجمالي</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>عدرا <span style="color:#999">&middot; ريف دمشق</span></td>
+        <td>3.0</td><td>2.7</td><td>3.0</td><td>2.9</td><td>2.9</td><td>3.4</td><td>3.5</td><td>3.7</td><td>4.2</td><td>5.1</td>
+        <td class="pos">+68%</td>
+      </tr>
+      <tr>
+        <td>الشيخ نجار <span style="color:#999">&middot; حلب</span></td>
+        <td>2.1</td><td>1.7</td><td>2.0</td><td>2.1</td><td>2.0</td><td>3.6</td><td>3.2</td><td>3.8</td><td>3.4</td><td>3.9</td>
+        <td class="pos">+86%</td>
+      </tr>
+      <tr>
+        <td>حسياء <span style="color:#999">&middot; حمص</span></td>
+        <td>2.4</td><td>1.9</td><td>2.3</td><td>2.3</td><td>1.8</td><td>3.0</td><td>2.7</td><td>3.4</td><td>3.3</td><td>3.7</td>
+        <td class="pos">+54%</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption class="col">متوسّط السطوع الليلي (nW/cm&sup2;/sr)، تركيبات ربعية مُنقّاة من الغيوم بكسلاً ببكسل. المصدر: VIIRS VNP46A1.</figcaption>
+</div>
+
+<!-- ════════════════ PER-ZONE QUARTERLY SLIDERS ════════════════ -->
+<div class="col">
+  <h2>تابِع تعافي كلّ منطقة</h2>
+  <p>تعرض كلّ لوحة التركيبات الربعية العشر لمنطقة واحدة. حرّك المؤشّر أو انقر على ربع. يُظهر زرّ <strong>ليلاً</strong> سطوع VIIRS، مع المتوسّط في الزاوية؛ ويُظهر زرّ <strong>نهاراً</strong> صورةً حقيقية الألوان بدقّة 30 متراً للموقع نفسه.</p>
+</div>
+
+<div class="wide">
+  <div class="qz" data-zone="adra"></div>
+  <div class="qz" data-zone="sheikh_najjar"></div>
+  <div class="qz" data-zone="hisya"></div>
+</div>
+
+<!-- ════════════════ WHAT THE PATHS SHOW ════════════════ -->
+<div class="col">
+  <h2>ماذا تكشف المسارات</h2>
+
+  <p>لنبدأ بعام 2024، آخر عام كامل للنظام. المناطق الثلاث مستوية: عدرا نحو 2.9، والشيخ نجار نحو 2.0، وحسياء نحو 2.2، دون أيّ ميل صعودي عبر الأرباع الأربعة. أيّاً كان ما يجري في الصناعة السورية في عهد الأسد، فإنه لم يكن نموّاً. هذا الخطّ المستوي هو خطّ الأساس الذي يُقاس عليه كلّ ما تلاه.</p>
+
+  <p>ثم تتحرّك <strong>الشيخ نجار</strong> و<strong>حسياء</strong> معاً. تهبط كلتاهما إلى أدنى نقطة في مطلع 2025، في أكثر الشهور غيوماً وفي الأسابيع الأولى المضطربة بعد سقوط الأسد، ثم تقفزان في الربيع وتواصلان الارتفاع إلى أعلى قراءاتهما في كامل السلسلة بحلول الربع الثاني من 2026. ترتفع الشيخ نجار من نحو 2.0 إلى 3.9؛ وحسياء من نحو 2.2 إلى 3.7، متقدّمةً بفارق كبير على بقية محافظة حمص.</p>
+
+  <p><strong>عدرا</strong>، أكبر منطقة في سوريا، هي الحالة الأوضح. لا تقفز؛ بل بعد استواء 2024 ترتفع في كلّ ربع تقريباً: 3.4، 3.5، 3.7، 4.2، 5.1، لتنتهي أعلى بكثير من أيّ مستوى بلغته في عهد النظام السابق. هذا الصعود الثابت يواكب الانتعاش الأوسع حول دمشق.</p>
+
+  <p>أمام هذا الخطّ المستوي، يصبح التوقيت واضحاً. تقع القفزة المشتركة في <strong>ربيع 2025</strong>، قبل إعادة فتح خطّ الغاز كِلِس–حلب في آب وقبل ارتفاع ساعات التغذية الكهربائية. لو كانت الكهرباء وحدها تحرّك الأضواء، لجاء التحوّل لاحقاً في العام. لكنّ الانتعاش كان قد بدأ بحلول الربيع، وهو ما يتّسق مع عودة الشركات إلى العمل وعودة العمّال مع استقرار الأمن، بينما حافظت الكهرباء المُستعادة على هذا الانتعاش بدل أن تُطلقه.</p>
+
+  <p>تنبيهٌ بشأن الأرقام: أيّ ربع منفرد عرضةٌ للضوضاء، إذ يتباين الغطاء السحابي وعدد الليالي الصافية. ما ينبغي قراءته هو الاتجاه، لا نقطةً بعينها. والخطّ المستوي لعام 2024 يساعد هنا أيضاً: فهو لا يُظهر تأرجحاً موسمياً ثابتاً، ما يجعل الصعود المتواصل من ربيع 2025 فصاعداً يُقرأ نموّاً حقيقياً لا أثراً لصيفٍ أكثر سطوعاً. وعلى أساس سنوي، من الربع الثاني 2025 إلى الربع الثاني 2026، ترتفع عدرا بنحو النصف، وحسياء بنحو الربع، والشيخ نجار بنحو العُشر. (الربع الثاني من 2026 لا يزال جارياً، حتى منتصف حزيران.)</p>
+
+</div>
+
+<!-- ════════════════ CAVEATS ════════════════ -->
+<div class="col">
+  <h2>ما لا تراه الأضواء</h2>
+
+  <p>عند دقّة 500 متر، لا يرى VIIRS سوى المناطق الكبيرة الساطعة المتركّزة. الورش الصغيرة والصناعات الخفيفة المبعثرة في الأحياء السكنية لا تظهر. لذا فإنّ ارتفاعاً هنا يدلّ على عودة <em>كبرى</em> المواقع الصناعية في سوريا؛ لكنه لا يقول شيئاً عن قاعدة التصنيع الأوسع، التي قد تسير في الاتجاه المعاكس.</p>
+
+  <p>كما أنّ الضوء ضوءٌ منبعث، لا إنتاج. قد تسطع منطقةٌ أكثر لأنها أضافت ورديّة عمل، أو لمجرّد أنّ الكهرباء عادت فصارت المصانع نفسها تُبقي أنوارها مضاءة بعد حلول الظلام. وللتمييز بين الأمرين نحتاج إلى نظرةٍ نهارية للمواقع، وهذا ما يقدّمه زرّ <strong>نهاراً</strong> في كلّ لوحة.</p>
+</div>
+
+<!-- ════════════════ DAYTIME SIDEBAR ════════════════ -->
+<div class="col">
+  <h3>نهاراً وليلاً</h3>
+  <p>الصور النهارية مأخوذة من منتج ناسا المتجانس لاندسات–سنتينل بدقّة 30 متراً، وهي حادّة بما يكفي لتمييز المباني والساحات والإنشاءات الجديدة، حيث لا يُظهر النطاق الليلي سوى توهّج. لكنّ مصنعاً أُعيد بناؤه يبدو نهاراً كما هو سواء كان يعمل أم متوقّفاً. النظرة الليلية تخبرك إن كان يعمل؛ والنهارية تخبرك إن كان قائماً. والمنطقة التي تكون مبانيها سليمةً وآخذةً في التوسّع <em>و</em> سطوعها الليلي في ارتفاع هي منطقةٌ عادت فعلاً. (للحصول على تفاصيل أدقّ دون المتر الواحد تلزم صورٌ تجارية لا يستخدمها هذا المشروع.)</p>
+</div>
+
+<!-- ════════════════ METHODOLOGY ════════════════ -->
+<div class="methodology">
+  <div class="col">
+    <h3>كيف أنجزنا هذا</h3>
+    <p><strong>البيانات الليلية:</strong> حُبيبات يومية من VNP46A1 (نطاق VIIRS النهاري/الليلي) عبر منصّة ناسا Earthdata (EDL)، بدقّة نحو 500 متر. تقع المناطق الثلاث ضمن بلاطة واحدة، h21v05.</p>
+    <p><strong>التركيبات الربعية:</strong> لكلّ منطقة وكلّ ربع (من الربع الأول 2024 إلى الربع الثاني 2026، مع اعتبار عام 2024 بأكمله خطّ الأساس لما قبل الانتقال)، نحسب متوسّط السطوع بكسلاً ببكسل عبر الليالي الصافية في الربع، مع تطبيق قناع الغيوم المعتمد في المشروع. كلّ منطقة مربّعٌ مركزه الموقع (عدرا والشيخ نجار 13 كم، حسياء 10 كم). الربع الثاني من 2026 لا يزال جارياً ويستخدم الليالي الصافية حتى منتصف حزيران.</p>
+    <p><strong>اختيار الليالي الصافية:</strong> نستخدم مرشّح الجودة المعتمد في المشروع على سجلّات المحافظات اليومية (غطاء سحابي أقلّ من 0.2، وإضاءة قمرية لا تتجاوز 20 بالمئة، ودون تداخل مع حافّة المسح)، مع أخذ حتى أصفى عشر ليالٍ في كلّ ربع. الأرباع الشتوية (الرابع والأول) تعطي ليالي صافية أقلّ، وهو ما يسهم في الانخفاضات المتكرّرة في الربع الأول.</p>
+    <p><strong>البيانات النهارية:</strong> منتج ناسا المتجانس لاندسات–سنتينل (HLSS30/HLSL30 الإصدار 2.0)، بدقّة 30 متراً، بألوان حقيقية (النطاقات B04/B03/B02). لكلّ منطقة وربع نبحث في CMR ضمن النطاق نفسه، ونأخذ أصفى المشاهد (الأقلّ غطاءً سحابياً)، ونقنّع الغيوم والظلال باستخدام نطاق Fmask، ثم نركّب بالوسيط. والمصادقة بالرمز نفسه EDL.</p>
+    <p><strong>ملاحظة حول القيم المطلقة:</strong> هذه تركيبات لربع كامل، لذا تأتي أرقام السطوع أدنى من تركيبات أصفى ليالي تشرين الأول في المقال المرافق («أضواء سوريا تروي قصةً معقّدة»)؛ والعبرة بالمسارات لا بالمستويات المطلقة.</p>
+    <p><strong>القيود:</strong> يرصد VIIRS النشاط الصناعي الكبير الساطع المتركّز فقط؛ أما التصنيع الأصغر والمبعثر فغير مرئي. والضوء المنبعث مؤشّرٌ على النشاط لا قياسٌ مباشر للإنتاج. اقرأ الاتجاه من ربع إلى ربع لا أيّ تركيبة منفردة.</p>
+    <p style="margin-top: 1em; color: #999; font-size: 0.8rem;">مشروع تحليل الأضواء الليلية في الشرق الأوسط وشمال أفريقيا &middot; حزيران 2026</p>
+  </div>
+</div>
+
+<!-- ════════════════ QUARTERLY SLIDER DATA + JS ════════════════ -->
+<script>
+const QUARTERS = [
+  { key: "2024q1", label: "Q1 ’24", sub: "كانون الثاني–آذار 2024" },
+  { key: "2024q2", label: "Q2 ’24", sub: "نيسان–حزيران 2024" },
+  { key: "2024q3", label: "Q3 ’24", sub: "تموز–أيلول 2024" },
+  { key: "2024q4", label: "Q4 ’24", sub: "تشرين الأول–كانون الأول 2024" },
+  { key: "2025q1", label: "Q1 ’25", sub: "كانون الثاني–آذار 2025" },
+  { key: "2025q2", label: "Q2 ’25", sub: "نيسان–حزيران 2025" },
+  { key: "2025q3", label: "Q3 ’25", sub: "تموز–أيلول 2025" },
+  { key: "2025q4", label: "Q4 ’25", sub: "تشرين الأول–كانون الأول 2025" },
+  { key: "2026q1", label: "Q1 ’26", sub: "كانون الثاني–آذار 2026" },
+  { key: "2026q2", label: "Q2 ’26", sub: "نيسان–حزيران 2026" },
+];
+
+const ZONES = {
+  adra: {
+    name: "عدرا", gov: "ريف دمشق",
+    radiance: [3.04, 2.71, 3.02, 2.86, 2.85, 3.39, 3.49, 3.66, 4.16, 5.11],
+    caption: "أكبر منطقة صناعية في سوريا (نحو 7,000 هكتار وقرابة 2,000 مصنع قبل الحرب). المصدر: VIIRS VNP46A1، بتدرّج ألوان magma.",
+  },
+  sheikh_najjar: {
+    name: "الشيخ نجار", gov: "حلب",
+    radiance: [2.10, 1.69, 2.00, 2.09, 1.95, 3.55, 3.24, 3.83, 3.39, 3.91],
+    caption: "المدينة الصناعية المخطّطة الرئيسية في حلب، على بُعد 10 كم شمال شرق مركز المدينة. كانت نشطة جزئياً طوال الحرب.",
+  },
+  hisya: {
+    name: "حسياء", gov: "حمص",
+    radiance: [2.42, 1.90, 2.32, 2.32, 1.75, 2.96, 2.66, 3.35, 3.34, 3.73],
+    caption: "على محور دمشق–حمص، على بُعد 47 كم جنوب حمص. سبق تعافيها بقية محافظة حمص.",
+  },
+};
+
+function fmtRad(v) {
+  return (v === null || v === undefined) ? "قيد الإنشاء" : v.toFixed(1) + " nW/cm²/sr";
+}
+
+function buildZoneSlider(root) {
+  const zoneId = root.dataset.zone;
+  const z = ZONES[zoneId];
+  if (!z) return;
+
+  const n = QUARTERS.length;
+  const net = (z.radiance[0] != null && z.radiance[n - 1] != null)
+    ? Math.round(((z.radiance[n - 1] / z.radiance[0]) - 1) * 100)
+    : null;
+  const deltaHtml = net == null
+    ? '<span style="color:#bbb">—</span>'
+    : '<span style="color:var(--' + (net >= 0 ? 'green' : 'red') + ')">'
+        + (net >= 0 ? '+' : '') + net + '%</span>';
+
+  root.innerHTML =
+    '<div class="qz__head">'
+    + '<span class="qz__name">' + z.name + '</span>'
+    + '<span class="qz__gov">' + z.gov + '</span>'
+    + '<span class="qz__mode">'
+    +   '<button class="qz__modebtn active" data-mode="night">ليلاً</button>'
+    +   '<button class="qz__modebtn" data-mode="day">نهاراً</button>'
+    + '</span>'
+    + '<span class="qz__delta">' + deltaHtml + '</span>'
+    + '</div>'
+    + '<div class="qz__viewport"></div>'
+    + '<div class="qz__controls">'
+    + '<button class="qz__btn" data-dir="-1" aria-label="الربع السابق">‹</button>'
+    + '<input class="qz__range" type="range" min="0" max="' + (n - 1) + '" step="0.01" value="0">'
+    + '<button class="qz__btn" data-dir="1" aria-label="الربع التالي">›</button>'
+    + '</div>'
+    + '<div class="qz__ticks"></div>'
+    + '<div class="qz__caption">' + z.caption + '</div>';
+
+  let mode = "night";
+
+  const viewport = root.querySelector(".qz__viewport");
+  const range = root.querySelector(".qz__range");
+  const ticks = root.querySelector(".qz__ticks");
+
+  const layers = QUARTERS.map((q, i) => {
+    const wrap = document.createElement("div");
+    wrap.style.position = "absolute";
+    wrap.style.inset = "0";
+    wrap.style.opacity = (i === 0) ? "1" : "0";
+    wrap.style.transition = "opacity 0.18s linear";
+
+    const imgs = {};
+    const missing = { night: false, day: false };
+    [["night", ".jpeg"], ["day", "_day.jpeg"]].forEach(([m, suffix]) => {
+      const img = document.createElement("img");
+      img.className = "qz__img";
+      img.dataset.mode = m;
+      img.alt = z.name + " " + q.label;
+      img.draggable = false;
+      img.style.display = "none";
+      img.src = "images/" + zoneId + "_" + q.key + suffix;
+      img.onerror = () => { missing[m] = true; if (m === mode) applyMode(layer); };
+      wrap.appendChild(img);
+      imgs[m] = img;
+    });
+
+    const miss = document.createElement("div");
+    miss.className = "qz__missing";
+    miss.style.display = "none";
+    wrap.appendChild(miss);
+
+    viewport.appendChild(wrap);
+    const layer = { wrap, imgs, miss, missing, q };
+    return layer;
+  });
+
+  function applyMode(layer) {
+    layer.imgs.night.style.display = "none";
+    layer.imgs.day.style.display = "none";
+    if (layer.missing[mode]) {
+      layer.miss.textContent = (mode === "day" ? "المشهد النهاري قيد الإنشاء: " : "التركيبة الليلية قيد الإنشاء: ") + layer.q.label;
+      layer.miss.style.display = "flex";
+    } else {
+      layer.miss.style.display = "none";
+      layer.imgs[mode].style.display = "block";
+    }
+  }
+
+  const readout = document.createElement("div");
+  readout.className = "qz__readout";
+  readout.innerHTML = '<span class="qz__quarter"></span><span class="qz__rad"></span>';
+  viewport.appendChild(readout);
+  const qLabel = readout.querySelector(".qz__quarter");
+  const rLabel = readout.querySelector(".qz__rad");
+
+  QUARTERS.forEach((q, i) => {
+    const t = document.createElement("span");
+    t.className = "qz__tick" + (i === 0 ? " active" : "");
+    t.textContent = q.label;
+    t.addEventListener("click", () => { range.value = i; update(i); });
+    ticks.appendChild(t);
+  });
+
+  function update(value) {
+    const idx = parseFloat(value);
+    const lower = Math.floor(idx);
+    const upper = Math.min(Math.ceil(idx), QUARTERS.length - 1);
+    const frac = idx - lower;
+
+    layers.forEach((layer, i) => {
+      if (lower === upper) layer.wrap.style.opacity = (i === lower) ? "1" : "0";
+      else if (i === lower) layer.wrap.style.opacity = String(1 - frac);
+      else if (i === upper) layer.wrap.style.opacity = String(frac);
+      else layer.wrap.style.opacity = "0";
+    });
+
+    const nearest = Math.round(idx);
+    qLabel.textContent = QUARTERS[nearest].sub;
+    rLabel.textContent = (mode === "night")
+      ? fmtRad(z.radiance[nearest])
+      : "ألوان حقيقية HLS (30 م)";
+    ticks.querySelectorAll(".qz__tick").forEach((t, i) =>
+      t.classList.toggle("active", i === nearest));
+  }
+
+  range.addEventListener("input", () => update(range.value));
+  root.querySelectorAll(".qz__btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const cur = Math.round(parseFloat(range.value));
+      const next = Math.max(0, Math.min(QUARTERS.length - 1, cur + parseInt(btn.dataset.dir, 10)));
+      range.value = next;
+      update(next);
+    });
+  });
+
+  root.querySelectorAll(".qz__modebtn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      mode = btn.dataset.mode;
+      root.querySelectorAll(".qz__modebtn").forEach(b =>
+        b.classList.toggle("active", b.dataset.mode === mode));
+      layers.forEach(applyMode);
+      update(range.value);
+    });
+  });
+
+  layers.forEach(applyMode);
+  update(0);
+}
+
+document.querySelectorAll(".qz").forEach(buildZoneSlider);
+
+// Hamburger toggle
+const toggle = document.getElementById('nav-toggle');
+const nav = document.getElementById('main-nav');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.classList.toggle('masthead__hamburger--open');
+  });
+}
+</script>
+
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20740W8TXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-20740W8TXW');
+</script>
+
+</body>
+</html>

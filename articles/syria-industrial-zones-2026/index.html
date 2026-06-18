@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Syria's Growing Industrial Zones">
+<meta property="og:description" content="Tracking the recovery of Syria's major industrial zones from space, one quarter at a time, since the fall of Assad in December 2024.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://menantlanalysis.github.io/articles/syria-industrial-zones-2026/images/iz_hero.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="ar" href="index.ar.html">
+<title>Syria's Growing Industrial Zones</title>
+<link rel="stylesheet" href="../../css/v2.css">
+<style>
+  /* ── Reset & Base ─────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: 'Helvetica Neue', Arial, sans-serif;
+    --bg: #fff;
+    --fg: #1a1a1a;
+    --gray: #666;
+    --light-gray: #f0f0f0;
+    --accent: #d4a843;
+    --red: #c0392b;
+    --green: #27ae60;
+    --col: min(680px, 90vw);
+    --wide: min(960px, 95vw);
+  }
+
+  body {
+    font-family: var(--serif);
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.72;
+    font-size: 19px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Typography ───────────────────────────────── */
+  .col    { max-width: var(--col); margin: 0 auto; padding: 0 20px; }
+  .wide   { max-width: var(--wide); margin: 0 auto; padding: 0 20px; }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+    letter-spacing: -0.02em;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--fg);
+    margin: 3em 0 1em;
+    border-top: 2px solid var(--fg);
+    padding-top: 1em;
+  }
+  h3 {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2em 0 0.6em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  p     { margin-bottom: 1.15em; }
+  .lead { font-size: 1.25rem; line-height: 1.65; color: #333; }
+  .byline {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 2em;
+  }
+  .byline time { display: block; margin-top: 0.3em; color: #999; }
+  .drop-cap::first-letter {
+    float: left;
+    font-size: 4.2em;
+    line-height: 0.8;
+    padding-right: 0.08em;
+    margin-top: 0.05em;
+    font-weight: 700;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.2em 0 0.2em 1.4em;
+    margin: 1.8em 0;
+    font-style: italic;
+    color: #444;
+  }
+
+  figcaption {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--gray);
+    margin-top: 0.6em;
+    line-height: 1.5;
+  }
+
+  /* ── Hero ──────────────────────────────────────── */
+  .hero {
+    position: relative;
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
+    background: #000;
+    display: block;
+    height: auto;
+    text-align: left;
+  }
+  .hero img {
+    width: 100%;
+    display: block;
+    opacity: 0.85;
+    object-fit: cover;
+    max-height: 70vh;
+  }
+  .hero-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    padding: 3rem 2rem 2rem;
+    color: #fff;
+  }
+  .hero-overlay h1 { color: #fff; }
+  .hero-overlay .subtitle {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 600px;
+  }
+
+  /* ── Data Table ────────────────────────────────── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.5em 0;
+  }
+  .data-table th {
+    text-align: left;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray);
+    border-bottom: 2px solid #1a1a1a;
+    padding: 0.5em 0.8em;
+  }
+  .data-table td {
+    padding: 0.55em 0.8em;
+    border-bottom: 1px solid #eee;
+  }
+  .data-table tr:hover td { background: #fafafa; }
+  .data-table .pos { color: var(--green); font-weight: 600; }
+  .data-table .neg { color: var(--red); font-weight: 600; }
+  .data-table .pending { color: #bbb; font-style: italic; }
+
+  /* ── Callout Box ───────────────────────────────── */
+  .callout {
+    background: #f7f5f0;
+    border-left: 4px solid var(--accent);
+    padding: 1.4em 1.6em;
+    margin: 2em 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .callout-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+  .callout p { font-size: 0.95rem; margin-bottom: 0.6em; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* ── Draft banner (remove before publishing) ─────── */
+  .draft-banner {
+    background: #fff4e5;
+    border: 1px dashed var(--accent);
+    color: #7a5b12;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    padding: 1em 1.2em;
+    margin: 1.5em auto;
+    border-radius: 4px;
+    max-width: var(--wide);
+  }
+  .draft-banner strong { color: #5a4310; }
+
+  /* ── Image figure ──────────────────────────────── */
+  figure { margin: 2em 0; }
+  figure img { width: 100%; display: block; border-radius: 4px; }
+
+  /* ── Quarterly Zone Slider ───────────────────────── */
+  .qz {
+    margin: 2.4em 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .qz__head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    padding: 0.9em 1.1em 0.7em;
+  }
+  .qz__name {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--fg);
+  }
+  .qz__gov {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+  .qz__delta {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .qz__mode {
+    margin-left: auto;
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .qz__modebtn {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.3em 0.7em;
+    border: none;
+    background: #fff;
+    color: var(--gray);
+    cursor: pointer;
+  }
+  .qz__modebtn.active { background: var(--fg); color: #fff; }
+  .qz__head .qz__delta { margin-left: 1em; }
+  .qz__viewport {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    overflow: hidden;
+  }
+  .qz__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.18s linear;
+  }
+  .qz__missing {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    background: repeating-linear-gradient(45deg, #111 0 12px, #1a1a1a 12px 24px);
+  }
+  .qz__readout {
+    position: absolute;
+    top: 10px; left: 10px;
+    font-family: var(--sans);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.4em 0.7em;
+    border-radius: 4px;
+    z-index: 4;
+    pointer-events: none;
+  }
+  .qz__quarter {
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: block;
+  }
+  .qz__rad {
+    font-size: 0.74rem;
+    color: var(--accent);
+  }
+  .qz__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    padding: 0.7em 1.1em 0.4em;
+  }
+  .qz__range {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: #ddd;
+    outline: none;
+  }
+  .qz__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--fg);
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+  }
+  .qz__range::-moz-range-thumb {
+    width: 20px; height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: var(--fg);
+    cursor: pointer;
+  }
+  .qz__btn {
+    background: none;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    width: 34px; height: 34px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--fg);
+    flex-shrink: 0;
+  }
+  .qz__btn:hover { background: var(--light-gray); }
+  .qz__ticks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.1em 0.9em;
+    font-family: var(--sans);
+    font-size: 0.66rem;
+    color: var(--gray);
+  }
+  .qz__tick {
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+  }
+  .qz__tick.active { color: var(--fg); font-weight: 700; }
+  .qz__caption {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--gray);
+    padding: 0 1.1em 1em;
+    line-height: 1.5;
+  }
+
+  /* ── Footer ────────────────────────────────────── */
+  .methodology {
+    background: var(--light-gray);
+    padding: 2.5em 0;
+    margin-top: 3em;
+    font-size: 0.9rem;
+  }
+  .methodology h3 { font-size: 1.15rem; margin-top: 0; }
+  .methodology p { font-size: 0.88rem; color: #444; }
+
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* ── Responsive ────────────────────────────────── */
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    .hero { max-height: none; }
+    .hero img { max-height: none; min-height: 55vh; }
+    .hero-overlay { padding: 2rem 1rem 1.2rem; }
+    .data-table { min-width: 520px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Masthead -->
+<header class="masthead" id="masthead">
+  <div class="masthead__inner">
+    <a href="../../index.html" class="masthead__logo">Nighttime Lights</a>
+    <button class="masthead__hamburger" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="masthead__nav" id="main-nav">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../index.html">Articles</a></li>
+      <li><a href="../../methodology.pdf">Methodology</a></li>
+      <li><a href="mailto:menantlanalysis@gmail.com">Contact</a></li>
+      <li><a href="index.ar.html" class="lang-link" style="font-weight:700">العربية</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ════════════════ HERO ════════════════ -->
+<div class="hero">
+  <img src="images/iz_hero.jpeg" alt="Aleppo and the Sheikh Najjar industrial city, daytime satellite view, 2025">
+  <div class="hero-overlay">
+    <h1>Syria's Growing<br>Industrial Zones</h1>
+    <p class="subtitle">No one publishes reliable figures on Syrian manufacturing. So we watched the country's biggest industrial zones from orbit, quarter by quarter.</p>
+  </div>
+</div>
+
+<!-- ════════════════ BYLINE ════════════════ -->
+<div class="col" style="margin-top: 2em;">
+  <div class="byline">
+    MENA Nighttime Lights Analysis Project
+    <time>June 2026</time>
+  </div>
+</div>
+
+<!-- ════════════════ LEDE ════════════════ -->
+<div class="col">
+  <p class="drop-cap">After fourteen years of war, Syria's statistical agencies are a shell. The transitional government's figures are contested, independent surveys barely exist, and much of the country spent the past decade outside any ministry's reach. This is the situation nighttime-lights analysis was built for: when a place stops counting itself, the light it emits at night is still a usable proxy for economic activity, and a satellite records it whether anyone files a report or not.</p>
+
+  <p>So we watched the factories directly. Using NASA's VIIRS Day/Night Band, we built a cloud-masked composite of each of Syria's three largest industrial zones for every quarter from the start of 2024 to now: all of Assad's final year as a baseline, then the six quarters since the December 2024 transition. Ten quarters in all. Drag the slider on each to watch it change.</p>
+</div>
+
+<!-- ════════════════ WHY QUARTERLY ════════════════ -->
+<div class="col">
+  <h2>Why quarter by quarter</h2>
+
+  <p>A before-and-after pair tells you a zone got brighter, but not how. A factory zone up 50 percent over a year might have climbed steadily, or jumped the week a gas pipeline reopened and then flattened. Those mean different things. A quarterly series separates them, and it lets us line the lights up against the events that should have moved them: the <a href="https://www.euronews.com/2025/08/02/kilis-aleppo-natural-gas-pipeline-opened-gas-flow-from-turkey-to-syria-started">Kilis&ndash;Aleppo gas pipeline reopening</a> in August 2025, reopened trade routes, the Suwayda unrest, the reintegration of the northeast.</p>
+
+  <div class="callout">
+    <div class="callout-title">The three zones we can resolve</div>
+    <p><strong>Adra</strong> (Rif Dimashq): Syria's largest industrial zone, ~7,000 hectares, nearly 2,000 factories pre-war.</p>
+    <p><strong>Sheikh Najjar</strong> (Aleppo): Aleppo's main planned industrial city, 10&nbsp;km northeast of the city center.</p>
+    <p><strong>Hisya</strong> (Homs): 47&nbsp;km south of Homs, on the Damascus&ndash;Homs corridor.</p>
+    <p>Two other sites are too small to resolve reliably at VIIRS's ~500&nbsp;m pixel and are excluded: Layramoun (Aleppo) and Bab al-Hawa / Sarmada (Idlib), the cross-border cluster at the Turkish frontier, whose ~2&nbsp;km footprint sits at the noise floor.</p>
+  </div>
+</div>
+
+<!-- ════════════════ TRAJECTORY TABLE ════════════════ -->
+<div class="col">
+  <h2>The trajectories</h2>
+  <p>Mean nighttime radiance at each zone, by quarter, in nW/cm&sup2;/sr.</p>
+</div>
+
+<div class="wide table-scroll">
+  <table class="data-table" id="qz-table">
+    <thead>
+      <tr>
+        <th>Industrial Zone</th>
+        <th>Q1 &rsquo;24</th>
+        <th>Q2 &rsquo;24</th>
+        <th>Q3 &rsquo;24</th>
+        <th>Q4 &rsquo;24</th>
+        <th>Q1 &rsquo;25</th>
+        <th>Q2 &rsquo;25</th>
+        <th>Q3 &rsquo;25</th>
+        <th>Q4 &rsquo;25</th>
+        <th>Q1 &rsquo;26</th>
+        <th>Q2 &rsquo;26</th>
+        <th>Net change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adra <span style="color:#999">&middot; Rif Dimashq</span></td>
+        <td>3.0</td><td>2.7</td><td>3.0</td><td>2.9</td><td>2.9</td><td>3.4</td><td>3.5</td><td>3.7</td><td>4.2</td><td>5.1</td>
+        <td class="pos">+68%</td>
+      </tr>
+      <tr>
+        <td>Sheikh Najjar <span style="color:#999">&middot; Aleppo</span></td>
+        <td>2.1</td><td>1.7</td><td>2.0</td><td>2.1</td><td>2.0</td><td>3.6</td><td>3.2</td><td>3.8</td><td>3.4</td><td>3.9</td>
+        <td class="pos">+86%</td>
+      </tr>
+      <tr>
+        <td>Hisya <span style="color:#999">&middot; Homs</span></td>
+        <td>2.4</td><td>1.9</td><td>2.3</td><td>2.3</td><td>1.8</td><td>3.0</td><td>2.7</td><td>3.4</td><td>3.3</td><td>3.7</td>
+        <td class="pos">+54%</td>
+      </tr>
+    </tbody>
+  </table>
+  <figcaption class="col">Mean nighttime radiance (nW/cm&sup2;/sr), per-pixel cloud-masked quarterly composites. Q4&rsquo;24 and Q4&rsquo;25 values carried from the October composites in the prior analysis. Interior quarters pending. VIIRS VNP46A1.</figcaption>
+</div>
+
+<!-- ════════════════ PER-ZONE QUARTERLY SLIDERS ════════════════ -->
+<div class="col">
+  <h2>Watch each zone recover</h2>
+  <p>Each panel runs through the ten quarterly composites for one zone. Drag the slider or click a quarter. <strong>Night</strong> shows VIIRS radiance, with the mean in the corner; <strong>Day</strong> shows 30&nbsp;m true color of the same site.</p>
+</div>
+
+<div class="wide">
+  <div class="qz" data-zone="adra"></div>
+  <div class="qz" data-zone="sheikh_najjar"></div>
+  <div class="qz" data-zone="hisya"></div>
+</div>
+
+<!-- ════════════════ WHAT THE PATHS SHOW ════════════════ -->
+<div class="col">
+  <h2>What the paths show</h2>
+
+  <p>Start with 2024, the regime's last full year. All three zones are flat: Adra sits around 2.9, Sheikh Najjar around 2.0, Hisya around 2.2, with no upward drift across the four quarters. Whatever was happening in Syrian industry under Assad, it was not growth. That flat line is the baseline everything after is measured against.</p>
+
+  <p><strong>Sheikh Najjar</strong> and <strong>Hisya</strong> then move together. Both sink to their lowest point in early 2025, in the cloudiest months and the chaotic first weeks after Assad fell, then jump in the spring and keep rising to their brightest readings of the whole run by Q2 2026. Sheikh Najjar climbs from about 2.0 to 3.9; Hisya from about 2.2 to 3.7, well ahead of the rest of Homs governorate.</p>
+
+  <p><strong>Adra</strong>, Syria's largest zone, is the clearest case. It doesn't jump; after the flat 2024 it climbs almost every quarter, 3.4, 3.5, 3.7, 4.2, 5.1, ending well above anything it reached under the old regime. That steady rise tracks the broader surge around Damascus.</p>
+
+  <p>Against that flat baseline, the timing is clear. The shared jump lands in <strong>spring 2025</strong>, before the Kilis&ndash;Aleppo gas pipeline reopened in August and grid hours rose. If electricity alone were driving the lights, the break would come later in the year. Instead the rebound was underway by spring, which fits firms reopening and workers returning as security settled, with the restored grid sustaining it rather than starting it.</p>
+
+  <p>One caveat on the numbers: any single quarter is noisy, since cloud cover and the number of clear nights vary. The trend is what to read, not any one point. The flat 2024 line helps here too: it shows no steady seasonal swing, so the sustained climb from spring 2025 onward reads as real growth rather than an artifact of brighter summers. Year on year, from Q2 2025 to Q2 2026, Adra is up about half, Hisya about a quarter, and Sheikh Najjar about a tenth. (Q2 2026 is still in progress, through mid-June.)</p>
+
+</div>
+
+<!-- ════════════════ CAVEATS ════════════════ -->
+<div class="col">
+  <h2>What the lights miss</h2>
+
+  <p>At 500 metres, VIIRS only sees large, bright, concentrated zones. Small workshops and the light industry scattered through residential areas don't register. So a rise here shows Syria's <em>major</em> industrial sites coming back; it says nothing about the wider manufacturing base, which could be moving the other way.</p>
+
+  <p>And the light is emitted light, not output. A zone can burn brighter because it added a shift, or just because the grid came back and the same factories now keep their lights on after dark. Telling those apart takes a daytime look at the sites, which is what the <strong>Day</strong> toggle on each slider is for.</p>
+</div>
+
+<!-- ════════════════ DAYTIME SIDEBAR ════════════════ -->
+<div class="col">
+  <h3>Day and night</h3>
+  <p>The daytime frames come from NASA's Harmonized Landsat&ndash;Sentinel product at 30&nbsp;metres, sharp enough to make out buildings, lots and new construction, where the night band shows only a glow. But a rebuilt factory looks the same by day whether it's running or idle. The night view tells you if it's working; the day view tells you if it's there. A zone whose buildings are intact and expanding <em>and</em> whose night radiance is rising is one that's genuinely back. (For sharper, sub-metre detail you'd need commercial imagery, which this project doesn't use.)</p>
+</div>
+
+<!-- ════════════════ METHODOLOGY ════════════════ -->
+<div class="methodology">
+  <div class="col">
+    <h3>How we did this</h3>
+    <p><strong>Nighttime data:</strong> NASA VNP46A1 (VIIRS Day/Night Band) daily granules via NASA Earthdata (EDL), ~500&nbsp;m resolution. All three zones fall within a single tile, h21v05.</p>
+    <p><strong>Quarterly composites:</strong> For each zone and quarter (Q1 2024 through Q2 2026, with all of 2024 serving as the pre-transition baseline), we average per-pixel radiance across the quarter's clear nights, applying the project's per-pixel cloud mask. Each zone is a square footprint (Adra and Sheikh Najjar 13&nbsp;km, Hisya 10&nbsp;km) centered on the site. Q2 2026 is still in progress and uses the quarter's clear nights through mid-June.</p>
+    <p><strong>Clear-night selection:</strong> We use the project's standard quality filter on the per-date governorate records (cloud cover below 0.2, lunar illumination at or below 20&nbsp;percent, and no swath-edge overlap), taking up to the ten clearest nights in each quarter. Winter quarters (Q4, Q1) yield fewer clean nights, which contributes to the recurring first-quarter dips.</p>
+    <p><strong>Daytime data:</strong> NASA Harmonized Landsat&ndash;Sentinel (HLSS30 / HLSL30 v2.0), 30&nbsp;m, true color (bands B04/B03/B02). For each zone and quarter we search CMR over the same footprint, take the clearest scenes (lowest cloud cover), mask cloud and shadow with the Fmask band, and median-composite. Authenticated with the same EDL token.</p>
+    <p><strong>Note on absolute values:</strong> These are full-quarter composites, so the radiance figures run lower than the clearest-October-night composites in the companion piece (&ldquo;Syria's Lights Tell a Complicated Story&rdquo;); the trajectories, not the absolute levels, are the point.</p>
+    <p><strong>Limitations:</strong> VIIRS detects only large, bright, concentrated industrial activity; smaller and distributed manufacturing is invisible. Emitted light is a proxy for activity, not a direct measure of output. Read the quarter-over-quarter trend rather than any single composite.</p>
+    <p style="margin-top: 1em; color: #999; font-size: 0.8rem;">MENA Nighttime Lights Analysis Project &middot; Draft, June 2026</p>
+  </div>
+</div>
+
+<!-- ════════════════ QUARTERLY SLIDER DATA + JS ════════════════ -->
+<script>
+/* Quarters since the transition (Assad fell 8 Dec 2024). */
+const QUARTERS = [
+  { key: "2024q1", label: "Q1 ’24", sub: "Jan–Mar 2024" },
+  { key: "2024q2", label: "Q2 ’24", sub: "Apr–Jun 2024" },
+  { key: "2024q3", label: "Q3 ’24", sub: "Jul–Sep 2024" },
+  { key: "2024q4", label: "Q4 ’24", sub: "Oct–Dec 2024" },
+  { key: "2025q1", label: "Q1 ’25", sub: "Jan–Mar 2025" },
+  { key: "2025q2", label: "Q2 ’25", sub: "Apr–Jun 2025" },
+  { key: "2025q3", label: "Q3 ’25", sub: "Jul–Sep 2025" },
+  { key: "2025q4", label: "Q4 ’25", sub: "Oct–Dec 2025" },
+  { key: "2026q1", label: "Q1 ’26", sub: "Jan–Mar 2026" },
+  { key: "2026q2", label: "Q2 ’26", sub: "Apr–Jun 2026" },
+];
+
+/* radiance: mean nW/cm2/sr per quarter, aligned to QUARTERS. Full-quarter
+   cloud-masked composites over the project's quality-filtered clear nights
+   (cloud_cover < 0.2, lunar_illumination <= 20, no swath edge; up to 10 clearest
+   nights/quarter). Generated by generate_clips.py --source viirs. */
+const ZONES = {
+  adra: {
+    name: "Adra", gov: "Rif Dimashq",
+    radiance: [3.04, 2.71, 3.02, 2.86, 2.85, 3.39, 3.49, 3.66, 4.16, 5.11],
+    caption: "Syria's largest industrial zone (~7,000 ha, nearly 2,000 factories pre-war). VIIRS VNP46A1, magma color scale.",
+  },
+  sheikh_najjar: {
+    name: "Sheikh Najjar", gov: "Aleppo",
+    radiance: [2.10, 1.69, 2.00, 2.09, 1.95, 3.55, 3.24, 3.83, 3.39, 3.91],
+    caption: "Aleppo's main planned industrial city, 10 km northeast of the city center. Partially active throughout the conflict.",
+  },
+  hisya: {
+    name: "Hisya", gov: "Homs",
+    radiance: [2.42, 1.90, 2.32, 2.32, 1.75, 2.96, 2.66, 3.35, 3.34, 3.73],
+    caption: "On the Damascus–Homs corridor, 47 km south of Homs. Recovery here ran ahead of the wider Homs governorate.",
+  },
+};
+
+function fmtRad(v) {
+  return (v === null || v === undefined) ? "pending" : v.toFixed(1) + " nW/cm²/sr";
+}
+
+function buildZoneSlider(root) {
+  const zoneId = root.dataset.zone;
+  const z = ZONES[zoneId];
+  if (!z) return;
+
+  const n = QUARTERS.length;
+  const net = (z.radiance[0] != null && z.radiance[n - 1] != null)
+    ? Math.round(((z.radiance[n - 1] / z.radiance[0]) - 1) * 100)
+    : null;
+  const deltaHtml = net == null
+    ? '<span style="color:#bbb">net pending</span>'
+    : '<span style="color:var(--' + (net >= 0 ? 'green' : 'red') + ')">'
+        + (net >= 0 ? '+' : '') + net + '% net</span>';
+
+  root.innerHTML =
+    '<div class="qz__head">'
+    + '<span class="qz__name">' + z.name + '</span>'
+    + '<span class="qz__gov">' + z.gov + '</span>'
+    + '<span class="qz__mode">'
+    +   '<button class="qz__modebtn active" data-mode="night">Night</button>'
+    +   '<button class="qz__modebtn" data-mode="day">Day</button>'
+    + '</span>'
+    + '<span class="qz__delta">' + deltaHtml + '</span>'
+    + '</div>'
+    + '<div class="qz__viewport"></div>'
+    + '<div class="qz__controls">'
+    + '<button class="qz__btn" data-dir="-1" aria-label="Previous quarter">‹</button>'
+    + '<input class="qz__range" type="range" min="0" max="' + (n - 1) + '" step="0.01" value="0">'
+    + '<button class="qz__btn" data-dir="1" aria-label="Next quarter">›</button>'
+    + '</div>'
+    + '<div class="qz__ticks"></div>'
+    + '<div class="qz__caption">' + z.caption + '</div>';
+
+  let mode = "night";  // "night" = VIIRS radiance, "day" = HLS true color
+
+  const viewport = root.querySelector(".qz__viewport");
+  const range = root.querySelector(".qz__range");
+  const ticks = root.querySelector(".qz__ticks");
+
+  // One stacked wrap per quarter; each holds a night + a day image and a
+  // "pending" fallback. Slider opacity crossfades the wraps; the mode toggle
+  // chooses which image inside each wrap is shown.
+  const layers = QUARTERS.map((q, i) => {
+    const wrap = document.createElement("div");
+    wrap.style.position = "absolute";
+    wrap.style.inset = "0";
+    wrap.style.opacity = (i === 0) ? "1" : "0";
+    wrap.style.transition = "opacity 0.18s linear";
+
+    const imgs = {};
+    const missing = { night: false, day: false };
+    [["night", ".jpeg"], ["day", "_day.jpeg"]].forEach(([m, suffix]) => {
+      const img = document.createElement("img");
+      img.className = "qz__img";
+      img.dataset.mode = m;
+      img.alt = z.name + " " + q.label + " (" + m + ")";
+      img.draggable = false;
+      img.style.display = "none";
+      img.src = "images/" + zoneId + "_" + q.key + suffix;
+      img.onerror = () => { missing[m] = true; if (m === mode) applyMode(layer); };
+      wrap.appendChild(img);
+      imgs[m] = img;
+    });
+
+    const miss = document.createElement("div");
+    miss.className = "qz__missing";
+    miss.style.display = "none";
+    wrap.appendChild(miss);
+
+    viewport.appendChild(wrap);
+    const layer = { wrap, imgs, miss, missing, q };
+    return layer;
+  });
+
+  function applyMode(layer) {
+    layer.imgs.night.style.display = "none";
+    layer.imgs.day.style.display = "none";
+    if (layer.missing[mode]) {
+      layer.miss.textContent = (mode === "day" ? "day scene pending: " : "night composite pending: ") + layer.q.label;
+      layer.miss.style.display = "flex";
+    } else {
+      layer.miss.style.display = "none";
+      layer.imgs[mode].style.display = "block";
+    }
+  }
+
+  const readout = document.createElement("div");
+  readout.className = "qz__readout";
+  readout.innerHTML = '<span class="qz__quarter"></span><span class="qz__rad"></span>';
+  viewport.appendChild(readout);
+  const qLabel = readout.querySelector(".qz__quarter");
+  const rLabel = readout.querySelector(".qz__rad");
+
+  // Tick labels
+  QUARTERS.forEach((q, i) => {
+    const t = document.createElement("span");
+    t.className = "qz__tick" + (i === 0 ? " active" : "");
+    t.textContent = q.label;
+    t.addEventListener("click", () => { range.value = i; update(i); });
+    ticks.appendChild(t);
+  });
+
+  function update(value) {
+    const idx = parseFloat(value);
+    const lower = Math.floor(idx);
+    const upper = Math.min(Math.ceil(idx), QUARTERS.length - 1);
+    const frac = idx - lower;
+
+    layers.forEach((layer, i) => {
+      if (lower === upper) layer.wrap.style.opacity = (i === lower) ? "1" : "0";
+      else if (i === lower) layer.wrap.style.opacity = String(1 - frac);
+      else if (i === upper) layer.wrap.style.opacity = String(frac);
+      else layer.wrap.style.opacity = "0";
+    });
+
+    const nearest = Math.round(idx);
+    qLabel.textContent = QUARTERS[nearest].sub;
+    rLabel.textContent = (mode === "night")
+      ? fmtRad(z.radiance[nearest])
+      : "HLS true color (30 m)";
+    ticks.querySelectorAll(".qz__tick").forEach((t, i) =>
+      t.classList.toggle("active", i === nearest));
+  }
+
+  range.addEventListener("input", () => update(range.value));
+  root.querySelectorAll(".qz__btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const cur = Math.round(parseFloat(range.value));
+      const next = Math.max(0, Math.min(QUARTERS.length - 1, cur + parseInt(btn.dataset.dir, 10)));
+      range.value = next;
+      update(next);
+    });
+  });
+
+  root.querySelectorAll(".qz__modebtn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      mode = btn.dataset.mode;
+      root.querySelectorAll(".qz__modebtn").forEach(b =>
+        b.classList.toggle("active", b.dataset.mode === mode));
+      layers.forEach(applyMode);
+      update(range.value);
+    });
+  });
+
+  layers.forEach(applyMode);
+  update(0);
+}
+
+document.querySelectorAll(".qz").forEach(buildZoneSlider);
+
+// Hamburger toggle
+const toggle = document.getElementById('nav-toggle');
+const nav = document.getElementById('main-nav');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.classList.toggle('masthead__hamburger--open');
+  });
+}
+</script>
+
+<!-- Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20740W8TXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-20740W8TXW');
+</script>
+
+</body>
+</html>

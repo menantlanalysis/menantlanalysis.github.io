@@ -4,10 +4,6 @@
             "displayName": "Syria",
             "monthly": [
                 {
-                    "month": "2025-05",
-                    "path": "images/syria/monthly/2025-05.jpeg"
-                },
-                {
                     "month": "2025-07",
                     "path": "images/syria/monthly/2025-07.jpeg"
                 },
@@ -50,16 +46,20 @@
                 {
                     "month": "2026-05",
                     "path": "images/syria/monthly/2026-05.jpeg"
+                },
+                {
+                    "month": "2026-06",
+                    "path": "images/syria/monthly/2026-06.jpeg"
                 }
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-05",
-                    "path": "images/syria/monthly/2025-05.jpeg"
+                    "date": "2025-07",
+                    "path": "images/syria/monthly/2025-07.jpeg"
                 },
                 "latest": {
-                    "date": "2026-05",
-                    "path": "images/syria/monthly/2026-05.jpeg"
+                    "date": "2026-06",
+                    "path": "images/syria/monthly/2026-06.jpeg"
                 }
             },
             "diff": "images/syria/diff.jpeg",
@@ -176,10 +176,6 @@
             "displayName": "Yemen",
             "monthly": [
                 {
-                    "month": "2025-05",
-                    "path": "images/yemen/monthly/2025-05.jpeg"
-                },
-                {
                     "month": "2025-06",
                     "path": "images/yemen/monthly/2025-06.jpeg"
                 },
@@ -226,16 +222,20 @@
                 {
                     "month": "2026-05",
                     "path": "images/yemen/monthly/2026-05.jpeg"
+                },
+                {
+                    "month": "2026-06",
+                    "path": "images/yemen/monthly/2026-06.jpeg"
                 }
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-05",
-                    "path": "images/yemen/monthly/2025-05.jpeg"
+                    "date": "2025-06",
+                    "path": "images/yemen/monthly/2025-06.jpeg"
                 },
                 "latest": {
-                    "date": "2026-05",
-                    "path": "images/yemen/monthly/2026-05.jpeg"
+                    "date": "2026-06",
+                    "path": "images/yemen/monthly/2026-06.jpeg"
                 }
             },
             "diff": "images/yemen/diff.jpeg",
@@ -313,10 +313,6 @@
             "displayName": "Libya",
             "monthly": [
                 {
-                    "month": "2025-05",
-                    "path": "images/libya/monthly/2025-05.jpeg"
-                },
-                {
                     "month": "2025-06",
                     "path": "images/libya/monthly/2025-06.jpeg"
                 },
@@ -363,16 +359,20 @@
                 {
                     "month": "2026-05",
                     "path": "images/libya/monthly/2026-05.jpeg"
+                },
+                {
+                    "month": "2026-06",
+                    "path": "images/libya/monthly/2026-06.jpeg"
                 }
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-05",
-                    "path": "images/libya/monthly/2025-05.jpeg"
+                    "date": "2025-06",
+                    "path": "images/libya/monthly/2025-06.jpeg"
                 },
                 "latest": {
-                    "date": "2026-05",
-                    "path": "images/libya/monthly/2026-05.jpeg"
+                    "date": "2026-06",
+                    "path": "images/libya/monthly/2026-06.jpeg"
                 }
             },
             "diff": "images/libya/diff.jpeg",
@@ -450,10 +450,6 @@
             "displayName": "Iran",
             "monthly": [
                 {
-                    "month": "2025-05",
-                    "path": "images/iran/monthly/2025-05.jpeg"
-                },
-                {
                     "month": "2025-06",
                     "path": "images/iran/monthly/2025-06.jpeg"
                 },
@@ -500,16 +496,20 @@
                 {
                     "month": "2026-05",
                     "path": "images/iran/monthly/2026-05.jpeg"
+                },
+                {
+                    "month": "2026-06",
+                    "path": "images/iran/monthly/2026-06.jpeg"
                 }
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-05",
-                    "path": "images/iran/monthly/2025-05.jpeg"
+                    "date": "2025-06",
+                    "path": "images/iran/monthly/2025-06.jpeg"
                 },
                 "latest": {
-                    "date": "2026-05",
-                    "path": "images/iran/monthly/2026-05.jpeg"
+                    "date": "2026-06",
+                    "path": "images/iran/monthly/2026-06.jpeg"
                 }
             },
             "diff": "images/iran/diff.jpeg",
@@ -614,10 +614,6 @@
             "displayName": "Egypt",
             "monthly": [
                 {
-                    "month": "2025-05",
-                    "path": "images/egypt/monthly/2025-05.jpeg"
-                },
-                {
                     "month": "2025-06",
                     "path": "images/egypt/monthly/2025-06.jpeg"
                 },
@@ -664,16 +660,20 @@
                 {
                     "month": "2026-05",
                     "path": "images/egypt/monthly/2026-05.jpeg"
+                },
+                {
+                    "month": "2026-06",
+                    "path": "images/egypt/monthly/2026-06.jpeg"
                 }
             ],
             "lightbox": {
                 "earliest": {
-                    "date": "2025-05",
-                    "path": "images/egypt/monthly/2025-05.jpeg"
+                    "date": "2025-06",
+                    "path": "images/egypt/monthly/2025-06.jpeg"
                 },
                 "latest": {
-                    "date": "2026-05",
-                    "path": "images/egypt/monthly/2026-05.jpeg"
+                    "date": "2026-06",
+                    "path": "images/egypt/monthly/2026-06.jpeg"
                 }
             },
             "diff": "images/egypt/diff.jpeg",
@@ -763,5 +763,5 @@
             }
         }
     },
-    "last_run_date": "2026-06-03"
+    "last_run_date": "2026-07-02"
 }
